@@ -76,6 +76,7 @@ pwt_subset <- select(pwt, year, countrycode, country, all_of(pwt_vars))
 
 df <- left_join(df, pwt_subset, by = c("year", "country", "countrycode")) %>% 
   arrange(countrycode, year) %>% 
-  filter(year < 2020)
+  filter(year < 2020) %>% 
+  mutate(across(c("pop", "emp"), ~ .x*1e6))
 
 write_csv(df, "./data/merged_debt.csv")
