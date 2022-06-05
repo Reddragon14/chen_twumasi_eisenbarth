@@ -80,3 +80,5 @@ df <- left_join(df, pwt_subset, by = c("year", "country", "countrycode")) %>%
   mutate(across(c("pop", "emp"), ~ .x*1e6))
 
 write_csv(df, "./data/merged_debt.csv")
+
+rm(list = ls())
