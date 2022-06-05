@@ -1,51 +1,7 @@
 library(dplyr)
 library(tidyr)
 library(purrr)
-library(boot)
-library(data.table)
-library(tsibble)
-library(fable)
-library(fabletools)
-library(fable.prophet)
-library(feasts)
-library(seasonal)
-library(forecast)
-library(lubridate)
-library(prophet)
-library(zoo)
 library(readr)
-library(shiny)
-library(ggthemr)
-library(ggplot2)
-library(hrbrthemes)
-library(ggthemes)
-library(wesanderson)
-library(scales)
-library(viridis)
-library(ggh4x)
-library(fredr)
-
-raspberry <- "#DB2955"
-babyblue <- "#47AFFF"
-prussian <- "#113255"
-sapphire <- "#255F85"
-mint <- "#B2EDC5"
-celadon <- "#5F8DBF"
-viridian <- "#5A876F"
-khaki <- "#9fae84"
-turq <- "#76E7CD"
-emerald <- "#32936F"
-colombia <- "#C7E8F3"
-violet <- "#AA78A6"
-jeans <- "#418B82"
-sparkle <- "#2F5075"
-sky <- "#ABDDED"
-pale_mint <- "#73BFB0"
-jungle <- "#193832"
-amazon <- "#317658"
-bedazzled <- "#1E569B"
-colors <- c(jeans, celadon, sapphire, mint, raspberry, violet)
-cools <- c(pale_mint, emerald, colombia, sapphire, khaki, sparkle, amazon, sky, turq, bedazzled, viridian, prussian, jungle)
 
 #' load in global debt data from IMF
 ggd <- haven::read_dta("./debt/data/imf_gdd.dta") %>% haven::zap_labels() %>%
@@ -59,7 +15,7 @@ ggd <- mutate(ggd, country = gsub("&", "and", country)) %>%
       country == "C.A.R." ~ "Central African Republic",
       country == "Congo, Dem. Rep. of" ~ "Congo D.R.",
       country == "Kyrgyz Republic" ~ "Kyrgyzstan",
-      country == "São Tomé and Príncipe" ~ "Sao Tome and Principe",
+      country == "SÃ£o TomÃ© and PrÃ­ncipe" ~ "Sao Tome and Principe",
       country == "Slovak Republic" ~ "Slovakia",
       country == "St. Kitts and Nevis" ~ "Saint Kitts and Nevis",
       country == "St. Lucia" ~ "Saint Lucia",
@@ -75,7 +31,7 @@ ggd <- mutate(ggd, country = gsub("&", "and", country)) %>%
 pwt <- haven::read_dta("./debt/data/pwt100.dta") %>%
   mutate(country = sub('.*,\\s*', '', country)) %>%
   mutate(country = sub("[\\(\\)].*", "", country)) %>%
-  mutate(country = case_when(country == "Côte d'Ivoire" ~ "Cote D'Ivoire",
+  mutate(country = case_when(country == "CÃ´te d'Ivoire" ~ "Cote D'Ivoire",
                              country == "D.R. of the Congo" ~ "Congo D.R.",
                              country == "Lao People's DR" ~ "Laos",
                              country == "North Macedonia" ~ "Macedonia",
