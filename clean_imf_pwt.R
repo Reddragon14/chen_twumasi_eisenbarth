@@ -4,7 +4,7 @@ library(purrr)
 library(readr)
 
 #' load in global debt data from IMF
-ggd <- haven::read_dta("./debt/data/imf_gdd.dta") %>% haven::zap_labels() %>%
+ggd <- haven::read_dta("./data/imf_gdd.dta") %>% haven::zap_labels() %>%
   select(ifscode, year, country, pvd = pvd_all, hhd = hh_all, gg, cg, gdp = ngdp) %>%
   mutate(across(c(4:7), ~ .x/100))
 #' fix strings on country column, we will use this column to merge 
@@ -33,7 +33,7 @@ ggd <-
   mutate(country = trimws(country))
 #' fix strings on country column, we will use this column to merge 
 #' and match codes between Penn World Tables and the IMF dataset
-pwt <- haven::read_dta("./debt/data/pwt100.dta") %>%
+pwt <- haven::read_dta("./data/pwt100.dta") %>%
   #' remove unnecessary strings after comma 
   mutate(country = sub('.*,\\s*', '', country)) %>%
   #' remove unnecessary strings in () 
@@ -66,7 +66,7 @@ startingCountries = unique(ifscodes$country)
 endingCountries = unique(ccodes$country)
 #' table of countries without PWT data
 rejects <- tibble(
-  fips = setdiff(startingCountries, endingCountries),
+  country = setdiff(startingCountries, endingCountries),
   code = 'EXCLUDE_LIST',
   reason = "No matching data in Penn World Tables"
 )
