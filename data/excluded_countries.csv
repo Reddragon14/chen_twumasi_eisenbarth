@@ -1,4 +1,4 @@
-fips,code,reason
+country,code,reason
 Afghanistan,EXCLUDE_LIST,No matching data in Penn World Tables
 Cape Verde,EXCLUDE_LIST,No matching data in Penn World Tables
 Eritrea,EXCLUDE_LIST,No matching data in Penn World Tables
