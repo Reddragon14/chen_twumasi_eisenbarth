@@ -39,7 +39,7 @@ pwt <- haven::read_dta("./data/pwt100.dta") %>%
   #' remove unnecessary strings in () 
   mutate(country = sub("[\\(\\)].*", "", country)) %>%
   #' this fixes the discrepancy in country names between IMF and PWT
-  mutate(country = case_when(country == "Côte d'Ivoire" ~ "Cote D'Ivoire",
+  mutate(country = case_when(country == "Côte d'Ivoire" ~ "Cote d'Ivoire",
                              country == "D.R. of the Congo" ~ "Congo D.R.",
                              country == "Lao People's DR" ~ "Laos",
                              country == "North Macedonia" ~ "Macedonia",
