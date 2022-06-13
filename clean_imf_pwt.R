@@ -17,6 +17,7 @@ ggd <-
     country = case_when(
       country == "C.A.R." ~ "Central African Republic",
       country == "Congo, Dem. Rep. of" ~ "Congo D.R.",
+      country == "Cote D'Ivoire" ~ "Cote d'Ivoire",
       country == "Kyrgyz Republic" ~ "Kyrgyzstan",
       country == "São Tomé and Príncipe" ~ "Sao Tome and Principe",
       country == "Slovak Republic" ~ "Slovakia",

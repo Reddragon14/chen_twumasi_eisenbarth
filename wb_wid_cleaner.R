@@ -25,7 +25,7 @@ wb <- filter(
     "NY.GDP.DEFL.KD.ZG",
     "MS.MIL.XPND.GD.ZS"
   )
-) %>%
+) 
   mutate(series_name = case_when(
                                  series_code == "FS.AST.DOMS.GD.ZS" ~ "domestic_credit", 
                                  series_code == "NY.GDP.MKTP.CD" ~ "gdp_us",
