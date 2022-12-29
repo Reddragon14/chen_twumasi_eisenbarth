@@ -1,0 +1,169 @@
+\documentclass[12pt, titlepage]{article}
+\usepackage[letterpaper, width = 145mm, top = 20mm, bottom = 25mm]{geometry}
+\usepackage{authblk}
+\usepackage{fancyhdr}
+%\pagestyle{fancy}
+\makeatother
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\makeatletter
+\usepackage[T1]{fontenc}
+\usepackage{nimbusserif}
+\usepackage{roboto}
+\usepackage[labelfont = sc]{caption}
+\usepackage{graphicx}
+\usepackage{amsmath, amsfonts}
+\newcommand{\source}[1]{\footnotesize\caption*{\emph{Source}: {#1}}} %
+\newcommand{\note}[1]{\footnotesize\caption*{\emph{Note}: {#1}}} %
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[flushleft]{threeparttable}
+\usepackage{authblk}
+\usepackage[font=sf]{caption}
+\usepackage{subcaption}
+\usepackage{textpos}
+\usepackage[figuresleft]{rotating}
+\usepackage{ragged2e}
+\usepackage{titlesec}
+\newcommand{\sectionbreak}{\clearpage}
+\usepackage[authoryear]{natbib}
+\usepackage[colorlinks]{hyperref}
+\hypersetup{
+	linkcolor=blue,
+	citecolor=blue,
+	urlcolor=blue
+}
+\usepackage{relsize}
+\usepackage{setspace}
+\clubpenalty=100000
+\widowpenalty=10000
+\singlespacing
+\pagenumbering{arabic}
+\captionsetup{singlelinecheck=false}
+\numberwithin{equation}{section}
+\usepackage[hang,flushmargin, bottom]{footmisc}
+
+\newcommand\blfootnote[1]{%
+	\begingroup
+	\renewcommand\thefootnote{}\footnote{#1}%
+	\addtocounter{footnote}{-1}%
+	\endgroup
+}
+% to change titles font family
+\usepackage{titling}
+\usepackage[font=sf]{floatrow}
+\usepackage{enumitem}
+\setlist{nolistsep}
+
+\usepackage{sectsty}
+\sectionfont{\sffamily\mdseries\clearpage}
+\subsectionfont{\sffamily\mdseries}
+\subsubsectionfont{\sffamily\mdseries}
+%\titleformat*{\section}{\Large\sffamily\MakeUppercase\clearpage}
+%\titleformat*{\subsection}{\large\sffamily\MakeUppercase}
+%\titleformat*{\subsubsection}{\normalsize\sffamily\MakeUppercase}
+
+
+\renewcommand{\bibsection}{\section{References}}
+
+\date{}
+
+\renewcommand\Affilfont{\itshape\small}
+
+\begin{document}
+	\begin{titlepage}
+		\centering
+		%\includegraphics[width =4cm]{logic-2020.png}\\
+		\LARGE{\sffamily{Growth, Debt, and Inequality}}\\
+		\vspace{5mm}
+		\normalsize{Zhuo Fu Chen\(^\ast\), Anthony Perez Eisenbarth\(^\dagger\),
+			and Richard Atta Twumasi\(^\ddagger\)}\\ \vspace{5mm}
+		\textit{
+			\vspace{1mm}
+			\(^\ast\)@email.com, \(^\dagger\)ageisenbarth@gmail.com, \(^\ddagger\)@email.com
+		}
+	\begin{Center}
+		\textbf{Abstract}
+	\end{Center}
+\justifying
+Standard macroeconomic theory assumes that persistent fiscal deficits
+lead to inflation. Though there is little empirical evidence to substantiate the
+assumption of this relationship, it nevertheless perseveres, guiding the study
+of both fiscal and monetary policy. The most recent global financial crisis
+has led to an unprecedented increase in public debt across the world, raising
+serious concerns about its economic impact. In our sample of 25 countries, we
+study the relationship between debt, deficits, and inequality. Rising household
+debt is viewed as the outcome of persistent changes in income distribution
+and growing income inequality. We examine the sustainability of such long-term trends.
+\end{titlepage}
+	\tableofcontents 
+	\addtocontents{toc}{\protect\thispagestyle{empty}}
+	\pagenumbering{gobble}
+	\cleardoublepage
+	\pagenumbering{arabic}
+
+\section{Introduction}
+
+Public debt has an important influence over the economy in both the
+short run and the long run. The conventional view is that debt can stimulate aggregate demand
+and output in the short run, but crowds out capital and reduces output in the long run (see
+\cite{Mankiw1999} for a survey). Standard growth models also predict that higher
+public debt leads to slower growth (see \cite{Saint-Paul91} or \cite{Aizeman07}). There are several channels through which high public debt can adversely affect
+capital accumulation, productivity and growth: higher long-term interest rates and sovereign
+risk spillovers to corporate borrowing costs \citep{Gale2003, Cecchetti2015, Corsetti2013}, higher future distortionary taxation and lower future public infrastructure spending, higher inflation \citep{Barro95}, and greater uncertainty about prospects and policies. Also, high debt
+is likely to constrain the scope for counter-cyclical fiscal policies, which may result in higher
+volatility and further lower growth \citep{Woo2015}. In more extreme cases of a
+debt crisis, by triggering a banking or currency crisis, the adverse effects can be magnified
+\citep{Reinhart2011, Reinhart2012}.
+
+\section{Monetary and Fiscal Policy Framework}
+
+It is said that the budget constraint of the government links monetary and fiscal policies in crucial ways in determining the price level. The literature in monetary economics has analyzed several conceptions of the relationship
+between monetary and fiscal policy. In the most traditional, fiscal policy is assumed to adjust
+to ensure that the government’s intertemporal budget constraint is always in balance, while
+monetary policy is free to set the nominal money stock and the nominal interest rate. A
+situation characterized by \cite{Leeper91} as one with passive fiscal policy and active monetary
+policy, one with monetary dominance. If fiscal policy, however, effects the real rate of interest,
+then the price level is not independent of fiscal policy, even under "monetary dominance."
+An increase in expenditures that raises the real interest rate raises also the nominal interest
+rate, lowering the demand for money. As money is assumed to be exogenous, the price level
+increases to reduce the real money supply.
+
+\subsection{Monetary Policy}
+
+\section{Related Literature}
+
+The renowned paper of \cite{Sargent81} discusses
+the "monetary dominance" and "fiscal dominance" regimes said to emerge between the relationship of fiscal deficits  and inflation. Given that the budget deficit is jointly determined by bond sales to the public and seigniorage created by a monetary authority if the monetary authority implements a monetary policy independently, then the fiscal authority faces a budget constraint imposed by the monetary authority when it formulates the fiscal policy. Under this circumstance, the monetary authority can control the money supply, and fiscal deficits do not lead to inflation. In contrast, in a fiscal dominance regime, the monetary authority cannot control the money supply, and fiscal deficits lead to inflation under such fiscal dominance. 
+
+The many empirical studies on the relationship between fiscal deficits and inflation provide contradictory and inconsistent results. For the United States, \cite{Hamburger1981} examine the deficit–money relationship from the period of 1954–1976, and conclude that budget deficits are inflationary. The relationship becomes stronger in the "Keynesian period" of 1961–1974. \cite{Dwyer82} uses quarterly data covering the 1953– 1978 period to test the
+relationship between debt, price, and money; his results indicate that expected government
+deficits have no significance for future inflation.
+
+There is inconsistent evidence that debt plays a role in determining price level and money stock. \cite{Ahking85}  examine quarterly data from the period of 1947–1980, and present that the deficit–inflation relationship of the United States does exist during some specific periods. \cite{King1985} investigate the deficit–seigniorage relationship in terms of neoclassical macroeconomic models. They find little connection between fiscal deficits and seigniorage in the 1953–1982 period in the United States; they also estimate the deficit–seigniorage connection of 12 other industrial and developing countries, but still fail to demonstrate that the relationship is significant. \cite{Protopapadakis87} examine the debt–money and the debt–inflation connections for 10 major advanced countries during the period of 1952–1987, and note that the association between debt growth and inflation is very weak. \cite{Haan1990}, investigating 17 developing countries from 1961 to 1985, find no evidence to support the "fiscal dominance hypothesis," discovering that deficits are correlated to inflation during acute inflation periods.
+\cite{Catao2005} model inflation as non-linearly related to fiscal deficits through the inflation tax base and estimate this relationship as intrinsically dynamic, using panel techniques that explicitly distinguish between short- and long-run effects of fiscal deficits. Their results, with a panel spanning 107 countries between 1960 and 2001, give a strong association between deficits and inflation among high-inflation and developing country groups, but not among low-inflation advanced economies.
+
+The lack of a relationship between inflation and deficit levels are confirmed in \cite{Reinhart2010}, which instigated an extensive literature analyzing the relationship between the accumulation of sovereign debt and its effect on economic growth. Notably, their result of a 90 percent threshold for debt were criticized by \cite{Herndon2014} for containing a spreadsheet error. Nonetheless, they too obtain the similar result that high debt
+is associated with lower growth, although the corrected growth rate (2.2\%) when debt is
+above 90\% is higher than that (0.1\%) originally reported in Reinhart and Rogoff (2010).
+Although there is a lack of relationship between inflation and either deficit levels and debt
+levels, empirical work has generally found that high debt levels impede growth \citep{Cecchetti2015}; \citep{Woo2015}.
+
+The empirical work contrasts with earlier theoretical work, which suggested that debt aides in growth. For instance, in a model with finite lived agents, Modigliani (1961) argues that sovereign debt promotes economic growth, though he also sheds light on potential negative effects to finance a larger debt for future generations. In \cite{Barro74}, perfectly informed, infinitely lived agents, anticipating future tax increases, reduce their actual consumption when government expenditure rises. Ricardian equivalence implies an insignificant impact of sovereign debt on economic growth. If the assumption of perfect information is also relaxed, creditors do not expect to be fully reimbursed of extensive sovereign debts, and the optimal solution becomes a debt overhang, as economically unsustainable debt would impact negatively on the probability of servicing the debt and, hence, economic growth. The bulk of the theoretical literature points towards a negative relationship between sovereign debt and economic growth. The general intuition is that because governments should adopt expansionary fiscal policies in times of recession (to promote economic recovery) and contractionary fiscal policies in times of prosperity (to control sovereign debt levels), sovereign debt and economic growth should be negatively correlated with a time lag. The extent of this correlation remains questionable. \cite{Marchionne2015} find that the notion of a threshold level of debt applicable to all countries does not exist, as characteristics specific to each individual country affect the manner in which sovereign debt interacts with economic growth.
+
+A central point of \cite{Sargent81} is that the relationship between fiscal
+deficit and inflation is dynamic.Under an independently set fiscal policy ("fiscal dominance"), deficits determine the present value of the necessary money creation ("seigniorage") to finance them, but do not necessarily determine current seigniorage and hence current inflation.This is because borrowing allows governments to allocate seigniorage inter-temporally, implying that fiscal deficits and inflation need not be contemporaneously correlated. Moreover, because the short-run dynamics of the deficit-inflation relationship can be
+very complex.
+
+\section{Data}
+
+\section{Methods}
+
+\section{Results}
+
+\section{Conclusion}
+
+\bibliographystyle{aea}
+\bibliography{references} % Bibliography file (usually '*.bib' )
+
+\end{document}

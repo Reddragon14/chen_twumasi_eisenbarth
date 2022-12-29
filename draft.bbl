@@ -1,0 +1,126 @@
+
+
+% Bibstyle aea.bst version 2009.05.20
+
+\begin{thebibliography}{xx}
+
+\harvarditem[Ahking \harvardand\ Miller]{F.W. Ahking \harvardand\ S.M.
+  Miller}{1985}{Ahking85}
+{\bf Ahking, F.W., and S.M. Miller.} 1985. ``On the Determination of the Public
+  Debt.'' {\em Journal of Macroeconomics}, 7:~447--467.
+
+\harvarditem[Aizenman, Kletzer \harvardand\ Pinto]{Joshua Aizenman, Kenneth
+  Kletzer \harvardand\ Brian Pinto}{2007}{Aizeman07}
+{\bf Aizenman, Joshua, Kenneth Kletzer, and Brian Pinto.} 2007. ``Economic
+  Growth with Constraints on Tax Revenues and Public Debt: Implications for
+  Fiscal Policy and Cross-Country Differences.'' National Bureau of Economic
+  Research Working Paper 12750.
+
+\harvarditem[Barro]{Robert~J. Barro}{1974}{Barro74}
+{\bf Barro, Robert~J.} 1974. ``Are Government Bonds Net Wealth?'' {\em Journal
+  of Political Economy}, 82(6):~1095--1117.
+
+\harvarditem[Barro]{Robert~J. Barro}{1995}{Barro95}
+{\bf Barro, Robert~J.} 1995. ``Inflation and Economic Growth.'' National Bureau
+  of Economic Research NBER Working Papers 5326.
+
+\harvarditem[Catão \harvardand\ Terrones]{Luis Catão \harvardand\ Marco
+  Terrones}{2005}{Catao2005}
+{\bf Catão, Luis, and Marco Terrones.} 2005. ``Fiscal deficits and
+  inflation.'' {\em Journal of Monetary Economics}, 52(3):~529--554.
+
+\harvarditem[Cecchetti \harvardand\ Kharroubi]{Stephen~G Cecchetti \harvardand\
+  Enisse Kharroubi}{2015}{Cecchetti2015}
+{\bf Cecchetti, Stephen~G, and Enisse Kharroubi.} 2015. ``Why does financial
+  sector growth crowd out real economic growth?'' Bank for International
+  Settlements BIS Working Papers 490.
+
+\harvarditem[Corsetti et~al.]{Giancarlo Corsetti, Keith Kuester, André Meier
+  \harvardand\ Gernot~J. Müller}{2013}{Corsetti2013}
+{\bf Corsetti, Giancarlo, Keith Kuester, André Meier, and Gernot~J. Müller.}
+  2013. ``Sovereign Risk, Fiscal Policy, and Macroeconomic Stability.'' {\em
+  The Economic Journal}, 123(566):~F99--F132.
+
+\harvarditem[Dwyer~Jr.]{Gerald~P. Dwyer~Jr.}{1982}{Dwyer82}
+{\bf Dwyer~Jr., Gerald~P.} 1982. ``Inflation and Government Deficits.'' {\em
+  Economic Inquiry}, 20(3):~315--329.
+
+\harvarditem[Gale \harvardand\ Orszag]{William~G. Gale \harvardand\ Peter~R.
+  Orszag}{2003}{Gale2003}
+{\bf Gale, William~G., and Peter~R. Orszag.} 2003. ``Economic Effects of
+  Sustained Budget Deficits.'' {\em National Tax Journal}, 56(3):~463--485.
+
+\harvarditem[Haan \harvardand\ Zellhorst]{J.D. Haan \harvardand\ D.
+  Zellhorst}{1990}{Haan1990}
+{\bf Haan, J.D., and D. Zellhorst.} 1990. ``The Impact of Government Deficits
+  on Money Growth in Developing Countries.'' {\em Journal of International
+  Money and Finance}, 9:~455--469.
+
+\harvarditem[Hamburger \harvardand\ Zwick]{M.J. Hamburger \harvardand\ B.
+  Zwick}{1981}{Hamburger1981}
+{\bf Hamburger, M.J., and B. Zwick.} 1981. ``Defiicits, Money, and Inflation.''
+  {\em Journal of Monetary Economics}, 7:~141--150.
+
+\harvarditem[Herndon, Ash \harvardand\ Pollin]{Thomas Herndon, Michael Ash
+  \harvardand\ Robert Pollin}{2014}{Herndon2014}
+{\bf Herndon, Thomas, Michael Ash, and Robert Pollin.} 2014. ``Does High Public
+  Debt Consistently Stifle Economic Growth? A Critique of Reinhart and
+  Rogoff.'' {\em Cambridge Journal of Economics}, 38(2):~257--279.
+
+\harvarditem[King \harvardand\ Plosser]{Robert King \harvardand\ Charles
+  Plosser}{1985}{King1985}
+{\bf King, Robert, and Charles Plosser.} 1985. ``Money, Deficits, and
+  Inflation.'' {\em Carnegie-Rochester Conference Series}, 22:~147--195.
+
+\harvarditem[Leeper]{E. Leeper}{1991}{Leeper91}
+{\bf Leeper, E.} 1991. ``Equilibria under 'Active' and 'Passive' Monetary and
+  Fiscal Policies.'' {\em Journal of Monetary Econoimcs}, 27(1):~1229--147.
+
+\harvarditem[Mankiw \harvardand\ Elmendorf]{N.G. Mankiw \harvardand\ Douglas
+  Elmendorf}{1999}{Mankiw1999}
+{\bf Mankiw, N.G., and Douglas Elmendorf.} 1999. ``Government Debt.'' {\em
+  Handbook of Macroeconomics}, , ed. (J.~B. Taylor and M. Woodford, 1615--1669.
+  North Holland.
+
+\harvarditem[Marchionne \harvardand\ Parekh]{F Marchionne \harvardand\ S
+  Parekh}{2015}{Marchionne2015}
+{\bf Marchionne, F, and S Parekh.} 2015. ``{Growth, Debt, and Inequality}.''
+  {\em Economic Issues Journal Articles}, 20(2):~67--94.
+
+\harvarditem[Protopapadakis \harvardand\ Siegel]{Aris~A Protopapadakis
+  \harvardand\ Jeremy~J Siegel}{1987}{Protopapadakis87}
+{\bf Protopapadakis, Aris~A, and Jeremy~J Siegel.} 1987. ``Are Money Growth and
+  Inflation Related to Government Deficits? Evidence from Ten Industrialized
+  Economies.'' {\em Journal of International Money and Finance}, 6(1):~31--48.
+
+\harvarditem[Reinhart \harvardand\ Rogoff]{Carmen~M. Reinhart \harvardand\
+  Kenneth~S. Rogoff}{2010}{Reinhart2010}
+{\bf Reinhart, Carmen~M., and Kenneth~S. Rogoff.} 2010. ``Growth in a Time of
+  Debt.'' {\em American Economic Review}, 100(2):~573--78.
+
+\harvarditem[Reinhart \harvardand\ Rogoff]{Carmen~M. Reinhart \harvardand\
+  Kenneth~S. Rogoff}{2011}{Reinhart2011}
+{\bf Reinhart, Carmen~M., and Kenneth~S. Rogoff.} 2011. ``From Financial Crash
+  to Debt Crisis.'' {\em American Economic Review}, 101(5):~1676--1706.
+
+\harvarditem[Reinhart, Reinhart \harvardand\ Rogoff]{Carmen~M. Reinhart,
+  Vincent~R. Reinhart \harvardand\ Kenneth~S. Rogoff}{2012}{Reinhart2012}
+{\bf Reinhart, Carmen~M., Vincent~R. Reinhart, and Kenneth~S. Rogoff.} 2012.
+  ``Public Debt Overhangs: Advanced-Economy Episodes since 1800.'' {\em Journal
+  of Economic Perspectives}, 26(3):~69--86.
+
+\harvarditem[Saint-Paul]{G. Saint-Paul}{1991}{Saint-Paul91}
+{\bf Saint-Paul, G.} 1991. ``Fiscal Policy in an Endogenous Growth Model.''
+  {\em The Quarterly Journal of Economics}, 107:~1243--1259.
+
+\harvarditem[Sargent \harvardand\ Wallace]{Thomas~J. Sargent \harvardand\ Neil
+  Wallace}{1981}{Sargent81}
+{\bf Sargent, Thomas~J., and Neil Wallace.} 1981. ``Some Unpleasant Monetarist
+  Arithmetic.'' {\em Quarterly Review}, 5(Fall):~1--17.
+
+\harvarditem[Woo \harvardand\ Kumar]{Jaejoon Woo \harvardand\ Manmohan~S.
+  Kumar}{2015}{Woo2015}
+{\bf Woo, Jaejoon, and Manmohan~S. Kumar.} 2015. ``Public Debt and Growth.''
+  {\em Economica}, 82(328):~705--739.
+
+\end{thebibliography}

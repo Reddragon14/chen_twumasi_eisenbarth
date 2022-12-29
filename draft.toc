@@ -1,0 +1,10 @@
+\thispagestyle {empty}
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\contentsline {section}{\numberline {2}Monetary and Fiscal Policy Framework}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Monetary Policy}{2}{subsection.2.1}%
+\contentsline {section}{\numberline {3}Related Literature}{3}{section.3}%
+\contentsline {section}{\numberline {4}Data}{5}{section.4}%
+\contentsline {section}{\numberline {5}Methods}{6}{section.5}%
+\contentsline {section}{\numberline {6}Results}{7}{section.6}%
+\contentsline {section}{\numberline {7}Conclusion}{8}{section.7}%
+\contentsline {section}{\numberline {8}References}{9}{section.8}%
