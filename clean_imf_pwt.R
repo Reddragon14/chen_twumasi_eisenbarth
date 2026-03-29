@@ -90,6 +90,10 @@ pwt_vars <- c("cgdpe",
               "emp",
               "hc",
               "rconna",
+              "csh_g",
+              "csh_i",
+              "csh_x",
+              "csh_m",
               "ctfp",
               "labsh",
               "pl_c",
@@ -99,7 +103,6 @@ pwt_vars <- c("cgdpe",
               "pl_m")
 
 pwt_subset <- select(pwt, year, countrycode, country, all_of(pwt_vars))
-
 
 dataset <- left_join(df, pwt_subset) %>%
   arrange(countrycode, year) %>% 

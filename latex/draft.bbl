@@ -4,6 +4,12 @@
 
 \begin{thebibliography}{xx}
 
+\harvarditem[Acalin \harvardand\ Ball]{Julien Acalin \harvardand\ Laurence~M.
+  Ball}{2023}{AcalinBall2023}
+{\sc Acalin, Julien, and Laurence~M. Ball.} 2023. ``Did the US Really Grow out
+  of its World War II Debt?'' {\em American Economic Journal: Macroeconomics}.
+  Forthcoming.
+
 \harvarditem[Ahking \harvardand\ Miller]{F.W. Ahking \harvardand\ S.M.
   Miller}{1985}{Ahking85}
 {\sc Ahking, F.W., and S.M. Miller.} 1985. ``On the Determination of the Public
@@ -16,23 +22,62 @@
   Fiscal Policy and Cross-Country Differences.'' National Bureau of Economic
   Research Working Paper 12750.
 
+\harvarditem[Alesina \harvardand\ Tabellini]{Alberto Alesina \harvardand\ Guido
+  Tabellini}{1990}{Alesina1990}
+{\sc Alesina, Alberto, and Guido Tabellini.} 1990. ``A Positive Theory of
+  Fiscal Deficits and Government Debt.'' {\em The Review of Economic Studies},
+  57(3):~403--414.
+
 \harvarditem[Azzimonti, de~Francisco \harvardand\ Quadrini]{Marina Azzimonti,
   Eva de~Francisco \harvardand\ Vincenzo Quadrini}{2014}{Azzimonti2014}
 {\sc Azzimonti, Marina, Eva de~Francisco, and Vincenzo Quadrini.} 2014.
   ``Financial Globalization, Inequality, and the Rising Public Debt.'' {\em
   American Economic Review}, 104:~2267--2302.
 
-\harvarditem[Barro]{Robert~J. Barro}{1974}{Barro74}
-{\sc Barro, Robert~J.} 1974. ``Are Government Bonds Net Wealth?'' {\em Journal
-  of Political Economy}, 82(6):~1095--1117.
-
 \harvarditem[Barro]{Robert~J. Barro}{1995}{Barro95}
 {\sc Barro, Robert~J.} 1995. ``Inflation and Economic Growth.'' National Bureau
   of Economic Research NBER Working Papers 5326.
 
-\harvarditem[Catão \harvardand\ Terrones]{Luis Catão \harvardand\ Marco
+\harvarditem[Baum, Checherita-Westphal \harvardand\ Rother]{Anja Baum, Cristina
+  Checherita-Westphal \harvardand\ Philipp Rother}{2013}{Baum2013}
+{\sc Baum, Anja, Cristina Checherita-Westphal, and Philipp Rother.} 2013.
+  ``Debt and growth: New evidence for the euro area.'' {\em Journal of
+  International Money and Finance}, 32:~809--821.
+
+\harvarditem[Bentour]{El~Mostafa Bentour}{2021}{Bentour2021}
+{\sc Bentour, El~Mostafa.} 2021. ``On the public debt and growth threshold: one
+  size does not necessarily fit all.'' {\em Applied Economics},
+  53(11):~1280--1299.
+
+\harvarditem[Blanchard]{Olivier Blanchard}{2019}{Blanchard2019}
+{\sc Blanchard, Olivier.} 2019. ``Public Debt and Low Interest Rates.'' {\em
+  American Economic Review}, 109(4):~1197--1229.
+
+\harvarditem[Blanchard]{Olivier Blanchard}{2023}{Blanchard2023}
+{\sc Blanchard, Olivier.} 2023. {\em Fiscal Policy Under Low Interest Rates.}
+  Cambridge, MA:MIT Press.
+
+\harvarditem[Boushey, Nunn \harvardand\ Shambaugh]{Heather Boushey, Ryan Nunn
+  \harvardand\ Jay Shambaugh}{2019}{Boushey2019}
+{\sc Boushey, Heather, Ryan Nunn, and Jay Shambaugh, } ed. 2019. {\em Recession
+  Ready: Fiscal Policies to Stabilize the American Economy.} Washington:The
+  Hamilton Project and the Washington Center for Equitable Growth.
+
+\harvarditem[Bouton, Lizzeri \harvardand\ Persico]{Laurent Bouton, Alessandro
+  Lizzeri \harvardand\ Nicola Persico}{2020}{Bouton2020}
+{\sc Bouton, Laurent, Alessandro Lizzeri, and Nicola Persico.} 2020. ``The
+  Political Economy of Debt and Entitlements.'' {\em The Review of Economic
+  Studies}, 87(6):~2568--2599.
+
+\harvarditem[Case \harvardand\ Deaton]{Anne Case \harvardand\ Angus
+  Deaton}{2023}{CaseDeaton2023}
+{\sc Case, Anne, and Angus Deaton.} 2023. ``Accounting for the Widening
+  Mortality Gap between American Adults with and without a BA.'' {\em Brookings
+  Papers on Economic Activity}.
+
+\harvarditem[Cat\~{a}o \harvardand\ Terrones]{Luis Cat\~{a}o \harvardand\ Marco
   Terrones}{2005}{Catao2005}
-{\sc Catão, Luis, and Marco Terrones.} 2005. ``Fiscal deficits and
+{\sc Cat\~{a}o, Luis, and Marco Terrones.} 2005. ``Fiscal deficits and
   inflation.'' {\em Journal of Monetary Economics}, 52(3):~529--554.
 
 \harvarditem[Cecchetti \harvardand\ Kharroubi]{Stephen~G Cecchetti \harvardand\
@@ -41,15 +86,70 @@
   sector growth crowd out real economic growth?'' Bank for International
   Settlements BIS Working Papers 490.
 
-\harvarditem[Corsetti et~al.]{Giancarlo Corsetti, Keith Kuester, André Meier
-  \harvardand\ Gernot~J. Müller}{2013}{Corsetti2013}
-{\sc Corsetti, Giancarlo, Keith Kuester, André Meier, and Gernot~J. Müller.}
-  2013. ``Sovereign Risk, Fiscal Policy, and Macroeconomic Stability.'' {\em
-  The Economic Journal}, 123(566):~F99--F132.
+\harvarditem[Checherita-Westphal \harvardand\ Rother]{Cristina
+  Checherita-Westphal \harvardand\ Philipp Rother}{2012}{Checherita2012}
+{\sc Checherita-Westphal, Cristina, and Philipp Rother.} 2012. ``The Impact of
+  High Government Debt on Economic Growth and its Channels: An Empirical
+  Investigation for the Euro Area.'' {\em European Economic Review},
+  56(7):~1392--1405.
+
+\harvarditem[Chetty et~al.]{Raj Chetty, David Grusky, Maximilian Hell,
+  Nathaniel Hendren, Robert Manduca \harvardand\ Jimmy
+  Narang}{2017}{Chetty2017}
+{\sc Chetty, Raj, David Grusky, Maximilian Hell, Nathaniel Hendren, Robert
+  Manduca, and Jimmy Narang.} 2017. ``The Fading American Dream: Trends in
+  Absolute Income Mobility Since 1940.'' {\em Science}, 356(6336):~398--406.
+
+\harvarditem[Chudik et~al.]{Alexander Chudik, Kamiar Mohaddes, M.~Hashem
+  Pesaran \harvardand\ Mehdi Raissi}{2017}{Chudik2017}
+{\sc Chudik, Alexander, Kamiar Mohaddes, M.~Hashem Pesaran, and Mehdi Raissi.}
+  2017. ``Is There a Debt-threshold E\textsection{}ect on Output Growth?'' {\em
+  Review of Economics and Statistics}, 99(1):~135--150.
+
+\harvarditem[Corsetti et~al.]{Giancarlo Corsetti, Keith Kuester, Andr\'{e}
+  Meier \harvardand\ Gernot~J. M\"{u}ller}{2013}{Corsetti2013}
+{\sc Corsetti, Giancarlo, Keith Kuester, Andr\'{e} Meier, and Gernot~J.
+  M\"{u}ller.} 2013. ``Sovereign Risk, Fiscal Policy, and Macroeconomic
+  Stability.'' {\em The Economic Journal}, 123(566):~F99--F132.
+
+\harvarditem[Debrun, Jarmuzek \harvardand\ Shabunina]{Xavier Debrun, Mariusz
+  Jarmuzek \harvardand\ Anna Shabunina}{2020}{Debrun2020}
+{\sc Debrun, Xavier, Mariusz Jarmuzek, and Anna Shabunina.} 2020. ``Public
+  Debt: Safe at Any Speed?'' {\em National Bank of Belgium Economic Review}.
 
 \harvarditem[Dwyer~Jr.]{Gerald~P. Dwyer~Jr.}{1982}{Dwyer82}
 {\sc Dwyer~Jr., Gerald~P.} 1982. ``Inflation and Government Deficits.'' {\em
   Economic Inquiry}, 20(3):~315--329.
+
+\harvarditem[Dynan \harvardand\ Elmendorf]{Karen Dynan \harvardand\ Douglas
+  Elmendorf}{2024}{DynanElmendorf2024}
+{\sc Dynan, Karen, and Douglas Elmendorf.} 2024. ``Fiscal Policy and the
+  Pandemic-Era Surge in US Inflation: Lessons for the Future.'' Peterson
+  Institute for International Economics Working Paper 24-22.
+
+\harvarditem[Eberhardt]{Markus Eberhardt}{2019}{Eberhardt_2019}
+{\sc Eberhardt, Markus.} 2019. ``Nonlinearities in the Relationship Between
+  Debt and Growth: (No) Evidence From Over Two Centuries.'' {\em Macroeconomic
+  Dynamics}, 23(4):~1563--1585.
+
+\harvarditem[Eberhardt \harvardand\ Presbitero]{Markus Eberhardt \harvardand\
+  Andrea~F. Presbitero}{2015}{Eberhardt2015}
+{\sc Eberhardt, Markus, and Andrea~F. Presbitero.} 2015. ``Public debt and
+  growth: Heterogeneity and non-linearity.'' {\em Journal of International
+  Economics}, 97(1):~45--58.
+
+\harvarditem[Fieldhouse \harvardand\ Mertens]{Andrew~J. Fieldhouse \harvardand\
+  Karel Mertens}{2023}{Fieldhouse2023}
+{\sc Fieldhouse, Andrew~J., and Karel Mertens.} 2023. ``The Returns to
+  Government R\&D: Evidence from U.S. Appropriations Shocks.'' Federal Reserve
+  Bank of Dallas Working Paper 2305.
+
+\harvarditem[Furman \harvardand\ Summers]{Jason Furman \harvardand\ Lawrence~H.
+  Summers}{2020}{FurmanSummers2020}
+{\sc Furman, Jason, and Lawrence~H. Summers.} 2020. ``A Reconsideration of
+  Fiscal Policy in the Era of Low Interest Rates.'' {\em
+  \url{https://www.hks.harvard.edu/publications/reconsideration-fiscal-policy-era-low-interest-rates}},
+  Accessed July 22, 2025.
 
 \harvarditem[Gale \harvardand\ Orszag]{William~G. Gale \harvardand\ Peter~R.
   Orszag}{2003}{Gale2003}
@@ -67,20 +167,38 @@
 {\sc Hamburger, M.J., and B. Zwick.} 1981. ``Defiicits, Money, and Inflation.''
   {\em Journal of Monetary Economics}, 7:~141--150.
 
+\harvarditem[Harms \harvardand\ Knaze]{Philipp Harms \harvardand\ Jakub
+  Knaze}{2021}{HarmsKnaze2021}
+{\sc Harms, Philipp, and Jakub Knaze.} 2021. ``Bilateral De-Jure Exchange Rate
+  Regimes and Foreign Direct Investment: A Gravity Analysis.'' {\em Journal of
+  International Money and Finance}, 117:~102438.
+
 \harvarditem[Herndon, Ash \harvardand\ Pollin]{Thomas Herndon, Michael Ash
   \harvardand\ Robert Pollin}{2014}{Herndon2014}
 {\sc Herndon, Thomas, Michael Ash, and Robert Pollin.} 2014. ``Does High Public
   Debt Consistently Stifle Economic Growth? A Critique of Reinhart and
   Rogoff.'' {\em Cambridge Journal of Economics}, 38(2):~257--279.
 
+\harvarditem[Iacoviello]{Matteo Iacoviello}{2008}{Iacoviello2008}
+{\sc Iacoviello, Matteo.} 2008. ``Household Debt and Income Inequality,
+  1963-2003.'' {\em Journal of Money, Credit and Banking}, 40(5):~929--965.
+
+\harvarditem[Ilzetzki, Reinhart \harvardand\ Rogoff]{Ethan Ilzetzki, Carmen~M.
+  Reinhart \harvardand\ Kenneth~S. Rogoff}{2019}{IlzetzkiReinhartRogoff2019}
+{\sc Ilzetzki, Ethan, Carmen~M. Reinhart, and Kenneth~S. Rogoff.} 2019.
+  ``Exchange Arrangements Entering the Twenty-First Century: Which Anchor Will
+  Hold?'' {\em Quarterly Journal of Economics}, 134(2):~599--646.
+
 \harvarditem[King \harvardand\ Plosser]{Robert King \harvardand\ Charles
   Plosser}{1985}{King1985}
 {\sc King, Robert, and Charles Plosser.} 1985. ``Money, Deficits, and
   Inflation.'' {\em Carnegie-Rochester Conference Series}, 22:~147--195.
 
-\harvarditem[Leeper]{E. Leeper}{1991}{Leeper91}
-{\sc Leeper, E.} 1991. ``Equilibria under 'Active' and 'Passive' Monetary and
-  Fiscal Policies.'' {\em Journal of Monetary Econoimcs}, 27(1):~1229--147.
+\harvarditem[Kumhof, Ranci\`{e}re \harvardand\ Winant]{Michael Kumhof, Romain
+  Ranci\`{e}re \harvardand\ Pablo Winant}{2015}{Kumhof2015}
+{\sc Kumhof, Michael, Romain Ranci\`{e}re, and Pablo Winant.} 2015.
+  ``Inequality, Leverage, and Crises.'' {\em The American Economic Review},
+  105(3):~1217--1245.
 
 \harvarditem[Mankiw \harvardand\ Elmendorf]{N.G. Mankiw \harvardand\ Douglas
   Elmendorf}{1999}{Mankiw1999}
@@ -88,10 +206,42 @@
   Handbook of Macroeconomics}, , ed. (J.~B. Taylor and M. Woodford, 1615--1669.
   North Holland.
 
-\harvarditem[Marchionne \harvardand\ Parekh]{F Marchionne \harvardand\ S
-  Parekh}{2015}{Marchionne2015}
-{\sc Marchionne, F, and S Parekh.} 2015. ``{Growth, Debt, and Inequality}.''
-  {\em Economic Issues Journal Articles}, 20(2):~67--94.
+\harvarditem[Mason \harvardand\ Jayadev]{J.~W. Mason \harvardand\ Arjun
+  Jayadev}{2014}{Mason2014}
+{\sc Mason, J.~W., and Arjun Jayadev.} 2014. ``"Fisher Dynamics" in US
+  Household Debt, 1929-2011.'' {\em American Economic Journal: Macroeconomics},
+  6(3):~214--234.
+
+\harvarditem[Mian, Straub \harvardand\ Sufi]{Atif Mian, Ludwig Straub
+  \harvardand\ Amir Sufi}{2024}{Mian2024}
+{\sc Mian, Atif, Ludwig Straub, and Amir Sufi.} 2024. ``A Goldilocks Theory of
+  Fiscal Deficits.'' Mimeo.
+
+\harvarditem[Panizza \harvardand\ Presbitero]{Ugo Panizza \harvardand\
+  Andrea~F. Presbitero}{2014}{Panizza2014}
+{\sc Panizza, Ugo, and Andrea~F. Presbitero.} 2014. ``Public debt and economic
+  growth: Is there a causal effect?'' {\em Journal of Macroeconomics},
+  41:~21--41.
+
+\harvarditem[Pesaran \harvardand\ Shin]{M.~Hashem Pesaran \harvardand\
+  Yongcheol Shin}{1999}{PesaranShin1999}
+{\sc Pesaran, M.~Hashem, and Yongcheol Shin.} 1999. ``An Autoregressive
+  Distributed-Lag Modelling Approach to Cointegration Analysis.'' {\em
+  Econometrics and Economic Theory in the 20th Century: The Ragnar Frisch
+  Centennial Symposium}, , ed. SteinarEditor Str\o{}m {\em Econometric Society
+  Monographs}, 371–413. Cambridge University Press.
+
+\harvarditem[Pesaran, Shin \harvardand\ Smith]{M.~Hashem Pesaran, Yongcheol
+  Shin \harvardand\ Richard~J. Smith}{2001}{PesaranShinSmith2001}
+{\sc Pesaran, M.~Hashem, Yongcheol Shin, and Richard~J. Smith.} 2001. ``Bounds
+  Testing Approaches to the Analysis of Level Relationships.'' {\em Journal of
+  Applied Econometrics}, 16(3):~289--326.
+
+\harvarditem[Piketty \harvardand\ Saez]{Thomas Piketty \harvardand\ Emmanuel
+  Saez}{2019}{PikettySaez2019}
+{\sc Piketty, Thomas, and Emmanuel Saez.} 2019. ``Income Inequality in the
+  United States, 1913--2018.'' {\em The Quarterly Journal of Economics},
+  134:~553--609.
 
 \harvarditem[Protopapadakis \harvardand\ Siegel]{Aris~A Protopapadakis
   \harvardand\ Jeremy~J Siegel}{1987}{Protopapadakis87}
@@ -130,9 +280,30 @@
 {\sc Sargent, Thomas~J., and Neil Wallace.} 1981. ``Some Unpleasant Monetarist
   Arithmetic.'' {\em Quarterly Review}, 5(Fall):~1--17.
 
+\harvarditem[Solt]{Frederick Solt}{2020}{solt2020}
+{\sc Solt, Frederick.} 2020. ``Measuring Income Inequality Across Countries and
+  Over Time: The Standardized World Income Inequality Database.'' {\em Social
+  Science Quarterly}, 101(3):~1183--1199.
+
+\harvarditem[Song, Storesletten \harvardand\ Zilibotti]{Zheng Song, Kjetil
+  Storesletten \harvardand\ Fabrizio Zilibotti}{2012}{Song2012}
+{\sc Song, Zheng, Kjetil Storesletten, and Fabrizio Zilibotti.} 2012. ``Rotten
+  Parents and Disciplined Children: A Politico-Economic Theory of Public
+  Expenditure and Debt.'' {\em Econometrica}, 80(6):~2785--2803.
+
+\harvarditem[Tabellini]{Guido Tabellini}{1991}{Tabellini1991}
+{\sc Tabellini, Guido.} 1991. ``The Politics of Intergenerational
+  Redistribution.'' {\em Journal of Political Economy}, 99(2):~335--357.
+
 \harvarditem[Woo \harvardand\ Kumar]{Jaejoon Woo \harvardand\ Manmohan~S.
   Kumar}{2015}{Woo2015}
 {\sc Woo, Jaejoon, and Manmohan~S. Kumar.} 2015. ``Public Debt and Growth.''
   {\em Economica}, 82(328):~705--739.
+
+\harvarditem[You \harvardand\ Dutt]{Jong-Il You \harvardand\ Amitava~Krishna
+  Dutt}{1996}{YouDutt1996}
+{\sc You, Jong-Il, and Amitava~Krishna Dutt.} 1996. ``Government Debt, Income
+  Distribution and Growth.'' {\em Cambridge Journal of Economics},
+  20(3):~335--351.
 
 \end{thebibliography}

@@ -1,0 +1,315 @@
+country,WIID
+Afghanistan,TRUE
+Alabama,TRUE
+Alaska,TRUE
+Albania,TRUE
+Algeria,TRUE
+Andorra,TRUE
+Angola,TRUE
+Anguilla,TRUE
+Antigua and Barbuda,TRUE
+Argentina,TRUE
+Arizona,TRUE
+Arkansas,TRUE
+Armenia,TRUE
+Aruba,TRUE
+Australia,TRUE
+Austria,TRUE
+Azerbaijan,TRUE
+Bahamas,TRUE
+Bahrain,TRUE
+Bangladesh,TRUE
+Barbados,TRUE
+Belarus,TRUE
+Belgium,TRUE
+Belize,TRUE
+Benin,TRUE
+Bermuda,TRUE
+Bhutan,TRUE
+Bolivia,TRUE
+"Bonaire, Sint Eustatius and Saba",TRUE
+Bosnia and Herzegovina,TRUE
+Botswana,TRUE
+Brazil,TRUE
+British Virgin Islands,TRUE
+Brunei Darussalam,TRUE
+Bulgaria,TRUE
+Burkina Faso,TRUE
+Burundi,TRUE
+Cabo Verde,TRUE
+California,TRUE
+Cambodia,TRUE
+Cameroon,TRUE
+Canada,TRUE
+Cayman Islands,TRUE
+Central African Republic,TRUE
+Chad,TRUE
+Chile,TRUE
+China,TRUE
+Colombia,TRUE
+Colorado,TRUE
+Comoros,TRUE
+Congo,TRUE
+Connecticut,TRUE
+Costa Rica,TRUE
+Cote d’Ivoire,TRUE
+Croatia,TRUE
+Cuba,TRUE
+Curacao,TRUE
+Cyprus,TRUE
+Czech Republic,TRUE
+DR Congo,TRUE
+Delaware,TRUE
+Denmark,TRUE
+Djibouti,TRUE
+Dominica,TRUE
+Dominican Republic,TRUE
+East Asia (MER),TRUE
+East Asia (PPP),TRUE
+Eastern Europe (MER),TRUE
+Eastern Europe (PPP),TRUE
+Ecuador,TRUE
+Egypt,TRUE
+El Salvador,TRUE
+Equatorial Guinea,TRUE
+Eritrea,TRUE
+Estonia,TRUE
+Ethiopia,TRUE
+Europe (MER),TRUE
+Europe (PPP),TRUE
+Fiji,TRUE
+Finland,TRUE
+Florida,TRUE
+France,TRUE
+French Polynesia,TRUE
+Gabon,TRUE
+Gambia,TRUE
+Georgia,TRUE
+Georgia (US),TRUE
+German Democratic Republic,TRUE
+Germany,TRUE
+Ghana,TRUE
+Gibraltar,TRUE
+Greece,TRUE
+Greenland,TRUE
+Grenada,TRUE
+Guatemala,TRUE
+Guernsey,TRUE
+Guinea,TRUE
+Guinea-Bissau,TRUE
+Guyana,TRUE
+Haiti,TRUE
+Hawaii,TRUE
+Honduras,TRUE
+Hong Kong,TRUE
+Hungary,TRUE
+Iceland,TRUE
+Idaho,TRUE
+Illinois,TRUE
+India,TRUE
+Indiana,TRUE
+Indonesia,TRUE
+Iowa,TRUE
+Iran,TRUE
+Iraq,TRUE
+Ireland,TRUE
+Isle of Man,TRUE
+Israel,TRUE
+Italy,TRUE
+Jamaica,TRUE
+Japan,TRUE
+Jersey,TRUE
+Jordan,TRUE
+Kansas,TRUE
+Kazakhstan,TRUE
+Kentucky,TRUE
+Kenya,TRUE
+Kiribati,TRUE
+Korea,TRUE
+Kosovo,TRUE
+Kuwait,TRUE
+Kyrgyzstan,TRUE
+Lao PDR,TRUE
+Latin America (MER),TRUE
+Latin America (PPP),TRUE
+Latvia,TRUE
+Lebanon,TRUE
+Lesotho,TRUE
+Liberia,TRUE
+Libya,TRUE
+Liechtenstein,TRUE
+Lithuania,TRUE
+Louisiana,TRUE
+Luxembourg,TRUE
+MENA (MER),TRUE
+MENA (PPP),TRUE
+Macao,TRUE
+Madagascar,TRUE
+Maine,TRUE
+Malawi,TRUE
+Malaysia,TRUE
+Maldives,TRUE
+Mali,TRUE
+Malta,TRUE
+Marshall Islands,TRUE
+Maryland,TRUE
+Massachusetts,TRUE
+Mauritania,TRUE
+Mauritius,TRUE
+Mexico,TRUE
+Michigan,TRUE
+Micronesia,TRUE
+Minnesota,TRUE
+Mississippi,TRUE
+Missouri,TRUE
+Moldova,TRUE
+Monaco,TRUE
+Mongolia,TRUE
+Montana,TRUE
+Montenegro,TRUE
+Montserrat,TRUE
+Morocco,TRUE
+Mozambique,TRUE
+Myanmar,TRUE
+Namibia,TRUE
+Nauru,TRUE
+Nebraska,TRUE
+Nepal,TRUE
+Netherlands,TRUE
+Nevada,TRUE
+New Caledonia,TRUE
+New Hampshire,TRUE
+New Jersey,TRUE
+New Mexico,TRUE
+New York,TRUE
+New Zealand,TRUE
+Nicaragua,TRUE
+Niger,TRUE
+Nigeria,TRUE
+North America & Oceania (MER),TRUE
+North America & Oceania (PPP),TRUE
+North America (MER),TRUE
+North America (PPP),TRUE
+North Carolina,TRUE
+North Dakota,TRUE
+North Korea,TRUE
+North Macedonia,TRUE
+Norway,TRUE
+Oceania (MER),TRUE
+Oceania (PPP),TRUE
+Ohio,TRUE
+Oklahoma,TRUE
+Oman,TRUE
+Oregon,TRUE
+Other East Asia (MER),TRUE
+Other East Asia (PPP),TRUE
+Other Latin America (MER),TRUE
+Other Latin America (PPP),TRUE
+Other MENA (MER),TRUE
+Other MENA (PPP),TRUE
+Other North America & Oceania (MER),TRUE
+Other North America & Oceania (PPP),TRUE
+Other North America (MER),TRUE
+Other North America (PPP),TRUE
+Other Oceania (MER),TRUE
+Other Oceania (PPP),TRUE
+Other Russia & Central Asia (MER),TRUE
+Other Russia & Central Asia (PPP),TRUE
+Other South & Southeast Asia (MER),TRUE
+Other South & Southeast Asia (PPP),TRUE
+Other Sub-Saharan Africa (MER),TRUE
+Other Sub-Saharan Africa (PPP),TRUE
+Other Western Europe (MER),TRUE
+Other Western Europe (PPP),TRUE
+Pakistan,TRUE
+Palau,TRUE
+Palestine,TRUE
+Panama,TRUE
+Papua New Guinea,TRUE
+Paraguay,TRUE
+Pennsylvania,TRUE
+Peru,TRUE
+Philippines,TRUE
+Poland,TRUE
+Portugal,TRUE
+Puerto Rico,TRUE
+Qatar,TRUE
+Rhode Island,TRUE
+Romania,TRUE
+Rural China,TRUE
+Russia & Central Asia (MER),TRUE
+Russia & Central Asia (PPP),TRUE
+Russian Federation,TRUE
+Rwanda,TRUE
+Saint Kitts and Nevis,TRUE
+Saint Lucia,TRUE
+Saint Vincent and the Grenadines,TRUE
+Samoa,TRUE
+San Marino,TRUE
+Sao Tome and Principe,TRUE
+Saudi Arabia,TRUE
+Senegal,TRUE
+Serbia,TRUE
+Seychelles,TRUE
+Sierra Leone,TRUE
+Singapore,TRUE
+Sint Maarten (Dutch part),TRUE
+Slovakia,TRUE
+Slovenia,TRUE
+Solomon Islands,TRUE
+Somalia,TRUE
+South & Southeast Asia (MER),TRUE
+South & Southeast Asia (PPP),TRUE
+South Africa,TRUE
+South Carolina,TRUE
+South Dakota,TRUE
+South Sudan,TRUE
+Spain,TRUE
+Sri Lanka,TRUE
+Sub-Saharan Africa (MER),TRUE
+Sub-Saharan Africa (PPP),TRUE
+Sudan,TRUE
+Suriname,TRUE
+Swaziland,TRUE
+Sweden,TRUE
+Switzerland,TRUE
+Syrian Arab Republic,TRUE
+Taiwan,TRUE
+Tajikistan,TRUE
+Tanzania,TRUE
+Tennessee,TRUE
+Texas,TRUE
+Thailand,TRUE
+Timor-Leste,TRUE
+Togo,TRUE
+Tonga,TRUE
+Trinidad and Tobago,TRUE
+Tunisia,TRUE
+Turkey,TRUE
+Turkmenistan,TRUE
+Turks and Caicos Islands,TRUE
+Tuvalu,TRUE
+USA,TRUE
+Uganda,TRUE
+Ukraine,TRUE
+United Arab Emirates,TRUE
+United Kingdom,TRUE
+Urban China,TRUE
+Uruguay,TRUE
+Utah,TRUE
+Uzbekistan,TRUE
+Vanuatu,TRUE
+Venezuela,TRUE
+Vermont,TRUE
+Viet Nam,TRUE
+Virginia,TRUE
+Washington,TRUE
+Washington D.C.,TRUE
+West Virginia,TRUE
+Wisconsin,TRUE
+World (MER),TRUE
+World (PPP),TRUE
+Wyoming,TRUE
+Yemen,TRUE
+Zambia,TRUE
+Zimbabwe,TRUE

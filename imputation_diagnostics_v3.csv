@@ -1,0 +1,77 @@
+country,iso,income_group,n_years,debt_imputed_n,debt_imputed_pct,growth_obs,growth_missing,gini_obs,gini_missing,gini_avg_sd
+Australia,AUS,High income,32,0,0,31,1,32,0,0.94
+Barbados,BRB,High income,32,0,0,31,1,30,2,3.19
+Belgium,BEL,High income,32,0,0,31,1,32,0,0.92
+Canada,CAN,High income,32,0,0,31,1,32,0,0.63
+Chile,CHL,High income,32,0,0,31,1,32,0,0.97
+Cyprus,CYP,High income,32,0,0,31,1,32,0,1.71
+Czech Republic,CZE,High income,32,0,0,29,3,32,0,0.84
+Denmark,DNK,High income,32,0,0,31,1,32,0,0.59
+Finland,FIN,High income,32,0,0,31,1,32,0,0.63
+France,FRA,High income,32,0,0,31,1,32,0,0.62
+Germany,DEU,High income,32,0,0,31,1,32,0,0.67
+Greece,GRC,High income,32,0,0,31,1,32,0,1.01
+Hungary,HUN,High income,32,0,0,31,1,32,0,0.92
+Ireland,IRL,High income,32,0,0,31,1,32,0,1.23
+Israel,ISR,High income,32,0,0,31,1,32,0,0.9
+Italy,ITA,High income,32,0,0,31,1,32,0,0.92
+Japan,JPN,High income,32,0,0,31,1,32,0,0.98
+Luxembourg,LUX,High income,32,0,0,31,1,32,0,0.94
+Netherlands,NLD,High income,32,0,0,31,1,32,0,0.88
+New Zealand,NZL,High income,32,0,0,31,1,32,0,1.01
+Norway,NOR,High income,32,0,0,31,1,32,0,0.68
+Panama,PAN,High income,32,0,0,31,1,32,0,0.94
+Poland,POL,High income,32,0,0,31,1,32,0,0.57
+Portugal,PRT,High income,32,0,0,31,1,32,0,1.26
+Qatar,QAT,High income,32,0,0,31,1,30,2,3
+Singapore,SGP,High income,32,0,0,31,1,32,0,1.66
+Slovakia,SVK,High income,32,0,0,29,3,32,0,0.88
+Slovenia,SVN,High income,32,0,0,29,3,32,0,0.86
+South Korea,KOR,High income,32,0,0,31,1,32,0,0.89
+Spain,ESP,High income,32,0,0,31,1,32,0,0.79
+Sweden,SWE,High income,32,0,0,31,1,32,0,0.75
+Switzerland,CHE,High income,32,0,0,31,1,32,0,1.2
+Taiwan,TWN,High income,32,0,0,31,1,32,0,0.71
+United Kingdom,GBR,High income,32,0,0,31,1,32,0,0.64
+United States,USA,High income,32,0,0,31,1,32,0,0.49
+Uruguay,URY,High income,32,0,0,31,1,32,0,0.71
+Madagascar,MDG,Low income,32,0,0,31,1,32,0,2.99
+Malawi,MWI,Low income,32,0,0,31,1,32,0,3.2
+Rwanda,RWA,Low income,32,0,0,31,1,32,0,2.41
+Sierra Leone,SLE,Low income,32,0,0,31,1,31,1,2.77
+Bangladesh,BGD,Lower middle income,32,0,0,31,1,32,0,2.54
+Egypt,EGY,Lower middle income,32,0,0,31,1,32,0,1.32
+Ghana,GHA,Lower middle income,32,0,0,31,1,29,3,2.32
+Honduras,HND,Lower middle income,32,0,0,31,1,32,0,1.36
+India,IND,Lower middle income,32,0,0,31,1,32,0,1.27
+Iran,IRN,Lower middle income,32,0,0,31,1,32,0,1.46
+Jordan,JOR,Lower middle income,32,0,0,31,1,30,2,1.5
+Kenya,KEN,Lower middle income,32,0,0,31,1,32,0,2.41
+Lesotho,LSO,Lower middle income,32,0,0,31,1,30,2,3.07
+Mauritania,MRT,Lower middle income,32,0,0,31,1,32,0,2.59
+Morocco,MAR,Lower middle income,32,0,0,31,1,32,0,2.52
+Nepal,NPL,Lower middle income,32,0,0,31,1,32,0,3.87
+Nigeria,NGA,Lower middle income,32,0,0,31,1,32,0,2.15
+Pakistan,PAK,Lower middle income,32,0,0,31,1,31,1,2.16
+Philippines,PHL,Lower middle income,32,0,0,31,1,32,0,2.12
+Sri Lanka,LKA,Lower middle income,32,0,0,31,1,32,0,2.53
+Tanzania,TZA,Lower middle income,32,0,0,31,1,31,1,2.33
+Tunisia,TUN,Lower middle income,32,0,0,31,1,32,0,2.34
+Zambia,ZMB,Lower middle income,32,0,0,31,1,32,0,3.06
+Argentina,ARG,Upper middle income,32,0,0,31,1,32,0,1.14
+Botswana,BWA,Upper middle income,32,0,0,31,1,28,4,2.81
+Brazil,BRA,Upper middle income,32,0,0,31,1,32,0,0.47
+Colombia,COL,Upper middle income,32,0,0,31,1,32,0,1.13
+Costa Rica,CRI,Upper middle income,32,0,0,31,1,32,0,0.96
+Fiji,FJI,Upper middle income,32,0,0,31,1,32,0,2.69
+Guatemala,GTM,Upper middle income,32,0,0,31,1,32,0,1.56
+Indonesia,IDN,Upper middle income,32,0,0,31,1,32,0,1.73
+Jamaica,JAM,Upper middle income,32,0,0,31,1,32,0,1.89
+Kazakhstan,KAZ,Upper middle income,32,0,0,29,3,32,0,1.31
+Malaysia,MYS,Upper middle income,32,0,0,31,1,32,0,2.35
+Mauritius,MUS,Upper middle income,32,0,0,31,1,30,2,2.64
+Mexico,MEX,Upper middle income,32,0,0,31,1,32,0,1.03
+South Africa,ZAF,Upper middle income,32,0,0,31,1,30,2,1.73
+Thailand,THA,Upper middle income,32,0,0,31,1,32,0,1.6
+Turkey,TUR,Upper middle income,32,0,0,31,1,32,0,1.54
+Venezuela,VEN,NA,32,0,0,31,1,32,0,1.3

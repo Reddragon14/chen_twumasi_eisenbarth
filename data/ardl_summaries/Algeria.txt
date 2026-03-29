@@ -1,0 +1,28 @@
+
+Time series regression with "ts" data:
+Start = 2, End = 47
+
+Call:
+dynlm::dynlm(formula = full_formula, data = data, start = start, 
+    end = end)
+
+Residuals:
+       Min         1Q     Median         3Q        Max 
+-0.0055568 -0.0004129  0.0000962  0.0006539  0.0023542 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       0.0020884  0.0924701   0.023   0.9821    
+L(log_gini, 1)    1.0002912  0.0246419  40.593   <2e-16 ***
+debt_imp          0.0008987  0.0017723   0.507   0.6149    
+gdp_imputed       0.0332160  0.0297958   1.115   0.2718    
+hc               -0.0043746  0.0023937  -1.828   0.0753 .  
+gdp_x_debt       -0.0173231  0.0447034  -0.388   0.7005    
+L(gdp_x_debt, 1)  0.0306614  0.0154225   1.988   0.0539 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.001539 on 39 degrees of freedom
+Multiple R-squared:  0.9987,	Adjusted R-squared:  0.9985 
+F-statistic:  4898 on 6 and 39 DF,  p-value: < 2.2e-16
+

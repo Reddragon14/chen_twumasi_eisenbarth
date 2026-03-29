@@ -1,0 +1,42 @@
+
+\begingroup
+\centering
+\begin{tabular}{lccccc}
+   \tabularnewline \midrule \midrule
+   Dependent Variables: & \multicolumn{4}{c}{gdp\_imputed} & fwd\_growth\_5yr\\
+                      & Linear          & Quadratic       & Bins            & Log             & 5yr Growth \\   
+   Model:             & (1)             & (2)             & (3)             & (4)             & (5)\\  
+   \midrule
+   \emph{Variables}\\
+   debt\_imp          & -0.0117$^{***}$ & -0.0161$^{**}$  &                 &                 & 0.0084\\   
+                      & (0.0038)        & (0.0069)        &                 &                 & (0.0053)\\   
+   L1\_gdp            & 0.2095$^{***}$  & 0.2089$^{***}$  & 0.2126$^{***}$  & 0.2111$^{***}$  & 0.0339$^{*}$\\   
+                      & (0.0467)        & (0.0467)        & (0.0460)        & (0.0472)        & (0.0191)\\   
+   hc                 & -0.0223$^{***}$ & -0.0223$^{***}$ & -0.0221$^{***}$ & -0.0226$^{***}$ & -0.0325$^{***}$\\   
+                      & (0.0069)        & (0.0070)        & (0.0068)        & (0.0070)        & (0.0098)\\   
+   debt\_sq           &                 & 0.0024          &                 &                 &   \\   
+                      &                 & (0.0036)        &                 &                 &   \\   
+   debt\_bin30-60\%   &                 &                 & -0.0038$^{**}$  &                 &   \\   
+                      &                 &                 & (0.0018)        &                 &   \\   
+   debt\_bin60-90\%   &                 &                 & -0.0059$^{**}$  &                 &   \\   
+                      &                 &                 & (0.0022)        &                 &   \\   
+   debt\_bin>90\%     &                 &                 & -0.0095$^{**}$  &                 &   \\   
+                      &                 &                 & (0.0037)        &                 &   \\   
+   log\_debt          &                 &                 &                 & -0.0054$^{***}$ &   \\   
+                      &                 &                 &                 & (0.0019)        &   \\   
+   \midrule
+   \emph{Fixed-effects}\\
+   country            & Yes             & Yes             & Yes             & Yes             & Yes\\  
+   year               & Yes             & Yes             & Yes             & Yes             & Yes\\  
+   \midrule
+   \emph{Fit statistics}\\
+   Observations       & 3,726           & 3,726           & 3,726           & 3,726           & 3,321\\  
+   R$^2$              & 0.24465         & 0.24475         & 0.24313         & 0.24376         & 0.40630\\  
+   Within R$^2$       & 0.06263         & 0.06276         & 0.06075         & 0.06154         & 0.04062\\  
+   \midrule \midrule
+   \multicolumn{6}{l}{\emph{Clustered (country) standard-errors in parentheses}}\\
+   \multicolumn{6}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+\end{tabular}
+\par\endgroup
+
+

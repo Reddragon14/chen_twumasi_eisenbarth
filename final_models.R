@@ -3,30 +3,51 @@ library(estimatr)
 library(stargazer)
 library(plm)
 
-dataset = read_csv(dataset, "final_dataset.csv")
+dataset = read_csv("final_dataset.csv")
 
-p_df <- plm::pdata.frame(dataset, index = c("year", "country"))
+
+dataset |>
+  group_by(income_group) |>
+  distinct(country) -> countries
+
+write_csv(countries, "countries.csv")
+  
+
+ns <-
+dataset |>
+  summarize(time_observations = n(), .by = country) |>
+  arrange(-time_observations)
+
+p_df <-
+  plm::pdata.frame(
+    dataset,
+    index = c("country", "year"),
+    drop.index = TRUE,
+    row.names = TRUE
+  )
 
 upper_mid <- filter(dataset, income_group == "Upper middle income")
 high <- filter(dataset, income_group == "High income")
 low <- filter(dataset, income_group == "Low income")
 lower_mid <- filter(dataset, income_group == "Lower middle income")
 
-summary(lm_robust(log(gini_imputed) ~ debt_imp + gdp + lag(gdp) + gdp*debt_imp, data = dataset, fixed_effects =  ~ country + year, se_type = "stata", weights =  population, clusters = country))
-summary(lm_robust(log(gini_imputed) ~ debt_imp + gdp + lag(gdp) + gdp*debt_imp, data = upper_mid, fixed_effects =  ~ country + year, se_type = "stata", weights =  population, clusters = country))
-summary(lm_robust(log(gini_imputed) ~ debt_imp + gdp + lag(gdp) + gdp*debt_imp, data = high, fixed_effects =  ~ country + year, se_type = "stata", weights =  population, clusters = country))
-summary(lm_robust(log(gini_imputed) ~ debt_imp + gdp + lag(gdp) + gdp*debt_imp, data = low, fixed_effects =  ~ country + year, se_type = "stata", weights =  population, clusters = country))
-summary(lm_robust(log(gini_imputed) ~ debt_imp + gdp + lag(gdp) + gdp*debt_imp, data = lower_mid, fixed_effects =  ~ country + year, se_type = "stata", weights =  population, clusters = country))
+
+summary(lm_robust(log(gini_imputed) ~ debt_imp + gdp + gdp*debt_imp + hc, data = dataset, fixed_effects =  ~ country + year, se_type = "stata", weights =  population, clusters = country))
+summary(lm_robust(log(gini_imputed) ~ debt_imp + gdp + gdp*debt_imp + hc, data = upper_mid, fixed_effects =  ~ country + year, se_type = "stata", weights =  population, clusters = country))
+summary(lm_robust(log(gini_imputed) ~ debt_imp + gdp + gdp*debt_imp + hc, data = high, fixed_effects =  ~ country + year, se_type = "stata", weights =  population, clusters = country))
+summary(lm_robust(log(gini_imputed) ~ debt_imp + gdp + gdp*debt_imp + hc, data = low, fixed_effects =  ~ country + year, se_type = "stata", weights =  population, clusters = country))
+summary(lm_robust(log(gini_imputed) ~ debt_imp + gdp + gdp*debt_imp + hc, data = lower_mid, fixed_effects =  ~ country + year, se_type = "stata", weights =  population, clusters = country))
 
 
 
-fit1 <- lm_robust(gini ~ debt_imp + pl_x + pl_m + independence_dummy + us_pegger_dummy , data = dataset, fixed_effects =  ~ country + year)
-fit2 <- lm_robust(gdp ~ debt_imp + pl_x + pl_m + independence_dummy + us_pegger_dummy, data = upper_mid, fixed_effects =  ~ country + year)
-fit3 <- lm_robust(gdp ~ debt_imp + pl_x + pl_m + independence_dummy + us_pegger_dummy, data = high, fixed_effects =  ~ country + year)
-fit4 <- lm_robust(gdp ~ debt_imp + pl_x + pl_m + independence_dummy + us_pegger_dummy, data = low, fixed_effects =  ~ country + year)
-fit5 <- lm_robust(gdp ~ debt_imp + pl_x + pl_m + independence_dummy + us_pegger_dummy, data = lower_mid, fixed_effects =  ~ country + year)
-fit6 <- lm_robust(gdp ~ +lag(gdp) + debt_imp + lag(debt_imp) + pl_x + pl_m + independence_dummy + us_pegger_dummy, data = full_df, fixed_effects =  ~ country + year)
+fit1 <- lm(log(gini_imputed) ~ debt_imp + gdp + gdp*debt_imp + hc, data = dataset, fixed_effects =  ~ country + year, se_type = "stata", weights =  population)
+fit2 <-  lm(log(gini_imputed) ~ debt_imp + gdp +  + gdp*debt_imp + hc, data = upper_mid, fixed_effects =  ~ country + year, se_type = "stata", weights =  population)
+fit3 <-  lm(log(gini_imputed) ~ debt_imp + gdp +  gdp*debt_imp + hc, data = high, fixed_effects =  ~ country + year, se_type = "stata", weights =  population)
+fit4 <-  lm(log(gini_imputed) ~ debt_imp + gdp  + gdp*debt_imp + hc, data = low, fixed_effects =  ~ country + year, se_type = "stata", weights =  population)
+fit5 <- lm(log(gini_imputed) ~ debt_imp + gdp +  gdp*debt_imp + hc, data = lower_mid, fixed_effects =  ~ country + year, se_type = "stata", weights =  population)
+fit6 <- lm(log(gini_imputed) ~ debt_imp + gdp + gdp*debt_imp + hc, data = dataset, fixed_effects =  ~ country + year, se_type = "stata", weights =  population)
 
+stargazer(fit1, fit2, fit3, fit4, fit5)
 
 glance(fit1) |> mutate(model = "Pooled")
 
@@ -36,6 +57,8 @@ model3 <- tidy(fit3) |> mutate(model = "High")
 model4 <- tidy(fit4) |> mutate(model = "Low")
 model5 <- tidy(fit5) |> mutate(model = "Lower Middle")
 model6 <- tidy(fit6) |> mutate(model = "Pooled (ARDL)")
+
+report(fit1)
 
 coefs <- bind_rows(model1, model2, model3, model4, model5, model6)
 
@@ -48,7 +71,6 @@ models$best_order
 models$best_model
 
 
-summary(plm(growth ~ debt_imp + pl_x + pl_m, data = p_df, model = "within", effect = "twoways"))
 
-g <- plm(inv ~ value + capital, data = Grunfeld, index = c("firm", "year"))
-pcdtest(g)
+
+\Delta y_{it} = a_{i} + \sum\limits_{\iota = 1}^{n} \gamma_{i\iota}\Delta y_{i, t - l} + \sum\limits_{l = 0}^{n}\mathbf{\beta_{il}}\mathbf{x}_{i, t - \iota} + u_{it}

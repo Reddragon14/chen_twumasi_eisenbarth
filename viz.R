@@ -22,6 +22,8 @@ satin <- "#D65C70"
 onyx <- "#383C42"
 rhythm <- "#6E758E"
 
+ggthemr::ggthemr(palette = 'greyscale', layout = "clean")
+
 
 wb_classes <- read_csv("./data/wb_classes.csv") |> janitor::clean_names() |>
   select(-economy)
@@ -29,46 +31,39 @@ wb_classes <- read_csv("./data/wb_classes.csv") |> janitor::clean_names() |>
 countrycodes |>
   left_join(wb_classes, by = join_by(countrycode == code))
 
-df <- read_csv("./data/merged_data.csv")
+dataset <- read_csv("final_dataset.csv")
 
-df <- mutate(df, region = if_else(country == "Cote d'Ivoire", "Sub-Saharan Africa", region))
+dataset <- mutate(df, region = if_else(country == "Cote d'Ivoire", "Sub-Saharan Africa", region))
 
-df <-
-  mutate(df, lmh = str_to_title(lmh) %>% factor(
+mutate(dataset, lmh = str_to_title(income_group)) |> 
+  distinct(income_group)
+
+dataset <-
+  mutate(dataset, income_group = str_to_title(income_group) %>% factor(
     .,
     levels = c(
       "Low Income",
-      "Lower-Middle Income",
-      "Upper-Middle Income",
+      "Lower Middle Income",
+      "Upper Middle Income",
       "High Income"
     )
   ))
+
+# dataset <-
+#   mutate(dataset, lmh = str_to_title(lmh) %>% factor(
+#     .,
+#     levels = c(
+#       "Low Income",
+#       "Lower-Middle Income",
+#       "Upper-Middle Income",
+#       "High Income"
+#     )
+#   ))
 
 
 defacto <- readxl::read_xlsx("./data/defacto_regimes.xlsx")
 dejure <- readxl::read_xlsx("./data/dejure_regimes.xlsx")
 
-theme_clean <- function(...) {
-  ggpubr::theme_classic2() +
-    theme(
-      panel.grid.major.x = element_blank(),
-      panel.grid.major.y = element_blank(),
-      panel.grid.minor.x = element_blank(),
-      panel.grid.minor.y = element_blank(),
-      legend.background = element_rect(fill = "transparent", color = NA),
-      legend.position = "bottom",
-      plot.caption = element_text(hjust = 1),
-      panel.border = element_blank(),
-      axis.line = element_line(linewidth = 0.25, colour = "black"),
-      legend.title = element_text(size = 10, face = "plain"),
-      legend.key = element_rect(fill = NA, color = NA),
-      text = element_text(color = "black", family = "Arial", size = 10),
-      strip.background = element_rect(color = NA),
-      plot.background = element_rect(color = NA),
-      axis.ticks.length = unit(0.20, "cm"),
-      axis.ticks = element_line(linewidth = 0.15)
-    )
-}
 
 # grid style ggplot theme
 theme_grid <- function(...) {
@@ -86,7 +81,7 @@ theme_grid <- function(...) {
     )
 }
 
-ggplot(df, aes(
+ggplot(dataset, aes(
   x = pvd,
   y = cg,
   size  = pop,
@@ -98,7 +93,6 @@ ggplot(df, aes(
     labels = comma_format(),
     breaks = c(5e6, 5e7, 1e8, 1e9)
   ) +
-  theme_clean() +
   guides(size = guide_legend(override.aes = list(color = glossy_grape), nrow = 2)) +
   scale_x_continuous(guide = "axis_minor", labels = percent_format()) +
   scale_y_continuous(guide = "axis_minor", labels = percent_format()) +
@@ -111,7 +105,7 @@ ggplot(df, aes(
   )
 
 
-df %>% group_by(country, lmh) %>% summarize(
+dataset %>% group_by(country, income_group) %>% summarize(
   pvd = mean(pvd, na.rm = TRUE),
   cg = mean(cg, na.rm = TRUE),
   pop = max(pop, na.rm = TRUE)
@@ -120,7 +114,7 @@ df %>% group_by(country, lmh) %>% summarize(
     x = pvd,
     y = cg,
     size  = pop,
-    color = lmh
+    color = income_group
   )) +
   geom_jitter() +
   scale_size_continuous(
@@ -128,7 +122,6 @@ df %>% group_by(country, lmh) %>% summarize(
     labels = comma_format(),
     breaks = c(5e6, 5e7, 1e8, 1e9)
   ) +
-  theme_clean() +
   guides(size = guide_legend(override.aes = list(color = lapis), nrow = 2)) +
   scale_x_continuous(guide = "axis_minor", labels = percent_format()) +
   scale_y_continuous(guide = "axis_minor", labels = percent_format()) +
@@ -139,7 +132,7 @@ df %>% group_by(country, lmh) %>% summarize(
        size = "Population")
 
 ggplot(
-  df %>% group_by(country, lmh) %>% summarize(
+  dataset %>% group_by(country, income_group) %>% summarize(
     rgdpo = mean(rgdpo, na.rm = TRUE),
     cg = mean(cg, na.rm = TRUE),
     pop = max(pop, na.rm = TRUE)
@@ -147,7 +140,7 @@ ggplot(
   aes(x = rgdpo,
       y = cg,
       size  = pop,
-      color = lmh)
+      color = income_group)
 ) +
   geom_jitter() +
   scale_size_continuous(
@@ -155,7 +148,6 @@ ggplot(
     labels = comma_format(),
     breaks = c(5e6, 5e7, 1e8, 1e9)
   ) +
-  theme_clean() +
   guides(size = guide_legend(override.aes = list(color = lapis), nrow = 2)) +
   scale_x_log10(guide = "axis_minor", labels = dollar_format()) +
   scale_y_continuous(guide = "axis_minor", labels = percent_format()) +
@@ -167,14 +159,14 @@ ggplot(
   
 
 ggplot(
-  df %>% group_by(country, lmh) %>% summarize(
+  dataset %>% group_by(country, income_group) %>% summarize(
     labsh = mean(labsh, na.rm = TRUE),
     cg = mean(cg, na.rm = TRUE),
     pop = max(pop, na.rm = TRUE)
   ),
   aes(x = labsh,
       y = cg,
-      color = lmh,
+      color = income_group,
       size  = pop)
 ) +
   geom_jitter() +
@@ -183,7 +175,6 @@ ggplot(
     labels = comma_format(),
     breaks = c(5e6, 5e7, 1e8, 1e9)
   ) +
-  theme_clean() +
   guides(size = guide_legend(override.aes = list(color = lapis), nrow = 2)) +
   scale_color_manual(values = wesanderson::wes_palette(name = "AsteroidCity1")) +
   scale_x_continuous(guide = "axis_minor", labels = percent_format()) +
@@ -193,34 +184,151 @@ ggplot(
        color = "",
        size = "Population")
 
-ggplot(
-  df %>% group_by(country, lmh) %>% summarize(
-    cg = mean(cg, na.rm = TRUE),
-    pop = max(pop, na.rm = TRUE)
+
+guides(
+  size = guide_legend(
+    override.aes = list(color = "grey70"),
+    theme = theme(
+      legend.title.position = "top",
+      legend.text.position = "bottom",
+      legend.title = element_text(hjust = 0.5)
+    ),
+    nrow = 2
   ),
-  aes(
-    x = lmh,
-    y = cg,
-    color = lmh,
-    size  = pop
+  color = guide_legend(nrow = 2)
+) 
+
+
+gross_debt <- dataset |>
+  ungroup() |>
+  summarize(
+    cg = mean(debt_imp, na.rm = TRUE),
+    pop = max(pop, na.rm = TRUE),
+    .by = c(country, income_group)
   )
-) +
-  geom_jitter(width = 0.1) +
+
+global_avg <- mean(gross_debt$global)
+
+
+group_averages <- debt_summary |>
+  summarize(group_avg = mean(cg, na.rm = TRUE), .by = income_group)
+
+ggplot(gross_debt,
+       aes(
+         x = income_group,
+         y = cg,
+         color = income_group,
+         size = pop
+       )) +
+  # Jittered country-level points
+  geom_jitter(width = 0.1, alpha = 0.7) +
+  
+  # Bar-like group average lines
+  geom_crossbar(
+    data = group_averages,
+    aes(
+      x = income_group,
+      y = group_avg,
+      ymin = group_avg,
+      ymax = group_avg
+    ),
+    color = "black",
+    width = 0.5,
+    fatten = 1,
+    inherit.aes = FALSE
+  ) +
+  
+  # Horizontal global average line
+  geom_hline(
+    yintercept = global_avg,
+    linetype = "dotted",
+    color = "gray40",
+    linewidth = 0.8
+  ) +
+  
+  # Aesthetic scaling
   scale_size_continuous(
-    range = c(1, 15),
+    range = c(1, 8),
     labels = comma_format(),
     breaks = c(5e6, 5e7, 1e8, 1e9)
   ) +
-  theme_clean() +
-  guides(size = guide_legend(override.aes = list(color = glossy_grape), nrow = 2)) +
-  scale_y_continuous(guide = "axis_minor", labels = percent_format()) +
-  scale_color_manual(values = wesanderson::wes_palette("AsteroidCity1")) +
+  scale_y_continuous(
+    guide = "axis_minor",
+    labels = percent_format(),
+    breaks = seq(0, 1.5, by = 0.2),
+    limits = c(0, 1.5)
+  ) +
+  scale_colour_paletteer_d("lisa::PabloPicasso_1") +
   labs(
     y = "Total government debt\n",
     x = "",
     fill = "",
     color = "",
     size = "Population"
+  ) +
+  theme(legend.position = "bottom") +
+  guides(size = "none", color = guide_legend(nrow = 2))
+
+ggsave("total_government_debt_icg.png", width = 7, height = 5, dpi = 1080, plot = last_plot())
+
+dataset %>% summarize(
+  gini = mean(gini, na.rm = TRUE),
+  cg = mean(debt_imp, na.rm = TRUE),
+  pop = max(pop, na.rm = TRUE),
+  .by = c(country, income_group)) %>%
+  ggplot(aes(x = cg, y = gini)) +
+  geom_jitter(aes(color = income_group, size  = pop), width = 0.1) +
+  stat_smooth(
+    aes(x = cg, y = gini),
+    linewidth = 0.75,
+    se = FALSE,
+    method = "lm"
+  ) +
+  scale_size_continuous(
+    range = c(1, 7),
+    labels = comma_format(),
+    breaks = c(5e6, 5e7, 1e8, 1e9)
+  ) +
+  guides(
+    size = "none",
+    color = guide_legend(nrow = 2)
+  ) +
+  scale_x_continuous(
+    guide = "axis_minor",
+    labels = percent_format(),
+    breaks = seq(0, 1.3, by = 0.2),
+    limits = c(0, 1.2)
+  ) +
+  scale_y_continuous(guide = "axis_minor", 
+                     labels = number_format(),
+                     breaks = seq(0, 100, by = 10),
+                     limits = c(20, 70)) +
+  scale_colour_paletteer_d("lisa::PabloPicasso_1") +
+  theme(legend.position = "bottom") +
+  labs(
+    y = "Gini Coefficient\n",
+    x = "Total government debt",
+    fill = "",
+    color = "",
+    size = "Population"
   )
 
+ggsave("latex/figure2.png", dpi = 1080, width = 7, height = 5)
 
+final_countries <- dataset |> 
+  distinct(country, income_group) 
+  pivot_wider(names_from = income_group,
+              values_from = country)
+
+dataset |>
+  distinct(country, region, income_group) |>
+  summarize(n = n(), .by = c(region, income_group)) |>
+  mutate(income_group = str_to_title(income_group)) |>
+  pivot_wider(names_from = income_group, 
+              values_from = n) |>
+  mutate(across(2:5, ~ if_else(is.na(.x), 0, as.numeric(.x)))) |>
+  mutate(Total = `Upper Middle Income` + `High Income` + `Low Income` + `Lower Middle Income`, .by = region) |>
+  janitor::adorn_totals() 
+  kable(booktabs = TRUE,  format = "latex") |>
+  kable_classic_2()
+  save_kable("dataset.tex", format = "latex")

@@ -1,0 +1,44 @@
+
+Time series regression with "ts" data:
+Start = 6, End = 31
+
+Call:
+dynlm::dynlm(formula = full_formula, data = data, na.action = ..1, 
+    start = start, end = end)
+
+Residuals:
+ALL 26 residuals are 0: no residual degrees of freedom!
+
+Coefficients:
+                 Estimate Std. Error t value Pr(>|t|)
+(Intercept)       0.94911        NaN     NaN      NaN
+L(log_gini, 1)    0.98018        NaN     NaN      NaN
+L(log_gini, 2)   -2.40205        NaN     NaN      NaN
+L(log_gini, 3)    2.31307        NaN     NaN      NaN
+L(log_gini, 4)   -0.25634        NaN     NaN      NaN
+debt_imp         -0.09259        NaN     NaN      NaN
+L(debt_imp, 1)    0.08703        NaN     NaN      NaN
+L(debt_imp, 2)    0.13297        NaN     NaN      NaN
+L(debt_imp, 3)   -0.19440        NaN     NaN      NaN
+L(debt_imp, 4)    0.02709        NaN     NaN      NaN
+L(debt_imp, 5)    0.03362        NaN     NaN      NaN
+growth           -0.00849        NaN     NaN      NaN
+L(growth, 1)     -0.09454        NaN     NaN      NaN
+L(growth, 2)     -0.04834        NaN     NaN      NaN
+L(growth, 3)     -0.10387        NaN     NaN      NaN
+L(growth, 4)     -0.38614        NaN     NaN      NaN
+hc               -0.56232        NaN     NaN      NaN
+L(hc, 1)         -1.41033        NaN     NaN      NaN
+L(hc, 2)          6.08989        NaN     NaN      NaN
+L(hc, 3)         -9.49147        NaN     NaN      NaN
+L(hc, 4)          5.52384        NaN     NaN      NaN
+gdp_x_debt       -0.97548        NaN     NaN      NaN
+L(gdp_x_debt, 1)  0.17369        NaN     NaN      NaN
+L(gdp_x_debt, 2)  0.12594        NaN     NaN      NaN
+L(gdp_x_debt, 3) -0.21470        NaN     NaN      NaN
+L(gdp_x_debt, 4)  0.47522        NaN     NaN      NaN
+
+Residual standard error: NaN on 0 degrees of freedom
+Multiple R-squared:      1,	Adjusted R-squared:    NaN 
+F-statistic:   NaN on 25 and 0 DF,  p-value: NA
+

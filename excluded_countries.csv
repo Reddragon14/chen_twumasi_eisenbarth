@@ -1,0 +1,135 @@
+country,iso,debt_obs,debt_missing,debt_pct_obs,n_from_gg,n_from_cg,max_consec_gap,reason,gini_obs,gini_missing,gini_pct_obs,gini_mean_sd
+Albania,ALB,26,6,81.2,26,0,6,debt missing: 6 of 32,NA,NA,NA,NA
+Angola,AGO,25,7,78.1,0,25,7,debt missing: 7 of 32,NA,NA,NA,NA
+Armenia,ARM,24,8,75,0,24,8,debt missing: 8 of 32,NA,NA,NA,NA
+Azerbaijan,AZE,26,6,81.2,0,26,6,debt missing: 6 of 32,NA,NA,NA,NA
+Belarus,BLR,26,6,81.2,16,10,6,debt missing: 6 of 32,NA,NA,NA,NA
+Bosnia and Herzegovina,BIH,22,10,68.8,22,0,10,debt missing: 10 of 32,NA,NA,NA,NA
+Brunei Darussalam,BRN,19,13,59.4,0,19,13,debt missing: 13 of 32,NA,NA,NA,NA
+Cambodia,KHM,25,7,78.1,25,0,7,debt missing: 7 of 32,NA,NA,NA,NA
+China,CHN,25,7,78.1,25,0,7,debt missing: 7 of 32,NA,NA,NA,NA
+Croatia,HRV,25,7,78.1,22,3,7,debt missing: 7 of 32,NA,NA,NA,NA
+Djibouti,DJI,25,7,78.1,0,25,7,debt missing: 7 of 32,NA,NA,NA,NA
+Dominican Republic,DOM,20,12,62.5,0,20,12,debt missing: 12 of 32,NA,NA,NA,NA
+Estonia,EST,25,7,78.1,25,0,7,debt missing: 7 of 32,NA,NA,NA,NA
+Georgia,GEO,25,7,78.1,25,0,7,debt missing: 7 of 32,NA,NA,NA,NA
+Hong Kong SAR,HKG,19,13,59.4,0,19,13,debt missing: 13 of 32,NA,NA,NA,NA
+Iraq,IRQ,16,16,50,0,16,16,debt missing: 16 of 32,NA,NA,NA,NA
+Kyrgyzstan,KGZ,26,6,81.2,26,0,6,debt missing: 6 of 32,NA,NA,NA,NA
+Latvia,LVA,25,7,78.1,25,0,7,debt missing: 7 of 32,NA,NA,NA,NA
+Liberia,LBR,20,12,62.5,0,20,12,debt missing: 12 of 32,NA,NA,NA,NA
+Lithuania,LTU,25,7,78.1,25,0,7,debt missing: 7 of 32,NA,NA,NA,NA
+Macedonia,MKD,26,6,81.2,26,0,6,debt missing: 6 of 32,NA,NA,NA,NA
+Moldova,MDA,25,7,78.1,25,0,7,debt missing: 7 of 32,NA,NA,NA,NA
+Montenegro,MNE,18,14,56.2,18,0,14,debt missing: 14 of 32,NA,NA,NA,NA
+Mozambique,MOZ,21,11,65.6,0,21,11,debt missing: 11 of 32,NA,NA,NA,NA
+Nicaragua,NIC,23,9,71.9,23,0,9,debt missing: 9 of 32,NA,NA,NA,NA
+Peru,PER,21,11,65.6,21,0,11,debt missing: 11 of 32,NA,NA,NA,NA
+Romania,ROU,25,7,78.1,25,0,7,debt missing: 7 of 32,NA,NA,NA,NA
+Serbia,SRB,20,12,62.5,20,0,12,debt missing: 12 of 32,NA,NA,NA,NA
+Syria,SYR,23,9,71.9,0,23,9,debt missing: 9 of 32,NA,NA,NA,NA
+Tajikistan,TJK,22,10,68.8,22,0,10,debt missing: 10 of 32,NA,NA,NA,NA
+Turkmenistan,TKM,23,9,71.9,23,0,9,debt missing: 9 of 32,NA,NA,NA,NA
+Ukraine,UKR,25,7,78.1,25,0,7,debt missing: 7 of 32,NA,NA,NA,NA
+Uzbekistan,UZB,22,10,68.8,22,0,10,debt missing: 10 of 32,NA,NA,NA,NA
+Afghanistan,NA,NA,NA,NA,NA,NA,NA,gini missing: 21 of 32,11,21,34.4,3.26
+Albania,NA,NA,NA,NA,NA,NA,NA,gini missing: 8 of 32,24,8,75,1.88
+Algeria,NA,NA,NA,NA,NA,NA,NA,gini missing: 8 of 32,24,8,75,3.61
+Andorra,NA,NA,NA,NA,NA,NA,NA,gini missing: 16 of 32,16,16,50,2.51
+Angola,NA,NA,NA,NA,NA,NA,NA,gini missing: 13 of 32,19,13,59.4,3.03
+Anguilla,NA,NA,NA,NA,NA,NA,NA,gini missing: 24 of 32,8,24,25,3.32
+Antigua and Barbuda,NA,NA,NA,NA,NA,NA,NA,gini missing: 31 of 32,1,31,3.1,7.06
+Austria,NA,NA,NA,NA,NA,NA,NA,gini missing: 6 of 32,26,6,81.2,0.81
+Azerbaijan,NA,NA,NA,NA,NA,NA,NA,gini missing: 11 of 32,21,11,65.6,1.59
+Bahamas,NA,NA,NA,NA,NA,NA,NA,gini missing: 19 of 32,13,19,40.6,3.54
+Bahrain,NA,NA,NA,NA,NA,NA,NA,gini missing: 31 of 32,1,31,3.1,8.21
+Belize,NA,NA,NA,NA,NA,NA,NA,gini missing: 6 of 32,26,6,81.2,2.58
+Benin,NA,NA,NA,NA,NA,NA,NA,gini missing: 14 of 32,18,14,56.2,2.53
+Bhutan,NA,NA,NA,NA,NA,NA,NA,gini missing: 15 of 32,17,15,53.1,2.91
+Bolivia,NA,NA,NA,NA,NA,NA,NA,gini missing: 4 of 32,28,4,87.5,1.13
+Bosnia and Herzegovina,NA,NA,NA,NA,NA,NA,NA,gini missing: 17 of 32,15,17,46.9,2.39
+Bulgaria,NA,NA,NA,NA,NA,NA,NA,gini missing: 1 of 32,31,1,96.9,1.23
+Burkina Faso,NA,NA,NA,NA,NA,NA,NA,gini missing: 6 of 32,26,6,81.2,2.52
+Burundi,NA,NA,NA,NA,NA,NA,NA,gini missing: 4 of 32,28,4,87.5,3.29
+Cambodia,NA,NA,NA,NA,NA,NA,NA,gini missing: 16 of 32,16,16,50,3.87
+Cameroon,NA,NA,NA,NA,NA,NA,NA,gini missing: 8 of 32,24,8,75,2.87
+Cape Verde,NA,NA,NA,NA,NA,NA,NA,gini missing: 15 of 32,17,15,53.1,2.71
+Central African Republic,NA,NA,NA,NA,NA,NA,NA,gini missing: 4 of 32,28,4,87.5,3.7
+Chad,NA,NA,NA,NA,NA,NA,NA,gini missing: 15 of 32,17,15,53.1,3.34
+Comoros,NA,NA,NA,NA,NA,NA,NA,gini missing: 21 of 32,11,21,34.4,4.56
+Congo-Brazzaville,NA,NA,NA,NA,NA,NA,NA,gini missing: 25 of 32,7,25,21.9,4.18
+Congo,NA,NA,NA,NA,NA,NA,NA,gini missing: 16 of 32,16,16,50,3.78
+Czechoslovakia,NA,NA,NA,NA,NA,NA,NA,gini missing: 30 of 32,2,30,6.2,2.51
+Djibouti,NA,NA,NA,NA,NA,NA,NA,gini missing: 10 of 32,22,10,68.8,3.49
+Dominica,NA,NA,NA,NA,NA,NA,NA,gini missing: 23 of 32,9,23,28.1,4.82
+Ecuador,NA,NA,NA,NA,NA,NA,NA,gini missing: 6 of 32,26,6,81.2,1.31
+El Salvador,NA,NA,NA,NA,NA,NA,NA,gini missing: 1 of 32,31,1,96.9,1.33
+Equatorial Guinea,NA,NA,NA,NA,NA,NA,NA,gini missing: 18 of 32,14,18,43.8,4.87
+Ethiopia,NA,NA,NA,NA,NA,NA,NA,gini missing: 7 of 32,25,7,78.1,2.43
+Gabon,NA,NA,NA,NA,NA,NA,NA,gini missing: 19 of 32,13,19,40.6,4.2
+Gambia,NA,NA,NA,NA,NA,NA,NA,gini missing: 4 of 32,28,4,87.5,2.88
+Greenland,NA,NA,NA,NA,NA,NA,NA,gini missing: 14 of 32,18,14,56.2,1.68
+Grenada,NA,NA,NA,NA,NA,NA,NA,gini missing: 11 of 32,21,11,65.6,3.7
+Guinea,NA,NA,NA,NA,NA,NA,NA,gini missing: 4 of 32,28,4,87.5,2.52
+Guinea-Bissau,NA,NA,NA,NA,NA,NA,NA,gini missing: 3 of 32,29,3,90.6,3.07
+Guyana,NA,NA,NA,NA,NA,NA,NA,gini missing: 16 of 32,16,16,50,3.29
+Haiti,NA,NA,NA,NA,NA,NA,NA,gini missing: 20 of 32,12,20,37.5,2.85
+Iceland,NA,NA,NA,NA,NA,NA,NA,gini missing: 4 of 32,28,4,87.5,0.93
+Iraq,NA,NA,NA,NA,NA,NA,NA,gini missing: 18 of 32,14,18,43.8,1.61
+Kiribati,NA,NA,NA,NA,NA,NA,NA,gini missing: 18 of 32,14,18,43.8,4.88
+Kosovo,NA,NA,NA,NA,NA,NA,NA,gini missing: 15 of 32,17,15,53.1,2.14
+Kuwait,NA,NA,NA,NA,NA,NA,NA,gini missing: 20 of 32,12,20,37.5,3.4
+Laos,NA,NA,NA,NA,NA,NA,NA,gini missing: 5 of 32,27,5,84.4,2.37
+Lebanon,NA,NA,NA,NA,NA,NA,NA,gini missing: 7 of 32,25,7,78.1,3.38
+Liberia,NA,NA,NA,NA,NA,NA,NA,gini missing: 20 of 32,12,20,37.5,2.88
+Libya,NA,NA,NA,NA,NA,NA,NA,gini missing: 26 of 32,6,26,18.8,4.24
+Maldives,NA,NA,NA,NA,NA,NA,NA,gini missing: 14 of 32,18,14,56.2,3.42
+Mali,NA,NA,NA,NA,NA,NA,NA,gini missing: 6 of 32,26,6,81.2,1.64
+Malta,NA,NA,NA,NA,NA,NA,NA,gini missing: 18 of 32,14,18,43.8,1.57
+Marshall Islands,NA,NA,NA,NA,NA,NA,NA,gini missing: 31 of 32,1,31,3.1,5.96
+Micronesia,NA,NA,NA,NA,NA,NA,NA,gini missing: 16 of 32,16,16,50,5.26
+Mongolia,NA,NA,NA,NA,NA,NA,NA,gini missing: 7 of 32,25,7,78.1,2.09
+Montenegro,NA,NA,NA,NA,NA,NA,NA,gini missing: 17 of 32,15,17,46.9,1.52
+Mozambique,NA,NA,NA,NA,NA,NA,NA,gini missing: 8 of 32,24,8,75,2.34
+Myanmar,NA,NA,NA,NA,NA,NA,NA,gini missing: 24 of 32,8,24,25,4
+Namibia,NA,NA,NA,NA,NA,NA,NA,gini missing: 8 of 32,24,8,75,3.02
+Nauru,NA,NA,NA,NA,NA,NA,NA,gini missing: 25 of 32,7,25,21.9,4.85
+Nicaragua,NA,NA,NA,NA,NA,NA,NA,gini missing: 10 of 32,22,10,68.8,1.75
+Niger,NA,NA,NA,NA,NA,NA,NA,gini missing: 4 of 32,28,4,87.5,2.87
+North Macedonia,NA,NA,NA,NA,NA,NA,NA,gini missing: 6 of 32,26,6,81.2,1.37
+Oman,NA,NA,NA,NA,NA,NA,NA,gini missing: 12 of 32,20,12,62.5,4.08
+Palau,NA,NA,NA,NA,NA,NA,NA,gini missing: 23 of 32,9,23,28.1,3.53
+Palestinian Territories,NA,NA,NA,NA,NA,NA,NA,gini missing: 8 of 32,24,8,75,1.79
+Papua New Guinea,NA,NA,NA,NA,NA,NA,NA,gini missing: 18 of 32,14,18,43.8,3.66
+Paraguay,NA,NA,NA,NA,NA,NA,NA,gini missing: 2 of 32,30,2,93.8,1.11
+Romania,NA,NA,NA,NA,NA,NA,NA,gini missing: 1 of 32,31,1,96.9,0.84
+SÃ£o TomÃ© and PrÃ­ncipe,NA,NA,NA,NA,NA,NA,NA,gini missing: 14 of 32,18,14,56.2,3.05
+Samoa,NA,NA,NA,NA,NA,NA,NA,gini missing: 20 of 32,12,20,37.5,2.76
+San Marino,NA,NA,NA,NA,NA,NA,NA,gini missing: 19 of 32,13,19,40.6,2.01
+Saudi Arabia,NA,NA,NA,NA,NA,NA,NA,gini missing: 20 of 32,12,20,37.5,5.43
+Senegal,NA,NA,NA,NA,NA,NA,NA,gini missing: 3 of 32,29,3,90.6,2.77
+Serbia,NA,NA,NA,NA,NA,NA,NA,gini missing: 9 of 32,23,9,71.9,1.06
+Seychelles,NA,NA,NA,NA,NA,NA,NA,gini missing: 12 of 32,20,12,62.5,3.28
+Solomon Islands,NA,NA,NA,NA,NA,NA,NA,gini missing: 24 of 32,8,24,25,4.9
+Somalia,NA,NA,NA,NA,NA,NA,NA,gini missing: 31 of 32,1,31,3.1,5
+South Sudan,NA,NA,NA,NA,NA,NA,NA,gini missing: 24 of 32,8,24,25,4.4
+Soviet Union,NA,NA,NA,NA,NA,NA,NA,gini missing: 29 of 32,3,29,9.4,1.62
+St. Kitts and Nevis,NA,NA,NA,NA,NA,NA,NA,gini missing: 22 of 32,10,22,31.2,5.04
+St. Lucia,NA,NA,NA,NA,NA,NA,NA,gini missing: 11 of 32,21,11,65.6,3.24
+St. Vincent and Grenadines,NA,NA,NA,NA,NA,NA,NA,gini missing: 18 of 32,14,18,43.8,5.66
+Sudan,NA,NA,NA,NA,NA,NA,NA,gini missing: 5 of 32,27,5,84.4,2.94
+Suriname,NA,NA,NA,NA,NA,NA,NA,gini missing: 17 of 32,15,17,46.9,3.67
+Syria,NA,NA,NA,NA,NA,NA,NA,gini missing: 8 of 32,24,8,75,3.1
+Timor-Leste,NA,NA,NA,NA,NA,NA,NA,gini missing: 18 of 32,14,18,43.8,3.63
+Togo,NA,NA,NA,NA,NA,NA,NA,gini missing: 17 of 32,15,17,46.9,2.98
+Trinidad and Tobago,NA,NA,NA,NA,NA,NA,NA,gini missing: 14 of 32,18,14,56.2,3.2
+Turkmenistan,NA,NA,NA,NA,NA,NA,NA,gini missing: 14 of 32,18,14,56.2,2.24
+Turks and Caicos Islands,NA,NA,NA,NA,NA,NA,NA,gini missing: 31 of 32,1,31,3.1,6.07
+Tuvalu,NA,NA,NA,NA,NA,NA,NA,gini missing: 15 of 32,17,15,53.1,4.08
+Uganda,NA,NA,NA,NA,NA,NA,NA,gini missing: 1 of 32,31,1,96.9,2.38
+United Arab Emirates,NA,NA,NA,NA,NA,NA,NA,gini missing: 21 of 32,11,21,34.4,3.55
+Vanuatu,NA,NA,NA,NA,NA,NA,NA,gini missing: 18 of 32,14,18,43.8,4.06
+Vietnam,NA,NA,NA,NA,NA,NA,NA,gini missing: 4 of 32,28,4,87.5,1.39
+Yemen,NA,NA,NA,NA,NA,NA,NA,gini missing: 9 of 32,23,9,71.9,3.1
+Yugoslavia,NA,NA,NA,NA,NA,NA,NA,gini missing: 29 of 32,3,29,9.4,3.45
+Zimbabwe,NA,NA,NA,NA,NA,NA,NA,gini missing: 7 of 32,25,7,78.1,3.04

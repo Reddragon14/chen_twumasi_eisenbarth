@@ -1,0 +1,171 @@
+country,status,aic,bic,nobs,best_order
+Albania,skipped: nobs(24) < min_rows(30),NA,NA,24,NA
+Algeria,skipped: nobs(24) < min_rows(30),NA,NA,24,NA
+Angola,skipped: nobs(19) < min_rows(30),NA,NA,19,NA
+Antigua and Barbuda,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Argentina,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Armenia,skipped: nobs(24) < min_rows(30),NA,NA,24,NA
+Australia,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Austria,skipped: nobs(26) < min_rows(30),NA,NA,26,NA
+Azerbaijan,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Bahamas,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Bahrain,skipped: nobs(1) < min_rows(30),NA,NA,1,NA
+Bangladesh,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Barbados,ok,-Inf,-Inf,33,"(4,4,5,5,5)"
+Belarus,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Belgium,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Belize,skipped: nobs(26) < min_rows(30),NA,NA,26,NA
+Benin,skipped: nobs(18) < min_rows(30),NA,NA,18,NA
+Bhutan,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Bolivia,skipped: nobs(28) < min_rows(30),NA,NA,28,NA
+Bosnia and Herzegovina,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Botswana,ok,-Inf,-Inf,31,"(4,5,4,4,4)"
+Brazil,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Brunei Darussalam,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Bulgaria,ok,-Inf,-Inf,31,"(4,5,4,4,4)"
+Burkina Faso,skipped: nobs(26) < min_rows(30),NA,NA,26,NA
+Burundi,skipped: nobs(28) < min_rows(30),NA,NA,28,NA
+Cambodia,skipped: nobs(16) < min_rows(30),NA,NA,16,NA
+Cameroon,skipped: nobs(23) < min_rows(30),NA,NA,23,NA
+Canada,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Central African Republic,skipped: nobs(28) < min_rows(30),NA,NA,28,NA
+Chad,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Chile,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+China,skipped: nobs(25) < min_rows(30),NA,NA,25,NA
+Colombia,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Comoros,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Congo,skipped: nobs(16) < min_rows(30),NA,NA,16,NA
+Congo D.R.,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Costa Rica,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Cote d'Ivoire,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Croatia,skipped: nobs(25) < min_rows(30),NA,NA,25,NA
+Cyprus,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Czech Republic,skipped: nobs(27) < min_rows(30),NA,NA,27,NA
+Denmark,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Djibouti,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Dominica,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Dominican Republic,skipped: nobs(20) < min_rows(30),NA,NA,20,NA
+Ecuador,skipped: nobs(25) < min_rows(30),NA,NA,25,NA
+Egypt,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+El Salvador,ok,-Inf,-Inf,31,"(4,5,4,4,4)"
+Equatorial Guinea,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Estonia,skipped: nobs(25) < min_rows(30),NA,NA,25,NA
+Ethiopia,skipped: nobs(25) < min_rows(30),NA,NA,25,NA
+Fiji,ok,-Inf,-Inf,34,"(4,5,5,5,5)"
+Finland,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+France,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Gabon,skipped: nobs(13) < min_rows(30),NA,NA,13,NA
+Gambia,skipped: nobs(28) < min_rows(30),NA,NA,28,NA
+Georgia,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Germany,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Ghana,ok,-Inf,-Inf,30,"(4,5,4,4,4)"
+Greece,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Grenada,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Guatemala,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Guinea,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Guinea-Bissau,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Guyana,skipped: nobs(16) < min_rows(30),NA,NA,16,NA
+Haiti,skipped: nobs(12) < min_rows(30),NA,NA,12,NA
+Honduras,ok,-Inf,-Inf,32,"(4,5,5,4,4)"
+Hong Kong SAR,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Hungary,ok,-Inf,-Inf,31,"(4,5,4,4,4)"
+Iceland,skipped: nobs(28) < min_rows(30),NA,NA,28,NA
+India,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Indonesia,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Iran,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Iraq,skipped: nobs(14) < min_rows(30),NA,NA,14,NA
+Ireland,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Israel,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Italy,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Jamaica,ok,-Inf,-Inf,32,"(4,5,5,4,4)"
+Japan,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Jordan,ok,-Inf,-Inf,32,"(3,4,5,5,5)"
+Kazakhstan,skipped: nobs(27) < min_rows(30),NA,NA,27,NA
+Kenya,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Kuwait,skipped: nobs(12) < min_rows(30),NA,NA,12,NA
+Kyrgyzstan,skipped: nobs(26) < min_rows(30),NA,NA,26,NA
+Laos,skipped: nobs(27) < min_rows(30),NA,NA,27,NA
+Latvia,skipped: nobs(25) < min_rows(30),NA,NA,25,NA
+Lebanon,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Lesotho,ok,-Inf,-Inf,32,"(3,5,4,5,5)"
+Liberia,skipped: nobs(12) < min_rows(30),NA,NA,12,NA
+Lithuania,skipped: nobs(25) < min_rows(30),NA,NA,25,NA
+Luxembourg,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Macedonia,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Madagascar,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Malawi,ok,-Inf,-Inf,34,"(4,5,5,5,5)"
+Malaysia,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Maldives,skipped: nobs(18) < min_rows(30),NA,NA,18,NA
+Mali,skipped: nobs(26) < min_rows(30),NA,NA,26,NA
+Malta,skipped: nobs(14) < min_rows(30),NA,NA,14,NA
+Mauritania,ok,-Inf,-Inf,32,"(4,5,5,4,4)"
+Mauritius,ok,-Inf,-Inf,31,"(4,5,4,4,4)"
+Mexico,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Moldova,skipped: nobs(25) < min_rows(30),NA,NA,25,NA
+Mongolia,skipped: nobs(25) < min_rows(30),NA,NA,25,NA
+Montenegro,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Morocco,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Mozambique,skipped: nobs(21) < min_rows(30),NA,NA,21,NA
+Myanmar,skipped: nobs(8) < min_rows(30),NA,NA,8,NA
+Namibia,skipped: nobs(24) < min_rows(30),NA,NA,24,NA
+Nepal,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Netherlands,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+New Zealand,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Nicaragua,skipped: nobs(18) < min_rows(30),NA,NA,18,NA
+Niger,skipped: nobs(28) < min_rows(30),NA,NA,28,NA
+Nigeria,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Norway,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Oman,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Pakistan,ok,-Inf,-Inf,34,"(5,5,5,5,5)"
+Panama,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Paraguay,ok,-Inf,-Inf,30,"(3,4,3,5,5)"
+Peru,skipped: nobs(21) < min_rows(30),NA,NA,21,NA
+Philippines,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Poland,ok,-Inf,-Inf,34,"(4,5,5,5,5)"
+Portugal,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Qatar,skipped: nobs(28) < min_rows(30),NA,NA,28,NA
+Romania,skipped: nobs(25) < min_rows(30),NA,NA,25,NA
+Russian Federation,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Rwanda,ok,-Inf,-Inf,34,"(4,5,5,5,5)"
+Saint Kitts and Nevis,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Saint Lucia,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Sao Tome and Principe,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Saudi Arabia,skipped: nobs(12) < min_rows(30),NA,NA,12,NA
+Senegal,skipped: nobs(29) < min_rows(30),NA,NA,29,NA
+Serbia,skipped: nobs(20) < min_rows(30),NA,NA,20,NA
+Seychelles,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Sierra Leone,ok,-Inf,-Inf,34,"(4,5,5,5,5)"
+Singapore,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Slovakia,skipped: nobs(27) < min_rows(30),NA,NA,27,NA
+Slovenia,skipped: nobs(27) < min_rows(30),NA,NA,27,NA
+South Africa,ok,-Inf,-Inf,33,"(4,4,5,5,5)"
+South Korea,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Spain,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Sri Lanka,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+St. Vincent and the Grenadines,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Sudan,skipped: nobs(23) < min_rows(30),NA,NA,23,NA
+Suriname,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Sweden,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Switzerland,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Syria,skipped: nobs(15) < min_rows(30),NA,NA,15,NA
+Taiwan,ok,-Inf,-Inf,33,"(3,5,5,5,5)"
+Tajikistan,skipped: nobs(22) < min_rows(30),NA,NA,22,NA
+Tanzania,ok,-Inf,-Inf,34,"(4,5,5,5,5)"
+Thailand,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Togo,skipped: nobs(15) < min_rows(30),NA,NA,15,NA
+Trinidad and Tobago,skipped: nobs(21) < min_rows(30),NA,NA,21,NA
+Tunisia,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Turkey,ok,-Inf,-Inf,33,"(3,5,5,5,5)"
+Turkmenistan,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Uganda,skipped: nobs(29) < min_rows(30),NA,NA,29,NA
+Ukraine,skipped: nobs(25) < min_rows(30),NA,NA,25,NA
+United Arab Emirates,skipped: nobs(11) < min_rows(30),NA,NA,11,NA
+United Kingdom,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+United States,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Uruguay,ok,-Inf,-Inf,34,"(4,5,5,5,5)"
+Uzbekistan,skipped: nobs(0) < min_rows(30),NA,NA,0,NA
+Venezuela,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Vietnam,skipped: nobs(28) < min_rows(30),NA,NA,28,NA
+Yemen,skipped: nobs(23) < min_rows(30),NA,NA,23,NA
+Zambia,ok,-Inf,-Inf,35,"(5,5,5,5,5)"
+Zimbabwe,skipped: nobs(24) < min_rows(30),NA,NA,24,NA

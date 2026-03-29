@@ -1,10 +1,27 @@
 \thispagestyle {empty}
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
-\contentsline {section}{\numberline {2}Monetary and Fiscal Policy Framework}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Monetary Policy}{3}{subsection.2.1}%
+\contentsline {section}{\numberline {2}Monetary Implications of Debt}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Theoretical Framework}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Debt Sustainability and Implications}{3}{subsection.2.2}%
 \contentsline {section}{\numberline {3}Related Literature}{4}{section.3}%
-\contentsline {section}{\numberline {4}Data}{6}{section.4}%
-\contentsline {section}{\numberline {5}Methods}{7}{section.5}%
-\contentsline {section}{\numberline {6}Results}{8}{section.6}%
-\contentsline {section}{\numberline {7}Conclusion}{9}{section.7}%
-\contentsline {section}{\numberline {8}References}{10}{section.8}%
+\contentsline {section}{\numberline {4}Data}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Debt Data}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Growth Data}{6}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Inequality Data}{7}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Final Dataset}{7}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Methods \& Results}{9}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Debt and Inequality}{9}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Estimation}{10}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Dynamic Analysis: ARDL Bounds Testing Approach}{15}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Cointegration Evidence}{16}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.2}Long-Run Multipliers}{17}{subsubsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3}Error Correction Dynamics}{18}{subsubsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.4}Synthesis and Robustness}{20}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Exchange Rate Regimes and Monetary Sovereignty}{20}{subsection.5.5}%
+\contentsline {subsubsection}{\numberline {5.5.1}Panel Evidence with Regime Interactions}{21}{subsubsection.5.5.1}%
+\contentsline {subsubsection}{\numberline {5.5.2}Split-Sample Analysis}{22}{subsubsection.5.5.2}%
+\contentsline {subsubsection}{\numberline {5.5.3}Long-Run Dynamics by Regime}{22}{subsubsection.5.5.3}%
+\contentsline {subsubsection}{\numberline {5.5.4}Interpretation}{23}{subsubsection.5.5.4}%
+\contentsline {subsection}{\numberline {5.6}Discussion}{23}{subsection.5.6}%
+\contentsline {section}{\numberline {6}Conclusion}{24}{section.6}%
+\contentsline {section}{\numberline {7}References}{25}{section.7}%

@@ -1,0 +1,100 @@
+\documentclass[12pt, titlepage]{article}
+\usepackage[letterpaper, width = 145mm, top = 20mm, bottom = 25mm]{geometry}
+\usepackage{authblk}
+\usepackage{fancyhdr}
+%\pagestyle{fancy}
+\makeatother
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\makeatletter
+\usepackage[T1]{fontenc}
+\usepackage[scaled]{uarial}
+\usepackage{nimbusserif}
+\usepackage[labelfont = sc]{caption}
+\usepackage{graphicx}
+\usepackage{amsmath, amsfonts}
+\newcommand{\source}[1]{\footnotesize\caption*{\emph{Source}: {#1}}} %
+\newcommand{\note}[1]{\footnotesize\caption*{\emph{Note}: {#1}}} %
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[flushleft]{threeparttable}
+\usepackage{authblk}
+\usepackage[font=sf]{caption}
+\usepackage{subcaption}
+\usepackage{textpos}
+\usepackage[figuresleft]{rotating}
+\usepackage{ragged2e}
+\usepackage{titlesec}
+\newcommand{\sectionbreak}{\clearpage}
+\usepackage[authoryear]{natbib}
+\usepackage[colorlinks]{hyperref}
+\hypersetup{
+	linkcolor=blue,
+	citecolor=blue,
+	urlcolor=blue
+}
+\usepackage{relsize}
+\usepackage{setspace}
+\clubpenalty=100000
+\widowpenalty=10000
+\singlespacing
+\pagenumbering{arabic}
+\captionsetup{singlelinecheck=false}
+\numberwithin{equation}{section}
+\usepackage[hang,flushmargin, bottom]{footmisc}
+
+\newcommand\blfootnote[1]{%
+	\begingroup
+	\renewcommand\thefootnote{}\footnote{#1}%
+	\addtocounter{footnote}{-1}%
+	\endgroup
+}
+% to change titles font family
+\usepackage{titling}
+\usepackage[font=sf]{floatrow}
+\usepackage{enumitem}
+\setlist{nolistsep}
+
+\usepackage{sectsty}
+\sectionfont{\sffamily\mdseries\clearpage}
+\subsectionfont{\sffamily\mdseries}
+\subsubsectionfont{\sffamily\mdseries}
+%\titleformat*{\section}{\Large\sffamily\MakeUppercase\clearpage}
+%\titleformat*{\subsection}{\large\sffamily\MakeUppercase}
+%\titleformat*{\subsubsection}{\normalsize\sffamily\MakeUppercase
+\begin{document}
+
+\centering
+\begin{threeparttable}[!htbp] \centering \footnotesize
+	\caption{} 
+	\label{} 
+	\begin{tabular}{@{\extracolsep{5pt}}lccccc} 
+		\\[-1.8ex]\toprule
+
+		\\[-1.8ex] & (1) & (2) & (3) & (4) & (5) \\
+		\hline \\[-1.8ex] 
+		Total debt & -0.004 & 0.002 & 0.043$^{**}$ & 0.010 & 0.063$^{**}$  \\ 
+		& (0.045) & (0.081) & (0.025) & (0.031) & (0.031) \\ 
+		& & & & & \\ 
+		GDP & -0.307$^{*}$ & -0.307 & 0.038 & 0.200$^{**}$ & -0.055  \\ 
+		& (0.289) & (0.342) & (0.162) & (0.075) & (0.216) \\ 
+		& & & & & \\ 
+		Human Capital & -0.052 & -0.319$^{**}$ & -0.168$^{***}$ & 0.167$^{**}$ &-0.078 \\ 
+		& (0.130) & (0.017) & (0.152) & (0.062) & (0.101)\\ 
+		& & & & & \\ 
+		Debt $\times$\, GDP & 0.226 & 0.279 & -0.147$^{*}$ & -0.263$^{**}$ & 0.178 \\ 
+		& (0.379) & (0.480) & (0.362) & (0.111) & (0.398) \\ 
+		& & & & &  \\ 
+		\hline \\[-1.8ex] 
+		Observations & 3,276 & 760 & 1,199 & 397 & 920 \\ 
+		$R^{2}$ & 0.837 & 0.795 & 0.938 & 0.898 & 0.923  \\ 
+		Adjusted $R^{2}$ & 0.831 & 0.777 & 0.934 & 0.882 & 0.917 \\ 
+		\midrule \\
+	\end{tabular} 
+	\noindent
+	\begin{tablenotes} 
+		\item \textit{Note}: All regressions include country and year fixed-effects and weighted by population. Asterisks denote statistical significance at the 10, 5, and 1 percent levels respectively {$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} 
+		\end{tablenotes}
+\end{threeparttable} 
+
+\end{document}

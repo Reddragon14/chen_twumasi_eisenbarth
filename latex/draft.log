@@ -1,27 +1,27 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.12.12)  21 JAN 2024 13:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.7)  20 MAR 2026 23:07
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  %&-line parsing enabled.
 **./draft.tex
 (draft.tex
-LaTeX2e <2023-11-01>
-L3 programming layer <2023-11-09>
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
-Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
-File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count186
-\c@section=\count187
-\c@subsection=\count188
-\c@subsubsection=\count189
-\c@paragraph=\count190
-\c@subparagraph=\count191
-\c@figure=\count192
-\c@table=\count193
-\abovecaptionskip=\skip48
-\belowcaptionskip=\skip49
-\bibindent=\dimen140
+\c@part=\count275
+\c@section=\count276
+\c@subsection=\count277
+\c@subsubsection=\count278
+\c@paragraph=\count279
+\c@subparagraph=\count280
+\c@figure=\count281
+\c@table=\count282
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
 )
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -34,45 +34,51 @@ Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
+Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
-\Gm@cnth=\count194
-\Gm@cntv=\count195
-\c@Gm@tempcnt=\count196
-\Gm@bindingoffset=\dimen141
-\Gm@wd@mp=\dimen142
-\Gm@odd@mp=\dimen143
-\Gm@even@mp=\dimen144
-\Gm@layoutwidth=\dimen145
-\Gm@layoutheight=\dimen146
-\Gm@layouthoffset=\dimen147
-\Gm@layoutvoffset=\dimen148
+\Gm@cnth=\count283
+\Gm@cntv=\count284
+\c@Gm@tempcnt=\count285
+\Gm@bindingoffset=\dimen149
+\Gm@wd@mp=\dimen150
+\Gm@odd@mp=\dimen151
+\Gm@even@mp=\dimen152
+\Gm@layoutwidth=\dimen153
+\Gm@layoutheight=\dimen154
+\Gm@layouthoffset=\dimen155
+\Gm@layoutvoffset=\dimen156
 \Gm@dimlist=\toks18
 
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/preprint\authblk.sty
 Package: authblk 2001/02/27 1.3 (PWD)
-\affilsep=\skip50
-\@affilsep=\skip51
-\c@Maxaffil=\count197
-\c@authors=\count198
-\c@affil=\count199
+\affilsep=\skip51
+\@affilsep=\skip52
+\c@Maxaffil=\count286
+\c@authors=\count287
+\c@affil=\count288
 )
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
-Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 
-\f@nch@headwidth=\skip52
-\f@nch@O@elh=\skip53
-\f@nch@O@erh=\skip54
-\f@nch@O@olh=\skip55
-\f@nch@O@orh=\skip56
-\f@nch@O@elf=\skip57
-\f@nch@O@erf=\skip58
-\f@nch@O@olf=\skip59
-\f@nch@O@orf=\skip60
+\f@nch@headwidth=\skip53
+\f@nch@offset@elh=\skip54
+\f@nch@offset@erh=\skip55
+\f@nch@offset@olh=\skip56
+\f@nch@offset@orh=\skip57
+\f@nch@offset@elf=\skip58
+\f@nch@offset@erf=\skip59
+\f@nch@offset@olf=\skip60
+\f@nch@offset@orf=\skip61
+\f@nch@height=\skip62
+\f@nch@footalignment=\skip63
+\f@nch@widthL=\skip64
+\f@nch@widthC=\skip65
+\f@nch@widthR=\skip66
+\@temptokenb=\toks19
 )
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
-Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 )
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/roboto\roboto.sty
 Package: roboto 2022/09/10 (Bob Tennent) Supports Roboto fonts for all LaTeX en
@@ -89,85 +95,64 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
-\XKV@toks=\toks19
-\XKV@tempa@toks=\toks20
+\XKV@toks=\toks20
+\XKV@tempa@toks=\toks21
 )
-\XKV@depth=\count266
+\XKV@depth=\count289
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )) (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
-Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
 )
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
-Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 )
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/fontaxes\fontaxes.sty
-Package: fontaxes 2020/07/21 v1.0e Font selection axes
-LaTeX Info: Redefining \upshape on input line 29.
-LaTeX Info: Redefining \itshape on input line 31.
-LaTeX Info: Redefining \slshape on input line 33.
-LaTeX Info: Redefining \swshape on input line 35.
-LaTeX Info: Redefining \scshape on input line 37.
-LaTeX Info: Redefining \sscshape on input line 39.
-LaTeX Info: Redefining \ulcshape on input line 41.
-LaTeX Info: Redefining \textsw on input line 47.
-LaTeX Info: Redefining \textssc on input line 48.
-LaTeX Info: Redefining \textulc on input line 49.
+Package: fontaxes 2026-01-02 v2.0.2 Font selection axes (deprecated)
+Applying: [2024-11-01] Use figureversions if present on input line 74.
+
+(C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/figureversions\figureve
+rsions.sty
+Package: figureversions 2025-04-29 v1.0.1 Figure versions
+)
+Already applied: [0000-00-00] Fall back to v1 on input line 76.
 ))
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/nimbus15\nimbusserif.st
 y
 Package: nimbusserif 2019/10/18 v1.012
  `nimbusserif' v1.012, 2019/10/18 Style file for NimbusSerif (msharpe)
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
-Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 ))
-(C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
-Package: caption 2023/08/05 v3.6o Customizing captions (AR)
-
-(C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
-Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen149
-\captionmargin=\dimen150
-\caption@leftmargin=\dimen151
-\caption@rightmargin=\dimen152
-\caption@width=\dimen153
-\caption@indent=\dimen154
-\caption@parindent=\dimen155
-\caption@hangindent=\dimen156
-Package caption Info: Standard document class detected.
-)
-\c@caption@flags=\count267
-\c@continuedfloat=\count268
-)
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
 
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
-Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
 
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
-Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 )
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
 fg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 107.
+Package graphics Info: Driver file: pdftex.def on input line 106.
 
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen157
 \Gin@req@width=\dimen158
 ) (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
-Package: amsmath 2023/05/13 v2.17o AMS math features
-\@mathmargin=\skip61
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip67
 For additional information on amsmath, use the `?' option.
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
-Package: amstext 2021/08/26 v2.01 AMS text
+Package: amstext 2024/11/17 v2.01 AMS text
 
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks21
+\@emptytoks=\toks22
 \ex@=\dimen159
 ))
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
@@ -177,53 +162,53 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count269
-LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count270
-\leftroot@=\count271
-LaTeX Info: Redefining \overline on input line 399.
-LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count272
-\DOTSCASE@=\count273
-LaTeX Info: Redefining \ldots on input line 496.
-LaTeX Info: Redefining \dots on input line 499.
-LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box51
-\strutbox@=\box52
-LaTeX Info: Redefining \big on input line 722.
-LaTeX Info: Redefining \Big on input line 723.
-LaTeX Info: Redefining \bigg on input line 724.
-LaTeX Info: Redefining \Bigg on input line 725.
+\inf@bad=\count290
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count291
+\leftroot@=\count292
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count293
+\DOTSCASE@=\count294
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box53
+\strutbox@=\box54
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
 \big@size=\dimen161
-LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count274
-LaTeX Info: Redefining \bmod on input line 905.
-LaTeX Info: Redefining \pmod on input line 910.
-LaTeX Info: Redefining \smash on input line 940.
-LaTeX Info: Redefining \relbar on input line 970.
-LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count275
-\dotsspace@=\muskip16
-\c@parentequation=\count276
-\dspbrk@lvl=\count277
-\tag@help=\toks22
-\row@=\count278
-\column@=\count279
-\maxfields@=\count280
-\andhelp@=\toks23
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count295
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count296
+\dotsspace@=\muskip17
+\c@parentequation=\count297
+\dspbrk@lvl=\count298
+\tag@help=\toks23
+\row@=\count299
+\column@=\count300
+\maxfields@=\count301
+\andhelp@=\toks24
 \eqnshift@=\dimen162
 \alignsep@=\dimen163
 \tagshift@=\dimen164
 \tagwidth@=\dimen165
 \totwidth@=\dimen166
 \lineht@=\dimen167
-\@envbody=\toks24
-\multlinegap=\skip62
-\multlinetaggap=\skip63
-\mathdisplay@stack=\toks25
-LaTeX Info: Redefining \[ on input line 2953.
-LaTeX Info: Redefining \] on input line 2954.
+\@envbody=\toks25
+\multlinegap=\skip68
+\multlinetaggap=\skip69
+\mathdisplay@stack=\toks26
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
 )
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
@@ -245,91 +230,157 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen175
 \cmidrulekern=\dimen176
 \defaultaddspace=\dimen177
-\@cmidla=\count281
-\@cmidlb=\count282
+\@cmidla=\count302
+\@cmidlb=\count303
 \@aboverulesep=\dimen178
 \@belowrulesep=\dimen179
-\@thisruleclass=\count283
-\@lastruleclass=\count284
+\@thisruleclass=\count304
+\@lastruleclass=\count305
 \@thisrulewidth=\dimen180
+)
+(C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjustbox.sty
+Package: adjustbox 2025/02/26 v1.3c Adjusting TeX boxes (trim, clip, ...)
+(C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\trimclip.sty
+Package: trimclip 2025/02/21 v1.2a Trim and clip general TeX material
+
+(C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collectbox.s
+ty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box55
+)
+\tc@llx=\dimen181
+\tc@lly=\dimen182
+\tc@urx=\dimen183
+\tc@ury=\dimen184
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\tc-pdftex.def
+File: tc-pdftex.def 2025/02/26 v2.3 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen185
+\adjbox@Height=\dimen186
+\adjbox@Depth=\dimen187
+\adjbox@Totalheight=\dimen188
+\adjbox@pwidth=\dimen189
+\adjbox@pheight=\dimen190
+\adjbox@pdepth=\dimen191
+\adjbox@ptotalheight=\dimen192
+
+(C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count306
+) (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box56
+\sift@deathcycles=\count307
+\@vwid@loff=\dimen193
+\@vwid@roff=\dimen194
+)
+==> First Aid for varwidth.sty applied!
 )
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/threeparttable\threepar
 ttable.sty
 Package: threeparttable 2003/06/13  v 3.0
-\@tempboxb=\box53
+\@tempboxb=\box57
+)
+(C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen195
+\captionmargin=\dimen196
+\caption@leftmargin=\dimen197
+\caption@rightmargin=\dimen198
+\caption@width=\dimen199
+\caption@indent=\dimen256
+\caption@parindent=\dimen257
+\caption@hangindent=\dimen258
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count308
+\c@continuedfloat=\count309
+Package caption Info: threeparttable package is loaded.
 )
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
 Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count285
+\c@subfigure=\count310
 Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count286
+\c@subtable=\count311
 ) (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/textpos\textpos.sty
 Package: textpos 2022/07/23 v1.10.1
 Package textpos Info: choosing support for LaTeX3 on input line 60.
-\TP@textbox=\box54
-\TPHorizModule=\dimen181
-\TPVertModule=\dimen182
-\TP@margin=\dimen183
-\TP@absmargin=\dimen184
+\TP@textbox=\box58
+\TPHorizModule=\dimen259
+\TPVertModule=\dimen260
+\TP@margin=\dimen261
+\TP@absmargin=\dimen262
 
 Grid set 16 x 16 = 38.39343pt x 49.68562pt
-\TPboxrulesize=\dimen185
-\TP@tbargs=\toks26
+\TPboxrulesize=\dimen263
+\TP@tbargs=\toks27
 ) (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/graphics\rotating.sty
-Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+Package: rotating 2025/01/14 v2.16e rotated objects in LaTeX
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
-Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count287
-\rotFPtop=\skip64
-\rotFPbot=\skip65
-\rot@float@box=\box55
-\rot@mess@toks=\toks27
+\c@r@tfl@t=\count312
+\rotFPtop=\skip70
+\rotFPbot=\skip71
+\rot@float@box=\box59
+\rot@mess@toks=\toks28
+)
+(C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip72
+\multirow@cntb=\count313
+\multirow@dima=\skip73
+\bigstrutjot=\dimen264
 )
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty
 Package: ragged2e 2023/06/22 v3.6 ragged2e Package
-\CenteringLeftskip=\skip66
-\RaggedLeftLeftskip=\skip67
-\RaggedRightLeftskip=\skip68
-\CenteringRightskip=\skip69
-\RaggedLeftRightskip=\skip70
-\RaggedRightRightskip=\skip71
-\CenteringParfillskip=\skip72
-\RaggedLeftParfillskip=\skip73
-\RaggedRightParfillskip=\skip74
-\JustifyingParfillskip=\skip75
-\CenteringParindent=\skip76
-\RaggedLeftParindent=\skip77
-\RaggedRightParindent=\skip78
-\JustifyingParindent=\skip79
+\CenteringLeftskip=\skip74
+\RaggedLeftLeftskip=\skip75
+\RaggedRightLeftskip=\skip76
+\CenteringRightskip=\skip77
+\RaggedLeftRightskip=\skip78
+\RaggedRightRightskip=\skip79
+\CenteringParfillskip=\skip80
+\RaggedLeftParfillskip=\skip81
+\RaggedRightParfillskip=\skip82
+\JustifyingParfillskip=\skip83
+\CenteringParindent=\skip84
+\RaggedLeftParindent=\skip85
+\RaggedRightParindent=\skip86
+\JustifyingParindent=\skip87
 )
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
-Package: titlesec 2023/10/27 v2.16 Sectioning titles
-\ttl@box=\box56
-\beforetitleunit=\skip80
-\aftertitleunit=\skip81
-\ttl@plus=\dimen186
-\ttl@minus=\dimen187
-\ttl@toksa=\toks28
-\titlewidth=\dimen188
-\titlewidthlast=\dimen189
-\titlewidthfirst=\dimen190
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box60
+\beforetitleunit=\skip88
+\aftertitleunit=\skip89
+\ttl@plus=\dimen265
+\ttl@minus=\dimen266
+\ttl@toksa=\toks29
+\titlewidth=\dimen267
+\titlewidthlast=\dimen268
+\titlewidthfirst=\dimen269
 )
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip82
-\bibsep=\skip83
+\bibhang=\skip90
+\bibsep=\skip91
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count288
+\c@NAT@ctr=\count314
 )
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
-Package: hyperref 2023-11-26 v7.01g Hypertext links for LaTeX
+Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
 
-(C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
-ty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )
@@ -342,11 +393,16 @@ ty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
-Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
 .sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
@@ -355,15 +411,8 @@ Package pdftexcmds Info: \pdfdraftmode found.
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro
-.sty
-Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-)
-(C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
-Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-)
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
-Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
 
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
@@ -375,47 +424,49 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count289
+\c@section@level=\count315
 )
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count290
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count316
 )
-\@linkdim=\dimen191
-\Hy@linkcounter=\count291
-\Hy@pagecounter=\count292
-
-(C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
-File: pd1enc.def 2023-11-26 v7.01g Hyperref: PDFDocEncoding definition (HO)
+(C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
+ty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen270
+\Hy@linkcounter=\count317
+\Hy@pagecounter=\count318
+ (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-)
-(C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+) (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count293
-
-(C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
-File: puenc.def 2023-11-26 v7.01g Hyperref: PDF Unicode definition (HO)
+\Hy@SavedSpaceFactor=\count319
+ (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 4064.
-Package hyperref Info: Hyper figures OFF on input line 4181.
-Package hyperref Info: Link nesting OFF on input line 4186.
-Package hyperref Info: Hyper index ON on input line 4189.
-Package hyperref Info: Plain pages OFF on input line 4196.
-Package hyperref Info: Backreferencing OFF on input line 4201.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4072.
+Package hyperref Info: Hyper figures OFF on input line 4201.
+Package hyperref Info: Link nesting OFF on input line 4206.
+Package hyperref Info: Hyper index ON on input line 4209.
+Package hyperref Info: Plain pages OFF on input line 4216.
+Package hyperref Info: Backreferencing OFF on input line 4221.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4448.
-\c@Hy@tempcnt=\count294
+Package hyperref Info: Bookmarks ON on input line 4468.
+\c@Hy@tempcnt=\count320
 
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
-\Urlmuskip=\muskip17
+\Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4786.
-\XeTeXLinkMargin=\dimen192
+LaTeX Info: Redefining \url on input line 4807.
+\XeTeXLinkMargin=\dimen271
 
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -425,49 +476,39 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count295
-\Field@Width=\dimen193
-\Fld@charsize=\dimen194
-Package hyperref Info: Hyper figures OFF on input line 6065.
-Package hyperref Info: Link nesting OFF on input line 6070.
-Package hyperref Info: Hyper index ON on input line 6073.
-Package hyperref Info: backreferencing OFF on input line 6080.
-Package hyperref Info: Link coloring ON on input line 6083.
-Package hyperref Info: Link coloring with OCG OFF on input line 6090.
-Package hyperref Info: PDF/A mode OFF on input line 6095.
-
-(C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
-Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
-package with kernel methods
-)
-\Hy@abspage=\count296
-\c@Item=\count297
-\c@Hfootnote=\count298
+\Fld@menulength=\count321
+\Field@Width=\dimen272
+\Fld@charsize=\dimen273
+Package hyperref Info: Hyper figures OFF on input line 6084.
+Package hyperref Info: Link nesting OFF on input line 6089.
+Package hyperref Info: Hyper index ON on input line 6092.
+Package hyperref Info: backreferencing OFF on input line 6099.
+Package hyperref Info: Link coloring ON on input line 6102.
+Package hyperref Info: Link coloring with OCG OFF on input line 6109.
+Package hyperref Info: PDF/A mode OFF on input line 6114.
+\Hy@abspage=\count322
+\c@Item=\count323
+\c@Hfootnote=\count324
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
-(C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
-File: hpdftex.def 2023-11-26 v7.01g Hyperref driver for pdfTeX
 
-(C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
-kage
-with kernel methods
-)
-\Fld@listcount=\count299
-\c@bookmark@seq@number=\count300
+(C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2026-01-29 v7.01p Hyperref driver for pdfTeX
+\Fld@listcount=\count325
+\c@bookmark@seq@number=\count326
 
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
 echeck.sty
-Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
 
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
 ounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-85.
+84.
 )
-\Hy@SectionHShift=\skip84
+\Hy@SectionHShift=\skip92
 )
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/relsize\relsize.sty
 Package: relsize 2013/03/29 ver 4.1
@@ -476,71 +517,40 @@ Package: relsize 2013/03/29 ver 4.1
 Package: setspace 2022/12/04 v6.7b set line spacing
 )
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/footmisc\footmisc.sty
-Package: footmisc 2023/07/05 v6.0f a miscellany of footnote facilities
-\FN@temptoken=\toks29
-\footnotemargin=\dimen195
-\@outputbox@depth=\dimen196
-Package footmisc Info: Declaring symbol style bringhurst on input line 696.
-Package footmisc Info: Declaring symbol style chicago on input line 704.
-Package footmisc Info: Declaring symbol style wiley on input line 713.
-Package footmisc Info: Declaring symbol style lamport-robust on input line 724.
+Package: footmisc 2025/05/09 v7.0b a miscellany of footnote facilities
+\FN@temptoken=\toks30
+\footnotemargin=\dimen274
+Package footmisc Info: Declaring symbol style bringhurst on input line 549.
+Package footmisc Info: Declaring symbol style chicago on input line 557.
+Package footmisc Info: Declaring symbol style wiley on input line 566.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 577.
 
-Package footmisc Info: Declaring symbol style lamport* on input line 744.
-Package footmisc Info: Declaring symbol style lamport*-robust on input line 765
+Package footmisc Info: Declaring symbol style lamport* on input line 597.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 618
 .
 )
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/titling\titling.sty
 Package: titling 2009/09/04 v2.1d maketitle typesetting
-\thanksmarkwidth=\skip85
-\thanksmargin=\skip86
-\droptitle=\skip87
+\thanksmarkwidth=\skip93
+\thanksmargin=\skip94
+\droptitle=\skip95
 )
-(C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/floatrow\floatrow.sty
-Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
-\c@float@type=\count301
-\float@exts=\toks30
-\float@box=\box57
-\@floatcapt=\box58
-Package floatrow Info: Modified float package code loaded on input line 455.
-Package floatrow Info: Modified rotfloat package code loaded on input line 473.
-
-\FR@everyfloat=\toks31
-\flrow@foot=\insert252
-\FB@wd=\dimen197
-\FBo@wd=\dimen198
-\FBc@wd=\dimen199
-\FBo@ht=\skip88
-\FBc@ht=\skip89
-\FBf@ht=\skip90
-\FBo@max=\skip91
-\FBc@max=\skip92
-\FBf@max=\skip93
-\c@FBl@b=\count302
-\floatbox@depth=\count303
-\c@FRobj=\count304
-\c@FRsobj=\count305
-\Xhsize=\skip94
-\sXhsize=\skip95
-\Zhsize=\skip96
-\sZhsize=\skip97
-\flrow@rowbox=\box59
-\FR@Zunitlength=\dimen256
-\c@FBcnt=\count306
-\FPOScnt=\count307
-\LTleft=\skip98
-\LTright=\skip99
-\LTleft=\skip100
-\LTright=\skip101
-\flrow@types=\toks32
+(C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count327
+\float@exts=\toks31
+\float@box=\box61
+\@float@everytoks=\toks32
+\@floatcapt=\box62
 )
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
-Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip102
-\enit@outerparindent=\dimen257
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip96
+\enit@outerparindent=\dimen275
 \enit@toks=\toks33
-\enit@inbox=\box60
-\enit@count@id=\count308
-\enitdp@description=\count309
+\enit@inbox=\box63
+\enit@count@id=\count328
+\enitdp@description=\count329
 )
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/sectsty\sectsty.sty
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
@@ -556,7 +566,7 @@ LaTeX Warning: Command \underline  has changed.
 
 )
 LaTeX Font Info:    Trying to load font information for T1+NimbusSerif on input
- line 73.
+ line 75.
 
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/nimbus15\t1nimbusserif.
 fd
@@ -564,34 +574,37 @@ File: T1NimbusSerif.fd 2015/09/19 Font definitions for T1/NimbusSerif (msharpe)
 .
 )
 LaTeX Font Info:    Font shape `T1/NimbusSerif/m/n' will be
-(Font)              scaled to size 12.0pt on input line 73.
+(Font)              scaled to size 12.0pt on input line 75.
 
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
-File: l3backend-pdftex.def 2023-11-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count310
-\l__pdf_internal_box=\box61
-) (draft.aux)
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count330
+) (draft.aux
+
+LaTeX Warning: Label `figure:figure1' multiply defined.
+
+)
 \openout1 = `draft.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -601,14 +614,14 @@ LaTeX Font Info:    ... okay on input line 73.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(100.86502pt, 412.56496pt, 100.86502pt)
+* h-part:(L,W,R)=(93.75183pt, 426.79134pt, 93.75183pt)
 * v-part:(T,H,B)=(56.9055pt, 666.9326pt, 71.13188pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=412.56496pt
+* \textwidth=426.79134pt
 * \textheight=666.9326pt
-* \oddsidemargin=28.59503pt
-* \evensidemargin=28.59503pt
+* \oddsidemargin=21.48184pt
+* \evensidemargin=21.48184pt
 * \topmargin=-52.36449pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -627,30 +640,22 @@ LaTeX Font Info:    ... okay on input line 73.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@mv@tabular=\count311
-\c@mv@boldtabular=\count312
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: float package is loaded.
-Package caption Info: floatrow package is loaded.
-Package caption Info: floatrow package is loaded.
-Package caption Info: hyperref package is loaded.
-Package caption Info: rotating package is loaded.
-Package caption Info: threeparttable package is loaded.
-Package caption Info: End \AtBeginDocument code.
+\c@mv@tabular=\count331
+\c@mv@boldtabular=\count332
 
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count313
-\scratchdimen=\dimen258
-\scratchbox=\box62
-\nofMPsegments=\count314
-\nofMParguments=\count315
+\scratchcounter=\count333
+\scratchdimen=\dimen276
+\scratchbox=\box64
+\nofMPsegments=\count334
+\nofMParguments=\count335
 \everyMPshowfont=\toks34
-\MPscratchCnt=\count316
-\MPscratchDim=\dimen259
-\MPnumerator=\count317
-\makeMPintoPDFobject=\count318
+\MPscratchCnt=\count336
+\MPscratchDim=\dimen277
+\MPnumerator=\count337
+\makeMPintoPDFobject=\count338
 \everyMPtoPDFconversion=\toks35
 )
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
@@ -662,8 +667,14 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-)) (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
-Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: rotating package is loaded.
+Package caption Info: End \AtBeginDocument code.
+ (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+Package: color 2025/01/14 v1.3e Standard LaTeX Color (DPC)
 LaTeX Info: Redefining \color on input line 88.
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
@@ -671,41 +682,41 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package color Info: Driver file: pdftex.def on input line 149.
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 )
-Package hyperref Info: Link coloring ON on input line 73.
+Package hyperref Info: Link coloring ON on input line 75.
  (draft.out) (draft.out)
 \@outlinefile=\write3
 \openout3 = `draft.out'.
 
 LaTeX Font Info:    Font shape `T1/NimbusSerif/m/n' will be
-(Font)              scaled to size 20.74pt on input line 77.
+(Font)              scaled to size 20.74pt on input line 79.
 LaTeX Font Info:    Trying to load font information for T1+Roboto-LF on input l
-ine 77.
+ine 79.
 
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/roboto\t1roboto-lf.fd
 File: T1Roboto-LF.fd 2019/12/11 (autoinst) Font definitions for T1/Roboto-LF.
 )
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
-(Font)              `T1/Roboto-LF/regular/n' on input line 77.
+(Font)              `T1/Roboto-LF/regular/n' on input line 79.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
-(Font)              scaled to size 20.74pt on input line 77.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 79.
+(Font)              scaled to size 20.74pt on input line 79.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 81.
 
 
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 79.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 81.
 
 
 (C:\Users\ageis\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/NimbusSerif/m/it' will be
-(Font)              scaled to size 12.0pt on input line 84.
-LaTeX Font Info:    Font shape `T1/NimbusSerif/b/n' will be
 (Font)              scaled to size 12.0pt on input line 86.
+LaTeX Font Info:    Font shape `T1/NimbusSerif/b/n' will be
+(Font)              scaled to size 12.0pt on input line 88.
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
  []\T1/NimbusSerif/b/n/12 Abstract 
  []
 
@@ -716,98 +727,238 @@ s/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/roboto/rbto_b5rac7.enc}{C:/User
 s/ageis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/nimbus15/nimbus15-ec.enc}
 ]
 LaTeX Font Info:    Font shape `T1/NimbusSerif/m/n' will be
-(Font)              scaled to size 17.28pt on input line 99.
+(Font)              scaled to size 17.28pt on input line 101.
 LaTeX Font Info:    Font shape `T1/NimbusSerif/b/n' will be
-(Font)              scaled to size 17.28pt on input line 99.
+(Font)              scaled to size 17.28pt on input line 101.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
-(Font)              `T1/Roboto-LF/bold/n' on input line 99.
+(Font)              `T1/Roboto-LF/bold/n' on input line 101.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
-(Font)              scaled to size 17.28pt on input line 99.
+(Font)              scaled to size 17.28pt on input line 101.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
-(Font)              `T1/Roboto-LF/regular/n' on input line 99.
+(Font)              `T1/Roboto-LF/regular/n' on input line 101.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
-(Font)              scaled to size 17.28pt on input line 99.
+(Font)              scaled to size 17.28pt on input line 101.
  (draft.toc)
 \tf@toc=\write4
 \openout4 = `draft.toc'.
 
- [1
-
-]
+ [1]
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.119 \[
-         [1
-
-
-] [2]
-LaTeX Font Info:    Font shape `T1/NimbusSerif/m/n' will be
-(Font)              scaled to size 14.4pt on input line 139.
-LaTeX Font Info:    Font shape `T1/NimbusSerif/b/n' will be
-(Font)              scaled to size 14.4pt on input line 139.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
-(Font)              `T1/Roboto-LF/bold/n' on input line 139.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
-(Font)              scaled to size 14.4pt on input line 139.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
-(Font)              `T1/Roboto-LF/regular/n' on input line 139.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
-(Font)              scaled to size 14.4pt on input line 139.
- [3
-
-] [4
-
-] [5] [6
-
-] [7
-
-] [8
-
-] (draft.bbl [9
+l.118 
+       [1
 
 ]
+LaTeX Font Info:    Font shape `T1/NimbusSerif/m/n' will be
+(Font)              scaled to size 14.4pt on input line 123.
+LaTeX Font Info:    Font shape `T1/NimbusSerif/b/n' will be
+(Font)              scaled to size 14.4pt on input line 123.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
+(Font)              `T1/Roboto-LF/bold/n' on input line 123.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
+(Font)              scaled to size 14.4pt on input line 123.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
+(Font)              `T1/Roboto-LF/regular/n' on input line 123.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
+(Font)              scaled to size 14.4pt on input line 123.
+ [2] [3]
+
+Package natbib Warning: Citation `Ramey2021' on page 4 undefined on input line 
+148.
+
+[4] [5]
+LaTeX Font Info:    Font shape `T1/NimbusSerif/m/n' will be
+(Font)              scaled to size 8.0pt on input line 180.
+LaTeX Font Info:    Font shape `T1/NimbusSerif/m/n' will be
+(Font)              scaled to size 10.0pt on input line 180.
+LaTeX Font Info:    Font shape `T1/NimbusSerif/m/n' will be
+(Font)              scaled to size 7.0pt on input line 180.
+
+Underfull \hbox (badness 1297) in paragraph at lines 180--180
+[][][]\T1/NimbusSerif/m/n/10 Implemented us-ing the \T1/cmtt/m/n/10 na_kalman \
+T1/NimbusSerif/m/n/10 func-tion in the \T1/cmtt/m/n/10 imputeTS \T1/NimbusSerif
+/m/n/10 pack-age for R, with \T1/cmtt/m/n/10 model =
+ []
+
+[6{C:/Users/ageis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-sup
+er-t1.enc}]
+LaTeX Font Info:    Font shape `T1/NimbusSerif/m/n' will be
+(Font)              scaled to size 10.95pt on input line 211.
+LaTeX Font Info:    Font shape `T1/NimbusSerif/b/n' will be
+(Font)              scaled to size 10.95pt on input line 214.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
+(Font)              `T1/Roboto-LF/regular/n' on input line 247.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
+(Font)              scaled to size 12.0pt on input line 247.
+
+Overfull \hbox (28.5478pt too wide) in paragraph at lines 209--253
+ [] 
+ []
+
+[7] [8]
+<C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/total_government_debt_icg.p
+ng, id=387, 505.89pt x 361.35pt>
+File: C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/total_government_debt_
+icg.png Graphic file (type png)
+<use C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/total_government_debt_i
+cg.png>
+Package pdftex.def Info: C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/tot
+al_government_debt_icg.png  used on input line 269.
+(pdftex.def)             Requested size: 426.79134pt x 304.85522pt.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
+(Font)              `T1/Roboto-LF/regular/n' on input line 270.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
+(Font)              scaled to size 10.0pt on input line 270.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/m/it' aliased to
+(Font)              `T1/Roboto-LF/regular/it' on input line 270.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/it' will be
+(Font)              scaled to size 10.0pt on input line 270.
+ [9 <C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/total_government_debt_i
+cg.png>]
+<C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/figure2.png, id=395, 505.89
+pt x 361.35pt>
+File: C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/figure2.png Graphic fi
+le (type png)
+<use C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/figure2.png>
+Package pdftex.def Info: C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/fig
+ure2.png  used on input line 282.
+(pdftex.def)             Requested size: 426.79134pt x 304.85522pt.
+LaTeX Font Info:    Font shape `T1/NimbusSerif/m/it' will be
+(Font)              scaled to size 10.0pt on input line 321.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10 <C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/figure2.png>] [11]
+[12] [13]
+<C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/figure_ME_GDP_debt_panels.p
+ng, id=429, 867.24pt x 578.16pt>
+File: C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/figure_ME_GDP_debt_pan
+els.png Graphic file (type png)
+<use C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/figure_ME_GDP_debt_pane
+ls.png>
+Package pdftex.def Info: C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/fig
+ure_ME_GDP_debt_panels.png  used on input line 426.
+(pdftex.def)             Requested size: 426.79134pt x 284.52713pt.
+ [14 <C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/figure_ME_GDP_debt_pan
+els.png>]
+Overfull \hbox (0.68456pt too wide) in paragraph at lines 439--440
+\T1/NimbusSerif/m/n/12 While the fixed-effects es-ti-mates pro-vide use-ful bas
+e-line as-so-ci-a-tions be-tween debt, growth,
+ []
+
+
+Package natbib Warning: Citation `Roodman2009' on page 15 undefined on input li
+ne 441.
+
+[15]
+LaTeX Font Info:    Font shape `T1/NimbusSerif/m/n' will be
+(Font)              scaled to size 6.0pt on input line 445.
+
+Overfull \hbox (85.43973pt too wide) detected at line 446
+[][][]\OT1/cmr/m/n/12 ^^A\OML/cmm/m/it/12 y[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/1
+2  \OT1/cmr/m/n/12 + [] \OML/cmm/m/it/12 ^^^[]\OT1/cmr/m/n/12 ^^A\OML/cmm/m/it
+/12 y[] \OT1/cmr/m/n/12 + [] \OML/cmm/m/it/12 ^^L[]\OT1/cmr/m/n/12 ^^A\OML/cmm/
+m/it/12 d[] \OT1/cmr/m/n/12 + [] \OML/cmm/m/it/12 ^^L[]\OT1/cmr/m/n/12 ^^A\OML/
+cmm/m/it/12 g[] \OT1/cmr/m/n/12 + [] \OML/cmm/m/it/12 ^^L[]\OT1/cmr/m/n/12 ^^A\
+OML/cmm/m/it/12 h[] \OT1/cmr/m/n/12 + [] \OML/cmm/m/it/12 ^^L[]\OT1/cmr/m/n/12 
+^^A(\OML/cmm/m/it/12 d \OMS/cmsy/m/n/12 ^^B \OML/cmm/m/it/12 g\OT1/cmr/m/n/12 )
+[] + \OML/cmm/m/it/12 ^^U[][] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 "[]
+ []
+
+LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
+(Font)              `T1/Roboto-LF/bold/n' on input line 452.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
+(Font)              scaled to size 12.0pt on input line 452.
+[16] [17] [18] [19]
+Overfull \hbox (5.80728pt too wide) in paragraph at lines 662--663
+\T1/NimbusSerif/m/n/12 A cen-tral mo-ti-va-tion for this study is the hy-poth-e
+-sis that coun-tries with mon-e-tary sovereignty,
+ []
+
+[20] [21]
+Overfull \hbox (15.38454pt too wide) in paragraph at lines 740--741
+\T1/NimbusSerif/m/n/12 sovereignty en-ables poli-cies whose re-dis-tribu-tive b
+en-e-fits ma-te-ri-al-ize only grad-u-ally^^Vthrough
+ []
+
+[22] [23] [24] (draft.bbl
 
 LaTeX Font Warning: Font shape `T1/NimbusSerif/m/sc' undefined
 (Font)              using `T1/NimbusSerif/m/n' instead on input line 9.
 
 LaTeX Font Info:    Font shape `T1/NimbusSerif/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 14.
-[10
+(Font)              scaled to size 12.0pt on input line 15.
+[25] [26]
+Underfull \hbox (badness 1097) in paragraph at lines 111--114
+[]\T1/NimbusSerif/m/sc/12 Corsetti, Gi-an-carlo, Keith Kuester, An-dré Meier, a
+nd Ger-not J. Müller. 2013.
+ []
 
-]) [11] (draft.aux)
+[27] [28])
+
+Package natbib Warning: There were undefined citations.
+
+[29] (draft.aux)
  ***********
-LaTeX2e <2023-11-01>
-L3 programming layer <2023-11-09>
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
  ***********
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `draft.out' has not changed.
-(rerunfilecheck)             Checksum: 1823DF7979E4BD97C1411738C8B16983;1014.
+(rerunfilecheck)             Checksum: 98B581DD2A3B2C01DA31E213353F4BB0;4234.
  ) 
 Here is how much of TeX's memory you used:
- 14984 strings out of 474587
- 244542 string characters out of 5745701
- 1942558 words of memory out of 5000000
- 36876 multiletter control sequences out of 15000+600000
- 613603 words of font info for 71 fonts, out of 8000000 for 9000
+ 15988 strings out of 467867
+ 266247 string characters out of 5418335
+ 686737 words of memory out of 5000000
+ 44448 multiletter control sequences out of 15000+600000
+ 731618 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,117p,1678b,619s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/ageis/AppData/Local/Programs/MiKTeX/fonts/type1/google/roboto/Robot
-o-Regular.pfb><C:/Users/ageis/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmmi12.pfb><C:/Users/ageis/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmr12.pfb><C:/Users/ageis/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ageis/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/ageis/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/nimbus15/ztm-Med.pfb><C:/Users/ageis/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/nimbus15/ztm-Reg.pfb><C:/Users/ageis/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/ztm-RegIta.pfb>
-Output written on draft.pdf (13 pages, 253495 bytes).
+ 75i,12n,117p,1743b,689s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
+, replaced by a fixed one
+
+<C:/Users/ageis/AppData/Local/Programs/MiKTeX/fonts/type1/google/roboto/Roboto-
+Italic.pfb><C:/Users/ageis/AppData/Local/Programs/MiKTeX/fonts/type1/google/rob
+oto/Roboto-Regular.pfb><C:/Users/ageis/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ageis/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/ageis/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ageis/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/ageis/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/ag
+eis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/
+Users/ageis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.
+pfb><C:/Users/ageis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmr12.pfb><C:/Users/ageis/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmr6.pfb><C:/Users/ageis/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr7.pfb><C:/Users/ageis/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmr8.pfb><C:/Users/ageis/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ageis/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/ageis/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/ageis/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfit1200.pfb><C:/Users/age
+is/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt1000.pfb><C:/U
+sers/ageis/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/ztm-Med.pf
+b><C:/Users/ageis/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/ztm
+-Reg.pfb><C:/Users/ageis/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbu
+s15/ztm-RegIta.pfb>
+Output written on draft.pdf (31 pages, 3004320 bytes).
 PDF statistics:
- 261 PDF objects out of 1000 (max. 8388607)
- 48 named destinations out of 1000 (max. 500000)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 671 PDF objects out of 1000 (max. 8388607)
+ 139 named destinations out of 1000 (max. 500000)
+ 224 words of extra memory for PDF output out of 10000 (max. 10000000)
 

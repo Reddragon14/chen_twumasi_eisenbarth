@@ -57,7 +57,7 @@ imf_debt <-
       country == "Congo, Dem. Rep. of" ~ "Congo D.R.",
       country == "Cote D'Ivoire" ~ "Cote d'Ivoire",
       country == "Kyrgyz Republic" ~ "Kyrgyzstan",
-      country == "São Tomé and Príncipe" ~ "Sao Tome and Principe",
+      country == "S?o Tom? and Pr?ncipe" ~ "Sao Tome and Principe",
       country == "Slovak Republic" ~ "Slovakia",
       country == "St. Kitts and Nevis" ~ "Saint Kitts and Nevis",
       country == "St. Lucia" ~ "Saint Lucia",
@@ -128,7 +128,13 @@ wb_gdp <- read_csv("./data/wb_gdp.csv") |> janitor::clean_names() |> filter(!is.
 dataset <-
   full_data |>
   left_join(wb_gdp, join_by(iso == country_code, year == year)) |>
-  left_join(final_gini)
+  filter(country %in% final_selection) %>%
+  left_join(final_gini) %>%
+  select(-population) %>%
+  left_join(world_bank_data,  join_by("country" == "country", "year" == "year")) %>%
+  mutate(income_group = if_else(country == "Venezuela", "Upper middle income", income_group)) %>%
+  filter(year >= 1973)
+
 
 gdp_missing <-
   dataset |>
@@ -153,10 +159,13 @@ rgdpc_missing <-
 dataset <-
   dataset |>
   filter(!iso %in% gdp_missing) |>
-  filter(!iso %in% rgdpc_missing) |>
+  filter(!iso %in% rgdpc_missing)
   filter(country %in% dataset_countries)
 
 dataset <- mutate(dataset, rgdpc_imputed = imputeTS:::na_interpolation(rgdpc), .by = iso)
+dataset <- mutate(dataset, gini_imputed = imputeTS:::na_interpolation(gini), .by = iso)
+dataset <- mutate(dataset, gdp_imputed = imputeTS:::na_interpolation(gdp), .by = iso)
+
 
 dataset <-
   dataset |>
@@ -171,18 +180,8 @@ chudik_df |>
   ggplot(aes(x = value, color = name)) +
   stat_density(geom = "line", position = "identity") +
   scale_x_continuous(labels = scales::percent_format(), guide = "axis_minor") +
-  scale_color_manual(values = c("darkgrey", saffron), labels = c("Original", "Imputed")) +
-  labs(x = "Debt", y = "Density", color = "") +
-  theme_clean()
-
-chudik_df |>
-  select(year, country, gdp, gdp_capita) |>
-  pivot_longer(cols = c(gdp, gdp_capita)) |>
-  ggplot(aes(x = value, color = name)) +
-  stat_density(geom = "line", position = "identity") +
-  scale_x_continuous(labels = scales::percent_format(), guide = "axis_minor") +
-  scale_color_manual(values = c("darkgrey", saffron), labels = c("Original", "Imputed")) +
-  labs(x = "Debt", y = "Density", color = "") +
+  scale_color_manual(values = c("darkgrey", "red"), labels = c("Original", "Imputed")) +
+  labs(x = "Debt", y = "Density", color = "")
   theme_clean()
 
 dataset |>
@@ -193,8 +192,7 @@ dataset |>
   stat_density(geom = "line", position = "identity") +
   scale_x_continuous(labels = scales::percent_format(), guide = "axis_minor") +
   scale_color_manual(values = c(onyx, saffron), labels = c("Original", "Imputed")) +
-  labs(x = "GDP Per-Capita", y = "Density", color = "") +
-  theme_clean()
+  labs(x = "GDP Per-Capita", y = "Density", color = "")
 
 
 monetary <- defacto |>
@@ -210,7 +208,16 @@ dataset <-
   left_join(monetary) |>
   filter(year >= 1973)
 
-dataset <- mutate(dataset, gini_imputed = imputeTS::na_kalman(gini, model = "StructTS", smooth = TRUE, type = "trend"), .by = country)
+dataset <- mutate(
+  dataset,
+  gini_imputed = imputeTS::na_kalman(
+    gini,
+    model = "StructTS",
+    smooth = TRUE,
+    type = "trend"
+  ),
+  .by = country
+)
 
 dataset |>
   filter(year >= 1973) |>
@@ -219,38 +226,34 @@ dataset |>
   ggplot(aes(x = value, color = name)) +
   stat_density(geom = "line", position = "identity") +
   scale_x_continuous(labels = scales::number_format(), guide = "axis_minor") +
-  scale_color_manual(values = c(onyx, saffron), labels = c("Original", "Imputed")) +
-  labs(x = "Gini", y = "Density", color = "") +
-  theme_clean()
-
-dataset |>
-  filter(year >= 1973) |>
-  select(year, country, debt_imp, gini_imputed) |>
-  ggplot(aes(x = debt_imp, y = gini_imputed)) +
-  geom_jitter() +
-  labs(x = "Gini", y = "Density", color = "") +
-  theme_clean()
+  labs(x = "Gini", y = "Density", color = "")
 
 dataset <-
-dataset |>
+  dataset |>
   select(-population) |>
   left_join(wb_population, join_by(iso == country_code, year == year))
 
-write_csv(dataset, "final_dataset.csv")
+write_csv(dataset, "final_dataset_revised.csv")
 
-p_df <- plm::pdata.frame(dataset, index = c("year", "country"))
+#dataset <- read_csv("final_dataset_revised.csv")
+
 
 upper_mid <- filter(dataset, income_group == "Upper middle income")
 high <- filter(dataset, income_group == "High income")
 low <- filter(dataset, income_group == "Low income")
 lower_mid <- filter(dataset, income_group == "Lower middle income")
 
-summary(lm_robust(log(gini_imputed) ~ debt_imp + gdp + lag(gdp) + gdp*debt_imp, data = dataset, fixed_effects =  ~ country + year, se_type = "stata", weights =  population, clusters = country))
-summary(lm_robust(log(gini_imputed) ~ debt_imp + gdp + lag(gdp) + gdp*debt_imp, data = upper_mid, fixed_effects =  ~ country + year, se_type = "stata", weights =  population, clusters = country))
-summary(lm_robust(log(gini_imputed) ~ debt_imp + gdp + lag(gdp) + gdp*debt_imp, data = high, fixed_effects =  ~ country + year, se_type = "stata", weights =  population, clusters = country))
-summary(lm_robust(log(gini_imputed) ~ debt_imp + gdp + lag(gdp) + gdp*debt_imp, data = low, fixed_effects =  ~ country + year, se_type = "stata", weights =  population, clusters = country))
-summary(lm_robust(log(gini_imputed) ~ debt_imp + gdp + lag(gdp) + gdp*debt_imp, data = lower_mid, fixed_effects =  ~ country + year, se_type = "stata", weights =  population, clusters = country))
+summary(lm_robust(log(gini_imputed) ~ debt_imp + gdp_imputed + hc + gdp_imputed * debt_imp, data = dataset, fixed_effects = ~ country + year, se_type = "stata", weights = population_total, clusters = country))
+summary(lm_robust(log(gini_imputed) ~ debt_imp + gdp_imputed + hc + gdp_imputed * debt_imp, data = upper_mid, fixed_effects = ~ country + year, se_type = "stata", weights = population_total, clusters = country))
+summary(lm_robust(log(gini_imputed) ~ debt_imp + gdp_imputed + hc + gdp_imputed * debt_imp, data = high, fixed_effects = ~ country + year, se_type = "stata", weights = population_total, clusters = country))
+summary(lm_robust(log(gini_imputed) ~ debt_imp + gdp_imputed + hc + gdp_imputed * debt_imp, data = low, fixed_effects = ~ country + year, se_type = "stata", weights = population_total, clusters = country))
+summary(lm_robust(log(gini_imputed) ~ debt_imp + gdp_imputed + hc + gdp_imputed * debt_imp, data = lower_mid, fixed_effects = ~ country + year, se_type = "stata", weights = population_total, clusters = country))
 
+fit1 <- lm_robust(log(gini_imputed) ~ debt_imp + gdp_imputed + hc + gdp_imputed*debt_imp, data = dataset, fixed_effects =  ~ country + year, se_type = "stata", weights =  population_total, clusters = country)
+fit2 <- lm_robust(log(gini_imputed) ~ debt_imp + gdp_imputed + hc + gdp_imputed*debt_imp, data = upper_mid, fixed_effects =  ~ country + year, se_type = "stata", weights =  population_total, clusters = country)
+fit3 <- lm_robust(log(gini_imputed) ~ debt_imp + gdp_imputed + hc + gdp_imputed*debt_imp, data = high, fixed_effects =  ~ country + year, se_type = "stata", weights =  population_total, clusters = country)
+fit4 <- lm_robust(log(gini_imputed) ~ debt_imp + gdp_imputed + hc + gdp_imputed*debt_imp, data = low, fixed_effects =  ~ country + year, se_type = "stata", weights =  population_total, clusters = country)
+fit5 <- lm_robust(log(gini_imputed) ~ debt_imp + gdp_imputed + hc + gdp_imputed*debt_imp, data = lower_mid, fixed_effects =  ~ country + year, se_type = "stata", weights =  population_total, clusters = country)
 
 
 fit1 <- lm_robust(gini ~ debt_imp + pl_x + pl_m + independence_dummy + us_pegger_dummy , data = dataset, fixed_effects =  ~ country + year)
@@ -285,3 +288,7 @@ summary(plm(growth ~ debt_imp + pl_x + pl_m, data = p_df, model = "within", effe
 
 g <- plm(inv ~ value + capital, data = Grunfeld, index = c("firm", "year"))
 pcdtest(g)
+
+
+summary(lm_robust(log(gini_imputed) ~ debt_imp + gdp + pl_x + pl_m, data = dataset, fixed_effects =  ~ country + year, se_type = "stata", weights =  population, clusters = country))
+
