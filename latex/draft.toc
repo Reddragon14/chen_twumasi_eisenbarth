@@ -11,7 +11,7 @@
 \contentsline {subsection}{\numberline {4.4}Final Dataset}{7}{subsection.4.4}%
 \contentsline {section}{\numberline {5}Methods \& Results}{9}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Debt and Inequality}{9}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Estimation}{10}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.2}Estimation}{9}{subsection.5.2}%
 \contentsline {subsection}{\numberline {5.3}Dynamic Analysis: ARDL Bounds Testing Approach}{15}{subsection.5.3}%
 \contentsline {subsubsection}{\numberline {5.3.1}Cointegration Evidence}{16}{subsubsection.5.3.1}%
 \contentsline {subsubsection}{\numberline {5.3.2}Long-Run Multipliers}{17}{subsubsection.5.3.2}%

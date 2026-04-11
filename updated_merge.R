@@ -5,16 +5,16 @@ library(zoo)
 
 ##### DATA IMPORTS ####
 
-pwt_raw <- read_dta("C:/Users/ageis/Downloads/pwt110.dta")
+pwt_raw <- read_dta("./data/pwt110.dta")
 
-ggd_raw <- read_csv("C:/Users/ageis/Downloads/dataset_2026-03-29T04_23_18.493273702Z_DEFAULT_INTEGRATION_IMF.FAD_GDD_2.0.0.csv") |>
+ggd_raw <- read_csv("./data/dataset_2026-03-29T04_23_18.493273702Z_DEFAULT_INTEGRATION_IMF.FAD_GDD_2.0.0.csv") |>
   janitor::clean_names()
 
-weo_raw <- read_csv("C:/Users/ageis/Downloads/dataset_2026-03-29T04_18_06.872068379Z_DEFAULT_INTEGRATION_IMF.RES_WEO_9.0.0.csv") |>
+weo_raw <- read_csv("./data/dataset_2026-03-29T04_18_06.872068379Z_DEFAULT_INTEGRATION_IMF.RES_WEO_9.0.0.csv") |>
   janitor::clean_names()
 
-wid_data_p90 <- read_xlsx("C:/Users/ageis/Downloads/WID_Data_29032026-100423.xlsx")
-wid_data_p99 <- read_xlsx("C:/Users/ageis/Downloads/WID_Data_29032026-100548.xlsx")
+wid_data_p90 <- read_xlsx("./data/WID_Data_29032026-100423.xlsx")
+wid_data_p99 <- read_xlsx("./data/WID_Data_29032026-100548.xlsx")
 
 wb_classes <- read_csv("./data/wb_classes.csv") |> janitor::clean_names()
 
@@ -27,7 +27,6 @@ wb_raw <- read_csv("./data/wb_data_new.csv") |>
 
 YEAR_START <- 1950
 YEAR_END <- 2024
-
 
 pwt_vars <- c(
   "rgdpe",
@@ -160,6 +159,7 @@ wid <- wid_data_p90 |>
     by = c("country", "year")
   ) |>
   mutate(country = case_when(
+    country == "Korea" ~ "South Korea",
     country == "Cote d’Ivoire" ~ "Cote d'Ivoire",
     country == "USA" ~ "United States",
     country == "Viet Nam" ~ "Vietnam",
@@ -177,6 +177,14 @@ wid <- wid |>
     .by = c(country, year)
   ) |>
   mutate(across(c(p90p100, p99p100), ~ na_if(.x, NaN)))
+
+wid <- wid |>
+  arrange(country, year) |> 
+  mutate(
+    d_p99 = p99p100 - dplyr::lag(p99p100),
+    d_p90 = p90p100 - dplyr::lag(p90p100),
+    .by = c(country)
+  )
 
 # SWIID GINI
 gini <- gini_raw |>
@@ -216,23 +224,25 @@ wb <- wb_raw |>
   mutate(series_name = wb_series[series_code]) |>
   pivot_longer(starts_with("x"), names_to = "year") |>
   mutate(year = str_extract(year, "\\d{4}") |> as.integer()) |>
-  select(country = country_name, year, series_name, value) |>
-  pivot_wider(names_from = series_name, values_from = value) |>
-  mutate(
-    country = str_replace(country, "(.*),.*", "\\1") |> trimws(),
-    country = case_when(
-      country == "Hong Kong SAR" ~ "Hong Kong",
-      country == "Kyrgyz Republic" ~ "Kyrgyzstan",
-      country == "Lao PDR" ~ "Lao PDR",
-      country == "Macao SAR" ~ "Macao",
-      country == "North Macedonia" ~ "North Macedonia",
-      country == "Slovak Republic" ~ "Slovakia",
-      country == "Syrian Arab Republic" ~ "Syrian Arab Republic",
-      country == "St. Kitts and Nevis" ~ "Saint Kitts and Nevis",
-      country == "St. Lucia" ~ "Saint Lucia",
-      .default = country
-    )
-  ) |>
+  select(iso = country_code, year, series_name, value) |>
+  pivot_wider(names_from = series_name, values_from = value) |> 
+  # mutate(
+  #   country = str_replace(country, "(.*),.*", "\\1") |> trimws(),
+  #   country = case_when(
+  #     country == "Hong Kong SAR" ~ "Hong Kong",
+  #     coumtru == "Korea, Rep." ~ "South Korea",
+  #     country == "Korea, Dem. People's Rep." ~ "North Korea",
+  #     country == "Kyrgyz Republic" ~ "Kyrgyzstan",
+  #     country == "Lao PDR" ~ "Lao PDR",
+  #     country == "Macao SAR" ~ "Macao",
+  #     country == "North Macedonia" ~ "North Macedonia",
+  #     country == "Slovak Republic" ~ "Slovakia",
+  #     country == "Syrian Arab Republic" ~ "Syrian Arab Republic",
+  #     country == "St. Kitts and Nevis" ~ "Saint Kitts and Nevis",
+  #     country == "St. Lucia" ~ "Saint Lucia",
+  #     .default = country
+  #   )
+  # ) |>
   mutate(across(
     c(military_exp, inflation, capital_formation, industry_va, domestic_credit, broad_money),
     ~ .x / 100
@@ -245,7 +255,7 @@ combined <- pwt |>
   left_join(weo, join_by(iso == country_code, year)) |>
   left_join(wid, by = c("country", "year")) |>
   left_join(gini, by = c("country", "year")) |>
-  left_join(wb, by = c("country", "year")) |>
+  left_join(wb, by = c("iso", "year")) |>
   left_join(wb_classes, by = join_by(iso == code)) |>
   filter(year >= YEAR_START, year <= YEAR_END)
 
@@ -264,7 +274,7 @@ combined <- combined |>
       !is.na(pwt_growth) ~ "pwt",
       !is.na(weo_real_gdp_growth) ~ "weo",
     ),
-    growth = coalesce(pwt_growth, weo_real_gdp_growth / 100),
+    growth = coalesce(pwt_growth, weo_real_gdp_growth),
 
     # GDP per capita: PWT to WEO
     gdp_pc_source = case_when(
@@ -272,60 +282,72 @@ combined <- combined |>
       !is.na(weo_gdp_pc_ppp) ~ "weo",
     ),
     gdp_pc = coalesce(pwt_gdp_pc, weo_gdp_pc_ppp),
+    
+    composite_inflation = coalesce(inflation, weo_cpi_inflation),
 
     # Govt expenditure: PWT csh_g to WEO
     govt_exp_source = case_when(
       !is.na(csh_g) ~ "pwt",
       !is.na(weo_govt_exp_pct_gdp) ~ "weo",
     ),
-    govt_expenditure = coalesce(csh_g, weo_govt_exp_pct_gdp / 100),
+    govt_expenditure = coalesce(csh_g, weo_govt_exp_pct_gdp),
 
     # Derived
     nonmil_g = csh_g - military_exp,
     log_gini = log(gini_mean),
   )
 
-longest_run <- combined |>
-  arrange(country, year) |>
+
+# ============================================================
+# CONSECUTIVE RUN ANALYSIS (Chudik et al. minimum T = 30)
+# ============================================================
+
+MIN_CONSEC <- 30
+
+joint_coverage <- combined |>
+  arrange(iso, year) |>
   mutate(
-    has_growth = !is.na(growth),
-    run_id = consecutive_id(has_growth),
-    .by = country
+    has_triad = !is.na(public_debt) & !is.na(growth) & !is.na(p90p100),
+    run_id = consecutive_id(has_triad),
+    .by = iso
   ) |>
-  filter(has_growth) |>
+  filter(has_triad) |>
   summarize(
     run_length = n(),
     run_start = min(year),
     run_end = max(year),
-    .by = c(country, run_id)
+    .by = c(iso, country, income_group, run_id)
   ) |>
-  slice_max(run_length, n = 1, by = country)
+  slice_max(run_length, n = 1, by = iso, with_ties = FALSE)
 
-longest_run_growth <- longest_run |>
-  filter(run_start <= 1980) |>
-  pull(country)
-
-longest_run <- combined |>
-  arrange(country, year) |>
-  mutate(
-    has_debt = !is.na(public_debt),
-    run_id = consecutive_id(has_debt),
-    .by = country
-  ) |>
-  filter(has_debt) |>
+joint_coverage |>
   summarize(
-    run_length = n(),
-    run_start = min(year),
-    run_end = max(year),
-    .by = c(country, run_id)
+    n = n(),
+    .by = cut(run_length, c(0, 9, 14, 19, 24, 29, 34, Inf),
+      labels = c("<10", "10-14", "15-19", "20-24", "25-29", "30-34", "35+")
+    )
   ) |>
-  slice_max(run_length, n = 1, by = country)
+  arrange(`cut(...)`)
 
-longest_run_debt <- longest_run |>
-  filter(run_start <= 1985) |>
+final_countries <- joint_coverage |>
+  filter(run_length >= MIN_CONSEC) |>
   pull(country)
 
-final_countries <- intersect(longest_run_debt, longest_run_growth)
+all_countries <- distinct(combined, country)
+
+cat("Countries with >=", MIN_CONSEC, "consecutive years:", length(final_countries), "\n")
+excluded_countries <- filter(all_countries, !country %in% final_countries)
+
+joint_coverage |>
+  filter(run_length >= MIN_CONSEC) |>
+  count(income_group, name = "n_countries") |>
+  print()
+
+joint_coverage |>
+  filter(run_length >= MIN_CONSEC) |>
+  arrange(income_group, country) |>
+  select(iso, country, income_group, run_length, run_start, run_end) |>
+  print(n = 120)
 
 # IMPUTATION
 impute_vars <- c(
@@ -336,19 +358,28 @@ impute_vars <- c(
   "weo_cpi_inflation",
   "p90p100",
   "p99p100",
-  "trade_openness"
+  "trade_openness",
+  "composite_inflation"
 )
 
-combined_filtered <-
-  combined |>
-  filter(year >= 1980, country %in% final_countries)
+combined_filtered <- combined |>
+  filter(iso %in% chudik_countries) |>
+  semi_join(
+    joint_coverage |> filter(run_length >= MIN_CONSEC),
+    by = "iso"
+  ) |>
+  left_join(
+    joint_coverage |>
+      filter(run_length >= MIN_CONSEC) |>
+      select(iso, run_start, run_end),
+    by = "iso"
+  ) |>
+  filter(year >= run_start, year <= run_end) |>
+  select(-run_start, -run_end)
 
 for (v in intersect(impute_vars, names(combined_filtered))) {
   combined_filtered <- combined_filtered |>
-    mutate(
-      !!v := imputeTS::na_ma(!!sym(v), k = 2),
-      .by = iso
-    )
+    mutate(!!v := imputeTS::na_ma(!!sym(v), k = 2), .by = iso)
 }
 
 final <- combined_filtered |>
@@ -365,6 +396,8 @@ final <- combined_filtered |>
     govt_expenditure,
     p90p100,
     p99p100,
+    d_p90,
+    d_p99,
     gini = gini_mean,
     gini_sd,
     log_gini,
@@ -377,6 +410,8 @@ final <- combined_filtered |>
     weo_gross_debt,
     weo_real_gdp_growth,
     weo_cpi_inflation,
+    inflation,
+    composite_inflation,
     weo_gdp_ppp,
     weo_gdp_pc_ppp,
     weo_govt_exp_pct_gdp,
@@ -404,7 +439,6 @@ final <- combined_filtered |>
     ck,
     cn,
     military_exp,
-    inflation,
     life_exp,
     capital_formation,
     industry_va,
@@ -416,8 +450,5 @@ final <- combined_filtered |>
 
 cat("Countries:", n_distinct(final$country), "\n")
 cat("Observations:", nrow(final), "\n")
-cat("Years:", 1980, "-", YEAR_END, "\n")
 
-write_csv(final, "updated_raw_dataset.csv")
-
-style_file("updated_merge.R", style = tidyverse_style)
+write_csv(final, "updated_dataset.csv")

@@ -1,50 +1,62 @@
-This is BibTeX, Version 0.99d
+This is BibTeX, Version 0.99e
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: draft.aux
 Reallocating 'name_of_file' (item size: 1) to 4 items.
 The style file: aea.bst
 Reallocating 'name_of_file' (item size: 1) to 11 items.
 Database file #1: references.bib
-Warning--I didn't find a database entry for "Ramey2021"
-You've used 54 entries,
+Repeated entry---line 1751 of file references.bib
+ : @techreport{HarmsKnaze2021
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1769 of file references.bib
+ : @article{IlzetzkiReinhartRogoff2019
+ :                                    ,
+I'm skipping whatever remains of this entry
+Warning--empty publisher in AlvaradoEtAl2013
+Warning--empty journal in DablaEtAl2015
+Warning--there's a number but no volume in DablaEtAl2015
+Warning--empty journal in MbayeMorenoBadiaChae2018
+Warning--there's a number but no volume in MbayeMorenoBadiaChae2018
+You've used 83 entries,
             2695 wiz_defined-function locations,
-            983 strings with 13174 characters,
-and the built_in function-call counts, 333491 in all, are:
-= -- 55846
-> -- 3669
-< -- 0
-+ -- 27027
-- -- 1151
-* -- 29929
-:= -- 64979
-add.period$ -- 377
-call.type$ -- 54
-change.case$ -- 702
-chr.to.int$ -- 54
-cite$ -- 54
-duplicate$ -- 817
-empty$ -- 2227
-format.name$ -- 1160
-if$ -- 60012
-int.to.chr$ -- 5
+            1164 strings with 17656 characters,
+and the built_in function-call counts, 504716 in all, are:
+= -- 84516
+> -- 5477
+< -- 2
++ -- 40930
+- -- 1715
+* -- 45237
+:= -- 98463
+add.period$ -- 579
+call.type$ -- 83
+change.case$ -- 1079
+chr.to.int$ -- 82
+cite$ -- 88
+duplicate$ -- 1254
+empty$ -- 3334
+format.name$ -- 1736
+if$ -- 90765
+int.to.chr$ -- 6
 int.to.str$ -- 0
 missing$ -- 0
-newline$ -- 169
-num.names$ -- 596
-pop$ -- 62
+newline$ -- 256
+num.names$ -- 917
+pop$ -- 91
 preamble$ -- 1
-purify$ -- 810
+purify$ -- 1245
 quote$ -- 0
-skip$ -- 695
+skip$ -- 1088
 stack$ -- 0
-substring$ -- 80141
-swap$ -- 345
-text.length$ -- 756
+substring$ -- 121250
+swap$ -- 538
+text.length$ -- 1164
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 208
-warning$ -- 0
-while$ -- 1372
+type$ -- 310
+warning$ -- 5
+while$ -- 2084
 width$ -- 0
-write$ -- 273
-(There was 1 warning)
+write$ -- 421
+(There were 2 error messages)
