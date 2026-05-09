@@ -3,15 +3,11 @@ library(estimatr)
 library(stargazer)
 library(plm)
 
-dataset = read_csv("final_dataset.csv")
-
+dataset = read_csv("updated_dataset.csv")
 
 dataset |>
   group_by(income_group) |>
   distinct(country) -> countries
-
-write_csv(countries, "countries.csv")
-  
 
 ns <-
 dataset |>
@@ -69,8 +65,3 @@ ts <- zoo::zooreg(data = full_data, start = 1973, end = 2019)
 models <- ARDL::auto_ardl(gdp ~ debt_imp, data = ts, max_order = 5)
 models$best_order
 models$best_model
-
-
-
-
-\Delta y_{it} = a_{i} + \sum\limits_{\iota = 1}^{n} \gamma_{i\iota}\Delta y_{i, t - l} + \sum\limits_{l = 0}^{n}\mathbf{\beta_{il}}\mathbf{x}_{i, t - \iota} + u_{it}

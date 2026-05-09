@@ -16,7 +16,23 @@ weo_raw <- read_csv("./data/dataset_2026-03-29T04_18_06.872068379Z_DEFAULT_INTEG
 wid_data_p90 <- read_xlsx("./data/WID_Data_29032026-100423.xlsx")
 wid_data_p99 <- read_xlsx("./data/WID_Data_29032026-100548.xlsx")
 
-wb_classes <- read_csv("./data/wb_classes.csv") |> janitor::clean_names()
+wb_classes <- read_csv("./data/who_analytical_history.csv")
+
+wb_classes <- wb_classes |>
+  pivot_longer(cols = -c(country_code, country), names_to = "year", values_to = "class") |>
+  filter(class %in% c("L", "LM", "LM*", "UM", "H")) |>
+  mutate(income_group = case_when(
+    class == "L"              ~ "Low income",
+    class %in% c("LM", "LM*") ~ "Lower middle income",
+    class == "UM"             ~ "Upper middle income",
+    class == "H"              ~ "High income"
+  )) |>
+  count(country_code, country, income_group) |>
+  slice_max(n, n = 1, by = country_code, with_ties = FALSE) |>
+  select(code = country_code, income_group)
+
+wb_regions <- read_csv("./data/wb_classes.csv") |> janitor::clean_names() |>
+  select(-c(economy, income_group))
 
 gini_raw <- read_dta("./data/swiid9_91.dta") |>
   select(country, year, 4:103)
@@ -248,7 +264,6 @@ wb <- wb_raw |>
     ~ .x / 100
   ))
 
-
 # MERGE
 combined <- pwt |>
   left_join(ggd, join_by(iso == country_code, year)) |>
@@ -320,20 +335,11 @@ joint_coverage <- combined |>
   ) |>
   slice_max(run_length, n = 1, by = iso, with_ties = FALSE)
 
-joint_coverage |>
-  summarize(
-    n = n(),
-    .by = cut(run_length, c(0, 9, 14, 19, 24, 29, 34, Inf),
-      labels = c("<10", "10-14", "15-19", "20-24", "25-29", "30-34", "35+")
-    )
-  ) |>
-  arrange(`cut(...)`)
-
 final_countries <- joint_coverage |>
   filter(run_length >= MIN_CONSEC) |>
   pull(country)
 
-all_countries <- distinct(combined, country)
+all_countries <- distinct(combined, country, iso)
 
 cat("Countries with >=", MIN_CONSEC, "consecutive years:", length(final_countries), "\n")
 excluded_countries <- filter(all_countries, !country %in% final_countries)
@@ -363,7 +369,7 @@ impute_vars <- c(
 )
 
 combined_filtered <- combined |>
-  filter(iso %in% chudik_countries) |>
+#  filter(country %in% chudik_countries) |> 
   semi_join(
     joint_coverage |> filter(run_length >= MIN_CONSEC),
     by = "iso"
@@ -383,6 +389,7 @@ for (v in intersect(impute_vars, names(combined_filtered))) {
 }
 
 final <- combined_filtered |>
+  left_join(wb_regions, join_by(iso == code)) |> 
   transmute(
     year,
     iso,

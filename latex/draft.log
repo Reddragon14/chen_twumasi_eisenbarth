@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.7)  27 APR 2026 20:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.7)  6 MAY 2026 21:58
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -801,35 +801,28 @@ LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
 (Font)              scaled to size 12.0pt on input line 236.
  [9] [10] [11]
-LaTeX Font Info:    Font shape `T1/NimbusSerif/m/n' will be
-(Font)              scaled to size 10.95pt on input line 292.
 LaTeX Font Info:    Font shape `T1/NimbusSerif/b/n' will be
-(Font)              scaled to size 10.95pt on input line 295.
-LaTeX Font Info:    Font shape `T1/NimbusSerif/m/it' will be
-(Font)              scaled to size 10.0pt on input line 331.
-
-Overfull \hbox (28.5478pt too wide) in paragraph at lines 290--334
- [] 
- []
-
+(Font)              scaled to size 8.0pt on input line 295.
 <C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/total_government_debt_icg.p
-ng, id=509, 505.89pt x 361.35pt>
+ng, id=511, 505.89pt x 361.35pt>
 File: C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/total_government_debt_
 icg.png Graphic file (type png)
 <use C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/total_government_debt_i
 cg.png>
 Package pdftex.def Info: C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/tot
-al_government_debt_icg.png  used on input line 348.
+al_government_debt_icg.png  used on input line 360.
 (pdftex.def)             Requested size: 426.79134pt x 304.85522pt.
-[12] [13]
-<C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/figure2.png, id=520, 505.89
+ [12] [13]
+<C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/figure2.png, id=522, 505.89
 pt x 361.35pt>
 File: C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/figure2.png Graphic fi
 le (type png)
 <use C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/figure2.png>
 Package pdftex.def Info: C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/fig
-ure2.png  used on input line 361.
+ure2.png  used on input line 373.
 (pdftex.def)             Requested size: 426.79134pt x 304.85522pt.
+LaTeX Font Info:    Font shape `T1/NimbusSerif/m/it' will be
+(Font)              scaled to size 10.0pt on input line 412.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -841,31 +834,31 @@ Overfull \vbox (0.32181pt too high) has occurred while \output is active []
 
 [16] [17]
 <C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/figure_ME_GDP_debt_panels.p
-ng, id=554, 867.24pt x 578.16pt>
+ng, id=556, 867.24pt x 578.16pt>
 File: C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/figure_ME_GDP_debt_pan
 els.png Graphic file (type png)
 <use C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/figure_ME_GDP_debt_pane
 ls.png>
 Package pdftex.def Info: C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/fig
-ure_ME_GDP_debt_panels.png  used on input line 505.
+ure_ME_GDP_debt_panels.png  used on input line 517.
 (pdftex.def)             Requested size: 426.79134pt x 284.52713pt.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
-(Font)              `T1/Roboto-LF/regular/n' on input line 506.
+(Font)              `T1/Roboto-LF/regular/n' on input line 518.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
-(Font)              scaled to size 10.0pt on input line 506.
+(Font)              scaled to size 10.0pt on input line 518.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/it' aliased to
-(Font)              `T1/Roboto-LF/regular/it' on input line 506.
+(Font)              `T1/Roboto-LF/regular/it' on input line 518.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/it' will be
-(Font)              scaled to size 10.0pt on input line 506.
+(Font)              scaled to size 10.0pt on input line 518.
  [18] [19 <C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/figure_ME_GDP_deb
 t_panels.png>]
-Overfull \hbox (0.68456pt too wide) in paragraph at lines 518--519
+Overfull \hbox (0.68456pt too wide) in paragraph at lines 530--531
 \T1/NimbusSerif/m/n/12 While the fixed-effects es-ti-mates pro-vide use-ful bas
 e-line as-so-ci-a-tions be-tween debt, growth,
  []
 
 
-Overfull \hbox (85.43973pt too wide) detected at line 525
+Overfull \hbox (85.43973pt too wide) detected at line 537
 [][][]\OT1/cmr/m/n/12 ^^A\OML/cmm/m/it/12 y[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/1
 2  \OT1/cmr/m/n/12 + [] \OML/cmm/m/it/12 ^^^[]\OT1/cmr/m/n/12 ^^A\OML/cmm/m/it
 /12 y[] \OT1/cmr/m/n/12 + [] \OML/cmm/m/it/12 ^^L[]\OT1/cmr/m/n/12 ^^A\OML/cmm/
@@ -876,14 +869,19 @@ OML/cmm/m/it/12 h[] \OT1/cmr/m/n/12 + [] \OML/cmm/m/it/12 ^^L[]\OT1/cmr/m/n/12
 [] + \OML/cmm/m/it/12 ^^U[][] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 "[]
  []
 
-[20] [21] [22] [23] [24]
-Overfull \hbox (5.80728pt too wide) in paragraph at lines 741--742
+[20]
+LaTeX Font Info:    Font shape `T1/NimbusSerif/m/n' will be
+(Font)              scaled to size 10.95pt on input line 552.
+LaTeX Font Info:    Font shape `T1/NimbusSerif/b/n' will be
+(Font)              scaled to size 10.95pt on input line 555.
+ [21] [22] [23] [24]
+Overfull \hbox (5.80728pt too wide) in paragraph at lines 753--754
 \T1/NimbusSerif/m/n/12 A cen-tral mo-ti-va-tion for this study is the hy-poth-e
 -sis that coun-tries with mon-e-tary sovereignty,
  []
 
 [25] [26]
-Overfull \hbox (15.38454pt too wide) in paragraph at lines 819--820
+Overfull \hbox (15.38454pt too wide) in paragraph at lines 831--832
 \T1/NimbusSerif/m/n/12 sovereignty en-ables poli-cies whose re-dis-tribu-tive b
 en-e-fits ma-te-ri-al-ize only grad-u-ally^^Vthrough
  []
@@ -930,11 +928,11 @@ Package rerunfilecheck Info: File `draft.out' has not changed.
 (rerunfilecheck)             Checksum: 2B5EFF39EF9785BF07EDC055E9A32FC5;5068.
  ) 
 Here is how much of TeX's memory you used:
- 16138 strings out of 467867
- 270151 string characters out of 5418335
+ 16139 strings out of 467867
+ 270171 string characters out of 5418335
  691105 words of memory out of 5000000
- 44557 multiletter control sequences out of 15000+600000
- 744841 words of font info for 116 fonts, out of 8000000 for 9000
+ 44558 multiletter control sequences out of 15000+600000
+ 747955 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,117p,3111b,749s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
@@ -968,9 +966,9 @@ is/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/ztm-Med.pfb><C:/Us
 ers/ageis/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/ztm-Reg.pfb
 ><C:/Users/ageis/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/ztm-
 RegIta.pfb>
-Output written on draft.pdf (37 pages, 3612057 bytes).
+Output written on draft.pdf (37 pages, 3613160 bytes).
 PDF statistics:
- 822 PDF objects out of 1000 (max. 8388607)
+ 824 PDF objects out of 1000 (max. 8388607)
  182 named destinations out of 1000 (max. 500000)
  266 words of extra memory for PDF output out of 10000 (max. 10000000)
 

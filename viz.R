@@ -24,6 +24,31 @@ rhythm <- "#6E758E"
 
 ggthemr::ggthemr(palette = 'greyscale', layout = "clean")
 
+custom_theme <- function() {
+  theme(
+    text              = element_text(family = "Arial", colour = "#111111"),
+    plot.title        = element_text(size = 11, face = "plain", colour = "#111111",
+                                     margin = margin(b = 4)),
+    plot.subtitle     = element_text(size = 9, colour = "#111111", lineheight = 1.4,
+                                     margin = margin(b = 14)),
+    plot.caption      = element_text(size = 8, colour = "#111111", hjust = 0,
+                                     margin = margin(t = 10)),
+    plot.background   = element_rect(fill = "white", colour = NA),
+    panel.background  = element_rect(fill = "white", colour = NA),
+    panel.border      = element_blank(),
+    axis.line         = element_line(colour = "#111111", linewidth = 0.4),
+    axis.ticks        = element_line(colour = "#111111", linewidth = 0.35),
+    axis.ticks.length = unit(-5, "pt"),
+    axis.title        = element_text(size = 9, colour = "#111111"),
+    axis.text         = element_text(size = 8, colour = "#111111"),
+    legend.background = element_rect(fill = "white", colour = NA),
+    legend.position = "bottom",
+    legend.key        = element_rect(fill = NA, colour = NA),
+    legend.title      = element_text(size = 8, colour = "#111111"),
+    legend.text       = element_text(size = 8, colour = "#111111"),
+    plot.margin       = margin(16, 20, 12, 16)
+  )
+}
 
 wb_classes <- read_csv("./data/wb_classes.csv") |> janitor::clean_names() |>
   select(-economy)
