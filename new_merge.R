@@ -1,6 +1,4 @@
-library(dplyr)
 library(tidyverse)
-library(ggplot2)
 library(extrafont)
 library(ggh4x)
 library(ggthemes)
@@ -13,7 +11,7 @@ library(feasts)
 library(tsibble)
 library(feasts)
 
-ggthemr::ggthemr(palette = "greyscale", line_weight = 0.5, layout = "clean",type = "outer")
+ggthemr::ggthemr(palette = "greyscale", line_weight = 0.5, layout = "clean", type = "outer")
 
 redwood <- "#B23A48"
 delft <- "#35415A"
@@ -24,8 +22,10 @@ sea <- "#388659"
 
 #' load in data
 df <- read_csv("./data/merged_debt.csv") |>
-  rename(iso = countrycode,
-         ifs = ifscode)
+  rename(
+    iso = countrycode,
+    ifs = ifscode
+  )
 #' institutional data
 defacto <- readxl::read_xlsx("./data/defacto_regimes.xlsx")
 dejure <- readxl::read_xlsx("./data/dejure_regimes.xlsx")
@@ -34,8 +34,10 @@ wb_classes <- read_csv("./data/wb_classes.csv") %>% janitor::clean_names()
 #' find out which countries have the most missing debt data
 missing_debt <-
   df |>
-  summarize(missing_obs = sum(is.na(gg)),
-            .by = c(country, iso, ifs))
+  summarize(
+    missing_obs = sum(is.na(gg)),
+    .by = c(country, iso, ifs)
+  )
 
 tbl <-
   df |>
@@ -55,7 +57,7 @@ missing_debt <-
     .by = c(country, iso)
   )
 
-excluded <- filter(missing_debt, missing_obs_gg > 20 , missing_obs_cg > 30, !country %in% c("China", "Peru", "Ecuador", "Phillipines", "Venezuela"))
+excluded <- filter(missing_debt, missing_obs_gg > 20, missing_obs_cg > 30, !country %in% c("China", "Peru", "Ecuador", "Phillipines", "Venezuela"))
 
 excluded_countries <- unique(excluded$country)
 
@@ -74,7 +76,10 @@ data_df <- filter(tbl, !country %in% c(excluded_countries)) |>
   left_join(wb_classes, by = join_by(iso == code)) |>
   relocate(c(region, income_group, lending_category), .after = country)
 
-included_countries <- distinct(data_df, country,) %>% left_join(defacto) %>% filter(year >= 2015) %>% distinct(country)
+included_countries <- distinct(data_df, country, ) %>%
+  left_join(defacto) %>%
+  filter(year >= 2015) %>%
+  distinct(country)
 
 data_df |>
   select(year, country, income_group, debt, debt_imp) |>
@@ -85,12 +90,14 @@ data_df |>
   scale_x_continuous(labels = scales::percent_format(), guide = "axis_minor") +
   scale_color_manual(values = c("darkgrey", "red"), labels = c("Original", "Imputed")) +
   labs(x = "Debt", y = "Density", color = "") +
-  facet_wrap(~ income_group, scales = "free")
+  facet_wrap(~income_group, scales = "free")
 
 
 data_df |>
-  as_tsibble(index = year,
-             key = c(ifs, iso, country)) -> ts
+  as_tsibble(
+    index = year,
+    key = c(ifs, iso, country)
+  ) -> ts
 
 ts |>
   ggplot(aes(x = year, y = growth_imp, group = country)) +
@@ -112,18 +119,18 @@ outliers <- ts_decomp |>
     .by = country
   ) |>
   filter(remainder < lower |
-           remainder > upper) |>
+    remainder > upper) |>
   transmute(country, year, outlier = TRUE)
 
 ts |>
   anti_join(outliers) |>
   fill_gaps() -> ts_df
-  
+
 ts_df %>%
   ggplot(aes(x = year, y = growth_imp, group = country)) +
   geom_line() +
   scale_y_continuous() +
-  facet_wrap( ~ region, scales = "free")
+  facet_wrap(~region, scales = "free")
 
 chudik <- read_csv("./data/chudik_countries.csv") %>% janitor::clean_names()
 chudik_countries <- unique(chudik$country)
@@ -136,11 +143,11 @@ distinct(chudik_df, country, iso) -> nations
 maddison <- haven::read_dta("./data/mpd2020.dta") %>%
   select(year, iso = countrycode, rgdpc = gdppc, population = pop)
 
-maddison_countries <- distinct(maddison, iso) 
+maddison_countries <- distinct(maddison, iso)
 
 distinct(data_df, country, iso) -> final_countries
 
-inner_join(final_countries, maddison_countries) %>% 
+inner_join(final_countries, maddison_countries) %>%
   select(iso) %>%
   as_vector() -> matching_countries
 
@@ -155,12 +162,15 @@ nations |>
   left_join(maddison) |>
   filter(year >= 1950) |>
   transmute(year,
-            country, 
-            iso, 
-            rgdpc,
-            population = population * 1000) |>
-  mutate(growth =  (rgdpc - lag(rgdpc)) / lag(rgdpc),
-         log_growth  = log(rgdpc / lag(rgdpc)), .by = country) -> chudik_gdp
+    country,
+    iso,
+    rgdpc,
+    population = population * 1000
+  ) |>
+  mutate(
+    growth = (rgdpc - lag(rgdpc)) / lag(rgdpc),
+    log_growth = log(rgdpc / lag(rgdpc)), .by = country
+  ) -> chudik_gdp
 
 distinct(chudik_gdp, country, iso) |>
   mutate(has_gdp = TRUE) -> has_growth
@@ -177,7 +187,7 @@ chudik_df |>
   scale_x_continuous(labels = scales::percent_format(), guide = "axis_minor") +
   scale_color_manual(values = c("darkgrey", "red"), labels = c("Original", "Imputed")) +
   labs(x = "Debt", y = "Density", color = "")
-  
+
 chudik_df |>
   select(year, country, growth, growth_imp, growth_arima) |>
   pivot_longer(cols = c(growth, growth_imp, growth_arima)) |>
@@ -202,24 +212,30 @@ columns_to_drop <-
   )
 
 chudik_data <-
-  select(chudik_df, -any_of(columns_to_drop)) |> left_join(maddison) |>
+  select(chudik_df, -any_of(columns_to_drop)) |>
+  left_join(maddison) |>
   mutate(
-    growth =  (rgdpc - lag(rgdpc)) / lag(rgdpc),
-    log_growth  = log(rgdpc / lag(rgdpc)),
+    growth = (rgdpc - lag(rgdpc)) / lag(rgdpc),
+    log_growth = log(rgdpc / lag(rgdpc)),
     .by = country
   )
 
 full_data <-
-  select(data_df, -any_of(columns_to_drop)) |> left_join(maddison) |>
+  select(data_df, -any_of(columns_to_drop)) |>
+  left_join(maddison) |>
   mutate(
-    growth =  (rgdpc - lag(rgdpc)) / lag(rgdpc),
-    log_growth  = log(rgdpc / lag(rgdpc)),
+    growth = (rgdpc - lag(rgdpc)) / lag(rgdpc),
+    log_growth = log(rgdpc / lag(rgdpc)),
     .by = country
   )
 
-final_selected_countries <- full_data  %>% distinct(country) %>%  pull(country)
+final_selected_countries <- full_data %>%
+  distinct(country) %>%
+  pull(country)
 
-excluded_countries_classifications <- tibble(country = excluded_countries)  %>% left_join(countrycodes) %>% left_join(wb_classes, join_by(countrycode == code))
+excluded_countries_classifications <- tibble(country = excluded_countries) %>%
+  left_join(countrycodes) %>%
+  left_join(wb_classes, join_by(countrycode == code))
 
 
 write_csv(full_data, "full_final_dataset.csv")
@@ -227,8 +243,8 @@ write_csv(chudik_data, "chudik_final_dataset.csv")
 
 chudik_data |>
   mutate(
-    growth_imp = imputeTS::na_kalman(growth),.by = country
-  )  |> 
+    growth_imp = imputeTS::na_kalman(growth), .by = country
+  ) |>
   filter(iso %in% matching_countries) |>
   select(year, country, region, growth, growth_imp) |>
   pivot_longer(cols = c(growth, growth_imp)) |>
@@ -242,15 +258,15 @@ chudik_data |>
 full_data |>
   filter(iso %in% matching_countries) |>
   mutate(
-    growth_imp = imputeTS::na_kalman(growth),.by = country
-  )  |> 
+    growth_imp = imputeTS::na_kalman(growth), .by = country
+  ) |>
   select(year, country, region, growth, growth_imp) |>
   pivot_longer(cols = c(growth, growth_imp)) |>
   ggplot(aes(x = value, color = name)) +
   stat_density(geom = "line", position = "identity") +
   scale_x_continuous(labels = scales::percent_format(), guide = "axis_minor") +
   scale_color_manual(values = c("darkgrey", "red"), labels = c("Original", "Imputed")) +
-  labs(x = "Growth", y = "Density", color = "") 
+  labs(x = "Growth", y = "Density", color = "")
 
 
 ts <- zoo::zooreg(data = chudik_df, start = 1950, end = 2019)
@@ -260,7 +276,9 @@ models$best_order
 models$best_model
 
 
-wb_data_new <- read_csv("data/wb_data_new.csv") |> janitor::clean_names() |> filter(!is.na(country_code))
+wb_data_new <- read_csv("data/wb_data_new.csv") |>
+  janitor::clean_names() |>
+  filter(!is.na(country_code))
 
 distinct(wb_data_new, series_name, series_code) -> wb_vars
 
@@ -295,37 +313,43 @@ wb_vars |>
 
 wb_data <-
   wb_data_new |>
-  pivot_longer(names_to = "year",
-               cols = 5:67) |>
+  pivot_longer(
+    names_to = "year",
+    cols = 5:67
+  ) |>
   left_join(wb_vars) |>
   select(-c(series_name, series_code)) |>
   pivot_wider(names_from = variable_name) |>
   mutate(year = seq(1960, 2022, by = 1), .by = country_code) %>%
-  mutate(country_name = 
-           case_when(country_name == "Egypt, Arab Rep." ~ "Egypt",
-                     country_name == "Gambia, The" ~ "Gambia",
-                     country_name == "Hong Kong SAR, China" ~ "Hong Kong",
-                     country_name == "Korea, Rep." ~ "South Korea",
-                     country_name == "Iran, Islamic Rep." ~ "Iran",
-                     country_name == "Lao PDR" ~ "Laos",
-                     country_name == "Turkiye" ~ "Turkey",
-                     country_name == "Venezuela, RB" ~ "Venezuela",
-                     TRUE ~ country_name)) |> 
-  rename(country = country_name) |> 
+  mutate(
+    country_name =
+      case_when(
+        country_name == "Egypt, Arab Rep." ~ "Egypt",
+        country_name == "Gambia, The" ~ "Gambia",
+        country_name == "Hong Kong SAR, China" ~ "Hong Kong",
+        country_name == "Korea, Rep." ~ "South Korea",
+        country_name == "Iran, Islamic Rep." ~ "Iran",
+        country_name == "Lao PDR" ~ "Laos",
+        country_name == "Turkiye" ~ "Turkey",
+        country_name == "Venezuela, RB" ~ "Venezuela",
+        TRUE ~ country_name
+      )
+  ) |>
+  rename(country = country_name) |>
   mutate(country = gsub("(.*),.*", "\\1", country)) |>
   mutate(
     country = case_when(
-      country == "Hong Kong SAR"          ~ "Hong Kong",
-      country == "Kyrgyz Republic"        ~ "Kyrgyzstan",
-      country == "Lao PDR"                ~ "Laos",
-      country == "Macao SAR"              ~ "Macao",
-      country == "North Macedonia"        ~ "Macedonia",
-      country == "Slovak Republic"        ~ "Slovakia",
-      country == "Syrian Arab Republic"   ~ "Syria",
-      country == "St. Kitts and Nevis"    ~ "Saint Kitts and Nevis",
-      country == "St. Lucia"              ~ "Saint Lucia",
-      country == "USA"                    ~ "United States",
-      country == "Viet Nam"               ~ "Vietnam",
+      country == "Hong Kong SAR" ~ "Hong Kong",
+      country == "Kyrgyz Republic" ~ "Kyrgyzstan",
+      country == "Lao PDR" ~ "Laos",
+      country == "Macao SAR" ~ "Macao",
+      country == "North Macedonia" ~ "Macedonia",
+      country == "Slovak Republic" ~ "Slovakia",
+      country == "Syrian Arab Republic" ~ "Syria",
+      country == "St. Kitts and Nevis" ~ "Saint Kitts and Nevis",
+      country == "St. Lucia" ~ "Saint Lucia",
+      country == "USA" ~ "United States",
+      country == "Viet Nam" ~ "Vietnam",
       TRUE ~ as.character(country)
     ),
   ) |>
@@ -342,11 +366,12 @@ wb_data <-
 world_bank_data <-
   wb_data %>%
   select(year,
-         country = country_name,
-         imports,
-         exports,
-         population_total)
-  
+    country = country_name,
+    imports,
+    exports,
+    population_total
+  )
+
 wb_data |>
   mutate(across(
     c(

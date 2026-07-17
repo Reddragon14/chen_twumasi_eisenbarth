@@ -265,10 +265,11 @@ wb <- wb_raw |>
   ))
 
 # MERGE
-combined <- pwt |>
+combined <-
+  wid |>
+  left_join(pwt, by = c("country", "year")) |>
   left_join(ggd, join_by(iso == country_code, year)) |>
   left_join(weo, join_by(iso == country_code, year)) |>
-  left_join(wid, by = c("country", "year")) |>
   left_join(gini, by = c("country", "year")) |>
   left_join(wb, by = c("iso", "year")) |>
   left_join(wb_classes, by = join_by(iso == code)) |>
@@ -312,50 +313,38 @@ combined <- combined |>
     log_gini = log(gini_mean),
   )
 
+write_csv(combined, "initial_data.csv")
 
-# ============================================================
-# CONSECUTIVE RUN ANALYSIS (Chudik et al. minimum T = 30)
-# ============================================================
 
-MIN_CONSEC <- 30
+PANEL_T     <- 30
+MISS_THRESH <- 0.20
+MIN_OBS     <- ceiling(PANEL_T * (1 - MISS_THRESH))
 
-joint_coverage <- combined |>
-  arrange(iso, year) |>
+gate_vars <- c("p90p100", "public_debt", "growth")
+
+window_search <- tibble(start = min(combined$year):(max(combined$year) - PANEL_T + 1)) |>
   mutate(
-    has_triad = !is.na(public_debt) & !is.na(growth) & !is.na(p90p100),
-    run_id = consecutive_id(has_triad),
-    .by = iso
+    n_countries = map_int(start, \(s) {
+      combined |>
+        filter(year >= s, year < s + PANEL_T) |>
+        summarize(across(all_of(gate_vars), ~ sum(!is.na(.x))), .by = iso) |>
+        filter(if_all(all_of(gate_vars), ~ .x >= MIN_OBS)) |>
+        nrow()
+    }),
+    end = start + PANEL_T - 1
   ) |>
-  filter(has_triad) |>
-  summarize(
-    run_length = n(),
-    run_start = min(year),
-    run_end = max(year),
-    .by = c(iso, country, income_group, run_id)
-  ) |>
-  slice_max(run_length, n = 1, by = iso, with_ties = FALSE)
+  arrange(desc(n_countries), start)
 
-final_countries <- joint_coverage |>
-  filter(run_length >= MIN_CONSEC) |>
-  pull(country)
 
-all_countries <- distinct(combined, country, iso)
+WINDOW_START <- 1974
+WINDOW_END   <- 2019
 
-cat("Countries with >=", MIN_CONSEC, "consecutive years:", length(final_countries), "\n")
-excluded_countries <- filter(all_countries, !country %in% final_countries)
+kept <- combined |>
+  filter(year >= WINDOW_START, year <= WINDOW_END) |>
+  summarize(across(all_of(gate_vars), ~ sum(!is.na(.x))), .by = iso) |>
+  filter(if_all(all_of(gate_vars), ~ .x >= MIN_OBS)) |>
+  pull(iso)
 
-joint_coverage |>
-  filter(run_length >= MIN_CONSEC) |>
-  count(income_group, name = "n_countries") |>
-  print()
-
-joint_coverage |>
-  filter(run_length >= MIN_CONSEC) |>
-  arrange(income_group, country) |>
-  select(iso, country, income_group, run_length, run_start, run_end) |>
-  print(n = 120)
-
-# IMPUTATION
 impute_vars <- c(
   "public_debt",
   "growth",
@@ -369,24 +358,19 @@ impute_vars <- c(
 )
 
 combined_filtered <- combined |>
-#  filter(country %in% chudik_countries) |> 
-  semi_join(
-    joint_coverage |> filter(run_length >= MIN_CONSEC),
-    by = "iso"
-  ) |>
-  left_join(
-    joint_coverage |>
-      filter(run_length >= MIN_CONSEC) |>
-      select(iso, run_start, run_end),
-    by = "iso"
-  ) |>
-  filter(year >= run_start, year <= run_end) |>
-  select(-run_start, -run_end)
+  filter(year >= WINDOW_START, year <= WINDOW_END, iso %in% kept) |>
+  arrange(iso, year) |>
+  mutate(
+    across(
+      all_of(intersect(impute_vars, names(combined))),
+      ~ imputeTS::na_locf(.x, na_remaining = "rev")
+    ),
+    .by = iso
+  )
 
-for (v in intersect(impute_vars, names(combined_filtered))) {
-  combined_filtered <- combined_filtered |>
-    mutate(!!v := imputeTS::na_ma(!!sym(v), k = 2), .by = iso)
-}
+cat("Window:", WINDOW_START, "-", WINDOW_END, "\n")
+cat("Countries:", length(kept), "\n")
+cat("Rows:", nrow(combined_filtered), "of expected", length(kept) * PANEL_T, "\n")
 
 final <- combined_filtered |>
   left_join(wb_regions, join_by(iso == code)) |> 
@@ -459,3 +443,4 @@ cat("Countries:", n_distinct(final$country), "\n")
 cat("Observations:", nrow(final), "\n")
 
 write_csv(final, "updated_dataset.csv")
+
