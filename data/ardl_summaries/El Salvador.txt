@@ -1,44 +1,27 @@
 
 Time series regression with "ts" data:
-Start = 6, End = 31
+Start = 2, End = 42
 
 Call:
 dynlm::dynlm(formula = full_formula, data = data, na.action = ..1, 
     start = start, end = end)
 
 Residuals:
-ALL 26 residuals are 0: no residual degrees of freedom!
+      Min        1Q    Median        3Q       Max 
+-0.047217 -0.005286  0.000914  0.005407  0.055571 
 
 Coefficients:
-                  Estimate Std. Error t value Pr(>|t|)
-(Intercept)      -0.884529        NaN     NaN      NaN
-L(log_gini, 1)    1.669554        NaN     NaN      NaN
-L(log_gini, 2)   -1.822889        NaN     NaN      NaN
-L(log_gini, 3)    0.771631        NaN     NaN      NaN
-L(log_gini, 4)    0.531671        NaN     NaN      NaN
-debt_imp          0.021069        NaN     NaN      NaN
-L(debt_imp, 1)    0.040320        NaN     NaN      NaN
-L(debt_imp, 2)    0.006626        NaN     NaN      NaN
-L(debt_imp, 3)   -0.162297        NaN     NaN      NaN
-L(debt_imp, 4)   -0.104644        NaN     NaN      NaN
-L(debt_imp, 5)    0.128887        NaN     NaN      NaN
-growth            0.280027        NaN     NaN      NaN
-L(growth, 1)      0.258599        NaN     NaN      NaN
-L(growth, 2)      0.042536        NaN     NaN      NaN
-L(growth, 3)      0.211271        NaN     NaN      NaN
-L(growth, 4)     -0.101413        NaN     NaN      NaN
-hc                1.010698        NaN     NaN      NaN
-L(hc, 1)         -0.269376        NaN     NaN      NaN
-L(hc, 2)         -0.508134        NaN     NaN      NaN
-L(hc, 3)         -1.101344        NaN     NaN      NaN
-L(hc, 4)          1.020635        NaN     NaN      NaN
-gdp_x_debt       -0.510645        NaN     NaN      NaN
-L(gdp_x_debt, 1) -0.513890        NaN     NaN      NaN
-L(gdp_x_debt, 2) -0.010936        NaN     NaN      NaN
-L(gdp_x_debt, 3) -0.491336        NaN     NaN      NaN
-L(gdp_x_debt, 4)  0.253605        NaN     NaN      NaN
+                Estimate Std. Error t value Pr(>|t|)   
+(Intercept)    0.2884765  0.0926429   3.114  0.00367 **
+L(p90p100, 1)  0.5337900  0.1509659   3.536  0.00117 **
+public_debt   -0.0025744  0.0142338  -0.181  0.85751   
+growth         0.2289369  0.1808908   1.266  0.21401   
+life_exp      -0.0008496  0.0004489  -1.893  0.06669 . 
+gdp_x_debt    -0.4025757  0.3240527  -1.242  0.22238   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: NaN on 0 degrees of freedom
-Multiple R-squared:      1,	Adjusted R-squared:    NaN 
-F-statistic:   NaN on 25 and 0 DF,  p-value: NA
+Residual standard error: 0.01602 on 35 degrees of freedom
+Multiple R-squared:  0.5117,	Adjusted R-squared:  0.4419 
+F-statistic: 7.335 on 5 and 35 DF,  p-value: 8.605e-05
 

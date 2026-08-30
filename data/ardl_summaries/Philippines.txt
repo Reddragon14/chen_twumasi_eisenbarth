@@ -1,6 +1,6 @@
 
 Time series regression with "ts" data:
-Start = 2, End = 32
+Start = 3, End = 46
 
 Call:
 dynlm::dynlm(formula = full_formula, data = data, na.action = ..1, 
@@ -8,21 +8,24 @@ dynlm::dynlm(formula = full_formula, data = data, na.action = ..1,
 
 Residuals:
        Min         1Q     Median         3Q        Max 
--0.0035601 -0.0007426  0.0003543  0.0010015  0.0031577 
+-0.0106980 -0.0013591  0.0000219  0.0014052  0.0113940 
 
 Coefficients:
-                  Estimate Std. Error t value Pr(>|t|)    
-(Intercept)       0.036563   0.097253   0.376    0.710    
-L(log_gini, 1)    1.004604   0.025884  38.812  < 2e-16 ***
-debt_imp          0.002913   0.008852   0.329    0.745    
-growth           -0.003343   0.099456  -0.034    0.973    
-hc               -0.023525   0.003615  -6.507 9.93e-07 ***
-gdp_x_debt        0.016968   0.175988   0.096    0.924    
-L(gdp_x_debt, 1)  0.039477   0.023531   1.678    0.106    
+                    Estimate Std. Error t value Pr(>|t|)    
+(Intercept)        0.0753531  0.0344585   2.187  0.03574 *  
+L(p90p100, 1)      1.2787219  0.1165335  10.973 1.03e-12 ***
+L(p90p100, 2)     -0.3404957  0.1259649  -2.703  0.01065 *  
+public_debt        0.0192287  0.0163902   1.173  0.24888    
+L(public_debt, 1) -0.0432603  0.0191960  -2.254  0.03078 *  
+L(public_debt, 2)  0.0339584  0.0138342   2.455  0.01938 *  
+growth             0.0116664  0.0816015   0.143  0.88716    
+life_exp          -0.0007787  0.0002853  -2.730  0.00997 ** 
+gdp_x_debt        -0.0447218  0.1694354  -0.264  0.79341    
+L(gdp_x_debt, 1)   0.1371976  0.0458334   2.993  0.00511 ** 
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 0.001854 on 24 degrees of freedom
-Multiple R-squared:  0.9959,	Adjusted R-squared:  0.9949 
-F-statistic: 982.5 on 6 and 24 DF,  p-value: < 2.2e-16
+Residual standard error: 0.003979 on 34 degrees of freedom
+Multiple R-squared:  0.965,	Adjusted R-squared:  0.9557 
+F-statistic:   104 on 9 and 34 DF,  p-value: < 2.2e-16
 

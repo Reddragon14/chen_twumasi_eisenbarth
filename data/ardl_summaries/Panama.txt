@@ -1,6 +1,6 @@
 
 Time series regression with "ts" data:
-Start = 4, End = 32
+Start = 2, End = 42
 
 Call:
 dynlm::dynlm(formula = full_formula, data = data, na.action = ..1, 
@@ -8,32 +8,20 @@ dynlm::dynlm(formula = full_formula, data = data, na.action = ..1,
 
 Residuals:
        Min         1Q     Median         3Q        Max 
--2.835e-03 -1.443e-03 -5.045e-05  1.031e-03  2.831e-03 
+-0.0081534 -0.0009973 -0.0003382  0.0010670  0.0096347 
 
 Coefficients:
-                  Estimate Std. Error t value Pr(>|t|)    
-(Intercept)       1.953319   0.379127   5.152 0.000317 ***
-L(log_gini, 1)    0.757668   0.230593   3.286 0.007259 ** 
-L(log_gini, 2)   -0.080859   0.204187  -0.396 0.699676    
-debt_imp         -0.005406   0.023470  -0.230 0.822059    
-L(debt_imp, 1)   -0.040619   0.030341  -1.339 0.207659    
-L(debt_imp, 2)    0.003770   0.030477   0.124 0.903773    
-L(debt_imp, 3)   -0.135682   0.035140  -3.861 0.002648 ** 
-growth           -0.184320   0.069966  -2.634 0.023224 *  
-L(growth, 1)     -0.141460   0.056436  -2.507 0.029164 *  
-L(growth, 2)     -0.110850   0.067175  -1.650 0.127140    
-L(growth, 3)     -0.110405   0.064183  -1.720 0.113376    
-hc                2.660744   0.716419   3.714 0.003418 ** 
-L(hc, 1)         -3.600601   1.036412  -3.474 0.005202 ** 
-L(hc, 2)          0.704812   0.462110   1.525 0.155432    
-gdp_x_debt        0.308486   0.134302   2.297 0.042257 *  
-L(gdp_x_debt, 1)  0.216985   0.107784   2.013 0.069226 .  
-L(gdp_x_debt, 2)  0.198493   0.115226   1.723 0.112912    
-L(gdp_x_debt, 3)  0.260033   0.114854   2.264 0.044775 *  
+                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)    0.0778942  0.0584274   1.333  0.19109    
+L(p90p100, 1)  0.8985019  0.0751282  11.960 6.44e-14 ***
+public_debt   -0.0039917  0.0056787  -0.703  0.48675    
+growth        -0.0770796  0.0270423  -2.850  0.00727 ** 
+life_exp      -0.0002475  0.0004322  -0.573  0.57062    
+gdp_x_debt     0.0822825  0.0381568   2.156  0.03800 *  
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 0.002517 on 11 degrees of freedom
-Multiple R-squared:  0.9988,	Adjusted R-squared:  0.9969 
-F-statistic:   523 on 17 and 11 DF,  p-value: 1.549e-13
+Residual standard error: 0.003628 on 35 degrees of freedom
+Multiple R-squared:  0.8905,	Adjusted R-squared:  0.8749 
+F-statistic: 56.94 on 5 and 35 DF,  p-value: 7.993e-16
 

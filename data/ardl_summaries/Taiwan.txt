@@ -1,6 +1,6 @@
 
 Time series regression with "ts" data:
-Start = 2, End = 32
+Start = 3, End = 46
 
 Call:
 dynlm::dynlm(formula = full_formula, data = data, na.action = ..1, 
@@ -8,21 +8,26 @@ dynlm::dynlm(formula = full_formula, data = data, na.action = ..1,
 
 Residuals:
        Min         1Q     Median         3Q        Max 
--0.0167352 -0.0024553  0.0002717  0.0045201  0.0121854 
+-0.0106687 -0.0025496 -0.0002006  0.0026564  0.0178154 
 
 Coefficients:
                   Estimate Std. Error t value Pr(>|t|)    
-(Intercept)       0.724177   0.390382   1.855  0.07591 .  
-L(log_gini, 1)    0.803645   0.120469   6.671 6.71e-07 ***
-debt_imp         -0.062333   0.073680  -0.846  0.40591    
-growth           -0.676579   0.231487  -2.923  0.00745 ** 
-hc               -0.008717   0.012260  -0.711  0.48394    
-gdp_x_debt        1.758662   0.698412   2.518  0.01888 *  
-L(gdp_x_debt, 1) -0.283028   0.189210  -1.496  0.14773    
+(Intercept)        0.16735    0.03282   5.098 1.49e-05 ***
+L(p90p100, 1)      0.05538    0.14739   0.376  0.70959    
+L(p90p100, 2)      0.34817    0.11794   2.952  0.00587 ** 
+public_debt       -0.02598    0.05252  -0.495  0.62421    
+L(public_debt, 1)  0.09075    0.07214   1.258  0.21750    
+L(public_debt, 2)  0.14897    0.06400   2.328  0.02641 *  
+growth            -0.03337    0.04312  -0.774  0.44462    
+hc                 0.68776    0.21428   3.210  0.00302 ** 
+L(hc, 1)          -0.68081    0.21453  -3.174  0.00332 ** 
+gdp_x_debt         0.31281    0.18230   1.716  0.09584 .  
+L(gdp_x_debt, 1)  -0.28736    0.11584  -2.481  0.01856 *  
+L(gdp_x_debt, 2)  -0.23116    0.12587  -1.837  0.07558 .  
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 0.007632 on 24 degrees of freedom
-Multiple R-squared:  0.9662,	Adjusted R-squared:  0.9578 
-F-statistic: 114.5 on 6 and 24 DF,  p-value: < 2.2e-16
+Residual standard error: 0.005972 on 32 degrees of freedom
+Multiple R-squared:  0.9906,	Adjusted R-squared:  0.9874 
+F-statistic: 307.6 on 11 and 32 DF,  p-value: < 2.2e-16
 

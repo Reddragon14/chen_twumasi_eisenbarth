@@ -55,7 +55,6 @@ panel <- panel |>
   left_join(cs_means, by = "year")
 
 panel_pd <- pdata.frame(panel, index = c("country", "year"))
-
 # ============================================================
 # MODEL SPECIFICATIONS
 # ============================================================

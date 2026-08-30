@@ -1,75 +1,567 @@
-country,F_statistic,conclusion
-Argentina,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Australia,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Bangladesh,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Barbados,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Belgium,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Botswana,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Brazil,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Bulgaria,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Canada,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Chile,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Colombia,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Costa Rica,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Cyprus,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Denmark,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Egypt,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-El Salvador,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Fiji,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Finland,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-France,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Germany,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Ghana,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Greece,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Guatemala,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Honduras,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Hungary,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-India,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Indonesia,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Iran,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Ireland,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Israel,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Italy,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Jamaica,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Japan,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Jordan,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Kenya,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Lesotho,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Luxembourg,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Madagascar,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Malawi,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Malaysia,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Mauritania,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Mauritius,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Mexico,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Morocco,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Nepal,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Netherlands,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-New Zealand,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Nigeria,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Norway,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Pakistan,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Panama,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Paraguay,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Philippines,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Poland,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Portugal,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Rwanda,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Sierra Leone,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Singapore,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-South Africa,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-South Korea,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Spain,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Sri Lanka,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Sweden,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Switzerland,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Taiwan,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Tanzania,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Thailand,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Tunisia,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Turkey,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-United Kingdom,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-United States,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Uruguay,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Venezuela,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
-Zambia,NA,Error: NA/NaN/Inf in foreign function call (arg 1)
+spec,dv,country,f_statistic,f_pvalue,conclusion,case_used
+Baseline (p=3),p90p100,Algeria,1.007186764540111,0.9126426949977235,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Argentina,2.2880153576094413,0.4179114306232927,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Australia,1.6476718649678577,0.6874100655924322,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Austria,5.405717810303583,0.005949756373496908,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),p90p100,Bahamas,3.9562619919657345,0.055232948959996774,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=3),p90p100,Bahrain,3.5448786538886323,0.0989062617543359,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=3),p90p100,Bangladesh,6.645933158737856,9.505496080996958e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),p90p100,Belgium,4.321089189672735,0.03198959296679329,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=3),p90p100,Belize,2.6195908048165757,0.2977214057112012,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Bolivia,0.6471780736167986,0.9746432716314789,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Brazil,1.6173433539260025,0.700959195554826,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Burkina Faso,4.381391332576657,0.029172822083086844,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=3),p90p100,Canada,4.160973774430483,0.04078943053837556,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=3),p90p100,Chile,5.1779460455708834,0.008266315576424946,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),p90p100,Colombia,1.8868213284930966,0.5838208449393656,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Costa Rica,3.8371219113241333,0.06570161463563057,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=3),p90p100,Cote d'Ivoire,2.614440521822544,0.2993695251719391,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Cyprus,3.8623845149203326,0.0634436637360932,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=3),p90p100,Denmark,5.593954420511908,0.004152636652809143,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),p90p100,Egypt,2.9951599339110997,0.19616924104034833,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,El Salvador,2.062321174560897,0.5091925616587721,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Finland,8.252203320012383,5.812455500224751e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),p90p100,France,1.4964967817182662,0.7503084229820146,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Germany,2.626498847874807,0.2955107931656227,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Ghana,2.7907134432389538,0.24706144103651848,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Greece,3.0511626819317006,0.18340635867680746,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Guatemala,0.4312441911233639,0.990977748352247,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Guyana,1.1058933865363252,0.8867301552357301,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Haiti,0.6124261224431147,0.9782301131173036,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Honduras,0.9861786097761204,0.9177846758259299,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Iceland,1.4570901234175317,0.7664314158232413,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,India,3.5213169113976903,0.10201815223682494,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Indonesia,3.936828278946411,0.05690703542388778,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=3),p90p100,Iran,3.0245319638886565,0.18950471085157536,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Ireland,4.8334906565162425,0.013992118506259013,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=3),p90p100,Italy,6.27986516033603,0.0013503845646781346,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),p90p100,Jamaica,1.0222758917015695,0.90889441587668,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Japan,1.890466158919559,0.5823044891005305,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Jordan,3.1193018447344563,0.16912945680558855,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Kenya,3.0869738170003425,0.17571299076607153,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Lebanon,2.1964542556493116,0.45330934964632186,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Luxembourg,2.6384987654803442,0.2916707521900383,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Malaysia,1.9928339596942197,0.538752976458507,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Malta,2.163584583927962,0.4667546182789542,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Mauritania,3.8567906431156915,0.06390369388309412,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=3),p90p100,Mexico,3.583384557525787,0.09388355785672065,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=3),p90p100,Netherlands,6.000321030585461,0.001999107017011245,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),p90p100,New Zealand,3.7894732827260524,0.07021828743900699,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=3),p90p100,Norway,2.260103745646005,0.42834656324468945,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Pakistan,4.199072016756128,0.038215563962676516,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=3),p90p100,Panama,2.825181328592385,0.2376829328162081,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Paraguay,1.2898659165688764,0.8286635860016929,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Portugal,2.3045133696397,0.4115684864789897,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Singapore,2.184186117451426,0.45823600570773193,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,South Africa,1.090201127930963,0.8911059263369819,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,South Korea,4.694933449586358,0.017556145221708924,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=3),p90p100,Spain,1.710552518961777,0.6602195764143232,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Sweden,2.9094771126458188,0.21574998268461992,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Switzerland,2.259582734521607,0.4285400151865424,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Thailand,1.698396411818516,0.6654291509178827,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Togo,1.9412636051233343,0.5609005962802852,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Trinidad and Tobago,2.302546392703037,0.4123247245529772,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Turkey,4.902287499055545,0.0126630823544333,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=3),p90p100,United Arab Emirates,NA,NA,Error: subscript out of bounds,NA
+Baseline (p=3),p90p100,United Kingdom,8.097241306628177,6.168734921771092e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),p90p100,United States,10.701603513439451,1.8094062124577536e-5,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),p90p100,Uruguay,2.3207715394447694,0.40531176048012374,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Venezuela,0.8225425352249672,0.9510036573869036,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p90p100,Zambia,5.0091208663555875,0.010628737330892554,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=3),p99p100,Algeria,3.155113487363193,0.1620890748763693,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Argentina,3.519812524020297,0.10222921099429458,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Australia,3.587592566816995,0.09334368123679171,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=3),p99p100,Austria,5.691349775627064,0.003492116953806158,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),p99p100,Bahamas,3.6184132109648637,0.08957969665826909,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=3),p99p100,Bahrain,6.092020235993695,0.0017863057914498056,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),p99p100,Bangladesh,3.8036492195387774,0.06869960571584673,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=3),p99p100,Belgium,5.590250667504159,0.004181182650751202,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),p99p100,Belize,3.701182220332887,0.07991968063851942,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=3),p99p100,Bolivia,3.3814025311776374,0.12354959730552122,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Brazil,3.795213776862286,0.06961625699360835,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=3),p99p100,Burkina Faso,NA,NA,Error: subscript out of bounds,NA
+Baseline (p=3),p99p100,Canada,2.9664068542259323,0.2027265520670964,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Chile,2.786203581920771,0.2482766842215767,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Colombia,2.2687180459248246,0.42514806509636727,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Costa Rica,2.237134058177228,0.4374546413569237,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Cote d'Ivoire,5.361173294778941,0.006379362567387288,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),p99p100,Cyprus,3.724157512236779,0.07711413464433138,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=3),p99p100,Denmark,3.4532549827410834,0.11179916459542177,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Egypt,2.178288543574679,0.46062714824622464,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,El Salvador,6.5231025776323035,9.787900829288307e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),p99p100,Finland,7.099798293349437,8.46199642525521e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),p99p100,France,1.5968888968269166,0.7095434798702871,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Germany,2.2653320810206794,0.4264052771885462,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Ghana,2.657821838402181,0.28560008770800027,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Greece,7.402270171373731,7.766571118219836e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),p99p100,Guatemala,3.286295725352777,0.13886134653454046,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Guyana,2.78525882070502,0.24853126292099695,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Haiti,2.125958451567168,0.4823775722042648,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Honduras,3.2088451741814135,0.15210313187764476,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Iceland,2.2806945458870116,0.42070117890566616,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,India,8.386630011553754,5.503389666238694e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),p99p100,Indonesia,2.678411770958219,0.27920461851802886,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Iran,4.7019125691506645,0.01737982088534131,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=3),p99p100,Ireland,1.789221314084383,0.6255348045426998,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Italy,3.4528743638696904,0.11186047784402965,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Jamaica,2.8694012117666303,0.22559602942793835,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Japan,1.791254331164481,0.6246389945731955,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Jordan,3.678589880305058,0.08248834941854859,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=3),p99p100,Kenya,4.458682114802612,0.02561573055796461,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=3),p99p100,Lebanon,3.8262971831972665,0.06675948611070172,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=3),p99p100,Luxembourg,3.1485255380137294,0.16338423131561505,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Malaysia,1.094129376604502,0.89005972989474,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Malta,2.4671341907070543,0.34914534362635635,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Mauritania,4.6872888065606055,0.017749283710864056,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=3),p99p100,Mexico,1.7234623155770137,0.6544838449256931,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Netherlands,2.2018260254649418,0.4511521468258291,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,New Zealand,2.1789107933804095,0.46036784278503634,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Norway,1.701709464944005,0.6640093216182492,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Pakistan,1.7308255468001312,0.6512076244361779,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Panama,4.317797947021165,0.03215504832885353,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=3),p99p100,Paraguay,2.794012173507249,0.24617255350870723,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Portugal,1.0526673867135137,0.9010659837567752,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Singapore,2.623222114235646,0.2965593663187123,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,South Africa,7.487543423505343,7.570515941345612e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),p99p100,South Korea,7.815118210763883,6.817375522162509e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),p99p100,Spain,2.0926593284463912,0.49620852907521484,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Sweden,6.937954439520529,8.83409816402154e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),p99p100,Switzerland,2.8256545283763876,0.2375502298876014,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Thailand,2.3222340534717847,0.40474875210327266,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Togo,5.714476700099496,0.0033407367969262433,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),p99p100,Trinidad and Tobago,4.320423521835336,0.03202254284564866,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=3),p99p100,Turkey,2.787568339388501,0.24790893184630308,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,United Arab Emirates,4.098836489047521,0.04453629233555969,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=3),p99p100,United Kingdom,4.84342540185917,0.013809116439927036,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=3),p99p100,United States,1.7473862117310706,0.6438538134481004,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),p99p100,Uruguay,10.112810079667025,1.5346593773038684e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),p99p100,Venezuela,4.383401679311695,0.029073594477532584,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=3),p99p100,Zambia,6.844437538535469,9.049106646811166e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),gini,Argentina,4.259461757207437,0.03482048961238512,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=3),gini,Australia,3.7259107379394507,0.07691171460679966,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=3),gini,Austria,1.8925996244868029,0.5814169051552374,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),gini,Bangladesh,4.969240353109536,0.011340308837076991,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=3),gini,Belgium,2.3531274366003294,0.3927610579310474,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),gini,Belize,0.7746261385492618,0.9588902008876887,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),gini,Bolivia,6.396080419630228,0.001080690301825502,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),gini,Brazil,NA,NA,Error: subscript out of bounds,NA
+Baseline (p=3),gini,Burkina Faso,6.531863377373675,9.767758520886566e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),gini,Canada,1.9823833228497165,0.5434506006449286,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),gini,Chile,1.3055010025086298,0.8231259761180667,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),gini,Colombia,2.9189590866129778,0.21359480377179946,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),gini,Costa Rica,1.416154921952393,0.7816828925012647,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),gini,Cyprus,2.8026886178834887,0.24383456811295875,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),gini,Denmark,4.763969148306209,0.015607267583516004,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=3),gini,Egypt,4.597680592964723,0.020540483108767858,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=3),gini,El Salvador,5.839827890751306,0.0026859712329634997,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),gini,Finland,7.963035928032147,6.477291926229032e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),gini,France,1.699890033333744,0.6647890502284104,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),gini,Germany,1.8349415287510307,0.6059872633220487,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),gini,Ghana,4.513821854039345,0.02339022659948962,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=3),gini,Greece,1.526921079040396,0.7379925444825183,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),gini,Guatemala,2.014670055955668,0.5291974954591868,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),gini,Honduras,2.7930105121197966,0.24644246472968642,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),gini,Iceland,2.591089108233696,0.30702302291443867,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),gini,India,3.2765440524497564,0.1404128948354199,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),gini,Indonesia,5.16497169200697,0.00843297742388011,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),gini,Iran,5.650158501548829,0.003761739554921128,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),gini,Ireland,4.856533371593529,0.013567662284435018,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=3),gini,Italy,3.076339138009387,0.17789062520437235,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),gini,Jamaica,5.619294618761034,0.00396376293351213,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),gini,Japan,4.715852699252819,0.017027629729065432,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=3),gini,Jordan,3.7116414719888056,0.07859968600323373,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=3),gini,Kenya,2.2442139628341473,0.43460432554339196,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),gini,Lebanon,1.5176571322489583,0.7417757885890165,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),gini,Luxembourg,4.518164797699763,0.023207222202869877,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=3),gini,Malaysia,3.656828861327573,0.08477491049570082,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=3),gini,Mauritania,6.429622492049981,0.0010028510873304854,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),gini,Mexico,1.599604893456676,0.7084036360134325,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),gini,Netherlands,3.117845718848534,0.16941572355074166,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),gini,New Zealand,4.64484145510227,0.019133260453607078,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=3),gini,Norway,2.2041242147493847,0.4502292367651632,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),gini,Pakistan,2.0363994715683726,0.5199911150118112,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),gini,Panama,3.305873514110421,0.135820291520361,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),gini,Paraguay,4.841224639161364,0.0138496553875601,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=3),gini,Portugal,2.6131764086181537,0.2997740484913656,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),gini,Singapore,NA,NA,Error: subscript out of bounds,NA
+Baseline (p=3),gini,South Africa,2.264344253364724,0.4267720585667394,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),gini,South Korea,4.012332085804412,0.051043338052745316,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=3),gini,Spain,4.371431073979148,0.029664445042502915,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=3),gini,Sweden,3.2897720450781307,0.1383213632063645,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),gini,Switzerland,4.457940372217901,0.02564397948797553,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=3),gini,Thailand,NA,NA,Error: subscript out of bounds,NA
+Baseline (p=3),gini,Trinidad and Tobago,3.831782710281742,0.0662326812214645,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=3),gini,Turkey,3.7944319123144106,0.06971446064748843,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=3),gini,United Kingdom,3.9542037051640775,0.055417565051528395,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=3),gini,United States,7.702466196545868,7.076378316364172e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=3),gini,Uruguay,1.9925584053144068,0.5388739231597327,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),gini,Venezuela,3.064227108216648,0.1804146454110169,No evidence of cointegration (p > 0.10),uc
+Baseline (p=3),gini,Zambia,1.7263368800643473,0.6532048266813295,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Algeria,1.007186764540111,0.9126426949977235,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Argentina,2.2880153576094413,0.4179114306232927,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Australia,1.6476718649678577,0.6874100655924322,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Austria,5.405717810303583,0.005949756373496908,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),p90p100,Bahamas,3.9562619919657345,0.055232948959996774,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=2),p90p100,Bahrain,3.5448786538886323,0.0989062617543359,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=2),p90p100,Bangladesh,6.645933158737856,9.505496080996958e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),p90p100,Belgium,4.321089189672735,0.03198959296679329,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=2),p90p100,Belize,2.6195908048165757,0.2977214057112012,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Bolivia,0.6471780736167986,0.9746432716314789,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Brazil,1.6173433539260025,0.700959195554826,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Burkina Faso,4.381391332576657,0.029172822083086844,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=2),p90p100,Canada,4.160973774430483,0.04078943053837556,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=2),p90p100,Chile,5.1779460455708834,0.008266315576424946,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),p90p100,Colombia,1.8868213284930966,0.5838208449393656,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Costa Rica,3.8371219113241333,0.06570161463563057,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=2),p90p100,Cote d'Ivoire,2.614440521822544,0.2993695251719391,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Cyprus,3.8623845149203326,0.0634436637360932,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=2),p90p100,Denmark,5.593954420511908,0.004152636652809143,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),p90p100,Egypt,2.9951599339110997,0.19616924104034833,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,El Salvador,2.062321174560897,0.5091925616587721,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Finland,8.252203320012383,5.812455500224751e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),p90p100,France,1.4964967817182662,0.7503084229820146,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Germany,2.626498847874807,0.2955107931656227,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Ghana,2.7907134432389538,0.24706144103651848,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Greece,3.0511626819317006,0.18340635867680746,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Guatemala,0.4312441911233639,0.990977748352247,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Guyana,1.1058933865363252,0.8867301552357301,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Haiti,0.6124261224431147,0.9782301131173036,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Honduras,0.9861786097761204,0.9177846758259299,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Iceland,1.4570901234175317,0.7664314158232413,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,India,3.5213169113976903,0.10201815223682494,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Indonesia,3.936828278946411,0.05690703542388778,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=2),p90p100,Iran,3.0245319638886565,0.18950471085157536,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Ireland,4.8334906565162425,0.013992118506259013,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=2),p90p100,Italy,6.27986516033603,0.0013503845646781346,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),p90p100,Jamaica,1.0222758917015695,0.90889441587668,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Japan,1.890466158919559,0.5823044891005305,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Jordan,3.1193018447344563,0.16912945680558855,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Kenya,3.0869738170003425,0.17571299076607153,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Lebanon,2.1964542556493116,0.45330934964632186,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Luxembourg,2.6384987654803442,0.2916707521900383,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Malaysia,1.9928339596942197,0.538752976458507,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Malta,2.163584583927962,0.4667546182789542,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Mauritania,3.8567906431156915,0.06390369388309412,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=2),p90p100,Mexico,3.583384557525787,0.09388355785672065,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=2),p90p100,Netherlands,6.000321030585461,0.001999107017011245,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),p90p100,New Zealand,3.7894732827260524,0.07021828743900699,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=2),p90p100,Norway,2.260103745646005,0.42834656324468945,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Pakistan,4.199072016756128,0.038215563962676516,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=2),p90p100,Panama,2.825181328592385,0.2376829328162081,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Paraguay,1.2898659165688764,0.8286635860016929,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Portugal,2.3045133696397,0.4115684864789897,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Singapore,2.184186117451426,0.45823600570773193,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,South Africa,1.090201127930963,0.8911059263369819,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,South Korea,4.694933449586358,0.017556145221708924,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=2),p90p100,Spain,1.710552518961777,0.6602195764143232,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Sweden,2.9094771126458188,0.21574998268461992,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Switzerland,2.259582734521607,0.4285400151865424,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Thailand,1.698396411818516,0.6654291509178827,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Togo,1.9412636051233343,0.5609005962802852,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Trinidad and Tobago,2.302546392703037,0.4123247245529772,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Turkey,4.902287499055545,0.0126630823544333,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=2),p90p100,United Arab Emirates,NA,NA,Error: subscript out of bounds,NA
+Baseline (p=2),p90p100,United Kingdom,8.097241306628177,6.168734921771092e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),p90p100,United States,10.701603513439451,1.8094062124577536e-5,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),p90p100,Uruguay,2.3207715394447694,0.40531176048012374,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Venezuela,0.8225425352249672,0.9510036573869036,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p90p100,Zambia,5.0091208663555875,0.010628737330892554,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=2),p99p100,Algeria,3.155113487363193,0.1620890748763693,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Argentina,3.519812524020297,0.10222921099429458,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Australia,3.587592566816995,0.09334368123679171,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=2),p99p100,Austria,5.691349775627064,0.003492116953806158,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),p99p100,Bahamas,3.6184132109648637,0.08957969665826909,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=2),p99p100,Bahrain,6.092020235993695,0.0017863057914498056,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),p99p100,Bangladesh,3.8036492195387774,0.06869960571584673,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=2),p99p100,Belgium,5.590250667504159,0.004181182650751202,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),p99p100,Belize,3.701182220332887,0.07991968063851942,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=2),p99p100,Bolivia,3.3814025311776374,0.12354959730552122,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Brazil,3.795213776862286,0.06961625699360835,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=2),p99p100,Burkina Faso,NA,NA,Error: subscript out of bounds,NA
+Baseline (p=2),p99p100,Canada,2.9664068542259323,0.2027265520670964,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Chile,2.786203581920771,0.2482766842215767,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Colombia,2.2687180459248246,0.42514806509636727,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Costa Rica,2.237134058177228,0.4374546413569237,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Cote d'Ivoire,5.361173294778941,0.006379362567387288,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),p99p100,Cyprus,3.724157512236779,0.07711413464433138,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=2),p99p100,Denmark,3.4532549827410834,0.11179916459542177,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Egypt,2.178288543574679,0.46062714824622464,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,El Salvador,6.5231025776323035,9.787900829288307e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),p99p100,Finland,7.099798293349437,8.46199642525521e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),p99p100,France,1.5968888968269166,0.7095434798702871,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Germany,2.2653320810206794,0.4264052771885462,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Ghana,2.657821838402181,0.28560008770800027,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Greece,7.402270171373731,7.766571118219836e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),p99p100,Guatemala,3.286295725352777,0.13886134653454046,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Guyana,2.78525882070502,0.24853126292099695,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Haiti,2.125958451567168,0.4823775722042648,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Honduras,3.2088451741814135,0.15210313187764476,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Iceland,2.2806945458870116,0.42070117890566616,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,India,8.386630011553754,5.503389666238694e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),p99p100,Indonesia,2.678411770958219,0.27920461851802886,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Iran,4.7019125691506645,0.01737982088534131,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=2),p99p100,Ireland,1.789221314084383,0.6255348045426998,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Italy,3.4528743638696904,0.11186047784402965,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Jamaica,2.8694012117666303,0.22559602942793835,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Japan,1.791254331164481,0.6246389945731955,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Jordan,3.678589880305058,0.08248834941854859,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=2),p99p100,Kenya,4.458682114802612,0.02561573055796461,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=2),p99p100,Lebanon,3.8262971831972665,0.06675948611070172,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=2),p99p100,Luxembourg,3.1485255380137294,0.16338423131561505,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Malaysia,1.094129376604502,0.89005972989474,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Malta,2.4671341907070543,0.34914534362635635,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Mauritania,4.6872888065606055,0.017749283710864056,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=2),p99p100,Mexico,1.7234623155770137,0.6544838449256931,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Netherlands,2.2018260254649418,0.4511521468258291,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,New Zealand,2.1789107933804095,0.46036784278503634,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Norway,1.701709464944005,0.6640093216182492,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Pakistan,1.7308255468001312,0.6512076244361779,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Panama,4.317797947021165,0.03215504832885353,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=2),p99p100,Paraguay,2.794012173507249,0.24617255350870723,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Portugal,1.0526673867135137,0.9010659837567752,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Singapore,2.623222114235646,0.2965593663187123,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,South Africa,7.487543423505343,7.570515941345612e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),p99p100,South Korea,7.815118210763883,6.817375522162509e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),p99p100,Spain,2.0926593284463912,0.49620852907521484,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Sweden,6.937954439520529,8.83409816402154e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),p99p100,Switzerland,2.8256545283763876,0.2375502298876014,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Thailand,2.3222340534717847,0.40474875210327266,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Togo,5.714476700099496,0.0033407367969262433,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),p99p100,Trinidad and Tobago,4.320423521835336,0.03202254284564866,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=2),p99p100,Turkey,2.787568339388501,0.24790893184630308,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,United Arab Emirates,4.098836489047521,0.04453629233555969,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=2),p99p100,United Kingdom,4.84342540185917,0.013809116439927036,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=2),p99p100,United States,1.7473862117310706,0.6438538134481004,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),p99p100,Uruguay,10.112810079667025,1.5346593773038684e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),p99p100,Venezuela,4.383401679311695,0.029073594477532584,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=2),p99p100,Zambia,6.844437538535469,9.049106646811166e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),gini,Argentina,4.259461757207437,0.03482048961238512,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=2),gini,Australia,3.7259107379394507,0.07691171460679966,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=2),gini,Austria,1.8925996244868029,0.5814169051552374,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),gini,Bangladesh,4.969240353109536,0.011340308837076991,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=2),gini,Belgium,2.3531274366003294,0.3927610579310474,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),gini,Belize,0.7746261385492618,0.9588902008876887,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),gini,Bolivia,6.396080419630228,0.001080690301825502,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),gini,Brazil,NA,NA,Error: subscript out of bounds,NA
+Baseline (p=2),gini,Burkina Faso,6.531863377373675,9.767758520886566e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),gini,Canada,1.9823833228497165,0.5434506006449286,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),gini,Chile,1.3055010025086298,0.8231259761180667,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),gini,Colombia,2.9189590866129778,0.21359480377179946,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),gini,Costa Rica,1.416154921952393,0.7816828925012647,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),gini,Cyprus,2.8026886178834887,0.24383456811295875,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),gini,Denmark,4.763969148306209,0.015607267583516004,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=2),gini,Egypt,4.597680592964723,0.020540483108767858,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=2),gini,El Salvador,5.839827890751306,0.0026859712329634997,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),gini,Finland,7.963035928032147,6.477291926229032e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),gini,France,1.699890033333744,0.6647890502284104,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),gini,Germany,1.8349415287510307,0.6059872633220487,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),gini,Ghana,4.513821854039345,0.02339022659948962,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=2),gini,Greece,1.526921079040396,0.7379925444825183,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),gini,Guatemala,2.014670055955668,0.5291974954591868,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),gini,Honduras,2.7930105121197966,0.24644246472968642,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),gini,Iceland,2.591089108233696,0.30702302291443867,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),gini,India,3.2765440524497564,0.1404128948354199,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),gini,Indonesia,5.16497169200697,0.00843297742388011,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),gini,Iran,5.650158501548829,0.003761739554921128,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),gini,Ireland,4.856533371593529,0.013567662284435018,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=2),gini,Italy,3.076339138009387,0.17789062520437235,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),gini,Jamaica,5.619294618761034,0.00396376293351213,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),gini,Japan,4.715852699252819,0.017027629729065432,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=2),gini,Jordan,3.7116414719888056,0.07859968600323373,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=2),gini,Kenya,2.2442139628341473,0.43460432554339196,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),gini,Lebanon,1.5176571322489583,0.7417757885890165,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),gini,Luxembourg,4.518164797699763,0.023207222202869877,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=2),gini,Malaysia,3.656828861327573,0.08477491049570082,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=2),gini,Mauritania,6.429622492049981,0.0010028510873304854,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),gini,Mexico,1.599604893456676,0.7084036360134325,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),gini,Netherlands,3.117845718848534,0.16941572355074166,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),gini,New Zealand,4.64484145510227,0.019133260453607078,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=2),gini,Norway,2.2041242147493847,0.4502292367651632,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),gini,Pakistan,2.0363994715683726,0.5199911150118112,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),gini,Panama,3.305873514110421,0.135820291520361,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),gini,Paraguay,4.841224639161364,0.0138496553875601,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=2),gini,Portugal,2.6131764086181537,0.2997740484913656,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),gini,Singapore,NA,NA,Error: subscript out of bounds,NA
+Baseline (p=2),gini,South Africa,2.264344253364724,0.4267720585667394,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),gini,South Korea,4.012332085804412,0.051043338052745316,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=2),gini,Spain,4.371431073979148,0.029664445042502915,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=2),gini,Sweden,3.2897720450781307,0.1383213632063645,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),gini,Switzerland,4.457940372217901,0.02564397948797553,Cointegration: Evidence (p <= 0.05),uc
+Baseline (p=2),gini,Thailand,NA,NA,Error: subscript out of bounds,NA
+Baseline (p=2),gini,Trinidad and Tobago,3.831782710281742,0.0662326812214645,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=2),gini,Turkey,3.7944319123144106,0.06971446064748843,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=2),gini,United Kingdom,3.9542037051640775,0.055417565051528395,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Baseline (p=2),gini,United States,7.702466196545868,7.076378316364172e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Baseline (p=2),gini,Uruguay,1.9925584053144068,0.5388739231597327,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),gini,Venezuela,3.064227108216648,0.1804146454110169,No evidence of cointegration (p > 0.10),uc
+Baseline (p=2),gini,Zambia,1.7263368800643473,0.6532048266813295,No evidence of cointegration (p > 0.10),uc
+Composition,p90p100,Algeria,5.866369508978961,8.190635203978191e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,p90p100,Argentina,1.7956531229003159,0.6322533722941921,No evidence of cointegration (p > 0.10),uc
+Composition,p90p100,Australia,3.3059002099745105,0.08791158845588574,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Composition,p90p100,Austria,4.810678613387184,0.0044080195038758395,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,p90p100,Bahamas,NA,NA,Error: NA/NaN/Inf in foreign function call (arg 1),NA
+Composition,p90p100,Bahrain,2.537792068200685,0.28324524802323403,No evidence of cointegration (p > 0.10),uc
+Composition,p90p100,Bangladesh,6.038797640945502,7.098002557474833e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,p90p100,Belgium,2.4214964922228788,0.3292054995159328,No evidence of cointegration (p > 0.10),uc
+Composition,p90p100,Belize,2.0695905582754675,0.49281207994103227,No evidence of cointegration (p > 0.10),uc
+Composition,p90p100,Bolivia,0.9277244278239227,0.9584380517721217,No evidence of cointegration (p > 0.10),uc
+Composition,p90p100,Brazil,1.153134197281098,0.9059661510892829,No evidence of cointegration (p > 0.10),uc
+Composition,p90p100,Burkina Faso,2.7151729938907927,0.22189963262521262,No evidence of cointegration (p > 0.10),uc
+Composition,p90p100,Canada,3.629523801928705,0.05026676614137708,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Composition,p90p100,Chile,2.064793308644737,0.4950227547303011,No evidence of cointegration (p > 0.10),uc
+Composition,p90p100,Colombia,3.279813996236452,0.09106251376153623,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Composition,p90p100,Costa Rica,NA,NA,Error: NA/NaN/Inf in foreign function call (arg 1),NA
+Composition,p90p100,Cote d'Ivoire,2.0810321969193,0.48742799632728256,No evidence of cointegration (p > 0.10),uc
+Composition,p90p100,Cyprus,4.496893791812276,0.00886772553527872,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,p90p100,Denmark,3.8129623713466074,0.035232151372171755,Cointegration: Evidence (p <= 0.05),uc
+Composition,p90p100,Egypt,4.362344762010373,0.011937283600157611,Cointegration: Evidence (p <= 0.05),uc
+Composition,p90p100,El Salvador,4.024311107817114,0.023429245303339428,Cointegration: Evidence (p <= 0.05),uc
+Composition,p90p100,Finland,7.063151383212049,6.069368154560006e-5,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,p90p100,France,4.005186674467381,0.024292615053400045,Cointegration: Evidence (p <= 0.05),uc
+Composition,p90p100,Germany,2.7401985124117636,0.21373268012158694,No evidence of cointegration (p > 0.10),uc
+Composition,p90p100,Ghana,2.6809051140731115,0.23298745422626996,No evidence of cointegration (p > 0.10),uc
+Composition,p90p100,Greece,6.741532260529228,2.644954331363494e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,p90p100,Guatemala,1.3959991503645512,0.8216616101729706,No evidence of cointegration (p > 0.10),uc
+Composition,p90p100,Guyana,1.1926967837427944,0.8940046649791047,No evidence of cointegration (p > 0.10),uc
+Composition,p90p100,Honduras,4.652989366701674,0.006445746210645316,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,p90p100,Iceland,NA,NA,Error: NA/NaN/Inf in foreign function call (arg 1),NA
+Composition,p90p100,India,2.80163048589354,0.19465576209258392,No evidence of cointegration (p > 0.10),uc
+Composition,p90p100,Indonesia,NA,NA,Error: subscript out of bounds,NA
+Composition,p90p100,Iran,2.4171777480469623,0.3310277366222548,No evidence of cointegration (p > 0.10),uc
+Composition,p90p100,Ireland,5.183734524653132,0.0019667828813266677,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,p90p100,Italy,NA,NA,Error: subscript out of bounds,NA
+Composition,p90p100,Jamaica,1.5003067129532912,0.7761700675654534,No evidence of cointegration (p > 0.10),uc
+Composition,p90p100,Japan,1.370479275514419,0.8320622913320407,No evidence of cointegration (p > 0.10),uc
+Composition,p90p100,Jordan,NA,NA,Error: subscript out of bounds,NA
+Composition,p90p100,Kenya,2.428765255288025,0.3263782547580996,No evidence of cointegration (p > 0.10),uc
+Composition,p90p100,Lebanon,1.7963419774245044,0.631896899126896,No evidence of cointegration (p > 0.10),uc
+Composition,p90p100,Luxembourg,3.450167123034549,0.06891601769469297,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Composition,p90p100,Malaysia,1.7663485991057777,0.6473903922067991,No evidence of cointegration (p > 0.10),uc
+Composition,p90p100,Malta,NA,NA,Error: subscript out of bounds,NA
+Composition,p90p100,Mexico,2.9902352509572205,0.14616604903561714,No evidence of cointegration (p > 0.10),uc
+Composition,p90p100,Netherlands,NA,NA,Error: subscript out of bounds,NA
+Composition,p90p100,New Zealand,NA,NA,Error: subscript out of bounds,NA
+Composition,p90p100,Norway,6.741181824038625,2.647174957115173e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,p90p100,Pakistan,1.6140110569584851,0.7234189748262607,No evidence of cointegration (p > 0.10),uc
+Composition,p90p100,Paraguay,5.746370330070936,8.951039083166234e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,p90p100,Portugal,1.8712812532446566,0.5933044849492496,No evidence of cointegration (p > 0.10),uc
+Composition,p90p100,Singapore,3.3083355288412086,0.08755320633533517,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Composition,p90p100,South Africa,1.215612463281776,0.8868782367673086,No evidence of cointegration (p > 0.10),uc
+Composition,p90p100,South Korea,6.645300832962568,3.2547480940156283e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,p90p100,Spain,2.951316840541849,0.15519353233120478,No evidence of cointegration (p > 0.10),uc
+Composition,p90p100,Sweden,3.887957560950167,0.030484771707516716,Cointegration: Evidence (p <= 0.05),uc
+Composition,p90p100,Switzerland,3.281789284113632,0.09079245984560079,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Composition,p90p100,Thailand,3.187857941834524,0.1064776307108945,No evidence of cointegration (p > 0.10),uc
+Composition,p90p100,Togo,3.451584586947514,0.0687159920647073,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Composition,p90p100,Turkey,4.179864224679931,0.016916158368170717,Cointegration: Evidence (p <= 0.05),uc
+Composition,p90p100,United Kingdom,6.0288549731059655,7.161006681865187e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,p90p100,United States,NA,NA,Error: subscript out of bounds,NA
+Composition,p90p100,Uruguay,2.419822631834358,0.32985656118438667,No evidence of cointegration (p > 0.10),uc
+Composition,p90p100,Venezuela,0.5235116207668067,0.9922038549725087,No evidence of cointegration (p > 0.10),uc
+Composition,p99p100,Algeria,3.0514071938345046,0.1328653212411552,No evidence of cointegration (p > 0.10),uc
+Composition,p99p100,Argentina,3.5549408979686787,0.05744210363071344,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Composition,p99p100,Australia,2.723853244242259,0.21909654036617413,No evidence of cointegration (p > 0.10),uc
+Composition,p99p100,Austria,7.131143368019326,1.760891257332664e-5,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,p99p100,Bahamas,NA,NA,Error: NA/NaN/Inf in foreign function call (arg 1),NA
+Composition,p99p100,Bahrain,5.340957590076932,0.001584005848941877,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,p99p100,Bangladesh,2.7555355358884257,0.20876661536225596,No evidence of cointegration (p > 0.10),uc
+Composition,p99p100,Belgium,6.564281996145082,3.7681435885842925e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,p99p100,Belize,4.070054529106667,0.02132520379044376,Cointegration: Evidence (p <= 0.05),uc
+Composition,p99p100,Bolivia,3.6384379707582686,0.049374089368214524,Cointegration: Evidence (p <= 0.05),uc
+Composition,p99p100,Brazil,2.5837359061218312,0.26623577340341337,No evidence of cointegration (p > 0.10),uc
+Composition,p99p100,Burkina Faso,NA,NA,Error: subscript out of bounds,NA
+Composition,p99p100,Canada,2.449384954358694,0.3182750498262293,No evidence of cointegration (p > 0.10),uc
+Composition,p99p100,Chile,4.743715472547358,0.005201091961542224,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,p99p100,Colombia,4.197484913349841,0.016325195921077673,Cointegration: Evidence (p <= 0.05),uc
+Composition,p99p100,Costa Rica,NA,NA,Error: NA/NaN/Inf in foreign function call (arg 1),NA
+Composition,p99p100,Cote d'Ivoire,2.3783891682619256,0.3483434565349071,No evidence of cointegration (p > 0.10),uc
+Composition,p99p100,Cyprus,2.784077790481813,0.19988730380139522,No evidence of cointegration (p > 0.10),uc
+Composition,p99p100,Denmark,2.0213519852730366,0.5166093683109865,No evidence of cointegration (p > 0.10),uc
+Composition,p99p100,Egypt,3.0174790116470662,0.13987384373578066,No evidence of cointegration (p > 0.10),uc
+Composition,p99p100,El Salvador,6.239007630750627,5.829323435789325e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,p99p100,Finland,5.712574642381367,9.165193648662658e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,p99p100,France,3.40080767429328,0.07489652988891946,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Composition,p99p100,Germany,3.7682389309811937,0.038608494406347046,Cointegration: Evidence (p <= 0.05),uc
+Composition,p99p100,Ghana,3.9608745846357842,0.026647126211281916,Cointegration: Evidence (p <= 0.05),uc
+Composition,p99p100,Greece,7.095995808317584,3.988101558636704e-5,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,p99p100,Guatemala,2.504386959301408,0.29642010071390135,No evidence of cointegration (p > 0.10),uc
+Composition,p99p100,Guyana,2.0262589438501317,0.5140489613182065,No evidence of cointegration (p > 0.10),uc
+Composition,p99p100,Honduras,3.6922694896718093,0.04453525982575428,Cointegration: Evidence (p <= 0.05),uc
+Composition,p99p100,Iceland,NA,NA,Error: NA/NaN/Inf in foreign function call (arg 1),NA
+Composition,p99p100,India,4.566558604470331,0.007693815885912374,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,p99p100,Indonesia,3.845858385521062,0.03301617178696831,Cointegration: Evidence (p <= 0.05),uc
+Composition,p99p100,Iran,3.30725122208288,0.08771277318331183,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Composition,p99p100,Ireland,1.5710469986740225,0.7437165884410278,No evidence of cointegration (p > 0.10),uc
+Composition,p99p100,Italy,2.5407276546641415,0.28207634196672843,No evidence of cointegration (p > 0.10),uc
+Composition,p99p100,Jamaica,3.6991017060390163,0.044034439316186766,Cointegration: Evidence (p <= 0.05),uc
+Composition,p99p100,Japan,1.3425916374235405,0.843042023649585,No evidence of cointegration (p > 0.10),uc
+Composition,p99p100,Jordan,NA,NA,Error: subscript out of bounds,NA
+Composition,p99p100,Kenya,2.2541684753596334,0.4041403803049761,No evidence of cointegration (p > 0.10),uc
+Composition,p99p100,Lebanon,4.980075835605037,0.0029400940297683595,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,p99p100,Luxembourg,3.5202835291650625,0.06086353653619299,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Composition,p99p100,Malaysia,0.7480600813398229,0.9817731452362651,No evidence of cointegration (p > 0.10),uc
+Composition,p99p100,Malta,NA,NA,Error: subscript out of bounds,NA
+Composition,p99p100,Mexico,1.4473935544243308,0.79986964037539,No evidence of cointegration (p > 0.10),uc
+Composition,p99p100,Netherlands,6.248627413539322,5.768365350775454e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,p99p100,New Zealand,1.5719796716770047,0.7433140361769252,No evidence of cointegration (p > 0.10),uc
+Composition,p99p100,Norway,1.147905102241113,0.9075250764165115,No evidence of cointegration (p > 0.10),uc
+Composition,p99p100,Pakistan,1.4085340121689176,0.8164075717614232,No evidence of cointegration (p > 0.10),uc
+Composition,p99p100,Paraguay,2.2533421215100566,0.4045216947062844,No evidence of cointegration (p > 0.10),uc
+Composition,p99p100,Portugal,4.0718952148124625,0.02125405816891806,Cointegration: Evidence (p <= 0.05),uc
+Composition,p99p100,Singapore,3.5432778125210556,0.05850883427591199,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Composition,p99p100,South Africa,4.922881844717627,0.0033698678147802367,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,p99p100,South Korea,4.066867482192379,0.021448388554053666,Cointegration: Evidence (p <= 0.05),uc
+Composition,p99p100,Spain,3.202417672660096,0.10391599507820033,No evidence of cointegration (p > 0.10),uc
+Composition,p99p100,Sweden,NA,NA,Error: subscript out of bounds,NA
+Composition,p99p100,Switzerland,3.162037409828312,0.11111326386408034,No evidence of cointegration (p > 0.10),uc
+Composition,p99p100,Thailand,3.8731890395877673,0.03132504799951044,Cointegration: Evidence (p <= 0.05),uc
+Composition,p99p100,Togo,3.409556248566146,0.07382973990118333,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Composition,p99p100,Turkey,2.186666135260153,0.43642757135443994,No evidence of cointegration (p > 0.10),uc
+Composition,p99p100,United Kingdom,3.4770537986625323,0.06566628078947072,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Composition,p99p100,United States,4.698538760445554,0.005782930966316052,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,p99p100,Uruguay,4.25496955130797,0.014610724591882326,Cointegration: Evidence (p <= 0.05),uc
+Composition,p99p100,Venezuela,4.582519077694515,0.007475617993206854,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,gini,Argentina,3.23364424075591,0.09864651934280237,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Composition,gini,Australia,3.161511235941956,0.11121425495333814,No evidence of cointegration (p > 0.10),uc
+Composition,gini,Bangladesh,6.737907752353025,2.6679219058286976e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,gini,Belgium,NA,NA,Error: subscript out of bounds,NA
+Composition,gini,Brazil,NA,NA,Error: subscript out of bounds,NA
+Composition,gini,Canada,6.443782105707145,4.5317203477300485e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,gini,Chile,4.250188094853301,0.014749939752393871,Cointegration: Evidence (p <= 0.05),uc
+Composition,gini,Colombia,2.4333158265397756,0.32460827290543065,No evidence of cointegration (p > 0.10),uc
+Composition,gini,Costa Rica,NA,NA,Error: NA/NaN/Inf in foreign function call (arg 1),NA
+Composition,gini,Cyprus,2.46068399650849,0.3136580238793643,No evidence of cointegration (p > 0.10),uc
+Composition,gini,Denmark,3.2656268080588404,0.09322895673206998,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Composition,gini,Egypt,3.032480939980435,0.13677490517177762,No evidence of cointegration (p > 0.10),uc
+Composition,gini,Finland,NA,NA,Error: subscript out of bounds,NA
+Composition,gini,France,3.3927029845267134,0.07598795247865658,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Composition,gini,Germany,2.8782281993911085,0.1736310091710682,No evidence of cointegration (p > 0.10),uc
+Composition,gini,Greece,4.61937999642096,0.006967829467650698,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,gini,Guatemala,NA,NA,Error: subscript out of bounds,NA
+Composition,gini,India,2.2148863211026906,0.42257307401526795,No evidence of cointegration (p > 0.10),uc
+Composition,gini,Indonesia,NA,NA,Error: subscript out of bounds,NA
+Composition,gini,Iran,3.304621068540071,0.08808138722794419,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Composition,gini,Ireland,3.769087964090925,0.03855413496404532,Cointegration: Evidence (p <= 0.05),uc
+Composition,gini,Italy,4.807319356836177,0.0044467466108882026,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,gini,Japan,3.547901425672871,0.058084873656103216,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Composition,gini,Kenya,2.2799322344221125,0.391779725435698,No evidence of cointegration (p > 0.10),uc
+Composition,gini,Luxembourg,1.1994406344995914,0.8919365879496817,No evidence of cointegration (p > 0.10),uc
+Composition,gini,Malaysia,3.0714037231184657,0.12878602234905406,No evidence of cointegration (p > 0.10),uc
+Composition,gini,Mexico,2.9071268727162054,0.165990118421665,No evidence of cointegration (p > 0.10),uc
+Composition,gini,Netherlands,4.069692599355267,0.021339192988616446,Cointegration: Evidence (p <= 0.05),uc
+Composition,gini,New Zealand,5.985528599386514,7.435554749170491e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,gini,Norway,3.375390976336591,0.07816898745028854,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Composition,gini,Pakistan,1.7290663692624413,0.6666520626954087,No evidence of cointegration (p > 0.10),uc
+Composition,gini,Portugal,5.7795023104866,8.741090259661671e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,gini,Singapore,NA,NA,Error: subscript out of bounds,NA
+Composition,gini,South Africa,2.9123199743828634,0.16466628486811874,No evidence of cointegration (p > 0.10),uc
+Composition,gini,South Korea,5.156214198107529,0.002068654208635321,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,gini,Spain,4.425862537797083,0.010263500767430763,Cointegration: Evidence (p <= 0.05),uc
+Composition,gini,Sweden,2.0297387894942474,0.5122332090592455,No evidence of cointegration (p > 0.10),uc
+Composition,gini,Switzerland,4.237341610049022,0.015123712178172917,Cointegration: Evidence (p <= 0.05),uc
+Composition,gini,Thailand,NA,NA,Error: subscript out of bounds,NA
+Composition,gini,Turkey,2.5854720499646904,0.26561064343448165,No evidence of cointegration (p > 0.10),uc
+Composition,gini,United Kingdom,NA,NA,Error: subscript out of bounds,NA
+Composition,gini,United States,6.657300182889386,3.178711305138261e-4,Cointegration: Strong evidence (p <= 0.01),uc
+Composition,gini,Uruguay,3.358228839815776,0.08036882990758237,Weak evidence of cointegration (0.05 < p <= 0.10),uc
+Composition,gini,Venezuela,3.9861313042726176,0.025233629347891327,Cointegration: Evidence (p <= 0.05),uc

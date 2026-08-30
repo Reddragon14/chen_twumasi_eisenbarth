@@ -1,6 +1,6 @@
 
 Time series regression with "ts" data:
-Start = 3, End = 32
+Start = 2, End = 46
 
 Call:
 dynlm::dynlm(formula = full_formula, data = data, na.action = ..1, 
@@ -8,25 +8,22 @@ dynlm::dynlm(formula = full_formula, data = data, na.action = ..1,
 
 Residuals:
        Min         1Q     Median         3Q        Max 
--0.0111318 -0.0025361 -0.0002187  0.0030182  0.0082290 
+-0.0066051 -0.0018881  0.0000494  0.0014276  0.0062253 
 
 Coefficients:
-                Estimate Std. Error t value Pr(>|t|)    
-(Intercept)     0.807393   0.269686   2.994  0.00746 ** 
-L(log_gini, 1)  0.837322   0.076498  10.946  1.2e-09 ***
-debt_imp       -0.004766   0.054041  -0.088  0.93065    
-L(debt_imp, 1)  0.057688   0.083752   0.689  0.49927    
-L(debt_imp, 2) -0.099090   0.054315  -1.824  0.08386 .  
-growth         -0.672747   0.511170  -1.316  0.20380    
-L(growth, 1)    0.090612   0.071683   1.264  0.22149    
-hc             -1.272924   0.961271  -1.324  0.20114    
-L(hc, 1)       -2.059341   1.656499  -1.243  0.22892    
-L(hc, 2)        3.300477   1.067252   3.092  0.00599 ** 
-gdp_x_debt      0.589417   0.423448   1.392  0.18002    
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)      -0.0241532  0.0318217  -0.759   0.4527    
+L(p90p100, 1)     0.8263199  0.0480865  17.184   <2e-16 ***
+public_debt       0.0097216  0.0052905   1.838   0.0742 .  
+growth           -0.0604505  0.0554363  -1.090   0.2826    
+L(growth, 1)     -0.0879415  0.0542840  -1.620   0.1137    
+life_exp          0.0008104  0.0005567   1.456   0.1539    
+gdp_x_debt        0.1312587  0.0570898   2.299   0.0272 *  
+L(gdp_x_debt, 1)  0.0931140  0.0560307   1.662   0.1050    
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 0.005378 on 19 degrees of freedom
-Multiple R-squared:  0.9585,	Adjusted R-squared:  0.9366 
-F-statistic: 43.86 on 10 and 19 DF,  p-value: 5.445e-11
+Residual standard error: 0.003177 on 37 degrees of freedom
+Multiple R-squared:  0.9909,	Adjusted R-squared:  0.9892 
+F-statistic: 577.2 on 7 and 37 DF,  p-value: < 2.2e-16
 

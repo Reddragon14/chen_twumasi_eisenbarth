@@ -1,0 +1,5 @@
+variable,n_countries,n_i0,n_i1,n_i2,pct_i0,pct_i1,pct_i2,modal_order
+growth,109,26,83,0,23.9,76.1,0,I(1)
+p90p100,109,0,73,36,0,67,33,I(1)
+p99p100,109,1,71,37,0.9,65.1,33.9,I(1)
+public_debt,109,0,95,14,0,87.2,12.8,I(1)

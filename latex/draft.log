@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.7)  15 JUL 2026 15:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.7)  5 AUG 2026 11:56
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -734,174 +734,129 @@ LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
 (Font)              `T1/Roboto-LF/regular/n' on input line 103.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
 (Font)              scaled to size 17.28pt on input line 103.
-LaTeX Font Info:    Font shape `T1/NimbusSerif/m/n' will be
-(Font)              scaled to size 8.0pt on input line 107.
-LaTeX Font Info:    Font shape `T1/NimbusSerif/m/n' will be
-(Font)              scaled to size 10.0pt on input line 107.
-LaTeX Font Info:    Font shape `T1/NimbusSerif/m/n' will be
-(Font)              scaled to size 7.0pt on input line 107.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
-(Font)              `T1/Roboto-LF/regular/n' on input line 111.
+(Font)              `T1/Roboto-LF/regular/n' on input line 127.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
-(Font)              scaled to size 12.0pt on input line 111.
-LaTeX Font Info:    Font shape `T1/NimbusSerif/m/n' will be
-(Font)              scaled to size 6.0pt on input line 135.
-LaTeX Font Info:    Font shape `T1/NimbusSerif/m/it' will be
-(Font)              scaled to size 8.0pt on input line 135.
+(Font)              scaled to size 12.0pt on input line 127.
 <C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/inequality_measures.png, id
-=158, 505.89pt x 216.81pt>
+=137, 505.89pt x 216.81pt>
 File: C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/inequality_measures.pn
 g Graphic file (type png)
 <use C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/inequality_measures.png
 >
 Package pdftex.def Info: C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/ine
-quality_measures.png  used on input line 143.
+quality_measures.png  used on input line 129.
 (pdftex.def)             Requested size: 426.79134pt x 182.91313pt.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
-(Font)              `T1/Roboto-LF/regular/n' on input line 144.
+(Font)              `T1/Roboto-LF/regular/n' on input line 133.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
-(Font)              scaled to size 8.0pt on input line 144.
+(Font)              scaled to size 8.0pt on input line 133.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/it' aliased to
-(Font)              `T1/Roboto-LF/regular/it' on input line 144.
+(Font)              `T1/Roboto-LF/regular/it' on input line 133.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/it' will be
-(Font)              scaled to size 8.0pt on input line 144.
+(Font)              scaled to size 8.0pt on input line 133.
+LaTeX Font Info:    Font shape `T1/NimbusSerif/m/n' will be
+(Font)              scaled to size 8.0pt on input line 141.
+LaTeX Font Info:    Font shape `T1/NimbusSerif/m/n' will be
+(Font)              scaled to size 10.0pt on input line 151.
+LaTeX Font Info:    Font shape `T1/NimbusSerif/m/n' will be
+(Font)              scaled to size 7.0pt on input line 151.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.148 
-       [1]
-<C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/debt_measures.png, id=205, 
+l.160 
+       [1 <C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/inequality_measur
+es.png>]
+LaTeX Font Info:    Font shape `T1/NimbusSerif/m/n' will be
+(Font)              scaled to size 6.0pt on input line 203.
+LaTeX Font Info:    Font shape `T1/NimbusSerif/m/it' will be
+(Font)              scaled to size 8.0pt on input line 203.
+ [2] [3] [4]
+<C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/debt_measures.png, id=227, 
 650.43pt x 325.215pt>
 File: C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/debt_measures.png Grap
 hic file (type png)
 <use C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/debt_measures.png>
 Package pdftex.def Info: C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/deb
-t_measures.png  used on input line 152.
+t_measures.png  used on input line 335.
 (pdftex.def)             Requested size: 426.79134pt x 213.40196pt.
- [2] [3 <C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/inequality_measures
-.png>]
+ [5 <C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/debt_measures.png>]
 LaTeX Font Info:    Font shape `T1/NimbusSerif/m/n' will be
-(Font)              scaled to size 14.4pt on input line 167.
+(Font)              scaled to size 14.4pt on input line 375.
 LaTeX Font Info:    Font shape `T1/NimbusSerif/b/n' will be
-(Font)              scaled to size 14.4pt on input line 167.
+(Font)              scaled to size 14.4pt on input line 375.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
-(Font)              `T1/Roboto-LF/bold/n' on input line 167.
+(Font)              `T1/Roboto-LF/bold/n' on input line 375.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
-(Font)              scaled to size 14.4pt on input line 167.
+(Font)              scaled to size 14.4pt on input line 375.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
-(Font)              `T1/Roboto-LF/regular/n' on input line 167.
+(Font)              `T1/Roboto-LF/regular/n' on input line 375.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
-(Font)              scaled to size 14.4pt on input line 167.
- [4 <C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/debt_measures.png>] [5]
- [6] [7] [8]
+(Font)              scaled to size 14.4pt on input line 375.
+ [6] [7] [8] [9] [10] [11]
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
-(Font)              `T1/Roboto-LF/bold/n' on input line 236.
+(Font)              `T1/Roboto-LF/bold/n' on input line 526.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
-(Font)              scaled to size 12.0pt on input line 236.
- [9] [10] [11]
+(Font)              scaled to size 12.0pt on input line 526.
+ [12] [13] [14]
 LaTeX Font Info:    Font shape `T1/NimbusSerif/b/n' will be
-(Font)              scaled to size 8.0pt on input line 295.
+(Font)              scaled to size 8.0pt on input line 703.
+ [15]
 <C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/total_government_debt_icg.p
-ng, id=511, 505.89pt x 361.35pt>
+ng, id=524, 505.89pt x 361.35pt>
 File: C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/total_government_debt_
 icg.png Graphic file (type png)
 <use C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/total_government_debt_i
 cg.png>
 Package pdftex.def Info: C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/tot
-al_government_debt_icg.png  used on input line 360.
+al_government_debt_icg.png  used on input line 761.
 (pdftex.def)             Requested size: 426.79134pt x 304.85522pt.
- [12] [13]
-<C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/figure2.png, id=522, 505.89
+ [16 <C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/total_government_debt_
+icg.png>]
+<C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/figure2.png, id=530, 505.89
 pt x 361.35pt>
 File: C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/figure2.png Graphic fi
 le (type png)
 <use C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/figure2.png>
 Package pdftex.def Info: C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/fig
-ure2.png  used on input line 373.
+ure2.png  used on input line 774.
 (pdftex.def)             Requested size: 426.79134pt x 304.85522pt.
+
+[17 <C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/figure2.png>] [18]
 LaTeX Font Info:    Font shape `T1/NimbusSerif/m/it' will be
-(Font)              scaled to size 10.0pt on input line 412.
+(Font)              scaled to size 10.0pt on input line 917.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[14 <C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/total_government_debt_i
-cg.png>] [15 <C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/figure2.png>]
-Overfull \vbox (0.32181pt too high) has occurred while \output is active []
-
-
-[16] [17]
-<C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/figure_ME_GDP_debt_panels.p
-ng, id=556, 867.24pt x 578.16pt>
-File: C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/figure_ME_GDP_debt_pan
-els.png Graphic file (type png)
-<use C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/figure_ME_GDP_debt_pane
-ls.png>
-Package pdftex.def Info: C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/fig
-ure_ME_GDP_debt_panels.png  used on input line 517.
-(pdftex.def)             Requested size: 426.79134pt x 284.52713pt.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
-(Font)              `T1/Roboto-LF/regular/n' on input line 518.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
-(Font)              scaled to size 10.0pt on input line 518.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/m/it' aliased to
-(Font)              `T1/Roboto-LF/regular/it' on input line 518.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/it' will be
-(Font)              scaled to size 10.0pt on input line 518.
- [18] [19 <C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/figure_ME_GDP_deb
-t_panels.png>]
-Overfull \hbox (0.68456pt too wide) in paragraph at lines 530--531
-\T1/NimbusSerif/m/n/12 While the fixed-effects es-ti-mates pro-vide use-ful bas
-e-line as-so-ci-a-tions be-tween debt, growth,
- []
-
-
-Overfull \hbox (85.43973pt too wide) detected at line 537
-[][][]\OT1/cmr/m/n/12 ^^A\OML/cmm/m/it/12 y[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/1
-2  \OT1/cmr/m/n/12 + [] \OML/cmm/m/it/12 ^^^[]\OT1/cmr/m/n/12 ^^A\OML/cmm/m/it
-/12 y[] \OT1/cmr/m/n/12 + [] \OML/cmm/m/it/12 ^^L[]\OT1/cmr/m/n/12 ^^A\OML/cmm/
-m/it/12 d[] \OT1/cmr/m/n/12 + [] \OML/cmm/m/it/12 ^^L[]\OT1/cmr/m/n/12 ^^A\OML/
-cmm/m/it/12 g[] \OT1/cmr/m/n/12 + [] \OML/cmm/m/it/12 ^^L[]\OT1/cmr/m/n/12 ^^A\
-OML/cmm/m/it/12 h[] \OT1/cmr/m/n/12 + [] \OML/cmm/m/it/12 ^^L[]\OT1/cmr/m/n/12 
-^^A(\OML/cmm/m/it/12 d \OMS/cmsy/m/n/12 ^^B \OML/cmm/m/it/12 g\OT1/cmr/m/n/12 )
-[] + \OML/cmm/m/it/12 ^^U[][] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 "[]
- []
-
-[20]
+[19]
 LaTeX Font Info:    Font shape `T1/NimbusSerif/m/n' will be
-(Font)              scaled to size 10.95pt on input line 552.
+(Font)              scaled to size 10.95pt on input line 956.
+ [20] [21] [22] [23]
 LaTeX Font Info:    Font shape `T1/NimbusSerif/b/n' will be
-(Font)              scaled to size 10.95pt on input line 555.
- [21] [22] [23] [24]
-Overfull \hbox (5.80728pt too wide) in paragraph at lines 753--754
-\T1/NimbusSerif/m/n/12 A cen-tral mo-ti-va-tion for this study is the hy-poth-e
--sis that coun-tries with mon-e-tary sovereignty,
- []
+(Font)              scaled to size 10.95pt on input line 1260.
+ [24]
+LaTeX Font Info:    Font shape `T1/NimbusSerif/b/n' will be
+(Font)              scaled to size 6.0pt on input line 1316.
+ [25] [26]
 
-[25] [26]
-Overfull \hbox (15.38454pt too wide) in paragraph at lines 831--832
-\T1/NimbusSerif/m/n/12 sovereignty en-ables poli-cies whose re-dis-tribu-tive b
-en-e-fits ma-te-ri-al-ize only grad-u-ally^^Vthrough
- []
+LaTeX Warning: Reference `figure:figure5' on page 27 undefined on input line 14
+39.
 
-[27] [28] [29] (draft.bbl
+[27] [28] [29] [30] [31] [32] [33] (draft.bbl
 
 LaTeX Font Warning: Font shape `T1/NimbusSerif/m/sc' undefined
 (Font)              using `T1/NimbusSerif/m/n' instead on input line 9.
 
-[30]
 LaTeX Font Info:    Font shape `T1/NimbusSerif/m/sc' will be
 (Font)              scaled to size 12.0pt on input line 14.
- [31]
+[34] [35]
 Underfull \hbox (badness 1097) in paragraph at lines 154--157
 []\T1/NimbusSerif/m/sc/12 Corsetti, Gi-an-carlo, Keith Kuester, An-dré Meier, a
 nd Ger-not J. Müller. 2013.
  []
 
-[32] [33{C:/Users/ageis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/
-cm-super-t1.enc}] [34] [35]
+[36{C:/Users/ageis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-su
+per-t1.enc}] [37] [38]
 Underfull \hbox (badness 1708) in paragraph at lines 446--448
 []\T1/NimbusSerif/m/sc/12 World Bank. 2024\T1/NimbusSerif/m/it/12 a\T1/NimbusSe
 rif/m/sc/12 . ``World Bank Coun-try and Lend-ing Groups.'' [][]$\T1/cmtt/m/it/1
@@ -915,7 +870,7 @@ rif/m/sc/12 . ``World De-vel-op-ment In-di-ca-tors.'' [][]$\T1/cmtt/m/it/12 htt
 ps : / / datatopics .
  []
 
-) [36] (draft.aux)
+) [39] (draft.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -924,17 +879,20 @@ L3 programming layer <2026-01-19>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `draft.out' has not changed.
-(rerunfilecheck)             Checksum: 2B5EFF39EF9785BF07EDC055E9A32FC5;5068.
+(rerunfilecheck)             Checksum: 3E31640D00A605FBC50BCD28F9F0487B;4440.
  ) 
 Here is how much of TeX's memory you used:
- 16139 strings out of 467867
- 270171 string characters out of 5418335
- 691105 words of memory out of 5000000
- 44558 multiletter control sequences out of 15000+600000
- 747955 words of font info for 117 fonts, out of 8000000 for 9000
+ 16147 strings out of 467867
+ 269639 string characters out of 5418335
+ 696541 words of memory out of 5000000
+ 44557 multiletter control sequences out of 15000+600000
+ 742545 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,117p,3111b,749s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,15n,117p,1685b,741s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 , replaced by a fixed one
@@ -950,25 +908,26 @@ oto/Roboto-Regular.pfb><C:/Users/ageis/AppData/Local/Programs/MiKTeX/fonts/type
 onts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/ageis/AppData/Local/Programs
 /MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ageis/AppData/Local
 /Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/ageis/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/ag
-eis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/
-Users/ageis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/ag
+eis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/
+Users/ageis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.
 pfb><C:/Users/ageis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmr12.pfb><C:/Users/ageis/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmr6.pfb><C:/Users/ageis/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr7.pfb><C:/Users/ageis/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmr8.pfb><C:/Users/ageis/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ageis/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/ageis/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/ageis/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfit1200.pfb><C:/Users/age
-is/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/ztm-Med.pfb><C:/Us
-ers/ageis/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/ztm-Reg.pfb
-><C:/Users/ageis/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/ztm-
-RegIta.pfb>
-Output written on draft.pdf (37 pages, 3720796 bytes).
+m/cmmib10.pfb><C:/Users/ageis/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmr10.pfb><C:/Users/ageis/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmr12.pfb><C:/Users/ageis/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/ageis/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/ageis/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ageis/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/ageis/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/
+ageis/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfit1200.pfb><C
+:/Users/ageis/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/ztm-Med
+.pfb><C:/Users/ageis/AppData/Local/Programs/MiKTeX/fonts/type1/public/nimbus15/
+ztm-Reg.pfb><C:/Users/ageis/AppData/Local/Programs/MiKTeX/fonts/type1/public/ni
+mbus15/ztm-RegIta.pfb>
+Output written on draft.pdf (40 pages, 2286297 bytes).
 PDF statistics:
- 824 PDF objects out of 1000 (max. 8388607)
- 182 named destinations out of 1000 (max. 500000)
- 266 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 864 PDF objects out of 1000 (max. 8388607)
+ 187 named destinations out of 1000 (max. 500000)
+ 237 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,6 +1,6 @@
 
 Time series regression with "ts" data:
-Start = 3, End = 32
+Start = 2, End = 46
 
 Call:
 dynlm::dynlm(formula = full_formula, data = data, na.action = ..1, 
@@ -8,27 +8,22 @@ dynlm::dynlm(formula = full_formula, data = data, na.action = ..1,
 
 Residuals:
        Min         1Q     Median         3Q        Max 
--0.0225380 -0.0056186 -0.0004926  0.0044757  0.0230802 
+-0.0142774 -0.0046738 -0.0000908  0.0040069  0.0118795 
 
 Coefficients:
-                  Estimate Std. Error t value Pr(>|t|)    
-(Intercept)        1.29903    0.37602   3.455 0.003027 ** 
-L(log_gini, 1)     1.25942    0.16015   7.864 4.61e-07 ***
-L(log_gini, 2)    -0.62044    0.15625  -3.971 0.000988 ***
-debt_imp          -0.01367    0.04000  -0.342 0.736747    
-L(debt_imp, 1)    -0.06262    0.06125  -1.022 0.320890    
-L(debt_imp, 2)     0.14809    0.05110   2.898 0.010005 *  
-growth            -0.27674    0.44398  -0.623 0.541346    
-hc                 4.59641    2.39314   1.921 0.071709 .  
-L(hc, 1)         -15.16309    3.01042  -5.037 0.000101 ***
-L(hc, 2)          10.57524    1.76490   5.992 1.46e-05 ***
-gdp_x_debt         0.72851    0.85665   0.850 0.406911    
-L(gdp_x_debt, 1)  -0.29663    0.20857  -1.422 0.173060    
-L(gdp_x_debt, 2)   0.46090    0.21872   2.107 0.050248 .  
+                    Estimate Std. Error t value Pr(>|t|)    
+(Intercept)        2.017e-02  7.860e-02   0.257   0.7989    
+L(p90p100, 1)      9.547e-01  5.905e-02  16.169   <2e-16 ***
+public_debt       -5.324e-05  9.061e-03  -0.006   0.9953    
+L(public_debt, 1)  2.666e-02  1.104e-02   2.414   0.0208 *  
+growth             3.719e-02  3.839e-02   0.969   0.3390    
+life_exp          -1.709e-04  1.288e-03  -0.133   0.8951    
+gdp_x_debt        -2.218e-01  1.082e-01  -2.051   0.0474 *  
+L(gdp_x_debt, 1)   8.787e-02  6.528e-02   1.346   0.1864    
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 0.01286 on 17 degrees of freedom
-Multiple R-squared:  0.9844,	Adjusted R-squared:  0.9733 
-F-statistic: 89.14 on 12 and 17 DF,  p-value: 6.747e-13
+Residual standard error: 0.006738 on 37 degrees of freedom
+Multiple R-squared:  0.9905,	Adjusted R-squared:  0.9887 
+F-statistic: 549.2 on 7 and 37 DF,  p-value: < 2.2e-16
 

@@ -1,131 +1,127 @@
 country,regime_group,longrun_debt,regime_var
-Australia,meets,0.9201863107252707,Floating (IRR)
-Brazil,meets,-0.46041721115927403,Floating (IRR)
-Chile,meets,0.07882477309256569,Floating (IRR)
-Germany,meets,0.7257734040636291,Floating (IRR)
-Iran,meets,0.1166412966966114,Floating (IRR)
-Japan,meets,-0.09728190304469501,Floating (IRR)
-Mexico,meets,-0.9930194084725464,Floating (IRR)
-New Zealand,meets,-1.5863282749502219,Floating (IRR)
-Nigeria,meets,0.11039425325054192,Floating (IRR)
-Turkey,meets,-1.0452173867826295,Floating (IRR)
-United Kingdom,meets,-0.7123355143981099,Floating (IRR)
-United States,meets,-0.6800736491629888,Floating (IRR)
-Algeria,fails,0.11575434357366544,Floating (IRR)
-Argentina,fails,-0.3283201909956674,Floating (IRR)
-Austria,fails,-6.83650851441751,Floating (IRR)
-Bangladesh,fails,1.7408337917167664,Floating (IRR)
-Barbados,fails,0.07979084195219502,Floating (IRR)
-Bolivia,fails,-0.27423356710035984,Floating (IRR)
-Burkina Faso,fails,0.02907831271177932,Floating (IRR)
-Canada,fails,-0.24110764313246358,Floating (IRR)
-China,fails,-1.2070177081069087,Floating (IRR)
-Colombia,fails,0.05998413328344929,Floating (IRR)
-Costa Rica,fails,-1.3214491534207258,Floating (IRR)
-Cyprus,fails,0.6731613763324246,Floating (IRR)
-Denmark,fails,-0.49358222992580825,Floating (IRR)
-Ecuador,fails,0.1824805164188962,Floating (IRR)
-Egypt,fails,-0.15006724034237598,Floating (IRR)
-Finland,fails,0.023550979319108212,Floating (IRR)
-France,fails,0.12099992836037603,Floating (IRR)
-Gambia,fails,-0.0044579447379003885,Floating (IRR)
-Ghana,fails,0.22090153108134628,Floating (IRR)
-Greece,fails,-0.007932953069238453,Floating (IRR)
-Guatemala,fails,-0.03523408283577415,Floating (IRR)
-Honduras,fails,0.03415058740534562,Floating (IRR)
-India,fails,0.32944192440040493,Floating (IRR)
-Indonesia,fails,-0.6527527687850583,Floating (IRR)
-Italy,fails,0.43405550248294844,Floating (IRR)
-Jordan,fails,0.06262047631967715,Floating (IRR)
-Kenya,fails,0.02096668991967885,Floating (IRR)
-Malaysia,fails,-0.04797224531272505,Floating (IRR)
-Mali,fails,0.06856880388665026,Floating (IRR)
-Mauritania,fails,-0.30080290951902566,Floating (IRR)
-Mauritius,fails,0.029356677034453958,Floating (IRR)
-Morocco,fails,0.007627555328566131,Floating (IRR)
-Nepal,fails,0.8213864331619594,Floating (IRR)
-Netherlands,fails,0.06516730420682021,Floating (IRR)
-Niger,fails,0.03357300365525517,Floating (IRR)
-Norway,fails,-2.338922892962599,Floating (IRR)
-Pakistan,fails,-0.08634543937756277,Floating (IRR)
-Panama,fails,0.1784839599924634,Floating (IRR)
-Paraguay,fails,-4.4610821744654405,Floating (IRR)
-Peru,fails,2.3418465946710283,Floating (IRR)
-Portugal,fails,-0.1003306614375176,Floating (IRR)
-Senegal,fails,0.03388216298410225,Floating (IRR)
-Sierra Leone,fails,0.04687663114058559,Floating (IRR)
-Singapore,fails,0.023303540580489748,Floating (IRR)
-South Korea,fails,-0.19159634567161693,Floating (IRR)
-Spain,fails,0.02639788629825021,Floating (IRR)
-Sri Lanka,fails,0.028606978199686522,Floating (IRR)
-Sweden,fails,-0.7039164635481994,Floating (IRR)
-Switzerland,fails,0.11210450481066901,Floating (IRR)
-Trinidad and Tobago,fails,-0.01407067428087243,Floating (IRR)
-Tunisia,fails,12.190281901569799,Floating (IRR)
-Uganda,fails,-1.0590920339988161,Floating (IRR)
-Uruguay,fails,0.4410489623292414,Floating (IRR)
-Australia,meets,0.9201863107252707,Hypothesis
-Germany,meets,0.7257734040636291,Hypothesis
-Japan,meets,-0.09728190304469501,Hypothesis
-New Zealand,meets,-1.5863282749502219,Hypothesis
-United Kingdom,meets,-0.7123355143981099,Hypothesis
-Algeria,fails,0.11575434357366544,Hypothesis
-Argentina,fails,-0.3283201909956674,Hypothesis
-Austria,fails,-6.83650851441751,Hypothesis
-Bangladesh,fails,1.7408337917167664,Hypothesis
-Barbados,fails,0.07979084195219502,Hypothesis
-Bolivia,fails,-0.27423356710035984,Hypothesis
-Brazil,fails,-0.46041721115927403,Hypothesis
-Burkina Faso,fails,0.02907831271177932,Hypothesis
-Canada,fails,-0.24110764313246358,Hypothesis
-Chile,fails,0.07882477309256569,Hypothesis
-China,fails,-1.2070177081069087,Hypothesis
-Colombia,fails,0.05998413328344929,Hypothesis
-Costa Rica,fails,-1.3214491534207258,Hypothesis
-Cyprus,fails,0.6731613763324246,Hypothesis
-Denmark,fails,-0.49358222992580825,Hypothesis
-Ecuador,fails,0.1824805164188962,Hypothesis
-Egypt,fails,-0.15006724034237598,Hypothesis
-Finland,fails,0.023550979319108212,Hypothesis
-France,fails,0.12099992836037603,Hypothesis
-Gambia,fails,-0.0044579447379003885,Hypothesis
-Ghana,fails,0.22090153108134628,Hypothesis
-Greece,fails,-0.007932953069238453,Hypothesis
-Guatemala,fails,-0.03523408283577415,Hypothesis
-Honduras,fails,0.03415058740534562,Hypothesis
-India,fails,0.32944192440040493,Hypothesis
-Indonesia,fails,-0.6527527687850583,Hypothesis
-Iran,fails,0.1166412966966114,Hypothesis
-Italy,fails,0.43405550248294844,Hypothesis
-Jordan,fails,0.06262047631967715,Hypothesis
-Kenya,fails,0.02096668991967885,Hypothesis
-Malaysia,fails,-0.04797224531272505,Hypothesis
-Mali,fails,0.06856880388665026,Hypothesis
-Mauritania,fails,-0.30080290951902566,Hypothesis
-Mauritius,fails,0.029356677034453958,Hypothesis
-Mexico,fails,-0.9930194084725464,Hypothesis
-Morocco,fails,0.007627555328566131,Hypothesis
-Nepal,fails,0.8213864331619594,Hypothesis
-Netherlands,fails,0.06516730420682021,Hypothesis
-Niger,fails,0.03357300365525517,Hypothesis
-Nigeria,fails,0.11039425325054192,Hypothesis
-Norway,fails,-2.338922892962599,Hypothesis
-Pakistan,fails,-0.08634543937756277,Hypothesis
-Panama,fails,0.1784839599924634,Hypothesis
-Paraguay,fails,-4.4610821744654405,Hypothesis
-Peru,fails,2.3418465946710283,Hypothesis
-Portugal,fails,-0.1003306614375176,Hypothesis
-Senegal,fails,0.03388216298410225,Hypothesis
-Sierra Leone,fails,0.04687663114058559,Hypothesis
-Singapore,fails,0.023303540580489748,Hypothesis
-South Korea,fails,-0.19159634567161693,Hypothesis
-Spain,fails,0.02639788629825021,Hypothesis
-Sri Lanka,fails,0.028606978199686522,Hypothesis
-Sweden,fails,-0.7039164635481994,Hypothesis
-Switzerland,fails,0.11210450481066901,Hypothesis
-Trinidad and Tobago,fails,-0.01407067428087243,Hypothesis
-Tunisia,fails,12.190281901569799,Hypothesis
-Turkey,fails,-1.0452173867826295,Hypothesis
-Uganda,fails,-1.0590920339988161,Hypothesis
-United States,fails,-0.6800736491629888,Hypothesis
-Uruguay,fails,0.4410489623292414,Hypothesis
+Australia,meets,0.5822547829624986,Floating (IRR)
+Brazil,meets,-3.9795067143688496,Floating (IRR)
+Chile,meets,0.3048063551675836,Floating (IRR)
+Iran,meets,-0.09317209117767333,Floating (IRR)
+Japan,meets,-0.3211261880008622,Floating (IRR)
+Mexico,meets,-0.6848996641567827,Floating (IRR)
+New Zealand,meets,-0.9289447975922273,Floating (IRR)
+United Kingdom,meets,-0.2503517850603788,Floating (IRR)
+United States,meets,-0.17501456764921491,Floating (IRR)
+Argentina,fails,-0.05550070984724841,Floating (IRR)
+Austria,fails,0.2657346559450447,Floating (IRR)
+Bangladesh,fails,1.8448586049348115,Floating (IRR)
+Barbados,fails,-0.022607177880798694,Floating (IRR)
+Belize,fails,-0.15355535329884232,Floating (IRR)
+Bolivia,fails,-0.4580071160552627,Floating (IRR)
+Burkina Faso,fails,-0.020162349140765413,Floating (IRR)
+Canada,fails,-0.5040619056607736,Floating (IRR)
+Central African Republic,fails,0.10430034814970124,Floating (IRR)
+Colombia,fails,-0.095636349296089,Floating (IRR)
+Costa Rica,fails,-0.5202295855057002,Floating (IRR)
+Denmark,fails,-5.5769723524748676,Floating (IRR)
+Egypt,fails,-0.2928588497266171,Floating (IRR)
+El Salvador,fails,-0.36512749155650764,Floating (IRR)
+Finland,fails,-0.10168317818507573,Floating (IRR)
+France,fails,0.31158830162610335,Floating (IRR)
+Gambia,fails,-0.035561358676373854,Floating (IRR)
+Germany,fails,0.540890701159591,Floating (IRR)
+Greece,fails,-0.12749887748400063,Floating (IRR)
+Guatemala,fails,-0.37346238864174647,Floating (IRR)
+Honduras,fails,-0.3372718726133772,Floating (IRR)
+India,fails,0.39305278357158824,Floating (IRR)
+Indonesia,fails,-0.1676780952153043,Floating (IRR)
+Ireland,fails,0.2744895879344449,Floating (IRR)
+Italy,fails,0.3806425251066959,Floating (IRR)
+Jamaica,fails,-0.028205119442834662,Floating (IRR)
+Jordan,fails,-0.07476364906138291,Floating (IRR)
+Malaysia,fails,-0.03390922771813462,Floating (IRR)
+Mali,fails,0.09334201605656178,Floating (IRR)
+Mauritania,fails,0.06964616099094842,Floating (IRR)
+Morocco,fails,0.05772168692211506,Floating (IRR)
+Nepal,fails,0.17779209415618372,Floating (IRR)
+Netherlands,fails,-0.05738954255365985,Floating (IRR)
+Niger,fails,-0.6954831268089853,Floating (IRR)
+Nigeria,fails,-0.07795821773883259,Floating (IRR)
+Norway,fails,-0.5761428307183193,Floating (IRR)
+Pakistan,fails,-0.028465172043873544,Floating (IRR)
+Panama,fails,0.011483156964092441,Floating (IRR)
+Paraguay,fails,0.8729530685942303,Floating (IRR)
+Philippines,fails,-0.12890706623120687,Floating (IRR)
+Portugal,fails,-0.06548098805743266,Floating (IRR)
+Rwanda,fails,0.05186750988244972,Floating (IRR)
+Senegal,fails,0.10637743258792068,Floating (IRR)
+Sierra Leone,fails,0.10425474239207883,Floating (IRR)
+Singapore,fails,-0.1019322585901462,Floating (IRR)
+South Korea,fails,-0.1700340133585521,Floating (IRR)
+Spain,fails,0.007028010592574442,Floating (IRR)
+Sri Lanka,fails,-0.028018756418860764,Floating (IRR)
+Sweden,fails,-0.2754201621894633,Floating (IRR)
+Switzerland,fails,0.06829494230932971,Floating (IRR)
+Tanzania,fails,0.20488610422224313,Floating (IRR)
+Thailand,fails,-1.10383161704389,Floating (IRR)
+Trinidad and Tobago,fails,0.055965098042634734,Floating (IRR)
+Uruguay,fails,-4.344313736058543,Floating (IRR)
+Australia,meets,0.5822547829624986,Hypothesis
+Japan,meets,-0.3211261880008622,Hypothesis
+New Zealand,meets,-0.9289447975922273,Hypothesis
+United Kingdom,meets,-0.2503517850603788,Hypothesis
+Argentina,fails,-0.05550070984724841,Hypothesis
+Austria,fails,0.2657346559450447,Hypothesis
+Bangladesh,fails,1.8448586049348115,Hypothesis
+Barbados,fails,-0.022607177880798694,Hypothesis
+Belize,fails,-0.15355535329884232,Hypothesis
+Bolivia,fails,-0.4580071160552627,Hypothesis
+Brazil,fails,-3.9795067143688496,Hypothesis
+Burkina Faso,fails,-0.020162349140765413,Hypothesis
+Canada,fails,-0.5040619056607736,Hypothesis
+Central African Republic,fails,0.10430034814970124,Hypothesis
+Chile,fails,0.3048063551675836,Hypothesis
+Colombia,fails,-0.095636349296089,Hypothesis
+Costa Rica,fails,-0.5202295855057002,Hypothesis
+Denmark,fails,-5.5769723524748676,Hypothesis
+Egypt,fails,-0.2928588497266171,Hypothesis
+El Salvador,fails,-0.36512749155650764,Hypothesis
+Finland,fails,-0.10168317818507573,Hypothesis
+France,fails,0.31158830162610335,Hypothesis
+Gambia,fails,-0.035561358676373854,Hypothesis
+Germany,fails,0.540890701159591,Hypothesis
+Greece,fails,-0.12749887748400063,Hypothesis
+Guatemala,fails,-0.37346238864174647,Hypothesis
+Honduras,fails,-0.3372718726133772,Hypothesis
+India,fails,0.39305278357158824,Hypothesis
+Indonesia,fails,-0.1676780952153043,Hypothesis
+Iran,fails,-0.09317209117767333,Hypothesis
+Ireland,fails,0.2744895879344449,Hypothesis
+Italy,fails,0.3806425251066959,Hypothesis
+Jamaica,fails,-0.028205119442834662,Hypothesis
+Jordan,fails,-0.07476364906138291,Hypothesis
+Malaysia,fails,-0.03390922771813462,Hypothesis
+Mali,fails,0.09334201605656178,Hypothesis
+Mauritania,fails,0.06964616099094842,Hypothesis
+Mexico,fails,-0.6848996641567827,Hypothesis
+Morocco,fails,0.05772168692211506,Hypothesis
+Nepal,fails,0.17779209415618372,Hypothesis
+Netherlands,fails,-0.05738954255365985,Hypothesis
+Niger,fails,-0.6954831268089853,Hypothesis
+Nigeria,fails,-0.07795821773883259,Hypothesis
+Norway,fails,-0.5761428307183193,Hypothesis
+Pakistan,fails,-0.028465172043873544,Hypothesis
+Panama,fails,0.011483156964092441,Hypothesis
+Paraguay,fails,0.8729530685942303,Hypothesis
+Philippines,fails,-0.12890706623120687,Hypothesis
+Portugal,fails,-0.06548098805743266,Hypothesis
+Rwanda,fails,0.05186750988244972,Hypothesis
+Senegal,fails,0.10637743258792068,Hypothesis
+Sierra Leone,fails,0.10425474239207883,Hypothesis
+Singapore,fails,-0.1019322585901462,Hypothesis
+South Korea,fails,-0.1700340133585521,Hypothesis
+Spain,fails,0.007028010592574442,Hypothesis
+Sri Lanka,fails,-0.028018756418860764,Hypothesis
+Sweden,fails,-0.2754201621894633,Hypothesis
+Switzerland,fails,0.06829494230932971,Hypothesis
+Tanzania,fails,0.20488610422224313,Hypothesis
+Thailand,fails,-1.10383161704389,Hypothesis
+Trinidad and Tobago,fails,0.055965098042634734,Hypothesis
+United States,fails,-0.17501456764921491,Hypothesis
+Uruguay,fails,-4.344313736058543,Hypothesis

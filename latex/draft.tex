@@ -92,7 +92,7 @@
 		lead to negative impacts on distributional outcomes. Though there is little empirical evidence to substantiate the assumption of this relationship, it nevertheless perseveres, guiding the study
 		of both fiscal and monetary policy. The most recent global financial crisis
 		has led to an unprecedented increase in public debt across the world, raising
-		serious concerns about its economic impact. In our sample of 137 countries over a period 1960 to 2022, we study the relationship between debt, deficits, and inequality.
+		serious concerns about its economic impact. In our sample of 109 countries over a period 1978 to 2019, we study the relationship between debt, deficits, and inequality.
 	\end{titlepage}
 %	\tableofcontents
 %	\addtocontents{toc}{\protect\thispagestyle{empty}}
@@ -104,7 +104,75 @@
 
 In the aftermath of the Great Recession and the COVID-19 pandemic, public debt levels have soared to unprecedented levels. The extraordinarily high debt levels and seeming fragility of the global economy has brought public and academic debate to reconsider the long-run implications of fiscal spending. Modern arguments can be traced back to \cite{Buchanan1958}, \cite{Meade1958}, and \cite{Modigliani1961}, although the issue goes back as far as Adam Smith. Income and wealth inequality have risen in tandem across much of the world since the early 1980s.
 
-\autoref{figure:figure1} and~\autoref{figure:figure2} document both trends using composition-adjusted, GDP-weighted averages across a broad cross-country panel: the top income shares and Gini coefficient have drifted upward over four decades, while public, household, and corporate debt have each expanded substantially. Whether these parallel trends reflect a causal relationship, and if so in which direction and through which channels, remains an open and contested question. In \autoref{table:descriptive}, these trends are tabulated across three periods: the pre-neoliberal era (1970--1978), the immediate post-neoliberal period (1982--1990), and the most recent decade of our estimation window (2010--2022). All series are GDP-weighted composition-adjusted averages constructed to purge sample-entry effects. The periods reflect a structural break in advanced-economy fiscal and financial policy that is well documented in the literature.\footnote{The early 1980s saw a coordinated acceleration of financial liberalization across OECD economies, documented across multiple dimensions in \citet{Abiad2010} and \citet{Quinn1997}. The reintegration of international capital markets following the Bretton Woods era is situated in long-run historical perspective in \citet{ObstfeldTaylor2004}. On the fiscal side, \citet{Alesina1995} show the wave of spending-based consolidation episodes that characterized OECD fiscal policy in this period. The distributional consequences are documented for the United States in \citet{PikettyS2003} and across a broad set of advanced economies in \citet{Atkinson2011}, both of whom identify the early 1980s as the turning point in top income concentration.} Beginning around 1979--1981, advanced economies underwent a well-documented shift toward capital account liberalization, credit and banking deregulation, and a reorientation of fiscal priorities whose effects propagated to the broader cross-country sample through international capital markets. The rise in public debt and the increase in income inequality documented in \autoref{table:descriptive} are both products of this period, and the endogenous relationship between the two has been formalized theoretically by \citet{Azzimonti2014}, who show that rising inequality and financial integration jointly provide incentives to governments to accumulate debt. The break at 1979--1981 accounts for the elections of Margaret Thatcher (1979) and Ronald Reagan (1980) mark a widely recognized structural shift in fiscal and financial policy in advanced economies, whose effects propagated globally through capital market liberalization and the deregulation of credit. Public debt nearly doubled between the pre- and post-neoliberal periods, rising from 24\% to 47\% of GDP on average, while the top 10\% income share rose by nearly 3 percentage points and the top 1\% share by more than 2 points over the same interval. Both debt and inequality continued to rise through the 2010s, with public debt reaching 80\% of GDP and the top 1\% share approaching 17\%.
+\autoref{figure:figure1} and~\autoref{figure:figure2} document both trends
+using a common cross-country aggregate. Income concentration is measured by
+the share of pre-tax national income accruing to the top 10\% and the top 1\%
+of the distribution, drawn from the World Inequality Database \citep{WID2024},
+with the Gini coefficient of disposable income from SWIID 9.91 \citep{solt2020}
+as a complementary summary measure. Debt is measured at the sectoral level from
+the IMF Global Debt Database \citep{MbayeMorenoBadiaChae2018}, which reports
+public, household, non-financial corporate, and total private debt as shares of
+GDP. Each series is aggregated as a GDP-weighted cross-country mean, with
+weights given by output-side real GDP from the Penn World Tables 11.0
+\citep{FeenstraInklaarTimmer2015}. Because country coverage expands
+substantially over the sample, unadjusted weighted means confound genuine
+movements with the entry and exit of countries. We therefore chain the
+aggregates: for each year, we compute the weighted mean change among countries
+observed in consecutive years, cumulate these changes over time, and anchor
+the resulting series to the weighted cross-sectional mean of the final
+observed year. The aggregates thus track within-country movements while
+remaining on the scale of the current cross-section.
+
+\begin{figure}[ht]
+	\caption{Long-Run Trends in Debt}
+	\label{figure:figure1}
+	\includegraphics[width=\linewidth]{C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/inequality_measures.png}
+\caption*{\scriptsize\emph{Note}: Chained GDP-weighted cross-country means,
+	anchored to the final-year cross-section to remove sample-entry effects.
+	Income shares from WID; Gini from SWIID 9.91. Weights are output-side real
+	GDP (PWT 11.0).}
+\end{figure}
+
+\autoref{table:descriptive} summarizes these series across three periods: the
+pre-neoliberal era (1970--1978), the immediate post-neoliberal period
+(1982--1990), and the most recent decade of the data (2013--2022). The
+periodization reflects a structural break in advanced-economy fiscal and
+financial policy that is well documented in the
+literature.\footnote{The early 1980s saw a coordinated acceleration of
+	financial liberalization across OECD economies, documented across multiple
+	dimensions in \citet{Abiad2010} and \citet{Quinn1997}. The reintegration of
+	international capital markets following the Bretton Woods era is situated in
+	long-run historical perspective in \citet{ObstfeldTaylor2004}. On the fiscal
+	side, \citet{Alesina1995} show the wave of spending-based consolidation
+	episodes that characterized OECD fiscal policy in this period. The
+	distributional consequences are documented for the United States in
+	\citet{PikettyS2003} and across a broad set of advanced economies in
+	\citet{Atkinson2011}, both of whom identify the early 1980s as the turning
+	point in top income concentration.} The elections of Margaret Thatcher (1979)
+and Ronald Reagan (1980) mark the conventional dating of this shift, which
+encompassed capital account liberalization, credit and banking deregulation,
+and a reorientation of fiscal priorities, and whose effects propagated to the
+broader cross-country sample through international capital markets. Rising
+inequality and rising public debt are both products of this period, and
+\citet{Azzimonti2014} formalize their joint determination, showing that
+financial integration and higher income risk together strengthen government
+incentives to accumulate debt.
+
+The magnitudes in \autoref{table:descriptive} are substantial. Public debt
+nearly doubled between the pre- and post-neoliberal periods, rising from 24\%
+to 47\% of GDP, and reached 86\% of GDP in the most recent decade. Household
+debt rose from 40\% to 69\% of GDP over the full span, and total private debt
+from 145\% to 209\%. The distributional series move in tandem: the top 10\%
+income share rose by roughly 3 percentage points between the first two periods
+and by more than 8 points overall, the top 1\% share climbed from 11.3\% to
+16.9\%, and the Gini coefficient rose by 3.5 points. Two patterns stand out.
+First, the acceleration in both debt and inequality dates to the same narrow
+window around 1980, which motivates the shaded intervals in
+\autoref{figure:figure1} and \autoref{figure:figure2}. Second, the expansion
+of debt is broad across sectors rather than confined to the public balance
+sheet, a fact that motivates our attention throughout the paper to the
+composition of debt alongside its aggregate level.
+
 
 \begin{table}[ht]
 	\centering
@@ -123,8 +191,8 @@ In the aftermath of the Great Recession and the COVID-19 pandemic, public debt l
 			\quad Gini coefficient           & 32.5   & 34.3   & 36.0   \\
 			\addlinespace
 			\multicolumn{4}{l}{\textit{Debt (share of GDP)}} \\
-			\quad Public debt                & 24.0\% & 46.6\% & 85.7\% \\
-			\quad Household debt             & 40.0\% & 49.5\% & 69.0\% \\
+			\quad Public debt                & 24.0\%  & 46.6\%  & 85.7\%  \\
+			\quad Household debt             & 40.0\%  & 49.5\%  & 69.0\%  \\
 			\quad Non-financial corporate    & 104.9\% & 114.2\% & 139.9\% \\
 			\quad Total private debt         & 144.9\% & 163.7\% & 208.9\% \\
 			\addlinespace
@@ -132,17 +200,132 @@ In the aftermath of the Great Recession and the COVID-19 pandemic, public debt l
 		\end{tabular}
 		\begin{tablenotes}
 			\scriptsize
-			\item \emph{Note}: GDP-weighted averages, composition-adjusted by demeaning within country to remove sample-entry effects. Income shares from WID; Gini from SWIID 9.91; debt from IMF Global Debt Database. Weights are real output-side GDP (PWT 11.0).
+			\item \emph{Note}: Chained GDP-weighted cross-country means. Aggregates
+			cumulate year-over-year weighted mean changes among countries observed in
+			consecutive years and are anchored to the final-year cross-section, which
+			removes movements attributable to sample entry and exit. Top income shares
+			(pre-tax national income) from WID; Gini coefficient (disposable income)
+			from SWIID 9.91; sectoral debt from the IMF Global Debt Database; weights
+			are output-side real GDP (PWT 11.0).
 		\end{tablenotes}
 	\end{threeparttable}
 \end{table}
 
-\begin{figure}[ht]
-	\caption{Long-Run Trends in Inequality}
-	\label{figure:figure1}
-	\includegraphics[width=\linewidth]{C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/inequality_measures.png}
-	\caption*{\scriptsize\emph{Note}: GDP-weighted averages, composition-adjusted by demeaning within country. Income shares from WID; Gini from SWIID 9.91. Weights are real output-side GDP (PWT 11.0).}
-\end{figure}
+Each series is aggregated as a GDP-weighted cross-country mean, with weights
+given by output-side real GDP from the Penn World Tables 11.0
+\citep{FeenstraInklaarTimmer2015}. The weighting makes the aggregate
+representative of the world economy rather than of the average country. An
+unweighted mean assigns the same influence to the smallest economies as to
+the largest and is therefore dominated by the many small countries in the
+sample; under GDP weighting, each debt series approximates the ratio of
+combined debt to combined output, and each distributional series describes
+income concentration where the bulk of world income is generated. Weighting
+by output rather than population follows the convention of the cross-country
+debt literature, in which the object of interest is the fiscal position of
+the world economy; a population-weighted alternative would characterize the
+experience of the median person rather than the median unit of output, and
+would be dominated by China and India. Because country coverage expands
+substantially over the sample, unadjusted weighted means confound genuine
+movements with the entry and exit of countries. We therefore chain the
+aggregates: for each year, we compute the weighted mean change among
+countries observed in consecutive years, cumulate these changes over time,
+and anchor the resulting series to the weighted cross-sectional mean of the
+final observed year. The aggregates thus track within-country movements
+while remaining on the scale of the current cross-section.
+
+Because the aggregates are GDP-weighted, they are dominated by the
+high-income economies, and the question arises whether the trends they record
+extend to the remainder of the sample. \autoref{table:decade_means} therefore disaggregate the chained series by
+World Bank income classification, reporting decade means and linear
+trends for each group. Top income shares declined through the postwar decades in every group for which
+the series extend that far back, reached their lowest recorded values in the
+1970s and 1980s, and rose thereafter in all four groups. The reversal,
+however, was not uniform in its incidence. High-income economies paired the
+largest expansion of public debt, from 40 percent of GDP in the 1980s to 110
+percent in the 2020s, with a comparatively moderate distributional trend of
+roughly one percentage point per decade in the top 10\% share. The
+lower-middle-income group, by contrast, experienced the steepest
+deterioration on every distributional measure, with the top 10\% share rising
+by 2.5 percentage points per decade since the late 1970s and the Gini
+coefficient by 2 points per decade, while its public debt accumulated at
+nearly the same pace as in the low-income group, both near 7 percentage
+points per decade. Household and corporate debt in the middle-income groups
+is observed only from the 1990s and expands rapidly thereafter, so that the
+financial deepening which unfolded across half a century in the high-income
+economies has been compressed, at much lower levels, into roughly two
+decades. That the timing of the distributional turn is common to all income
+groups, while its severity bears no evident relation to the pace of debt
+accumulation within them, is a first indication of the argument this paper
+develops: the aggregate level of public debt is a poor predictor of
+distributional outcomes, which depend instead on the institutional setting
+and on the composition of borrowing and spending.
+
+
+\begin{table}[htbp]
+	\centering
+	\caption{Decade Means by Income Group}
+	\label{table:decade_means}
+	\begin{threeparttable}
+		\scriptsize
+		\begin{tabular}{lcccccccc}
+			\toprule
+			& 1950s & 1960s & 1970s & 1980s & 1990s & 2000s & 2010s & 2020s \\
+			\midrule
+			\addlinespace
+			\multicolumn{9}{l}{\textit{Top 10\% income share}} \\
+			\quad Low income          & 45.1\% & 44.0\% & 41.9\% & 40.3\% & 42.4\% & 47.1\% & 53.0\% & 53.5\% \\
+			\quad Lower middle income &        &        & 35.6\% & 36.3\% & 39.7\% & 43.1\% & 44.0\% & 45.5\% \\
+			\quad Upper middle income & 48.9\% & 47.1\% & 45.3\% & 42.9\% & 47.5\% & 51.3\% & 50.9\% & 52.1\% \\
+			\quad High income         & 35.0\% & 34.8\% & 33.2\% & 33.9\% & 36.7\% & 39.7\% & 40.7\% & 41.0\% \\
+			\addlinespace
+			\multicolumn{9}{l}{\textit{Top 1\% income share}} \\
+			\quad Low income          & 17.5\% & 17.3\% & 14.5\% & 13.2\% & 15.2\% & 18.6\% & 19.8\% & 20.2\% \\
+			\quad Lower middle income &        &        & 12.1\% & 12.6\% & 14.1\% & 16.1\% & 16.2\% & 17.1\% \\
+			\quad Upper middle income & 18.7\% & 16.8\% & 16.4\% & 16.0\% & 17.5\% & 21.0\% & 21.8\% & 21.9\% \\
+			\quad High income         & 12.8\% & 11.9\% & 10.4\% & 11.2\% & 12.7\% & 14.5\% & 15.0\% & 15.8\% \\
+			\addlinespace
+			\multicolumn{9}{l}{\textit{Gini coefficient}} \\
+			\quad Low income          &        & 42.0 & 41.8 & 42.1 & 43.3 & 44.9 & 43.7 & 41.1 \\
+			\quad Lower middle income &        & 32.3 & 33.8 & 35.1 & 39.0 & 42.4 & 41.9 & 40.9 \\
+			\quad Upper middle income &        & 39.5 & 42.6 & 43.2 & 45.1 & 43.5 & 40.9 & 40.1 \\
+			\quad High income         &        & 30.8 & 29.7 & 30.0 & 32.1 & 33.5 & 33.8 & 33.8 \\
+			\addlinespace
+			\multicolumn{9}{l}{\textit{Public debt (share of GDP)}} \\
+			\quad Low income          & 21.9\% & 31.5\% & 34.4\% & 46.8\% & 67.7\% & 65.4\% & 57.1\% & 74.6\% \\
+			\quad Lower middle income & 5.1\%  & 12.4\% & 16.8\% & 32.9\% & 39.4\% & 37.7\% & 42.5\% & 67.2\% \\
+			\quad Upper middle income & 31.2\% & 33.7\% & 39.8\% & 58.0\% & 44.8\% & 35.1\% & 36.3\% & 50.0\% \\
+			\quad High income         & 45.1\% & 30.9\% & 26.3\% & 40.3\% & 58.1\% & 67.0\% & 96.3\% & 110.1\% \\
+			\addlinespace
+			\multicolumn{9}{l}{\textit{Household debt (share of GDP)}} \\
+			\quad Lower middle income &        &        &        &        & 5.2\%   & 19.6\% & 32.9\%  & 34.8\% \\
+			\quad Upper middle income &        &        &        &        & $-$1.0\% & 7.0\%  & 17.6\%  & 18.6\% \\
+			\quad High income         & 26.7\% & 39.8\% & 40.6\% & 47.9\% & 60.2\%  & 76.2\% & 76.2\%  & 73.6\% \\
+			\addlinespace
+			\multicolumn{9}{l}{\textit{Non-financial corporate debt (share of GDP)}} \\
+			\quad Lower middle income &        &        &        &        & $-$28.8\% & 35.0\% & 97.3\%  & 82.1\% \\
+			\quad Upper middle income &        &        &        &        & 145.8\%  & 82.2\% & 110.0\% & 113.5\% \\
+			\quad High income         & 92.3\% & 118.3\% & 114.5\% & 122.7\% & 118.3\% & 129.2\% & 142.3\% & 149.1\% \\
+			\addlinespace
+			\multicolumn{9}{l}{\textit{Total private debt (share of GDP)}} \\
+			\quad Lower middle income &        &        &        &        & $-$23.0\% & 55.2\% & 130.8\% & 117.4\% \\
+			\quad Upper middle income &        &        &        &        & 144.9\%  & 89.1\% & 127.5\% & 132.0\% \\
+			\quad High income         & 119.1\% & 158.0\% & 155.0\% & 170.6\% & 178.5\% & 205.5\% & 218.5\% & 222.7\% \\
+			\addlinespace
+			\bottomrule
+		\end{tabular}
+		\begin{tablenotes}
+			\scriptsize
+			\item \emph{Note}: Decade means of chained GDP-weighted cross-country
+			means by modal World Bank income classification. The Gini coefficient is
+			reported in index points; all other series as percent of GDP or of
+			national income. The 2020s cover 2020--2023. Sectoral debt series are
+			unavailable for the low-income group, and middle-income sectoral series
+			begin in the 1990s, where they rest on few reporting countries and are
+			sensitive to the chaining anchor. Sources as in
+			\autoref{table:descriptive}.
+		\end{tablenotes}
+	\end{threeparttable}
+\end{table}
 
 The conventional view is that debt can stimulate aggregate demand and output in the short-run, but crowds out capital and reduces output in the long-run (see \cite{Mankiw1999} for a survey). Standard growth models also predict that higher public debt leads to slower growth (see \cite{Saint-Paul91} or \cite{Aizeman07}). There are several channels through which high public debt can adversely affect capital accumulation, productivity and growth: higher long-term interest rates and sovereign risk spillovers to corporate borrowing costs \citep{Gale2003, Cecchetti2015, Corsetti2013}, higher future distortionary taxation and lower future public infrastructure spending, higher inflation \citep{Barro95}, and greater uncertainty about prospects and policies. High debt levels are also likely to constrain the scope for counter-cyclical fiscal policies, which may result in higher volatility and further lower growth \citep{Woo2015}. In more extreme cases of a debt crisis, by triggering a banking or currency crisis, the adverse effects can be magnified \citep{Reinhart2011, Reinhart2012}. The dominant strand of empirical research has framed the fiscal question in terms of aggregate growth, following after \citet{Reinhart2010} and \citet{Reinhart2011}, this  literature has examined whether public debt above some threshold suppresses GDP growth.
 
@@ -150,7 +333,10 @@ The conventional view is that debt can stimulate aggregate demand and output in 
 	\caption{Long-Run Trends in Debt}
 	\label{figure:figure2}
 	\includegraphics[width=\linewidth]{C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/debt_measures.png}
-	\caption*{\scriptsize\emph{Note}: GDP-weighted averages, composition-adjusted by demeaning within country. Income shares from WID; Gini from SWIID 9.91. Weights are real output-side GDP (PWT 11.0).}
+\caption*{\scriptsize\emph{Note}: Chained GDP-weighted cross-country means,
+	anchored to the final-year cross-section to remove sample-entry effects.
+	Sectoral debt from the IMF Global Debt Database. Weights are output-side real
+	GDP (PWT 11.0).}
 \end{figure}
 
 The threshold hypothesis has proven fragile under scrutiny. \citet{Eberhardt2015} and \citet{Chudik2017} demonstrate that the debt-growth relationship is characterized by substantial cross-country heterogeneity and that no common threshold exists across economies, even if country-specific tipping points cannot be ruled out. On this point, the empirical relationship between public debt and economic growth in the United States, western offshoot economies, and the OECD countries has also been exhaustively in the past decades (for example \cite{Dwyer82}, \cite{Ahking85}, \cite{Protopapadakis87}, \cite{King1985}, \cite{Woo2015}). These empirical studies provide conflicting results, where some researchers find no significant relation between public debt and growth, while others find some relationship in their analysis with a limited data sample. One possible contributing factor is the paucity of readily available data. Another limitation is the lack of research for developing countries other than the U.S., OECD countries, and their western offshoots.  In other words, an under looked factor is that countries selected for empirical studies in the prior decades are often well-developed countries with strong financial markets and access to foreign financial instruments. Such an arrangement naturally leads to selection bias, limiting the conclusions and inferences that can be drawn from such studies.
@@ -159,7 +345,29 @@ The distributional question has attracted far less systematic empirical attentio
 
 These findings share a common implication that motivates this paper: the distributional consequences of public debt are mediated by institutional context, the composition of debt, and the composition of fiscal spending. A country that borrows to finance civilian public investment is likely to generate different distributional outcomes than one that borrows to service existing obligations or fund military expenditure, even at identical debt-to-GDP ratios. Similarly, the consequences of public debt expansion will differ markedly between a country with monetary and fiscal sovereignty operating under a flexible exchange rate and one constrained by fixed rates or external denomination of its obligations. Aggregate debt levels, taken alone, are theoretically insufficient to determine distributional outcomes.
 
-This paper tests that proposition directly. Using an unbalanced panel of 137 countries over the period 1960--2022, we estimate the long-run relationship between public debt and three measures of income inequality, namely the top 10\% income share, the top 1\% income share, and the Gini coefficient, employing the Cross-Sectionally Augmented Distributed Lag (CS-DL) and CS-ARDL estimators of \citet{Chudik2017}, which account for cross-sectional dependence and allow for heterogeneous dynamics across countries. Our baseline results yield null or insignificant effects of public debt on inequality, a finding that can be treated a substantively informative result: debt accumulation in aggregate does not systematically worsen distributional outcomes across a broad cross-country panel. Income group analysis reveals that any detectable debt-inequality relationship is concentrated in lower-middle-income economies, where institutional capacity and fiscal space are most constrained. Fiscal composition analysis, distinguishing civilian government spending from military expenditure and interacting debt levels with spending composition, further shows that what debt finances matters more than its level.
+This paper tests that proposition directly. Using a balanced panel of 109
+countries over the period 1978--2019, we estimate the long-run relationship
+between public debt and three measures of income inequality, namely the top
+10\% income share, the top 1\% income share, and the Gini coefficient,
+employing country-specific ARDL bounds testing with random-effects
+meta-analytic pooling, alongside a static panel fixed-effects specification as
+a complementary baseline. Our results yield null or insignificant effects of
+public debt on inequality in both the static and the long-run specification, a
+finding we treat as substantively informative rather than as a failure to
+detect an effect: debt accumulation in aggregate does not systematically
+worsen distributional outcomes across a broad cross-country panel. Income
+group analysis finds no group in which the debt-inequality relationship is
+concentrated, in either specification, and the one static coefficient that
+reaches significance, for the Gini in low-income countries, does not survive
+in the corresponding long-run estimate. Fiscal composition analysis,
+distinguishing civilian government spending from military expenditure, does
+not restore a debt effect that the aggregate specification fails to find; it
+does surface an income-group pattern in the Gini coefficient's long-run
+multiplier, but on a small and unstable subsample that we treat as a candidate
+for further scrutiny rather than as an established result. In place of a
+concentrated or composition-driven channel, this paper documents that neither
+is detected in this sample: the level of public debt, taken alone, is not a
+systematic determinant of income concentration.
 
 
 	\section{Distributional Implications of Debt}
@@ -213,76 +421,276 @@ This paper tests that proposition directly. Using an unbalanced panel of 137 cou
 \section{Data}
 \label{section:data}
 
-The dataset is constructed from six primary sources spanning up to 137 countries over the period 1950--2024, though the effective estimation sample is determined by the minimum consecutive run requirement described below. Country income classifications follow the World Bank Atlas method, assigned using each country's historical modal classification to avoid reclassification artefacts from single-year designations \citep{WorldBankClassifications}. The countries span low, middle, and high income groups across all major regions, providing a broad empirical basis for the analysis. Table~\ref{table:table1} presents the distribution of countries by income group.\footnote{In calculating gross national income (GNI) per capita in U.S. dollars, the World Bank uses the Atlas method. The Atlas conversion factor for a given year is the average of a country's exchange rate for that year and the two preceding years, adjusted for the difference between the rate of inflation in the country and international inflation. GNI in U.S. dollars (Atlas method) for some year $t$ is estimated by dividing the country's GNI in current prices (local currency) by the Atlas factor. The resulting GNI in U.S. dollars can then be divided by a country's midyear population to derive GNI per capita. For 2019, these definitions classify GNI per capita in U.S. dollars of less than 1,035 as “Low Income,” 1,036 to 4,045 as “Lower Middle Income,” 4,046 to 12,535 as “Upper Middle Income,” and GNI per capita greater than 12,535 as “High Income.”}
+The dataset is constructed from six primary sources: the Penn World Tables,
+the IMF Global Debt Database, the IMF World Economic Outlook, the World
+Inequality Database, the Standardized World Income Inequality Database, and
+the World Bank's World Development Indicators. These sources are merged at
+the country-year level; the estimation sample, determined by the coverage
+requirements described below, comprises 109 countries observed over a fixed
+1978--2019 window. Country income classifications follow the World Bank
+Atlas method, assigned using each country's historical modal classification
+to avoid reclassification artifacts from single-year designations
+\citep{WorldBankClassifications}. The countries span low, middle, and high
+income groups across all major regions, providing a broad empirical basis for
+the analysis. Table~\ref{table:table1} presents the distribution of countries
+by income group.\footnote{In calculating gross
+	national income (GNI) per capita in U.S. dollars, the World Bank uses the
+	Atlas method. The Atlas conversion factor for a given year is the average of
+	a country's exchange rate for that year and the two preceding years, adjusted
+	for the difference between the rate of inflation in the country and
+	international inflation. GNI in U.S. dollars (Atlas method) for some year $t$
+	is estimated by dividing the country's GNI in current prices (local currency)
+	by the Atlas factor. The resulting GNI in U.S. dollars can then be divided by
+	a country's midyear population to derive GNI per capita. For 2019, these
+	definitions classify GNI per capita in U.S. dollars of less than 1,035 as
+	``Low Income,'' 1,036 to 4,045 as ``Lower Middle Income,'' 4,046 to 12,535 as
+	``Upper Middle Income,'' and GNI per capita greater than 12,535 as ``High
+	Income.''}
 
-Because country classifications change over time as GNI per capita evolves, using a single-year designation would introduce discontinuities into the sample stratification: a country that crossed a threshold in a single year would be assigned to different income groups depending on which year was chosen as the reference, with no substantive change in its
-structural characteristics. To avoid this, we assign each country its modal classification across all years for which it appears in the historical file. The modal classification represents the income group in which a country spent the largest number of
-years over the entire 1987--2024 period, and therefore reflects its dominant structural position rather than its transitory income status in any particular year. Where a country is tied across two groups, the higher group is assigned to avoid under-classifying countries that have experienced sustained development over the sample. The resulting distribution
-across the 137 countries in the estimation sample is reported in \autoref{table:table1}.
+Because country classifications change over time as GNI per capita evolves,
+using a single-year designation would introduce discontinuities into the
+sample stratification: a country that crossed a threshold in a single year
+would be assigned to different income groups depending on which year was
+chosen as the reference, with no substantive change in its structural
+characteristics. To avoid this, we assign each country its modal
+classification across all years for which it appears in the historical file.
+The modal classification represents the income group in which a country spent
+the largest number of years over the entire 1987--2024 period, and therefore
+reflects its dominant structural position rather than its transitory income
+status in any particular year. Where a country is tied across two groups, the
+higher group is assigned to avoid under-classifying countries that have
+experienced sustained development over the sample. The resulting distribution
+across the 137 countries in the estimation sample is reported in
+\autoref{table:table1}.
 
-This approach is preferred to using the most recent classification for two reasons. First, the estimation sample spans several decades, over which many countries have graduated across thresholds; applying the end-of-sample classification would retrospectively impose a later income category on observations from earlier periods when the country had structurally
-different characteristics. Second, the research question concerns whether the debt-inequality relationship varies by level of development as a structural feature of the economy, not as a function of where a country happened to sit in a given year relative to a threshold.
+This approach is preferred to using the most recent classification for two
+reasons. First, the estimation sample spans several decades, over which many
+countries have graduated across thresholds; applying the end-of-sample
+classification would retrospectively impose a later income category on
+observations from earlier periods when the country had structurally different
+characteristics. Second, the research question concerns whether the
+debt-inequality relationship varies by level of development as a structural
+feature of the economy, not as a function of where a country happened to sit
+in a given year relative to a threshold.
 
 \subsection{Real Output and Macroeconomic Aggregates}
 
-Real GDP and related aggregates are drawn from the Penn World Tables (PWT) version 11.0 \citep{FeenstraInklaarTimmer2015}. The primary measure of economic size used in weighting procedures is output-side real GDP (the PWT variable rgdpo), which values production at a country's own final demand prices and is the appropriate concept for cross-country comparisons of productive capacity. GDP per capita and real growth are constructed from this series. The government consumption share of GDP provides the basis for the civilian spending share used in the fiscal decomposition analysis, constructed by subtracting military expenditure from government consumption. Where PWT observations are missing for growth and GDP per capita, we supplement with the corresponding series from the IMF WEO October 2023 vintage \citep{IMFWEO2023}.
+Real GDP and related aggregates are drawn from the Penn World Tables (PWT)
+version 11.0 \citep{FeenstraInklaarTimmer2015}. The primary measure of
+economic size used in weighting procedures is output-side real GDP (the PWT
+variable rgdpo), which values production at a country's own final demand
+prices and is the appropriate concept for cross-country comparisons of
+productive capacity. Real growth is computed from this series as the annual
+proportional change, and GDP per capita as output-side real GDP per person.
+Where PWT observations are missing, the growth and GDP per capita composites
+are completed from the IMF World Economic Outlook (WEO) \citep{IMFWEO2023}:
+the growth composite is supplemented with WEO real GDP growth, and the GDP
+per capita composite with the WEO series in purchasing power parity terms.
+The underlying PWT and WEO series are retained separately in the dataset, so
+the mixture of sources in each composite can be reconstructed by comparing
+the composite to its components even though no separate source indicator is
+carried into the final analysis file.
+
+Trade openness is measured as the sum of the absolute export and import
+shares of GDP from the PWT national accounts data. The government consumption
+share of GDP provides the basis for the civilian spending share used in the
+fiscal decomposition analysis, constructed by subtracting the military
+expenditure share from the government consumption share. Government
+expenditure as a share of GDP, used elsewhere as a control for the overall
+size of the fiscal state, is measured from the IMF World Economic Outlook
+general government expenditure series.
 
 \subsection{Public Debt}
 
-The primary source for public debt is the IMF Global Debt Database (GDD) \citep{MbayeMorenoBadiaChae2018}, which provides sectoral debt series for up to 190 countries from 1950, covering general government, central government, household, non-financial corporate, and total private debt, all as a percentage of GDP. We construct the public debt variable using a source hierarchy that prioritizes the most comprehensive institutional coverage: general government debt from the GDD is used where available, supplemented by central government debt from the GDD, and finally by WEO gross general government debt where neither GDD measure is available. This hierarchy follows the approach of \citet{Reinhart2011} while exploiting the broader coverage available in the GDD. We measure public debt as total (domestic plus external) gross central government debt, expressed as a percentage of GDP. For countries where general government debt data is unavailable, we substitute central government debt as a proxy. This approach ensures broader coverage, particularly for developing economies where general government data is often incomplete. The WEO October 2023 vintage \citep{IMFWEO2023} also provides supplementary series for CPI inflation, government expenditure as a share of GDP, and GDP in purchasing power parity terms.
+The primary source for public debt is the IMF Global Debt Database (GDD)
+\citep{MbayeMorenoBadiaChae2018}, which provides sectoral debt series for up
+to 190 countries from 1950, covering general government, central government,
+household, non-financial corporate, and total private debt, each expressed as
+a percentage of GDP. The public debt variable is a composite constructed
+under a source hierarchy that prioritizes institutional breadth: general
+government debt from the GDD is used where available, central government debt
+from the GDD where general government coverage is missing, and gross general
+government debt from the WEO where neither GDD measure is reported. As with
+the output composites, a source indicator records the origin of each
+country-year observation. The hierarchy follows \citet{Reinhart2011} in
+accepting central government debt as a proxy where general government data
+are incomplete, a substitution that primarily affects developing economies,
+while exploiting the broader coverage available in the GDD. Household,
+non-financial corporate, and total private debt are taken directly from the
+GDD and enter the descriptive analysis of debt composition. The WEO
+additionally supplies supplementary series for consumer price inflation and
+GDP in purchasing power parity terms.
 
 \subsection{Income Inequality}
 
 \subsubsection{Top Income Shares}
 
-The primary inequality measures are top income shares from the World Inequality Database \citep{WID2024}. We use the share of pre-tax national income accruing to the top 10\% and the top 1\% of the national pre-tax income distribution. These series are constructed under the Distributional National Accounts (DINA) framework \citep{BlanchetEtAlDINA2021}, which combines tax records, household surveys, and national accounts to produce distributional estimates that are anchored to macroeconomic aggregates. This anchoring is a crucial methodological advantage: because WID estimates are constrained to sum to national income as measured in the System of National Accounts, they are substantially more comparable across countries and over time than survey-based estimates alone, which are subject to top-coding, non-response at the upper tail, and varying survey methodologies \citep{AtkinsonPiketty2007}. The DINA approach has been applied systematically across more than 100 countries in the World Inequality Report series \citep{ChandelEtAlWIR2022}. For China, WID reports separate series for rural and urban populations; we average these to a single national observation for each year.
+The primary inequality measures are top income shares from the World
+Inequality Database \citep{WID2024}. We use the share of pre-tax national
+income accruing to the top 10\% and the top 1\% of the national pre-tax
+income distribution. These series are constructed under the Distributional
+National Accounts (DINA) framework \citep{BlanchetEtAlDINA2021}, which
+combines tax records, household surveys, and national accounts to produce
+distributional estimates that are anchored to macroeconomic aggregates. This
+anchoring is a crucial methodological advantage: because WID estimates are
+constrained to sum to national income as measured in the System of National
+Accounts, they are substantially more comparable across countries and over
+time than survey-based estimates alone, which are subject to top-coding,
+non-response at the upper tail, and varying survey methodologies
+\citep{AtkinsonPiketty2007}. The DINA approach has been applied
+systematically across more than 100 countries in the World Inequality Report
+series \citep{ChandelEtAlWIR2022}. For China, WID reports separate series for
+rural and urban populations; we average these to a single national
+observation for each year.
 
-Top income shares are theoretically preferred to the Gini coefficient for this paper's research question for two reasons. First, they are more sensitive to changes at the upper tail of the distribution, where the fiscal and financial channels through which public debt operates are most likely to manifest \citep{Atkinson2011, PikettyS2003}. Second, the measurement error in top income shares is better characterized and more tractable than in survey-based Gini estimates: the primary limitation is the degree to which tax records capture top incomes, a concern that is extensively documented and partially addressed in the WID methodology \citep{AlvaradoEtAl2013}.
+Top income shares are theoretically preferred to the Gini coefficient for
+this paper's research question for two reasons. First, they are more
+sensitive to changes at the upper tail of the distribution, where the fiscal
+and financial channels through which public debt operates are most likely to
+manifest \citep{Atkinson2011, PikettyS2003}. Second, the measurement error in
+top income shares is better characterized and more tractable than in
+survey-based Gini estimates: the primary limitation is the degree to which
+tax records capture top incomes, a concern that is extensively documented and
+partially addressed in the WID methodology \citep{AlvaradoEtAl2013}.
 
-\subsection*{Gini Coefficient}
-The Gini coefficient is drawn from the Standardized World Income Inequality Database, version 9.91 \citep{solt2020}. SWIID provides harmonised estimates of post-tax, post-transfer disposable income inequality for up to 199 countries from 1960 to the present. The harmonization procedure uses the Luxembourg Income Study (LIS) as the comparability benchmark, exploiting its consistent income definition and processing methodology across countries. Observations from other sources (Eurostat, the OECD Income Distribution Database, the World Bank's PovcalNet, the Socio-Economic Database for Latin America and the Caribbean, and national statistical offices) are then expressed relative to their proximate LIS observations using a predictive model that accounts for differences in income definition, unit of observation, and equivalence scale \citep{solt2020}. This approach maximizes comparability without discarding the coverage gains available from non-LIS sources.
+\subsubsection{Gini Coefficient}
 
-Because the harmonization involves imputation across surveys and years, SWIID reports
-100 multiple imputations per country-year. We derive a point estimate as the mean Gini
-coefficient across all 100 imputations and its standard deviation as a measure of measurement uncertainty. Formally, combining inferences across all 100 imputations following Rubin's rules \citep{Rubin1987} would be the statistically correct treatment; we adopt the simpler averaging procedure for computational tractability and note that the resulting standard errors may modestly understate true uncertainty, particularly in low-income countries where SWIID coverage relies most heavily on imputation across sparse survey years. The Gini coefficient serves as the secondary inequality measure and is used principally in robustness checks; the binding constraint on sample coverage is the WID, which provides wider and more historically continuous country coverage over the relevant sample period.
+The Gini coefficient is drawn from the Standardized World Income Inequality
+Database, version 9.91 \citep{solt2020}. SWIID provides harmonized estimates
+of post-tax, post-transfer disposable income inequality for up to 199
+countries from 1960 to the present. The harmonization procedure uses the
+Luxembourg Income Study (LIS) as the comparability benchmark, exploiting its
+consistent income definition and processing methodology across countries.
+Observations from other sources (Eurostat, the OECD Income Distribution
+Database, the World Bank's PovcalNet, the Socio-Economic Database for Latin
+America and the Caribbean, and national statistical offices) are then
+expressed relative to their proximate LIS observations using a predictive
+model that accounts for differences in income definition, unit of
+observation, and equivalence scale \citep{solt2020}. This approach maximizes
+comparability without discarding the coverage gains available from non-LIS
+sources.
+
+Because the harmonization involves imputation across surveys and years,
+SWIID reports 100 multiple imputations per country-year. We derive a point
+estimate as the mean Gini coefficient across all 100 imputations and its
+standard deviation as a measure of measurement uncertainty. Formally,
+combining inferences across all 100 imputations following Rubin's rules
+\citep{Rubin1987} would be the statistically correct treatment; we adopt the
+simpler averaging procedure for computational tractability and note that the
+resulting standard errors may modestly understate true uncertainty,
+particularly in low-income countries where SWIID coverage relies most heavily
+on imputation across sparse survey years. The Gini coefficient serves as the
+secondary inequality measure and is used principally in robustness checks;
+the binding constraint on sample coverage is the WID, which provides wider
+and more historically continuous country coverage over the relevant sample
+period.
 
 \subsection{Control Variables}
 
-The choice of control variables follows the theoretical channels identified in the debt and
-inequality literatures, and is disciplined by the degrees-of-freedom constraints of the
-CS-DL and CS-ARDL estimators.
+The choice of control variables follows the theoretical channels identified
+in the debt and inequality literatures, and is disciplined by the
+degrees-of-freedom constraints of the CS-DL and CS-ARDL estimators.
 
-GDP per capita is included to control for the stage of economic development. The relationship between development and inequality is theoretically ambiguous. The Kuznets hypothesis predicts an inverted-U relationship, while the skill-biased technical change literature predicts monotone increases in the returns to education \citep{KatzMurphy1992, Goldin2008}, but controlling for the level of income is necessary to avoid conflating debt effects with development-stage effects.
+GDP per capita is included to control for the stage of economic development.
+The relationship between development and inequality is theoretically
+ambiguous. The Kuznets hypothesis predicts an inverted-U relationship, while
+the skill-biased technical change literature predicts monotone increases in
+the returns to education \citep{KatzMurphy1992, Goldin2008}, but controlling
+for the level of income is necessary to avoid conflating debt effects with
+development-stage effects.
 
-Government expenditure as a share of GDP controls for the size of the fiscal state, independent of how it is financed. The direction of the expenditure effect on inequality depends on the composition of spending: social transfers and public health and education
-expenditure are associated with reduced inequality \citep{DablaEtAl2015}, while military and general administration spending are not. This motivates the fiscal decomposition
-specification, in which civilian government spending (total government expenditure less military spending) is distinguished from the aggregate expenditure share. Military expenditure as a share of GDP is sourced from the World Bank's World Development Indicators \citep{WorldBank2024} and used to construct the civilian spending share.
+Government expenditure as a share of GDP controls for the size of the fiscal
+state, independent of how it is financed. The direction of the expenditure
+effect on inequality depends on the composition of spending: social transfers
+and public health and education expenditure are associated with reduced
+inequality \citep{DablaEtAl2015}, while military and general administration
+spending are not. This motivates the fiscal decomposition specification, in
+which civilian government spending (the government consumption share less the
+military expenditure share) is distinguished from the aggregate expenditure
+share. Military expenditure as a share of GDP is sourced from the World
+Bank's World Development Indicators \citep{WorldBank2024} and used to
+construct the civilian spending share.
 
-Life expectancy at birth is included as a broader measure of human development. It captures variation in public health infrastructure, nutrition, and living standards that is not
-fully absorbed by GDP per capita or government expenditure, and has been shown to be
-associated with income distribution through both human capital accumulation and labor
-market participation channels \citep{LondonoPrisca1996}. Life expectancy is preferred to
-the PWT human capital index for this purpose because the latter is constructed from assumed Mincer returns to schooling and therefore embeds a theoretical structure that may confound reduced-form estimates of the debt-inequality relationship.
+Life expectancy at birth is included as a broader measure of human
+development. It captures variation in public health infrastructure,
+nutrition, and living standards that is not fully absorbed by GDP per capita
+or government expenditure, and has been shown to be associated with income
+distribution through both human capital accumulation and labor market
+participation channels \citep{LondonoPrisca1996}. Life expectancy is
+preferred to the PWT human capital index for this purpose because the latter
+is constructed from assumed Mincer returns to schooling and therefore embeds
+a theoretical structure that may confound reduced-form estimates of the
+debt-inequality relationship.
 
-Trade openness, measured as the sum of export and import shares of GDP, is included to control for the distributional consequences of external sector integration. The effects of trade on inequality are theoretically contested: standard Heckscher-Ohlin reasoning predicts that openness reduces inequality in labor-abundant developing countries, while the empirical literature finds mixed results that depend strongly on the skill composition of the labor force and the nature of trading relationships \citep{GoldbergPavcnik2007}.
-Excluding trade openness would risk attributing to public debt any distributional effects
-that operate through the external sector.
+Trade openness, constructed from the PWT national accounts shares as
+described above, is included to control for the distributional consequences
+of external sector integration. The effects of trade on inequality are
+theoretically contested: standard Heckscher-Ohlin reasoning predicts that
+openness reduces inequality in labor-abundant developing countries, while the
+empirical literature finds mixed results that depend strongly on the skill
+composition of the labor force and the nature of trading relationships
+\citep{GoldbergPavcnik2007}. Excluding trade openness would risk attributing
+to public debt any distributional effects that operate through the external
+sector.
 
-Inflation is included because it is a distributional instrument in its own right. The redistributive incidence of inflation is asymmetric across the wealth distribution: it erodes the real value of nominal assets and liabilities and typically falls more heavily on lower-income households whose wealth is concentrated in liquid deposits rather than real assets \citep{DoepkeSchneider2006}. The composite inflation series draws on WDI CPI inflation, supplemented by WEO CPI where WDI observations are missing. All control variables are sourced from the World Bank's World Development Indicators \citep{WorldBank2024} unless otherwise noted.
-
-\subsection{Exchange Rate Regimes}
-
-Exchange rate regime classifications follow \citet{HarmsKnaze2021}, who construct effective exchange rate regime measures as trade-weighted averages of bilateral regime arrangements. This approach improves on standard unilateral classifications, which assess exchange rate stability only against a single anchor currency, by accounting for a country's full set of trading relationships. The underlying bilateral regime data combine the de-facto classification of \citet{IlzetzkiReinhartRogoff2019} with the IMF's de-jure classification from the Annual Report on Exchange Arrangements and Exchange Restrictions. The resulting measures are available on a coarse 1--4 scale from most rigid to most flexible, covering 1973--2019. We define a floating indicator as 1 if the de-facto regime code corresponds to a managed or free float, a policy autonomy indicator as 1 if the country is not pegged to the US dollar or euro, and a composite monetary sovereignty indicator requiring both conditions to hold in the absence of a contemporaneous currency or debt crisis.
+Inflation is included because it is a distributional instrument in its own
+right. The redistributive incidence of inflation is asymmetric across the
+wealth distribution: it erodes the real value of nominal assets and
+liabilities and typically falls more heavily on lower-income households whose
+wealth is concentrated in liquid deposits rather than real assets
+\citep{DoepkeSchneider2006}. The composite inflation series draws on the
+World Development Indicators GDP deflator inflation rate, supplemented by WEO
+consumer price inflation where the former is missing. All control variables
+are sourced from the World Bank's World Development Indicators
+\citep{WorldBank2024} unless otherwise noted.
 
 \subsection{Sample Construction}
 
-The estimation sample is determined by identifying, for each country, the longest consecutive run of years with non-missing observations on the core triad: public debt, real GDP growth, and the top 10\% income share. We impose a minimum run length of 30 consecutive years, following \citet{Chudik2017}, who establish this as the minimum time-series dimension required for reliable mean group estimation with the CS-DL and CS-ARDL estimators. Of the 195 countries with any coverage across these sources, 137 satisfy this criterion and form the estimation sample. Their distribution across income groups is reported in \autoref{table:table1}.
+The estimation sample is defined over a common window applied to all
+countries rather than over country-specific spans. Candidate windows of
+between 30 and 50 years, beginning in every year from 1950 to 2024, were
+evaluated against the coverage criterion described below, and a window
+running from 1978 to 2019, providing 42 annual observations per country, was
+selected as offering a substantially larger qualifying sample than shorter or
+differently dated alternatives.
 
-Within each country's identified run, isolated missing observations are filled using a centered moving average over a two-period window, applied separately to each variable. This preserves the local trend and autocorrelation properties of each series without imposing a global interpolation model. Countries with gaps too large to bridge under this procedure are excluded from the sample. The excluded set is concentrated among low- and lower-middle-income economies where debt reporting is most limited and includes several high-income economies where reporting discontinuities prevent the construction of a sufficiently long continuous series.
+Within this window, a country is retained if four variables, the top 10\%
+income share, the top 1\% income share, the public debt-to-GDP ratio, and
+real GDP growth, each have no gap of more than two consecutive missing years
+and no more than 20 percent of observations missing overall (at most eight of
+the 42 years). Applying this criterion to the merged data yields 109
+countries that satisfy it and form the estimation sample: 31 low-income, 26
+lower-middle-income, 21 upper-middle-income, and 31 high-income countries,
+whose distribution is reported in \autoref{table:table1}.
 
+Remaining interior gaps in a defined set of response and control variables,
+comprising public debt, growth, GDP per capita, government expenditure, the
+two income shares, the mean Gini coefficient, trade openness, composite
+inflation, WEO consumer price inflation, military expenditure, life
+expectancy, and the PWT government consumption share, are filled by Kalman
+smoothing under a local-level state-space model, fit separately to each
+country's own series. This is applied only where the series being filled
+itself has no gap longer than four consecutive years and no more than 20
+percent of its observations missing; series failing this secondary,
+variable-specific threshold retain their remaining gaps rather than being
+smoothed. Because the imputed value at any point depends on the estimated
+state of the whole series rather than only on the most recently observed
+value, this procedure can introduce interpolated movement into a gap, unlike
+a simple carry-forward rule, and the resulting series should be read with
+that in mind where imputed spans are long relative to the surrounding
+observed data.
 
-\subsection{Final Dataset}
-
+Because country classifications change over time as GNI per capita evolves,
+using a single-year designation would introduce discontinuities into the
+sample stratification: a country that crossed a threshold in a single year
+would be assigned to different income groups depending on which year was
+chosen as the reference, with no substantive change in its structural
+characteristics. To avoid this, we assign each country its modal
+classification across all years for which a classification is recorded in
+the underlying historical file, so that the assignment reflects a country's
+dominant structural position rather than its transitory income status in any
+particular year. The resulting distribution across the 109 countries in the
+estimation sample is reported in \autoref{table:table1}.
 
 \begin{table}[htbp]
 	\centering
@@ -294,54 +702,47 @@ Within each country's identified run, isolated missing observations are filled u
 			\toprule
 			\textbf{Low Income} & \textbf{Lower Middle Income} & \textbf{Upper Middle Income} & \textbf{High Income} \\
 			\midrule
-			Bangladesh & Albania & Antigua and Barbuda & Australia \\
-			Benin & Algeria & Argentina & Austria \\
-			Bhutan & Belize & Azerbaijan & Bahamas \\
-			Burkina Faso & Bolivia & Belarus & Bahrain \\
-			Burundi & Bulgaria & Botswana & Barbados \\
-			Central African Republic & Cabo Verde & Brazil & Belgium \\
-			Chad & Colombia & Chile & Canada \\
-			Comoros & Congo & Costa Rica & Cyprus \\
-			Equatorial Guinea & Cote d'Ivoire & Dominica & Czech Republic \\
-			Ethiopia & Ecuador & Gabon & Denmark \\
-			Gambia & Egypt & Grenada & Finland \\
-			Ghana & El Salvador & Hungary & France \\
-			Guinea & Fiji & Kazakhstan & Germany \\
-			Guinea-Bissau & Guatemala & Lebanon & Greece \\
-			Haiti & Guyana & Malaysia & Iceland \\
-			India & Honduras & Mauritius & Ireland \\
-			Kenya & Indonesia & Mexico & Israel \\
-			Kyrgyzstan & Iran & Oman & Italy \\
-			Lao PDR & Jamaica & Panama & Japan \\
-			Madagascar & Jordan & Poland & Kuwait \\
-			Malawi & Lesotho & Russian Federation & Luxembourg \\
-			Mali & Maldives & Saint Kitts and Nevis & Malta \\
-			Nepal & Morocco & Saint Lucia & Netherlands \\
-			Niger & Namibia & St.\ Vincent and the Grenadines & New Zealand \\
-			Nigeria & North Macedonia & Seychelles & Norway \\
-			Pakistan & Paraguay & South Africa & Portugal \\
-			Rwanda & Philippines & Suriname & Qatar \\
-			Sao Tome and Principe & Sri Lanka & Trinidad and Tobago & Saudi Arabia \\
-			Senegal & Swaziland & Turkey & Singapore \\
-			Sierra Leone & Syrian Arab Republic & Uruguay & Slovakia \\
-			Sudan & Thailand & Venezuela & Slovenia \\
-			Tanzania & Tunisia & & Spain \\
-			Togo & & & Sweden \\
-			Uganda & & & Switzerland \\
-			Yemen & & & Taiwan \\
-			Zambia & & & United Arab Emirates \\
-			& & & United Kingdom \\
-			& & & United States \\
+			Bangladesh & Algeria & Argentina & Australia \\
+			Benin & Belize & Botswana & Austria \\
+			Burkina Faso & Bolivia & Brazil & Bahamas \\
+			Burundi & Cameroon & Chile & Bahrain \\
+			Central African Republic & Colombia & Costa Rica & Barbados \\
+			Chad & Congo & Dominica & Belgium \\
+			DR Congo & Cote d'Ivoire & Gabon & Canada \\
+			Equatorial Guinea & Egypt & Grenada & Cyprus \\
+			Ethiopia & El Salvador & Lebanon & Denmark \\
+			Gambia & Fiji & Malaysia & Finland \\
+			Ghana & Guatemala & Mauritius & France \\
+			Haiti & Guyana & Mexico & Germany \\
+			India & Honduras & Oman & Greece \\
+			Kenya & Indonesia & Panama & Iceland \\
+			Lao PDR & Iran & Saint Vincent and the Grenadines & Ireland \\
+			Madagascar & Jamaica & Seychelles & Italy \\
+			Malawi & Jordan & South Africa & Japan \\
+			Mali & Lesotho & Trinidad and Tobago & Luxembourg \\
+			Mauritania & Maldives & Turkey & Malta \\
+			Nepal & Morocco & Uruguay & Netherlands \\
+			Niger & Paraguay & Venezuela & New Zealand \\
+			Nigeria & Philippines & & Norway \\
+			Pakistan & Sri Lanka & & Portugal \\
+			Rwanda & Swaziland & & Singapore \\
+			Sao Tome and Principe & Thailand & & South Korea \\
+			Senegal & Tunisia & & Spain \\
+			Sierra Leone & & & Sweden \\
+			Tanzania & & & Switzerland \\
+			Togo & & & United Arab Emirates \\
+			Zambia & & & United Kingdom \\
+			Zimbabwe & & & United States \\
 			\bottomrule
 		\end{tabular}
 		\begin{tablenotes}
 			\scriptsize
-			\item \textit{Note:} Income classifications follow the World Bank Atlas method.
-			Each country is assigned its modal classification across all years in the World
-			Bank Analytical Classifications History file (1987--2021), representing the
-			income group in which it spent the largest number of years over the full period
-			\citep{WorldBankClassifications}. The sample comprises 137 countries: 36 low
-			income, 32 lower middle income, 31 upper middle income, and 38 high income.
+			\item \textit{Note:} Income classifications follow the World Bank Atlas
+			method. Each country is assigned its modal classification across all
+			years for which a classification is recorded in the World Bank Analytical
+			Classifications History file \citep{WorldBankClassifications}. The sample
+			comprises 109 countries: 31 low income, 26 lower middle income, 21 upper
+			middle income, and 31 high income.
 		\end{tablenotes}
 	\end{threeparttable}
 \end{table}
@@ -373,6 +774,110 @@ Within each country's identified run, isolated missing observations are filled u
 		\includegraphics[width=\textwidth]{C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/figure2.png}
 		\caption*{\scriptsize\emph{Note}: Each dot represents a country. Size indicates population. Dotted line is the global average debt ratio; single lines represent income group level debt ratio average. Gross government debt and GDP attained from the IMF WEO from 1980-2019.}
 	\end{figure}
+
+\subsection{Panel Unit Root Properties}
+\label{section:unit_roots}
+
+The CS-DL and CS-ARDL estimators, and the underlying ARDL bounds testing
+procedure of \citet{PesaranShin1999} and \citet{PesaranShinSmith2001}, require
+that each variable entering the long-run relationship be integrated of order
+zero or one. A variable integrated of order two or higher invalidates the
+bounds test critical values and undermines the interpretation of the long-run
+multiplier. Given the pronounced cross-country heterogeneity documented
+throughout this paper, the order of integration is assessed separately for
+each country rather than imposed uniformly across the panel.
+
+For each country and each variable, we apply the Augmented Dickey-Fuller
+(ADF) test and the Phillips-Perron (PP) test for a unit root against the
+alternative of stationarity, first on the series in levels and, where the
+level test fails to reject, on its first difference. A series is classified
+$I(0)$ only where both tests reject the unit root null in levels at the 5
+percent level; this conservative requirement of agreement guards against
+classifying a series as stationary on the strength of a single test. Failing
+that, a series is classified $I(1)$ where either test rejects the null in
+first differences, a more permissive criterion adopted because a series that
+remains nonstationary in differences by the agreement of both tests is a
+substantially stronger candidate for the $I(2)$ classification than one where
+the tests merely disagree. All remaining series are classified $I(2)$ or
+higher. The test is applied to a balanced sample of 109 countries, each
+contributing 42 annual observations across the two income share measures,
+public debt, and growth.
+
+\begin{table}[htbp]
+	\centering
+	\caption{Country-Level Order of Integration, by Variable}
+	\label{table:unit_root_summary}
+	\begin{threeparttable}
+		\begin{tabular}{lccc}
+			\toprule
+			\textbf{Variable} & \textbf{$I(0)$} & \textbf{$I(1)$} & \textbf{$I(2)+$} \\
+			\midrule
+			Top 10\% income share & 0  & 73 & 36 \\
+			Top 1\% income share  & 1  & 71 & 37 \\
+			Public debt           & 0  & 95 & 14 \\
+			GDP growth            & 26 & 83 & 0  \\
+			\bottomrule
+		\end{tabular}
+		\begin{tablenotes}
+			\scriptsize
+			\item \textit{Note}: Counts of countries (of 109) by classified order of
+			integration, based on country-by-country ADF and PP tests applied to
+			levels and first differences at the 5 percent level.
+		\end{tablenotes}
+	\end{threeparttable}
+\end{table}
+
+\autoref{table:unit_root_summary} shows that GDP growth is the best-behaved of
+the four series. Roughly a quarter of countries (26 of 109, 23.9 percent)
+classify growth as stationary in levels, and the remaining three quarters
+achieve stationarity after first differencing, with no country requiring a
+higher order of integration. Public debt is almost uniformly $I(1)$: 95 of 109
+countries (87.2 percent) fall into this category, against 14 countries (12.8
+percent) where the series remains nonstationary even after differencing. Not a
+single country classifies public debt as $I(0)$, consistent with the
+persistence typically documented in debt-to-GDP ratios.
+
+The two income share measures depart from this pattern. No country classifies
+the top 10 percent share as stationary in levels, and only one classifies the
+top 1 percent share this way. More consequentially, both series show a
+substantially higher incidence of $I(2)$ or higher classification than public
+debt or growth: 36 countries (33.0 percent) for the top 10 percent share and
+37 countries (33.9 percent) for the top 1 percent share. These are not, for
+the most part, independent failures. Of the 40 countries where at least one
+income share measure classifies as $I(2)$ or higher, 33 (82.5 percent) show
+this result for both measures simultaneously, while 7 (17.5 percent) show it
+for a single measure alone. This concentration is consistent with the two
+series sharing a common source of persistence at the top of the income
+distribution, though the short country-specific samples, 42 annual
+observations each, also limit the power of univariate unit root tests to
+distinguish a genuine $I(2)$ process from an $I(1)$ process with strong
+low-frequency persistence. This caveat motivates the cross-sectionally
+augmented panel unit root test introduced below.
+
+Restricting attention to the four series entering the country-specific ARDL
+specification (the two income share measures, public debt, and growth), 55 of
+109 countries (50.5 percent) have all four series classified $I(0)$ or $I(1)$
+and are therefore valid candidates for country-specific ARDL bounds
+estimation. The remaining 54 countries (49.5 percent) are excluded on the
+grounds of at least one $I(2)$ or higher series. These exclusions separate
+cleanly by source: 40 countries (74.1 percent of exclusions) are excluded
+because of the income share measures, and the remaining 14 (25.9 percent)
+because of public debt alone. No country in the sample is excluded on both
+grounds simultaneously, so nonstationary income shares and nonstationary
+public debt behave as distinct threats to identification rather than
+compounding within the same countries. Growth is never the source of
+exclusion, since no country classifies this series as $I(2)$ or higher.
+
+The rate of ARDL validity also varies by income classification. High income
+countries have the highest share of valid country-specific specifications (20
+of 31, 64.5 percent), and low income countries have the lowest (10 of 31,
+32.3 percent). The two middle income groups fall in between, at close to half
+in each case (11 of 21, 52.4 percent, for upper middle income countries, and
+14 of 26, 53.8 percent, for lower middle income countries). This gradient
+echoes a theme that recurs elsewhere in this paper: whether the underlying
+series are even well-behaved enough to support a bounds test differs
+systematically with development level, rather than following a single
+pattern common to all countries.
 
 
 	\begin{table}[!h]
@@ -414,461 +919,807 @@ Within each country's identified run, isolated missing observations are filled u
 		\end{threeparttable}
 	\end{table}
 
-	\subsection{Estimation}
+\subsection{Estimation}
+\label{section:baseline}
 
-	In this section we test whether and how central government
-	debt as a percentage of GDP changes with income inequality
-	in the presence of fixed country and year effects. We first consider the long-run effects of debt and output growth on the distribution of income using a traditional panel fixed-effects approach, in the following equation:
-	\begin{equation}
-		y_{it} = \alpha_{i} + \lambda_{t} + \gamma d_{it} + \mathbf{\beta}\mathbf{X}_{it} + u_{it}
-	\end{equation}
-	where $y_{it}$ is the log of the Gini coefficient and $\mathbf{x}_{it}$ a vector of exogenous variables including the the log of debt to GDP ratio $d_{it}$, and $g_{it}$ the growth rate. $\alpha_{i}$ and $\lambda_{t}$ are country and time specific fixed-effects.
+We first estimate the relationship between public debt and income concentration
+using a static panel specification with country and year fixed effects. For
+country $i$ in year $t$,
+\begin{equation}
+	y_{it} = \alpha_{i} + \lambda_{t} + \gamma \, d_{it}
+	+ \boldsymbol{\beta}' \mathbf{x}_{it} + u_{it},
+	\label{eq:fe}
+\end{equation}
+where $y_{it}$ is one of three measures of income concentration, $d_{it}$ is the
+ratio of public debt to GDP, and $\mathbf{x}_{it}$ is a vector of controls. The
+country effects absorb time-invariant determinants of the level of
+concentration and the year effects absorb common shocks. We cluster standard
+errors by country. Public debt enters as a ratio to GDP and the income shares as
+fractions of national income, so $\gamma$ is the percentage point change in the
+share associated with a one percentage point change in debt-to-GDP. Gini
+coefficients are in index points.
 
-	We fit this specification to the entire sample of countries and then separately on each sub-classification of the IMF income classification. These results are presented in \autoref{table:table1}. Column (1) of \autoref{table:table1} is the full dataset, (2) are Upper Middle Income, (3) High Income, (4) Low Income, and (5) Lower Middle Income countries. The largely insignificant findings together with opposite estimated coefficients for two inequality measures challenge the argument by \cite{Azzimonti2014}
+Estimates are reported in \autoref{table:fe_debt} for three measures of
+concentration and five specifications. Specification (1) controls for growth,
+life expectancy, and the interaction of debt with growth. Specification (2) adds
+government consumption and inflation. Specification (3) replaces government
+consumption with its military and civilian components and replaces the
+headline inflation rate with a composite inflation index. Specification (4)
+adds the interaction of debt with civilian spending, and specification (5) adds
+trade openness and the investment share.
 
-
-	\begin{center}
-		\begin{threeparttable}\footnotesize
-			\caption{Regression Results by Income Group}
-			\label{table:table3}
-			\begin{tabular}{@{\extracolsep{5pt}}lccccc}
-				\\[-1.8ex]\toprule
-
-				\\[-1.8ex] & (1) & (2) & (3) & (4) & (5)  \\
-				\hline \\[-1.8ex]
-				Total debt & -0.026 & -0.085 & 0.041 & 0.009 & 0.086$^{***}$ \\
-				& (0.067) & (0.059) & (0.041) & (0.029) & (0.021) \\
-				& & & & & \\
-				GDP & 0.285 & 0.629$^{**}$ & 0.153 & 0.134$^{**}$ & -0.019 \\
-				& (0.173) & (0.288) & (0.259) & (0.053) & (0.152) \\
-				& & & & & \\
-				Human Capital & -0.018 & -0.304 & -0.169$^{**}$ & 0.172$^{***}$ & -0.036 \\
-				& (0.137) & (0.184) & (0.066) & (0.051) & (0.099) \\
-				& & & & & \\
-				Debt $\times$\, GDP & -0.663$^{*}$ & -0.907$^{*}$ & -0.210 & -0.172 & 0.122 \\
-				& (0.364) & (0.462) & (0.268) & (0.096) & (0.349) \\
-				& & & & &  \\
-				\hline \\[-1.8ex]
-				Observations & 3,276 & 760 & 1,199 & 397 & 920 \\
-				$R^{2}$ & 0.824 & 0.810 & 0.887 & 0.890 & 0.918 \\
-				Adjusted $R^{2}$ & 0.818 & 0.794 & 0.880 & 0.875 & 0.912 \\
-				\midrule \\
+\begin{table}[htbp]
+	\centering
+	\begin{threeparttable}
+		\caption{Public Debt and Income Concentration}
+		\label{table:fe_debt}
+		\begin{small}
+			\begin{tabular}{lccc}
+				\toprule
+				& Top 10\% share & Top 1\% share & Gini \\
+				\midrule
+				(1) Baseline & 0.0060\phantom{$^{***}$} & 0.0032\phantom{$^{***}$} & 0.693\phantom{$^{***}$} \\
+				& (0.0052) & (0.0040) & (0.444) \\
+				\addlinespace
+				(2) Fiscal size & 0.0082\phantom{$^{***}$} & 0.0036\phantom{$^{***}$} & 0.786$^{*}$\phantom{$^{**}$} \\
+				& (0.0055) & (0.0045) & (0.417) \\
+				\addlinespace
+				(3) Mil.\ vs civ. & 0.0077\phantom{$^{***}$} & 0.0037\phantom{$^{***}$} & 0.711\phantom{$^{***}$} \\
+				& (0.0063) & (0.0044) & (0.440) \\
+				\addlinespace
+				(4) Debt $\times$ civ. & 0.0200$^{**}$\phantom{$^{*}$} & 0.0142$^{*}$\phantom{$^{**}$} & 0.457\phantom{$^{***}$} \\
+				& (0.0097) & (0.0084) & (0.635) \\
+				\addlinespace
+				(5) Full & 0.0180$^{*}$\phantom{$^{**}$} & 0.0125\phantom{$^{***}$} & 0.653\phantom{$^{***}$} \\
+				& (0.0092) & (0.0082) & (0.647) \\
+				\bottomrule
 			\end{tabular}
-			\noindent
-			\begin{tablenotes}
-				\item \textit{Note}: All regressions include country and year fixed-effects and are weighted by population. Standard errors clustered at the country level are reported in parentheses. Asterisks denote statistical significance at the 10, 5, and 1 percent levels respectively: {$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01}.
-			\end{tablenotes}
-		\end{threeparttable}
-	\end{center}
+		\end{small}
+		\begin{tablenotes}
+			\footnotesize
+			\item \emph{Note}: Coefficient on public debt from \eqref{eq:fe}, with
+			standard errors clustered by country in parentheses. All columns include
+			country and year fixed effects. Gini coefficients are in index points.
+			$^{*}p<0.1$; $^{**}p<0.05$; $^{***}p<0.01$.
+		\end{tablenotes}
+	\end{threeparttable}
+\end{table}
 
-	\autoref{table:table3} reports the estimates for the full sample and for each income group. Column (1) pools all countries. Growth in domestic product (GDP) enters positively and is marginally significant, indicating that growth is associated with rising inequality on average. The coefficient on debt is close to zero, and human capital has no discernible effect. The interaction term between debt and GDP, however, is negative and weakly significant, suggesting that the inequality-raising effect of growth diminishes when debt levels are higher.
+The coefficient on public debt is positive in every specification for all three
+measures of concentration, ranging from 0.0060 to 0.0200 for the top 10 percent
+share, 0.0032 to 0.0142 for the top 1 percent share, and 0.457 to 0.786 for the
+Gini. It is not statistically distinguishable from zero in specifications (1)
+through (3) for any of the three measures. Significance emerges only once the
+interaction between debt and civilian spending enters the specification. In
+specification (4), the coefficient is 0.0200 ($p = 0.041$), significant at the
+5 percent level, for the top 10 percent share, and 0.0142 ($p = 0.094$),
+significant at the 10 percent level, for the top 1 percent share; the Gini
+coefficient in this specification, 0.457 ($p = 0.473$), remains far from
+significance. In the full specification, the coefficient for the top 10
+percent share, 0.0180 ($p = 0.053$), falls just short of the 5 percent
+threshold, while the coefficients for the top 1 percent share, 0.0125
+($p = 0.131$), and the Gini, 0.653 ($p = 0.315$), are not significant. Of the
+15 estimates in \autoref{table:fe_debt}, one is statistically significant at
+the 5 percent level and four at the 10 percent level. In the full
+specification, a ten percentage point increase in the ratio of public debt to
+GDP is associated with an increase of 0.18 percentage points in the top 10
+percent share, significant at the 10 percent level, and an increase of 0.12
+percentage points in the top 1 percent share, which does not reach
+conventional significance.
 
-	Column (2), which restricts the sample to upper-middle income countries, shows a clearer pattern. GDP is positively signed and statistically significant at the five-percent level, consistent with the view that growth exacerbates inequality at this stage of development. Debt itself remains insignificant, but the debt–GDP interaction is negative and significant at the ten-percent level, again indicating that debt moderates the distributive impact of growth. Human capital is negatively signed but not significant.
+The interaction between debt and growth is not statistically significant in
+any of the 15 estimates, with $p$-values ranging from 0.146 to 0.687. In the
+full specification, military expenditure enters at 0.190 ($p = 0.242$) for
+the top 10 percent share and 0.217 ($p = 0.204$) for the top 1 percent share,
+and the interaction between debt and civilian spending at $-0.063$
+($p = 0.117$) and $-0.054$ ($p = 0.233$). Composite inflation is significant
+for the top 10 percent share at the 10 percent level ($p = 0.064$) and for the
+Gini at the 5 percent level ($p = 0.011$).
 
-	In column (3), covering high-income countries, the results shift markedly. Neither GDP nor debt displays any independent association with inequality. Human capital, by contrast, is negative and statistically significant, consistent with the interpretation that educational attainment exerts an equalizing influence in advanced economies. The interaction term is small and not significant.
+\autoref{table:fe_group} reports specification (3) estimated separately within
+each income group. Of the twelve coefficients on public debt, one is
+statistically significant at the 5 percent level: 1.403 for the Gini in
+low-income countries ($p = 0.043$). The coefficient for lower-middle-income
+countries is negative across all three measures of concentration ($-0.0078$
+for the top 10 percent share, $-0.0109$ for the top 1 percent share, and
+$-0.677$ for the Gini), though not significantly so in any of them. The
+coefficient for upper-middle-income countries is positive across all three
+measures but likewise falls short of conventional significance, including for
+the top 10 percent share (0.0029, $p = 0.720$). We find no evidence that the
+relationship between debt and concentration concentrates in the income groups
+with the least fiscal space.
 
-	Column (4), for low-income countries, shows that GDP significantly increases inequality. Unlike in other groups, human capital is positively signed and highly significant, implying that educational investments in these settings may disproportionately benefit elites and thus widen inequality. Debt itself is uncorrelated with inequality, though the debt–GDP interaction is negative and nearly significant, pointing once more to a dampening of growth’s distributive pressures when debt burdens are larger.
-
-	Finally, column (5), which covers lower-middle income economies, demonstrates a distinct pattern: debt is strongly positive and significant at the one-percent level, suggesting a direct inequality-enhancing effect of indebtedness in this group. Neither GDP nor human capital is significant, and the interaction term is uninformative.
-
-	The cross-section of results highlights that the determinants of inequality vary systematically with income level. In the pooled specification (1), and more clearly in the upper-middle income group (2), growth raises inequality, but this effect is attenuated where debt is high. In high-income countries (3), human capital emerges as the main equalizing force, while growth and debt have no role. In low-income economies (4), both growth and human capital increase inequality, with the latter result consistent with theories of elite capture. In lower-middle income countries (5), debt itself is the dominant factor, directly contributing to higher inequality.
-
-	\begin{center}
-		\begin{threeparttable}[!htbp]\footnotesize
-			\caption{Regression Results}
-			\label{table:table4}
-			\begin{tabular}{@{\extracolsep{5pt}}lccccc}
-				\\[-1.8ex]\toprule
-
-				\\[-1.8ex] & (1) & (2) & (3) & (4) & (5) \\
-				\hline \\[-1.8ex]
-				Total debt & -0.004 & 0.002 & 0.043$^{**}$ & 0.010 & 0.063$^{**}$  \\
-				& (0.045) & (0.081) & (0.025) & (0.031) & (0.031) \\
-				& & & & & \\
-				GDP & -0.307$^{*}$ & -0.306 & 0.038 & 0.200$^{**}$ & -0.055  \\
-				& (0.289) & (0.342) & (0.162) & (0.075) & (0.216) \\
-				& & & & & \\
-				Human Capital & -0.052 & -0.319$^{**}$ & -0.168$^{***}$ & 0.167$^{**}$ &-0.078 \\
-				& (0.130) & (0.017) & (0.152) & (0.062) & (0.101)\\
-				& & & & & \\
-				Debt $\times$\, GDP & 0.226 & 0.279 & -0.147$^{*}$ & -0.263$^{**}$ & 0.178 \\
-				& (0.379) & (0.480) & (0.362) & (0.111) & (0.398) \\
-				& & & & &  \\
-				\hline \\[-1.8ex]
-				Observations & 3,276 & 760 & 1,199 & 397 & 920 \\
-				$R^{2}$ & 0.837 & 0.795 & 0.938 & 0.898 & 0.923  \\
-				Adjusted $R^{2}$ & 0.831 & 0.777 & 0.934 & 0.882 & 0.917 \\
-				\midrule \\
+\begin{table}[htbp]
+	\centering
+	\begin{threeparttable}
+		\caption{Public Debt and Income Concentration by Income Group}
+		\label{table:fe_group}
+		\begin{small}
+			\begin{tabular}{lccc}
+				\toprule
+				& Top 10\% share & Top 1\% share & Gini \\
+				\midrule
+				High income & \phantom{$-$}0.0098\phantom{$^{**}$} & $-0.0006$\phantom{$^{**}$} & $-0.422$\phantom{$^{**}$} \\
+				& (0.0125) & (0.0044) & (1.013) \\
+				\addlinespace
+				Upper middle income & \phantom{$-$}0.0029\phantom{$^{**}$} & \phantom{$-$}0.0050\phantom{$^{**}$} & \phantom{$-$}0.896\phantom{$^{**}$} \\
+				& (0.0081) & (0.0083) & (0.868) \\
+				\addlinespace
+				Lower middle income & $-0.0078$\phantom{$^{**}$} & $-0.0109$\phantom{$^{**}$} & $-0.677$\phantom{$^{**}$} \\
+				& (0.0079) & (0.0090) & (0.872) \\
+				\addlinespace
+				Low income & \phantom{$-$}0.0028\phantom{$^{**}$} & \phantom{$-$}0.0011\phantom{$^{**}$} & \phantom{$-$}1.403$^{**}$ \\
+				& (0.0093) & (0.0065) & (0.661) \\
+				\bottomrule
 			\end{tabular}
-			\noindent
-			\begin{tablenotes}
-				\item \textit{Note}: All regressions include country and year fixed-effects and weighted by population. Asterisks denote statistical significance at the 10, 5, and 1 percent levels respectively {$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01}
-			\end{tablenotes}
-		\end{threeparttable}
-	\end{center}
-
-	The regression estimates provide a nuanced picture. In the aggregate sample, the coefficient on public debt is small and statistically insignificant, suggesting that the level of debt, taken in isolation, does not exert a robust influence on inequality. However, the results diverge once the sample is stratified by income group. Among high-income countries, debt appears positively associated with inequality, whereas in lower-middle-income countries the relationship is also positive but more pronounced. By contrast, in upper-middle-income countries, the estimated association is weak, and in low-income countries the results are imprecise.
-
-	The interaction between debt and output growth provides additional insights. In several specifications, the interaction term carries the opposite sign from the direct effect of debt, implying that the consequences of indebtedness are mediated by the pace of economic expansion. In high-income countries, for example, the interaction is negative, consistent with the view that debt accumulation may exacerbate inequality only in periods of sluggish growth. These heterogeneous results underline the importance of considering both structural conditions and cyclical dynamics when assessing the distributive consequences of public debt.
-
-	\begin{figure}[ht]
-		\caption{Gross Government Debt and Inequality}
-		\label{figure:figure5}
-		\includegraphics[width=\textwidth]{C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/figure_ME_GDP_debt_panels.png}
-		\caption*{\footnotesize\emph{Note}: Panels report the marginal effect of GDP growth on inequality (log Gini) conditional on the debt-to-GDP ratio, with 95 percent confidence intervals (shaded). Darker shading indicates ranges where the confidence interval excludes zero. Dotted vertical lines mark the 10th and 90th percentiles of the observed debt distribution within each income group. Estimates are based on weighted regressions with country and year fixed effects, population weights, and cluster-robust standard errors by country. Data on gross government debt and GDP are from the IMF WEO, 1980–2019.}
-	\end{figure}
-
-
-	The marginal effects plots in \autoref{figure:figure3} clarify the conditional role of public debt in shaping the growth–inequality nexus across the income distribution. In the pooled specification, the slope of the marginal effect curve is clearly downward: at lower levels of indebtedness, increases in GDP are associated with rising inequality, but the effect steadily diminishes as debt rises, eventually turning negative. This pattern is sharpened in the upper-middle income sample, where the inequality-increasing impact of growth at modest debt ratios gives way to a neutral or even inequality-reducing effect as debt burdens mount. The evidence is consistent with the idea that debt acts as a moderator of distributive pressures in transitional economies, mitigating the extent to which growth accrues disproportionately to elites.
-
-	By contrast, the high-income panel shows little evidence of a systematic relationship between growth and inequality across the debt range. The marginal effect curve hovers around zero, with confidence intervals enveloping the axis throughout, suggesting that expansions in advanced economies are distributionally neutral. This echoes the regression estimates, in which human capital rather than growth emerged as the significant equalizing force. In the low-income group, the relationship is more fragile. The marginal effect of growth is again positive at low debt but declines with higher debt, although the confidence intervals are wide. Here the results of the main specification indicate that educational attainment itself is inequality-enhancing, pointing to processes of elite capture that complicate the distributive effects of both growth and schooling in early development. Finally, in the lower-middle income sample the marginal effect of growth is largely flat and insignificant, while debt exerts a direct and substantial inequality-raising influence in the regressions. In these economies, indebtedness appears to drive inequality independently of the growth process, plausibly through the tax and expenditure adjustments that accompany fiscal constraint.
-
-	Taken together, the figures highlight the heterogeneity of mechanisms by stage of development. In the aggregate and especially among upper-middle income countries, growth is inequality-increasing at low debt levels, but this effect is attenuated—and in some cases reversed—when debt is high. In rich economies, growth plays no role, with educational institutions instead determining the distributional trajectory. In poor countries, both growth and human capital risk amplifying inequality under elite control. And among lower-middle income economies, debt itself emerges as the critical determinant of inequality. The comparative plots thus reinforce the regression results while offering a visual demonstration of how debt conditions the growth–inequality relationship in markedly different ways across the income spectrum.
-
-	\subsection{Dynamic Analysis: ARDL Bounds Testing Approach}
-
-	While the fixed-effects estimates provide useful baseline associations between debt, growth, and inequality, they assume a static long-run relationship and do not account for the dynamic adjustment processes that characterize macroeconomic variables. To address these limitations, we employ the autoregressive distributed lag (ARDL) bounds testing approach developed by \cite{PesaranShin1999} and \cite{PesaranShinSmith2001}. This methodology offers several advantages for our analysis: it permits the inclusion of variables with different orders of integration (I(0) or I(1)), it performs well in small samples, and it allows for the estimation of both short-run dynamics and long-run equilibrium relationships.
-
-	When estimating the distributional consequences of sovereign debt and economic growth, addressing simultaneous causality and endogenous feedback loops is paramount. Traditional instrumental variable approaches (FE-2SLS) require strictly exogenous external instruments, a condition that is practically elusive in a diverse, 82-country macroeconomic panel, as global shocks rarely satisfy the exclusion restriction across universally heterogeneous economies. Similarly, while system GMM is frequently employed to resolve dynamic panel endogeneity, it is mathematically optimized for ``large $N$, small $T$'' datasets. Applying system GMM to a macroeconomic panel with a sufficiently long time dimension risks severe instrument proliferation, which overfits the endogenous variables and artificially inflates Hansen $J$-test $p$-values. To resolve these dual challenges without relying on arbitrary external instruments or risking GMM instrument proliferation, this study employs the panel ARDL framework. As demonstrated by \cite{PesaranShin1999}, augmenting the ARDL specification with an appropriate lag structure for both the dependent and explanatory variables fully absorbs residual serial correlation. Crucially, provided the variables exhibit a valid cointegrating relationship, the ARDL framework inherently corrects for endogenous regressors, yielding ``super-consistent'' long-run parameter estimates that are asymptotically immune to simultaneous causality bias.
-
-	The ARDL model for each country takes the general form:
-	\begin{equation}
-		\Delta y_{t} = \alpha + \sum_{j=1}^{p} \phi_{j} \Delta y_{t-j} + \sum_{j=0}^{q_{1}} \beta_{1,j} \Delta d_{t-j} + \sum_{j=0}^{q_{2}} \beta_{2,j} \Delta g_{t-j} + \sum_{j=0}^{q_{3}} \beta_{3,j} \Delta h_{t-j} + \sum_{j=0}^{q_{4}} \beta_{4,j} \Delta (d \times g)_{t-j} + \lambda \text{ECT}_{t-1} + \varepsilon_{t}
-	\end{equation}
-
-	where $y_{t}$ denotes the log Gini coefficient, $d_{t}$ is the debt-to-GDP ratio, $g_{t}$ is GDP growth, $h_{t}$ is human capital, and $(d \times g)_{t}$ captures the interaction between debt and growth. The error correction term $\text{ECT}_{t-1}$ represents the speed of adjustment toward the long-run equilibrium, and $\lambda$ is expected to be negative and significant when a cointegrating relationship exists.
-
-	We estimate country-specific ARDL models, selecting the optimal lag structure using the Akaike Information Criterion (AIC) with a maximum lag order of five. This approach respects the heterogeneity emphasized throughout our analysis while providing estimates of both short-run responses and long-run multipliers for each country.
-
-	\subsubsection{Cointegration Evidence}
-
-	The ARDL bounds test evaluates the null hypothesis of no long-run relationship against the alternative of cointegration. \autoref{table:bounds_summary} summarizes the distribution of bounds test results across the 81 countries in our sample.
-
-	\begin{table}[htbp]
-		\centering
-		\begin{threeparttable}
-			\caption{Summary of ARDL Bounds Test Results}
-			\label{table:bounds_summary}
-			\begin{small}
-				\begin{tabular}{lcc}
-					\toprule
-					\textbf{Conclusion} & \textbf{Number of Countries} & \textbf{Percent} \\
-					\midrule
-					Strong evidence of cointegration ($p \leq 0.01$) & 25 & 30.9 \\
-					Evidence of cointegration ($p \leq 0.05$) & 10 & 12.3 \\
-					Weak evidence of cointegration ($0.05 < p \leq 0.10$) & 5 & 6.2 \\
-					No evidence of cointegration ($p > 0.10$) & 31 & 38.3 \\
-					Inconclusive / Error & 10 & 12.3 \\
-					\bottomrule
-				\end{tabular}
-			\end{small}
-			\begin{tablenotes}
-				\footnotesize
-				\item \textit{Note}: Results based on Pesaran-Shin-Smith bounds tests. Critical values from \citet{PesaranShinSmith2001} assuming unrestricted intercept and no trend. Countries with computational errors are excluded from the cointegration subsample analysis.
-			\end{tablenotes}
-		\end{threeparttable}
-	\end{table}
-
-	The bounds tests reveal that approximately half of the countries in our sample (40 out of 71 with valid tests, or 56 percent) exhibit at least weak evidence of a long-run equilibrium relationship between inequality, debt, growth, and human capital. This finding supports the use of an error correction framework for these countries, as the variables do not drift apart indefinitely but instead adjust toward a stable long-run relationship.
-
-	\autoref{table:bounds_countries} presents selected country-level bounds test results, organized by income classification. Among high-income countries, strong evidence of cointegration is found in Australia, Austria, Belgium, France, Luxembourg, South Korea, Spain, Sweden, and Switzerland. In the middle-income groups, China, Colombia, Costa Rica, Ecuador, Egypt, and South Africa display robust cointegrating relationships. Among lower-income economies, Bangladesh, Ghana, Kenya, Malawi, and Madagascar also show strong evidence of long-run equilibrium.
-
-	\begin{table}[htbp]
-		\centering
-		\begin{threeparttable}
-			\caption{Bounds Test Results by Income Group (Selected Countries)}
-			\label{table:bounds_countries}
-			\begin{small}
-				\begin{tabular}{llcc}
-					\toprule
-					\textbf{Income Group} & \textbf{Country} & \textbf{F-Statistic} & \textbf{Conclusion} \\
-					\midrule
-					\multirow{5}{*}{High Income}
-					& Belgium & 9.60 & Strong ($p \leq 0.01$) \\
-					& Luxembourg & 10.19 & Strong ($p \leq 0.01$) \\
-					& Sweden & 7.71 & Strong ($p \leq 0.01$) \\
-					& United States & 4.94 & Evidence ($p \leq 0.05$) \\
-					& United Kingdom & 4.44 & Evidence ($p \leq 0.05$) \\
-					\midrule
-					\multirow{5}{*}{Upper Middle Income}
-					& China & 8.91 & Strong ($p \leq 0.01$) \\
-					& South Africa & 7.71 & Strong ($p \leq 0.01$) \\
-					& Costa Rica & 5.80 & Strong ($p \leq 0.01$) \\
-					& Ecuador & 6.35 & Strong ($p \leq 0.01$) \\
-					& Brazil & 3.92 & Weak ($0.05 < p \leq 0.10$) \\
-					\midrule
-					\multirow{5}{*}{Lower Middle Income}
-					& Ghana & 10.51 & Strong ($p \leq 0.01$) \\
-					& Egypt & 7.07 & Strong ($p \leq 0.01$) \\
-					& Philippines & 7.89 & Strong ($p \leq 0.01$) \\
-					& Bangladesh & 5.83 & Strong ($p \leq 0.01$) \\
-					& Kenya & 5.69 & Strong ($p \leq 0.01$) \\
-					\midrule
-					\multirow{3}{*}{Low Income}
-					& Madagascar & 9.40 & Strong ($p \leq 0.01$) \\
-					& Malawi & 8.40 & Strong ($p \leq 0.01$) \\
-					& Uganda & 4.47 & Evidence ($p \leq 0.05$) \\
-					\bottomrule
-				\end{tabular}
-			\end{small}
-			\begin{tablenotes}
-				\footnotesize
-				\item \textit{Note}: F-statistics from ARDL bounds tests. Critical values at 1\%, 5\%, and 10\% significance levels are approximately 4.29, 3.23, and 2.75 respectively for the case with unrestricted intercept and no trend (k=4 regressors).
-			\end{tablenotes}
-		\end{threeparttable}
-	\end{table}
-
-	The cross-sectional heterogeneity in cointegration evidence is notable. Countries where no cointegrating relationship is detected include several with historically volatile economic conditions (Argentina, Bolivia, Jamaica, Zimbabwe) as well as some stable advanced economies (Canada, Japan, Netherlands, Norway). This pattern suggests that the existence of a long-run equilibrium is not simply a function of development level but depends on country-specific institutional and structural factors.
-
-	\subsubsection{Long-Run Multipliers}
-
-	For countries where cointegration is established, the long-run multipliers capture the eventual cumulative impact of a permanent change in each explanatory variable on inequality. \autoref{table:meta_longrun} presents the meta-analytic summary of these multipliers across the 81 country-specific ARDL models.
-
-	\begin{table}[htbp]
-		\centering
-		\begin{threeparttable}
-			\caption{Meta-Analysis of Long-Run Multipliers}
-			\label{table:meta_longrun}
-			\begin{small}
-				\begin{tabular}{lcccccc}
-					\toprule
-					\textbf{Variable} & \textbf{Mean} & \textbf{SD} & \textbf{Median} & \textbf{Min} & \textbf{Max} & \textbf{N} \\
-					\midrule
-					Debt-to-GDP & $-0.41$ & 6.14 & 0.006 & $-31.18$ & 34.63 & 81 \\
-					GDP Growth & 9.50 & 124.49 & 0.010 & $-134.11$ & 1101.62 & 81 \\
-					Human Capital & 0.75 & 3.14 & 0.002 & $-1.97$ & 15.02 & 81 \\
-					Debt $\times$ Growth & $-6.93$ & 106.65 & 0.247 & $-896.35$ & 284.83 & 81 \\
-					\bottomrule
-				\end{tabular}
-			\end{small}
-			\begin{tablenotes}
-				\footnotesize
-				\item \textit{Note}: Long-run multipliers computed as $-\sum \beta_j / (1 - \sum \phi_j)$ from country-specific ARDL models. The dependent variable is the log Gini coefficient. Large standard deviations reflect substantial cross-country heterogeneity.
-			\end{tablenotes}
-		\end{threeparttable}
-	\end{table}
-
-	The most striking feature of \autoref{table:meta_longrun} is the substantial heterogeneity in long-run effects across countries. For all four variables, the standard deviations vastly exceed the means, and the ranges span from large negative to large positive values. This dispersion underscores the limitations of any single ``global'' estimate of the debt-inequality relationship and reinforces the importance of country-specific analysis.
-
-	Focusing on the median values, which are less sensitive to outliers, we find that the typical long-run effect of debt on inequality is essentially zero (0.006), as is the typical effect of GDP growth (0.010). Human capital similarly shows a near-zero median effect (0.002), while the debt-growth interaction has a small positive median (0.247). These results suggest that, for the median country, there is no systematic long-run relationship between debt accumulation and income inequality, a finding consistent with the insignificant pooled coefficients in our static fixed-effects specifications.
-
-	However, the extreme values in the distribution warrant attention. In some countries (such as the Philippines and Belgium), debt appears to have substantial long-run effects on inequality, though with opposite signs. The Belgian case, where the debt multiplier reaches 34.6, reflects a combination of high short-run responsiveness and slow adjustment dynamics, magnifying the cumulative effect. Conversely, the large negative multiplier for the Philippines ($-31.2$) suggests that debt accumulation is associated with declining inequality over the long run in that context, potentially through channels of public investment or social spending.
-
-	\subsubsection{Error Correction Dynamics}
-
-	The error correction term (ECT) coefficient measures the speed at which the system returns to equilibrium following a shock. A negative and significant ECT indicates stable adjustment dynamics, while a positive coefficient suggests explosive behavior incompatible with a stable long-run relationship.
-
-	\autoref{table:ecm_summary} summarizes the distribution of ECT coefficients across countries.
-
-	\begin{table}[htbp]
-		\centering
-		\begin{threeparttable}
-			\caption{Distribution of Error Correction Coefficients}
-			\label{table:ecm_summary}
-			\begin{small}
-				\begin{tabular}{lcc}
-					\toprule
-					\textbf{ECT Range} & \textbf{Number of Countries} & \textbf{Interpretation} \\
-					\midrule
-					$\lambda < -0.30$ & 9 & Fast adjustment (< 3 years) \\
-					$-0.30 \leq \lambda < -0.10$ & 24 & Moderate adjustment (3--10 years) \\
-					$-0.10 \leq \lambda < 0$ & 34 & Slow adjustment (> 10 years) \\
-					$\lambda \geq 0$ & 14 & No stable adjustment \\
-					\midrule
-					\textbf{Total} & \textbf{81} & \\
-					\bottomrule
-				\end{tabular}
-			\end{small}
-			\begin{tablenotes}
-				\footnotesize
-				\item \textit{Note}: The half-life of adjustment is approximated by $\ln(0.5)/\ln(1+\lambda)$. Positive ECT values indicate absence of error correction dynamics.
-			\end{tablenotes}
-		\end{threeparttable}
-	\end{table}
-
-	The majority of countries (67 of 81) display negative ECT coefficients, consistent with stable long-run dynamics. Among these, the distribution is skewed toward slow adjustment: 34 countries have ECT values between $-0.10$ and zero, implying half-lives of adjustment exceeding a decade. This sluggish pace of equilibrium restoration is economically intuitive: income distributions are shaped by deep structural factors (labor market institutions, educational systems, tax policies) that change only gradually.
-
-	Countries with faster adjustment speeds (ECT $< -0.30$) include Egypt ($-0.42$), Malaysia ($-0.41$), Morocco ($-0.42$), Sweden ($-0.55$), and France ($-0.99$). The French case is particularly notable: an ECT of $-0.99$ implies near-complete adjustment within a single year, suggesting either highly responsive policy mechanisms or measurement idiosyncrasies. At the other extreme, countries such as Argentina, Algeria, and the Philippines show ECT values near zero or slightly positive, indicating either no error correction or very weak mean-reversion.
-
-	\autoref{table:ecm_selected} presents ECT coefficients and model fit statistics for selected countries.
-
-	\begin{table}[htbp]
-		\centering
-		\begin{threeparttable}
-			\caption{Error Correction Coefficients: Selected Countries}
-			\label{table:ecm_selected}
-			\begin{small}
-				\begin{tabular}{llccc}
-					\toprule
-					\textbf{Income Group} & \textbf{Country} & \textbf{ECT ($\lambda$)} & \textbf{ECM $R^2$} & \textbf{Half-Life (years)} \\
-					\midrule
-					\multirow{5}{*}{High Income}
-					& France & -0.99 & 0.87 & 0.2 \\
-					& Sweden & -0.55 & 0.83 & 0.9 \\
-					& Spain & -0.28 & 0.59 & 2.1 \\
-					& South Korea & -0.34 & 0.72 & 1.7 \\
-					& United States & -0.07 & 0.55 & 9.5 \\
-					\midrule
-					\multirow{4}{*}{Upper Middle Income}
-					& China & -0.23 & 0.97 & 2.6 \\
-					& South Africa & 0.05 & 0.65 & --- \\
-					& Brazil & -0.07 & 0.64 & 9.6 \\
-					& Costa Rica & -0.13 & 0.79 & 4.9 \\
-					\midrule
-					\multirow{4}{*}{Lower Middle Income}
-					& Egypt & -0.42 & 0.65 & 1.3 \\
-					& Malaysia & -0.41 & 0.62 & 1.3 \\
-					& India & -0.12 & 0.33 & 5.4 \\
-					& Ghana & -0.14 & 0.63 & 4.6 \\
-					\midrule
-					\multirow{3}{*}{Low Income}
-					& Madagascar & -0.26 & 0.82 & 2.3 \\
-					& Malawi & -0.23 & 0.91 & 2.7 \\
-					& Mali & -0.21 & 0.56 & 2.9 \\
-					\bottomrule
-				\end{tabular}
-			\end{small}
-			\begin{tablenotes}
-				\footnotesize
-				\item \textit{Note}: Half-life computed as $\ln(0.5)/\ln(1+\lambda)$. ``---'' indicates no stable equilibrium (positive ECT). ECM $R^2$ is the variance explained by the error correction model.
-
-			\end{tablenotes}
-		\end{threeparttable}
-	\end{table}
-
-	The ECM $R^2$ values provide an additional diagnostic. Countries with high explanatory power (China at 0.97, Malawi at 0.91, Argentina at 0.99) suggest that the ARDL specification captures the essential dynamics of inequality in those contexts. Lower values (India at 0.33, Mauritius at 0.07) indicate that additional factors beyond debt, growth, and human capital drive inequality dynamics in those settings.
-
-	\subsection{Synthesis and Robustness}
-
-	The dynamic ARDL analysis complements and extends the static fixed-effects results in several important respects. First, it confirms that no universal relationship exists between public debt and income inequality. The pooled and median estimates are indistinguishable from zero, and the enormous cross-country variance in long-run multipliers defies any single characterization.
-
-	Second, the cointegration tests provide formal evidence that, for roughly half of the countries studied, debt, growth, human capital, and inequality share a long-run equilibrium. This finding supports the theoretical premise that fiscal variables and distributional outcomes are jointly determined in the long run, even if short-run correlations are weak or absent.
-
-	Third, the error correction analysis reveals that adjustment toward equilibrium is generally slow. Where stable dynamics exist, the typical half-life exceeds a decade, implying that the distributional consequences of fiscal policy unfold over very long horizons. This has direct policy implications: short-run evaluations of debt-financed programs may miss their full redistributive effects.
-
-	Finally, the substantial heterogeneity documented throughout this analysis reinforces our central argument against universal debt thresholds. The relationship between debt and inequality varies not only in magnitude but in sign across countries, and these differences are systematic with respect to income level, institutional context, and exchange rate regime. A policy framework that ignores this heterogeneity risks prescribing remedies ill-suited to local conditions.
-
-	\subsection{Exchange Rate Regimes and Monetary Sovereignty}
-
-	A central motivation for this study is the hypothesis that countries with monetary sovereignty, defined as possessing an independent monetary policy and a floating exchange rate, may experience fundamentally different debt-inequality dynamics than those operating under fixed or pegged arrangements. This conjecture draws on insights from both heterodox monetary theory and the political economy of fiscal policy. If monetarily sovereign nations face softer budget constraints and can deploy deficit spending without the disciplining pressures of currency crises or external creditors, they may use fiscal space more expansively and, potentially, more progressively.
-
-	To test this hypothesis, we draw on exchange rate regime classifications from \citet{HarmsKnaze2021}, which extend the \citet{IlzetzkiReinhartRogoff2019} methodology to construct both de jure and de facto measures of regime flexibility. We define three key indicators: (1) \textit{floating}, coded as 1 if a country's de facto IRR regime code is 12 or higher (managed or free float); (2) \textit{policy autonomy}, coded as 1 if the country is not pegged to the U.S. dollar or euro; and (3) \textit{meets hypothesis}, coded as 1 if a country satisfies both conditions and is not experiencing a currency or debt crisis. We also employ a continuous measure of effective regime flexibility on a 1--4 scale, capturing trade-weighted exchange rate arrangements.
-
-	\subsubsection{Panel Evidence with Regime Interactions}
-
-	We augment our baseline fixed-effects specification with interaction terms between debt and the regime indicators. \autoref{table:regime_interactions} presents the results.
-
-	\begin{table}[htbp]
-		\centering
-		\begin{threeparttable}
-			\caption{Debt-Inequality Relationship by Exchange Rate Regime}
-			\label{table:regime_interactions}
-			\begin{small}
-				\begin{tabular}{lcccccc}
-					\toprule
-					& (1) & (2) & (3) & (4) & (5) & (6) \\
-					& Base & Floating & Eff. Regime & Autonomy & Hypothesis & Triple \\
-					\midrule
-					Debt & 0.033 & 0.017 & $-0.077$ & 0.026 & 0.022 & 0.018 \\
-					& (0.022) & (0.018) & (0.056) & (0.018) & (0.017) & (0.017) \\
-					GDP & $-0.044$ & $-0.006$ & $-0.036$ & $-0.047$ & $-0.060$ & $-0.087$ \\
-					& (0.071) & (0.066) & (0.065) & (0.067) & (0.065) & (0.063) \\
-					Human Capital & $-0.034$ & $-0.032$ & $-0.030$ & $-0.037$ & $-0.032$ & $-0.034$ \\
-					& (0.044) & (0.044) & (0.043) & (0.045) & (0.043) & (0.043) \\
-					Debt $\times$ GDP & 0.018 & 0.089 & 0.006 & 0.020 & 0.056 & \\
-					& (0.109) & (0.092) & (0.092) & (0.099) & (0.093) & \\
-					Debt $\times$ Floating & & 0.045$^{**}$ & & & & \\
-					& & (0.021) & & & & \\
-					Debt $\times$ Eff. Regime & & & 0.037$^{**}$ & & & \\
-					& & & (0.018) & & & \\
-					Debt $\times$ Autonomy & & & & 0.023 & & \\
-					& & & & (0.037) & & \\
-					Debt $\times$ Hypothesis & & & & & 0.048 & \\
-					& & & & & (0.032) & \\
-					Debt $\times$ Meets Hyp. & & & & & & 0.083$^{**}$ \\
-					& & & & & & (0.036) \\
-					\midrule
-					Country FE & Yes & Yes & Yes & Yes & Yes & Yes \\
-					Year FE & Yes & Yes & Yes & Yes & Yes & Yes \\
-					Observations & 3,209 & 3,209 & 3,209 & 3,209 & 3,209 & 3,209 \\
-					$R^2$ & 0.948 & 0.950 & 0.950 & 0.949 & 0.949 & 0.949 \\
-					Within $R^2$ & 0.025 & 0.050 & 0.046 & 0.031 & 0.038 & 0.043 \\
-					\bottomrule
-				\end{tabular}
-			\end{small}
-			\begin{tablenotes}
-				\footnotesize
-				\item \textit{Note}: Dependent variable is log Gini coefficient. Standard errors clustered by country in parentheses. ``Floating'' indicates IRR regime $\geq 12$; ``Eff. Regime'' is continuous 1--4 scale; ``Autonomy'' indicates no USD/EUR peg; ``Meets Hyp.'' requires floating, autonomy, and no crisis. $^{*}p<0.1$; $^{**}p<0.05$; $^{***}p<0.01$.
-			\end{tablenotes}
-		\end{threeparttable}
-	\end{table}
-
-	The results in \autoref{table:regime_interactions} reveal a pattern that challenges the initial hypothesis. The interaction between debt and floating exchange rates (column 2) is positive and statistically significant at the five-percent level ($\beta = 0.045$, $p = 0.032$), indicating that countries with flexible exchange rates experience a \textit{stronger} positive relationship between debt and inequality than those with fixed arrangements. The same pattern emerges with the continuous effective regime measure (column 3): more flexible regimes are associated with larger inequality-increasing effects of debt accumulation ($\beta = 0.037$, $p < 0.05$).
-
-	The full hypothesis test in column 6, which interacts debt with an indicator for countries satisfying all sovereignty conditions, confirms this finding. The coefficient on Debt $\times$ Meets Hypothesis is 0.083 and significant at the five-percent level, implying that monetarily sovereign countries exhibit debt-inequality dynamics approximately 0.08 log points more positive than constrained countries—the opposite of what the sovereignty hypothesis predicts.
-
-	\subsubsection{Split-Sample Analysis}
-
-	To probe these findings further, we estimate separate models for floating and fixed-regime countries. The split-sample coefficients on debt are:
-
-	\begin{center}
-		\begin{tabular}{lcc}
-			\toprule
-			\textbf{Sample} & \textbf{Debt Coefficient} & \textbf{N} \\
-			\midrule
-			Floating regimes & 0.033 & 1,247 \\
-			Fixed regimes & 0.020 & 1,962 \\
-			Meets hypothesis & 0.032 & 892 \\
-			Fails hypothesis & 0.024 & 2,317 \\
-			\bottomrule
-		\end{tabular}
-	\end{center}
-
-	In all cases, the debt coefficient is larger (more inequality-increasing) for sovereign countries than for constrained ones, though the differences are modest in magnitude and the individual coefficients are not statistically distinguishable from zero.
-
-	\subsubsection{Long-Run Dynamics by Regime}
-
-	The short-run panel results, however, may not capture the full story. If monetary sovereignty enables policies whose redistributive benefits materialize only gradually—through sustained public investment, education spending, or social insurance—then the long-run multipliers from our ARDL models may reveal a different pattern.
-
-	\autoref{table:lr_regime} compares the distribution of long-run debt multipliers across regime categories.
-
-	\begin{table}[htbp]
-		\centering
-		\begin{threeparttable}
-			\caption{Long-Run Debt Multipliers by Exchange Rate Regime}
-			\label{table:lr_regime}
-			\begin{small}
-				\begin{tabular}{lccccc}
-					\toprule
-					\textbf{Regime} & \textbf{N} & \textbf{Mean LR} & \textbf{Difference} & \textbf{$t$-stat} & \textbf{$p$-value} \\
-					\midrule
-					Floating (IRR $\geq$ 12) & 12 & $-0.302$ & & & \\
-					Fixed (IRR $<$ 12) & 53 & $-0.005$ & $-0.297$ & $-0.82$ & 0.418 \\
-					\midrule
-					Meets Hypothesis & 5 & $-0.150$ & & & \\
-					Fails Hypothesis & 60 & $-0.053$ & $-0.097$ & $-0.18$ & 0.860 \\
-					\bottomrule
-				\end{tabular}
-			\end{small}
-			\begin{tablenotes}
-				\footnotesize
-				\item \textit{Note}: Long-run multipliers from country-specific ARDL models. Floating defined as IRR regime code $\geq 12$. ``Meets Hypothesis'' requires floating regime, policy autonomy, and no contemporaneous crisis. $t$-statistics from two-sample $t$-tests assuming unequal variances.
-			\end{tablenotes}
-		\end{threeparttable}
-	\end{table}
-
-	The long-run estimates present a strikingly different picture. Among floating-regime countries, the mean long-run debt multiplier is $-0.302$, compared to $-0.005$ for fixed-regime countries. Countries meeting the full sovereignty hypothesis show a mean multiplier of $-0.150$ versus $-0.053$ for those that do not. In both cases, the direction of the difference \textit{reverses}: sovereign countries appear to exhibit more inequality-\textit{reducing} long-run effects of debt, not more inequality-increasing effects as the short-run panel estimates suggest.
-
-	However, neither difference is statistically significant. The $t$-statistics are well below conventional thresholds ($-0.82$ and $-0.18$), and the $p$-values (0.418 and 0.860) provide no grounds for rejecting the null of equal means. The failure to detect significance reflects two factors: the small number of countries classified as floating or sovereignty-compliant (12 and 5, respectively), and the enormous cross-country variance in long-run multipliers documented earlier.
-
-	\subsubsection{Interpretation}
-
-	The regime analysis yields findings that resist easy characterization. In the short run, the evidence favors the mainstream view: countries with monetary sovereignty and floating exchange rates experience \textit{stronger} positive associations between debt and inequality. This pattern is consistent with several mechanisms. Sovereign countries may deploy debt in ways that disproportionately benefit asset holders—through financial sector support, quantitative easing, or tax policies that accompany deficit spending. The absence of external discipline does not, by itself, translate into progressive fiscal choices.
-
-	In the long run, the pattern reverses direction, though not significantly. Sovereign countries show more negative (inequality-reducing) debt multipliers on average, hinting that the full redistributive consequences of fiscal policy may take decades to materialize. But the small samples and wide confidence intervals preclude strong conclusions.
-
-	From a theoretical standpoint, these results offer partial support for both camps. The mainstream concern that monetary sovereignty does not guarantee equitable outcomes finds confirmation in the short-run dynamics. The heterodox intuition that sovereign countries \textit{could} use fiscal space progressively is not refuted by the long-run estimates—but neither is it affirmed. The critical insight may be that sovereignty creates \textit{capacity} without determining \textit{outcomes}: what matters is not whether a country can run deficits freely, but how it chooses to spend.
-
+		\end{small}
+		\begin{tablenotes}
+			\footnotesize
+			\item \emph{Note}: Coefficient on public debt from specification (3),
+			estimated separately within each income group. Standard errors clustered
+			by country in parentheses. $^{*}p<0.1$; $^{**}p<0.05$; $^{***}p<0.01$.
+		\end{tablenotes}
+	\end{threeparttable}
+\end{table}
+
+The income group estimates in \autoref{table:fe_group} do not support the
+prediction that the relationship concentrates where fiscal space is most
+constrained. The two middle-income groups carry coefficients of opposite sign,
+positive for upper-middle-income countries and negative for lower-middle-income
+countries, with neither approaching significance. The one significant
+coefficient, for the Gini in low-income countries, is not accompanied by a
+corresponding relationship for either income share in the same income group,
+nor by a significant Gini coefficient in any other income group.
+
+\autoref{table:fe_fd} reports estimates of \eqref{eq:fe} in first differences,
+which removes the country effects and any confounder that changes slowly within
+countries. The coefficient on the change in public debt is $-0.00063$
+($p = 0.694$) for the top 10 percent share, 0.00046 ($p = 0.758$) for the top
+1 percent share, and $-0.041$ ($p = 0.703$) for the Gini. No regressor is
+significant for either income share; for the Gini, only the change in
+inflation enters significantly, at 0.012 ($p = 0.021$). The level estimates in
+\autoref{table:fe_debt} therefore derive from variation that annual first
+differencing removes.
+
+\begin{table}[htbp]
+	\centering
+	\begin{threeparttable}
+		\caption{First-Difference Estimates}
+		\label{table:fe_fd}
+		\begin{small}
+			\begin{tabular}{lccc}
+				\toprule
+				& $\Delta$ Top 10\% & $\Delta$ Top 1\% & $\Delta$ Gini \\
+				\midrule
+				$\Delta$ Public debt      & $-0.00063$\phantom{$^{**}$} & \phantom{$-$}0.00046\phantom{$^{**}$} & $-0.041$\phantom{$^{**}$} \\
+				& (0.00160) & (0.00149) & (0.108) \\
+				\addlinespace
+				$\Delta$ Growth           & \phantom{$-$}0.00134\phantom{$^{**}$} & $-0.00050$\phantom{$^{**}$} & $-0.016$\phantom{$^{**}$} \\
+				& (0.00137) & (0.00090) & (0.021) \\
+				\addlinespace
+				$\Delta$ Life expectancy  & \phantom{$-$}0.00013\phantom{$^{**}$} & \phantom{$-$}0.00002\phantom{$^{**}$} & \phantom{$-$}0.008\phantom{$^{**}$} \\
+				& (0.00016) & (0.00016) & (0.005) \\
+				\addlinespace
+				$\Delta$ Military exp.    & $-0.02007$\phantom{$^{**}$} & \phantom{$-$}0.01540\phantom{$^{**}$} & \phantom{$-$}0.645\phantom{$^{**}$} \\
+				& (0.03935) & (0.03232) & (1.097) \\
+				\addlinespace
+				$\Delta$ Civilian spend.  & $-0.00742$\phantom{$^{**}$} & $-0.00350$\phantom{$^{**}$} & $-0.065$\phantom{$^{**}$} \\
+				& (0.00556) & (0.00504) & (0.270) \\
+				\addlinespace
+				$\Delta$ Inflation        & \phantom{$-$}0.00000\phantom{$^{**}$} & \phantom{$-$}0.00001\phantom{$^{**}$} & \phantom{$-$}0.012$^{**}$ \\
+				& (0.00001) & (0.00001) & (0.005) \\
+				\bottomrule
+			\end{tabular}
+		\end{small}
+		\begin{tablenotes}
+			\footnotesize
+			\item \emph{Note}: All columns include year fixed effects with standard
+			errors clustered by country. $^{*}p<0.1$; $^{**}p<0.05$; $^{***}p<0.01$.
+		\end{tablenotes}
+	\end{threeparttable}
+\end{table}
+
+The estimates in \autoref{table:fe_debt} do not identify a channel. The
+coefficient on public debt reaches significance, at conventional but modest
+levels, only in the specifications that include the interaction between debt
+and civilian spending, and only for the top 10 percent and top 1 percent
+shares; it is never significant for the Gini. The terms through which the
+composition argument of \autoref{section:section2} would operate are not
+themselves significant: military expenditure is positive but insignificant
+throughout, the interaction between debt and civilian spending is negative but
+insignificant throughout, and the interaction between debt and growth is
+insignificant throughout. The specifications that include the debt-civilian
+spending interaction produce a public debt coefficient two to three times
+larger than the specifications that do not, while the interaction term itself,
+and the spending components that motivate it, carry no independent
+explanatory weight.
+
+The first-difference estimates in \autoref{table:fe_fd} give no evidence of a
+relationship at annual frequency. Since first differencing removes the country
+effects and any determinant of concentration that changes slowly within
+countries, the level estimates are identified from low-frequency within-country
+variation that the differenced specification does not use. This does not
+invalidate the level estimates: a relationship operating over a longer horizon
+than one year would not appear in first differences. It does mean that the
+static specification cannot distinguish a long-run relationship from a
+persistent confounder, and that we cannot recover an adjustment horizon from
+it.
+
+Two features of the specification limit what \eqref{eq:fe} can establish. It
+constrains $\gamma$ to be common across the countries within each column, which
+the dispersion in \autoref{table:fe_group} gives reason to doubt. And it relates
+concentration to debt contemporaneously, so it recovers no long-run parameter if
+either series is persistent. Section~\ref{section:ardl} estimates the
+relationship separately for each country and separates short-run dynamics from
+the long-run relation.
+
+\subsection{Country-Specific ARDL Estimation}
+\label{section:ardl}
+
+The fixed-effects estimates of \autoref{table:fe_debt} and \autoref{table:fe_group}
+constrain the coefficient on public debt to be common across countries and
+impose a static relation between debt and inequality. This section relaxes
+both restrictions and estimates the long-run relation country by country,
+separately for the top decile share, the top percentile share, and the Gini
+coefficient. The exercise yields a bound rather than an effect. For the top
+decile share, the point estimate of the pooled long-run multiplier implies a
+small decline in concentration rather than the rise observed over the sample,
+and the upper end of the 95 percent interval attributes at most 5.5 percent of
+the observed rise to debt accumulation. The same conclusion, indistinguishable
+from zero at conventional levels, holds for the top percentile share and for
+the Gini coefficient.
+
+\subsubsection{Specification}
+
+For each country $i$ we estimate an autoregressive distributed lag model in
+levels, following \citet{PesaranShin1999} and \citet{PesaranShinSmith2001}:
+\begin{equation}
+	y_{it} = c_{i} + \sum_{j=1}^{p_{i}} \phi_{ij} \, y_{i,t-j}
+	+ \sum_{\ell=1}^{4} \sum_{j=0}^{q_{i\ell}} \beta_{i\ell j} \, x_{i\ell,t-j}
+	+ \varepsilon_{it},
+	\label{eq:ardl}
+\end{equation}
+where $y_{it}$ is, in turn, the top decile share, the top percentile share,
+and the Gini coefficient, and the four regressors are the public debt-to-GDP
+ratio, real GDP growth, life expectancy at birth, and the product of debt and
+growth. The model is estimated separately for each of the three outcomes, so
+that the lag structure, the cointegration evidence, and the long-run
+multiplier are all country- and outcome-specific rather than imposed jointly
+across measures of concentration.
+
+Each term in \eqref{eq:ardl} absorbs a distinct source of variation. The
+country intercept $c_{i}$ absorbs the time-invariant institutional and
+structural determinants of the level of concentration, which the descriptive
+evidence of \autoref{table:decade_means} shows to differ by more than ten
+percentage points across income groups. The own lags $\phi_{ij}$ absorb the
+persistence of the income distribution, which is high enough that a
+specification omitting them attributes to the regressors variation that is
+accounted for by the previous year's outcome. Growth and life expectancy absorb
+the development-stage channels set out in \autoref{section:data}, so that the
+debt coefficient is not identified from the covariation of debt with the level
+of income or with human development. The interaction term permits the effect
+of debt to depend on the growth environment in which it is accumulated.
+
+Lag orders $(p_{i}, q_{i1}, \dots, q_{i4})$ are selected by the Akaike
+Information Criterion over a maximum order of three in each argument. The
+long-run multiplier on regressor $\ell$ is
+\begin{equation}
+	\theta_{i\ell} = \frac{\sum_{j=0}^{q_{i\ell}} \beta_{i\ell j}}
+	{1 - \sum_{j=1}^{p_{i}} \phi_{ij}},
+	\label{eq:lrm}
+\end{equation}
+with standard errors obtained by the delta method from the estimated
+coefficient covariance matrix. The denominator of \eqref{eq:lrm} is the
+negative of the speed of adjustment in the associated conditional error
+correction representation, $\lambda_{i} = \sum_{j} \phi_{ij} - 1$, so the
+long-run multiplier and the adjustment dynamics are two readings of the same
+estimated autoregressive polynomial rather than independent pieces of
+evidence. The debt ratio is measured in percentage points of GDP and the two
+income shares in percentage points of national income, so $\theta_{i1}$ reads
+as the percentage point change in the share, or, for the Gini coefficient, the
+index-point change, associated with a permanent one percentage point change in
+the ratio of public debt to GDP. We report multipliers throughout alongside
+the movement they imply over the debt expansion recorded in
+\autoref{table:descriptive}, where public debt rises 61.7 percentage points of
+GDP between the pre-1979 and recent periods while the top decile share rises
+8.4 percentage points.
+
+Of the countries satisfying the order-of-integration requirement of
+\autoref{section:unit_roots}, 69 enter the exercise. All 69 are estimated for
+the top decile and top percentile shares. Nine are excluded from the Gini
+specification for having too few annual observations once the requisite lags
+are accounted for, leaving 60. The estimation samples are long relative to the
+requirements of country-specific time series work: every country contributes
+42 annual observations to the two income share specifications, and a median of
+42 (minimum 25) to the Gini specification. The selected dynamics are
+parsimonious for the income shares and considerably less so for the Gini
+coefficient. For the top decile share, 54 countries select a single own lag,
+12 select two, and 3 select three; 20 of the single-lag models are the fully
+static specification $(1,0,0,0,0)$, with no lagged terms on any regressor. For
+the top percentile share the corresponding counts are 48, 17, and 4, of which
+23 are static. For the Gini coefficient, 12 countries select a single own lag,
+40 select two, and 8 select three, and only 1 is static.
+
+\subsubsection{Evidence of Long-Run Relations}
+
+The long-run multiplier in \eqref{eq:lrm} has an equilibrium interpretation
+only where the variables are cointegrated. The bounds $F$ test evaluates the
+joint nullity of the levels terms in the conditional error correction form
+against the alternative of a long-run relation, computed for every country
+under an unrestricted intercept and no trend. \autoref{table:bounds_summary}
+reports the outcomes for each of the three measures of concentration.
+
+\begin{table}[htbp]
+	\centering
+	\begin{threeparttable}
+		\caption{ARDL Bounds Test Results, by Measure of Concentration}
+		\label{table:bounds_summary}
+		\begin{small}
+			\begin{tabular}{lccc}
+				\toprule
+				\textbf{Conclusion} & \textbf{Top 10\% share} & \textbf{Top 1\% share} & \textbf{Gini} \\
+				\midrule
+				Cointegration, $p \leq 0.01$        & 9  & 14 & 9  \\
+				Cointegration, $p \leq 0.05$        & 8  & 8  & 12 \\
+				Weak evidence, $0.05 < p \leq 0.10$ & 8  & 8  & 7  \\
+				No evidence, $p > 0.10$             & 43 & 38 & 29 \\
+				\addlinespace
+				Test could not be evaluated         & 1  & 1  & 3  \\
+				\midrule
+				Total estimated                     & 69 & 69 & 60 \\
+				\bottomrule
+			\end{tabular}
+		\end{small}
+		\begin{tablenotes}
+			\footnotesize
+			\item \emph{Note}: Bounds $F$ tests following \citet{PesaranShinSmith2001}
+			with $k = 4$ regressors, computed under an unrestricted intercept and no
+			trend. The bounds test could not be evaluated at the selected lag order for
+			the United Arab Emirates (top decile share), Burkina Faso (top percentile
+			share), and Brazil, Singapore, and Thailand (Gini). These countries retain
+			long-run multipliers in \autoref{table:meta_longrun} but carry no
+			cointegration verdict.
+		\end{tablenotes}
+	\end{threeparttable}
+\end{table}
+
+The null of no long-run relation is rejected less often than not for all three
+measures. At the 5 percent level, rejection occurs in 17 of 68 countries with
+a valid statistic for the top decile share (25.0 percent), 22 of 68 for the top
+percentile share (32.4 percent), and 21 of 57 for the Gini coefficient (36.8
+percent); at the 10 percent level the corresponding counts are 25 (36.8
+percent), 30 (44.1 percent), and 28 (49.1 percent). The test statistics are
+centered well below the customary critical values: means of 3.17, 3.76, and
+3.59 for the top decile share, the top percentile share, and the Gini
+coefficient respectively, with medians of 2.71, 3.33, and 3.31, and ranges
+running from 0.43 to 10.70, from 1.05 to 10.11, and from 0.77 to 7.96.
+
+Rejection is unrelated to development level for any of the three outcomes.
+Median statistics for the top decile share run from 1.79 in lower-middle-income
+countries to 3.69 in low-income countries, with high-income and
+upper-middle-income countries in between at 3.54 and 2.30. For the top
+percentile share the lowest median falls in high-income countries, at 3.06,
+against 4.46 in low-income countries. For the Gini coefficient the lowest
+median falls in upper-middle-income countries, at 2.66, against 4.72 in
+lower-middle-income countries. No income group is consistently the most or the
+least likely to show evidence of a long-run relation across the three
+outcomes, and the ordering itself is different for each one.
+
+\begin{table}[htbp]
+	\centering
+	\begin{threeparttable}
+		\caption{Countries Rejecting No Cointegration at the 1 Percent Level, Top Decile Share}
+		\label{table:bounds_countries}
+		\begin{small}
+			\begin{tabular}{llcrr}
+				\toprule
+				\textbf{Income Group} & \textbf{Country} & \textbf{$F$} & \textbf{$\hat\theta_{\text{debt}}$} & \textbf{Implied pp} \\
+				\midrule
+				High Income          & United States  & 10.70 & $-0.034$           & $-2.09$          \\
+				High Income          & Finland        & 8.25  & \phantom{$-$}0.253 & \phantom{$-$}15.63 \\
+				High Income          & United Kingdom & 8.10  & $-0.151$           & $-9.34$          \\
+				Low Income           & Bangladesh     & 6.65  & \phantom{$-$}0.307 & \phantom{$-$}18.93 \\
+				High Income          & Italy          & 6.28  & \phantom{$-$}0.049 & \phantom{$-$}3.05  \\
+				High Income          & Netherlands    & 6.00  & \phantom{$-$}0.004 & \phantom{$-$}0.28  \\
+				High Income          & Denmark        & 5.59  & \phantom{$-$}0.045 & \phantom{$-$}2.76  \\
+				High Income          & Austria        & 5.41  & $-0.022$           & $-1.35$          \\
+				Upper Middle Income  & Chile          & 5.18  & $-0.027$           & $-1.69$          \\
+				\bottomrule
+			\end{tabular}
+		\end{small}
+		\begin{tablenotes}
+			\footnotesize
+			\item \emph{Note}: Long-run debt multipliers from \eqref{eq:lrm}. The
+			implied column gives the percentage point movement in the top decile
+			share over the 61.7 percentage point rise in public debt recorded in
+			\autoref{table:descriptive}, against 8.4 percentage points observed. All
+			nine countries have a stable autoregressive polynomial.
+		\end{tablenotes}
+	\end{threeparttable}
+\end{table}
+
+The nine countries rejecting most strongly for the top decile share are drawn
+from three of the four income groups and divide close to evenly by sign: the
+long-run multiplier on public debt is negative in five and positive in four.
+The implied movement over the sample debt expansion ranges from a decline of
+9.3 percentage points in the United Kingdom to a rise of 18.9 points in
+Bangladesh, a span that argues against reading any single country's estimate
+as representative of a general pattern.
+
+\subsubsection{Long-Run Multipliers}
+
+\begin{table}[htbp]
+	\centering
+	\begin{threeparttable}
+		\caption{Long-Run Multiplier on Public Debt: Distribution and Pooled Estimate}
+		\label{table:meta_longrun}
+		\begin{small}
+			\begin{tabular}{lccc}
+				\toprule
+				& \textbf{Top 10\% share} & \textbf{Top 1\% share} & \textbf{Gini} \\
+				\midrule
+				$k$                   & 68 & 68 & 52 \\
+				Median                & $-0.0046$ & \phantom{$-$}0.0005 & $-0.730$ \\
+				IQR                   & $[-0.051,\ 0.037]$ & $[-0.022,\ 0.052]$ & $[-4.65,\ 8.47]$ \\
+				\addlinespace
+				Pooled $\hat\theta$   & $-0.0119$ & \phantom{$-$}0.0041 & $-0.529$ \\
+				SE                    & 0.0099 & 0.0055 & 1.354 \\
+				$p$                   & 0.227 & 0.458 & 0.696 \\
+				$I^{2}$ (\%)          & 83.9 & 83.7 & 89.2 \\
+				Implied pp            & $-0.74$ & \phantom{$-$}0.25 & $-0.33$ \\
+				\bottomrule
+			\end{tabular}
+		\end{small}
+		\begin{tablenotes}
+			\footnotesize
+			\item \emph{Note}: Random-effects meta-analysis by restricted maximum
+			likelihood with inverse-variance weights, restricted to countries with a
+			stable autoregressive polynomial and a defined multiplier. The implied
+			column converts the pooled estimate into the movement over the 61.7
+			percentage point rise in public debt recorded in \autoref{table:descriptive}.
+			Heterogeneity: top decile share, $Q(67) = 269.5$, $p < 0.001$; top percentile
+			share, $Q(67) = 215.7$, $p < 0.001$; Gini, $Q(51) = 426.7$, $p < 0.001$.
+		\end{tablenotes}
+	\end{threeparttable}
+\end{table}
+
+None of the three pooled estimates is distinguishable from zero. Applied to
+the sample debt expansion, the estimate for the top decile share implies a
+decline of 0.74 percentage points, against an observed rise of 8.4 points: the
+point estimate points in the opposite direction from the observed increase in
+concentration, and the upper end of the 95 percent interval, $+0.46$ points,
+accounts for at most 5.5 percent of it. Testing the pooled estimate against the
+hypothesis $\theta \geq 0.0204$, the multiplier that would be required for debt
+accumulation to account for 15 percent of the observed rise, returns $z=3.27$
+and $p<0.001$; testing against $\theta \geq 0.0504$, corresponding to 37
+percent of the observed rise, returns $p<0.0001$. The data are informative
+about the absence of a large positive long-run effect on the top decile share
+rather than merely uninformative about its presence.
+
+For the top percentile share, the same debt expansion implies a rise of 0.25
+percentage points at the point estimate, with a 95 percent interval running
+from $-0.41$ to $+0.91$ points. Tested against the same two thresholds, a
+multiplier at or above 0.0204 is rejected with $z=2.99$ ($p=0.001$), and a
+multiplier at or above 0.0504 is rejected with $p<0.0001$. For the Gini
+coefficient, the pooled estimate implies a decline of 0.33 points, with a 95
+percent interval running from $-3.18$ to $+2.12$; on the scale of index points
+rather than fractional shares this interval is too wide to be read the same
+way, a point taken up further below.
+
+Twelve of 68 country-specific multipliers on public debt are individually
+significant at the 5 percent level for the top decile share, and they divide
+seven negative to five positive. The significant negative cases are the United
+Arab Emirates ($-0.716$), the United Kingdom ($-0.151$), Luxembourg
+($-0.384$), the Bahamas ($-0.091$), Zambia ($-0.071$), Malta ($-0.062$), and
+Cote d'Ivoire ($-0.051$); the significant positive cases are Bangladesh
+($0.307$), Cyprus ($0.088$), Italy ($0.049$), Lebanon ($0.047$), and Jordan
+($0.026$). For the top percentile share, nine of 68 are individually
+significant, three negative (Luxembourg, $-0.628$; the United Kingdom,
+$-0.088$; Malta, $-0.042$) and six positive (South Africa, $0.677$; South
+Korea, $0.508$; Bangladesh, $0.215$; Bahrain, $0.078$; Greece, $0.057$; Jordan,
+$0.027$). For the Gini coefficient, four of 52 stable multipliers are
+individually significant: Brazil ($46.2$) and Bolivia ($27.9$) positive, El
+Salvador ($-22.9$) and Japan ($-7.4$) negative, magnitudes that reflect the
+coefficient's units rather than an economically distinct scale of effect. The
+sign division in all three lists is close to what a null relation with
+heterogeneous precision would generate, and none is dominated by one sign or
+one income group.
+
+The remaining regressors show a different pattern for the two income shares
+than for the Gini coefficient. Growth pools to a positive and significant
+long-run multiplier for both the top decile share ($0.0293$, SE $0.0145$,
+$p=0.044$) and the top percentile share ($0.0203$, SE $0.0084$, $p=0.016$),
+with no cross-country heterogeneity in either case ($I^{2}=0$). Life
+expectancy pools to a positive and highly significant multiplier for the top
+percentile share ($0.00135$, SE $0.00024$, $p<0.001$) but not for the top
+decile share ($p=0.421$). The interaction between debt and growth is
+significant and negative for the top percentile share ($-0.0306$, SE
+$0.0110$, $p=0.005$) but not for the top decile share ($p=0.570$). This bears
+on the conditional-effect interpretation advanced from the static estimates in
+\autoref{figure:figure5}, where the marginal effect of growth on inequality
+was read as declining in the debt ratio: that pattern does not survive in the
+long-run estimate for the top decile share, but it does appear in the estimate
+for the top percentile share, and the two income share measures do not agree
+on this point. For the Gini coefficient, none of the three secondary
+regressors approaches significance, and the standard errors on growth and the
+debt-growth interaction are an order of magnitude larger than the
+corresponding estimates.
+
+\subsubsection{Development Level as the Leading Alternative}
+
+The mainstream account of the debt-inequality relation predicts that its
+severity increases as institutional capacity and fiscal space contract, so
+that the effect should concentrate in the lower-income groups. This prediction
+is directly testable as a moderator restriction on the country-specific
+multipliers. \autoref{table:meta_regression} reports a random-effects
+meta-regression of the public debt multiplier on World Bank income group, for
+each of the three outcomes.
+
+\begin{table}[htbp]
+	\centering
+	\begin{threeparttable}
+		\caption{Long-Run Debt Multiplier by Income Group}
+		\label{table:meta_regression}
+		\begin{small}
+			\begin{tabular}{lccc}
+				\toprule
+				\textbf{Income Group} & \textbf{Top 10\% share} & \textbf{Top 1\% share} & \textbf{Gini} \\
+				\midrule
+				Low income          & \phantom{$-$}0.0209 [10] & \phantom{$-$}0.0209 [10] & \phantom{$-$}0.442 [5]  \\
+				& (0.0280) & (0.0201) & (4.165) \\
+				\addlinespace
+				Lower middle income & $-0.0096$ [16] & $-0.0020$ [15] & \phantom{$-$}0.181 [11] \\
+				& (0.0192) & (0.0127) & (3.652) \\
+				\addlinespace
+				Upper middle income & $-0.0074$ [12] & $-0.0012$ [13] & \phantom{$-$}1.311 [13] \\
+				& (0.0248) & (0.0146) & (2.869) \\
+				\addlinespace
+				High income         & $-0.0267$ [30] & \phantom{$-$}0.0109 [30] & $-1.764$ [23] \\
+				& (0.0163) & (0.0103) & (2.033) \\
+				\midrule
+				\multicolumn{4}{l}{Omnibus test of equality} \\
+				$Q_{M}(3)$, $p$, $R^{2}$ & 2.24, 0.523, 0\% & 1.41, 0.704, 0\% & 0.87, 0.833, 0\% \\
+				\bottomrule
+			\end{tabular}
+		\end{small}
+		\begin{tablenotes}
+			\footnotesize
+			\item \emph{Note}: Group-specific pooled estimates from a random-effects
+			meta-regression by restricted maximum likelihood without an intercept.
+			Standard errors in parentheses; bracketed figures are the number of
+			countries contributing to each cell. $R^{2}$ is the share of
+			between-country heterogeneity in the multiplier accounted for by income
+			group.
+		\end{tablenotes}
+	\end{threeparttable}
+\end{table}
+
+No group-specific estimate is significant for any of the three outcomes, and
+income group accounts for essentially none of the between-country
+heterogeneity in any of them. The largest point estimate in absolute value is
+the high-income coefficient on the top decile share, at $-0.0267$, and its
+sign runs against the direction predicted for the group with the greatest
+fiscal space; the corresponding high-income coefficient for the Gini,
+$-1.764$, points the same way.
+
+This result does not corroborate the one significant income-group finding in
+the static specification. In \autoref{table:fe_group} the debt coefficient for
+low-income countries on the Gini was 1.403, significant at the 5 percent
+level. Its long-run counterpart here is 0.442, less than a third the
+magnitude, with a standard error of 4.165 and $p=0.916$. The static
+coefficient is identified from a pooled within-country association at annual
+frequency under a common-slope restriction; the long-run estimate comes from a
+country-specific dynamic model estimated on five low-income countries with a
+defined multiplier. The divergence is consistent with the reading developed
+throughout this section, that the static annual association and the
+country-specific long-run relation answer different questions, and that a
+result significant in the former need not survive in the latter.
+
+Four features of the estimates admit readings other than the one advanced
+above, and the pooled estimate is recomputed under two of them in
+\autoref{table:lr_sensitivity}.
+
+\begin{table}[htbp]
+	\centering
+	\begin{threeparttable}
+		\caption{Pooled Long-Run Debt Multiplier Under Alternative Restrictions}
+		\label{table:lr_sensitivity}
+		\begin{small}
+			\begin{tabular}{lccc}
+				\toprule
+				\textbf{Subsample} & \textbf{Top 10\% share} & \textbf{Top 1\% share} & \textbf{Gini} \\
+				\midrule
+				All countries                 & $-0.0119$ [68] & \phantom{$-$}0.0041 [68] & $-0.529$ [52] \\
+				& (0.0099) & (0.0055) & (1.354) \\
+				\addlinespace
+				Cointegrated, $p \leq 0.10$   & $-0.0103$ [25] & \phantom{$-$}0.0397$^{*}$ [30] & $-0.882$ [23] \\
+				& (0.0180) & (0.0216) & (2.208) \\
+				\addlinespace
+				Cointegrated, $p \leq 0.05$   & $-0.0058$ [17] & \phantom{$-$}0.0625$^{*}$ [22] & $-0.103$ [16] \\
+				& (0.0229) & (0.0327) & (3.570) \\
+				\bottomrule
+			\end{tabular}
+		\end{small}
+		\begin{tablenotes}
+			\footnotesize
+			\item \emph{Note}: Restricted maximum likelihood random-effects estimates
+			with inverse-variance weights. Bracketed figures are $k$.
+			$^{*}p<0.10$ (two-sided).
+		\end{tablenotes}
+	\end{threeparttable}
+\end{table}
+
+\textit{Unstable autoregressive polynomials.} One country's autoregressive
+polynomial is estimated with $\sum\hat\phi_{j} \geq 1$ for the top decile
+share (South Africa, at 1.009) and one for the top percentile share (Algeria,
+at 1.034); such cases leave the denominator of \eqref{eq:lrm} non-positive and
+the multiplier without an equilibrium interpretation. Eight countries fall in
+this category for the Gini coefficient, with polynomials as high as 1.769
+(India) and implied multipliers running into the hundreds of index points
+(Egypt, 410.4; the United States, 566.6). Unlike an earlier draft of this
+analysis, these cases are excluded from every pooled estimate reported above
+as a matter of course rather than folded in and removed only as a robustness
+check. For the Gini coefficient this affects eight of 60 estimated countries,
+enough that the coefficient's basic numerical behavior, on a variable measured
+in index points rather than as a fractional share, is a limitation of
+\eqref{eq:lrm} worth flagging on its own terms.
+
+\textit{Selection on the outcome through the cointegration pretest.}
+\autoref{table:lr_sensitivity} restricts the pooled estimate to countries
+showing at least weak evidence of cointegration. For the top decile share the
+restriction moves the estimate from $-0.0119$ to $-0.0103$ at the 10 percent
+threshold and to $-0.0058$ at the 5 percent threshold, in both cases still
+centered near zero. For the top percentile share the restriction moves the
+estimate from $0.0041$ to $0.0397$ ($p=0.066$) at the 10 percent threshold and
+to $0.0625$ ($p=0.056$) at the 5 percent threshold, in both cases falling just
+short of conventional significance. For the Gini coefficient the restricted
+estimates remain centered near zero throughout. The correlation between the
+bounds test statistic and the absolute value of the multiplier is modest for
+all three outcomes (0.13, 0.07, and 0.07 respectively), weaker than would raise
+serious concern about the pretest selecting on effect size, though the mean
+absolute multiplier among cointegrated countries is still more than double the
+mean among the remainder for both income share measures (0.26 against 0.11 for
+the top decile share, 0.49 against 0.12 for the top percentile share). The
+near-significant result for the top percentile share under the cointegrated
+restriction should accordingly be read with some caution, as resting on a
+subsample chosen partly on the magnitude of the effect it is used to isolate.
+
+\textit{Estimation precision against genuine heterogeneity.} The heterogeneity
+statistics reported in \autoref{table:meta_longrun} measure dispersion in the
+estimated coefficients relative to their sampling error, not the share of
+variation in concentration that debt accounts for, and much of the apparent
+dispersion reflects imprecision. For the top decile share, 18 of 68 countries
+have confidence intervals lying entirely within $\pm 0.05$ and 17 have
+intervals wider than $\pm 0.2$, a span that over the sample debt expansion
+corresponds to more than 12 percentage points of the top decile share. For the
+top percentile share, 26 of 68 lie within $\pm 0.05$ and 17 are wider than
+$\pm 0.2$. The country-specific estimates individually cannot distinguish a
+null effect from a substantial one in a large share of cases, which is why the
+pooled estimate and the equivalence bound, rather than the distribution of
+country-level point estimates, carry the weight of the argument.
+
+\subsubsection{Adjustment Dynamics}
+
+The speed of adjustment $\lambda_{i}$ gives the fraction of a deviation from
+the long-run relation closed within one year, with stability requiring
+$-1 < \lambda_{i} < 0$. \autoref{table:ecm_summary} reports the distribution
+for each outcome.
+
+\begin{table}[htbp]
+	\centering
+	\begin{threeparttable}
+		\caption{Speed of Adjustment, by Measure of Concentration}
+		\label{table:ecm_summary}
+		\begin{small}
+			\begin{tabular}{lccc}
+				\toprule
+				\textbf{Range} & \textbf{Top 10\% share} & \textbf{Top 1\% share} & \textbf{Gini} \\
+				\midrule
+				$\lambda < -1$               & 0  & 0  & 0  \\
+				$-1 \leq \lambda < -0.30$    & 29 & 44 & 7  \\
+				$-0.30 \leq \lambda < -0.10$ & 29 & 13 & 20 \\
+				$-0.10 \leq \lambda < 0$     & 10 & 11 & 25 \\
+				$\lambda \geq 0$             & 1  & 1  & 8  \\
+				\midrule
+				\textbf{Total}               & \textbf{69} & \textbf{69} & \textbf{60} \\
+				\bottomrule
+			\end{tabular}
+		\end{small}
+		\begin{tablenotes}
+			\footnotesize
+			\item \emph{Note}: $\lambda_{i} = \sum_{j}\hat\phi_{ij} - 1$ from the
+			conditional error correction representation. The cases with
+			$\lambda \geq 0$ are the unstable polynomials identified above.
+		\end{tablenotes}
+	\end{threeparttable}
+\end{table}
+
+Adjustment is rapid for both income share measures and considerably slower for
+the Gini coefficient. For the top decile share, 68 of 69 countries fall in the
+stable range, with a median coefficient of $-0.237$ and a median half-life of
+2.6 years (interquartile range 1.4 to 4.6 years); group medians run from
+$-0.139$ in upper-middle-income countries to $-0.288$ in high-income and
+lower-middle-income countries. For the top percentile share, adjustment is
+faster still: a median coefficient of $-0.385$ and a median half-life of 1.4
+years (interquartile range 0.9 to 3.0 years), with group medians from $-0.248$
+in low-income countries to $-0.468$ in lower-middle-income countries. For the
+Gini coefficient, 52 of 60 countries fall in the stable range, with a median
+coefficient of $-0.107$ and a median half-life of 6.1 years (interquartile
+range 2.9 to 16.7 years); group medians run from $-0.020$ in
+lower-middle-income countries to $-0.128$ in high-income countries. The error
+correction models account for a median of 39 percent of the annual variance in
+the top decile share, 38 percent in the top percentile share, and 75 percent
+in the Gini coefficient, the last reflecting the coefficient's larger scale
+rather than a materially better-fitting model.
+
+Adjustment toward the estimated long-run relation is therefore rapid for both
+measures of top income concentration, running against the reading, common in
+the fiscal literature and adopted in an earlier draft of this analysis, that
+the distributional consequences of public debt unfold over horizons too long
+to detect in samples of this length. On the evidence here the horizon is not
+the binding constraint for either income share measure. The long-run
+multiplier on public debt is indistinguishable from zero for all three
+outcomes, income group accounts for none of the cross-country dispersion in
+any of them, and for a majority of countries the variables do not stand in a
+long-run relation at all; where they do, adjustment is a matter of a few years
+rather than decades.
+
+\subsubsection{Robustness to Fiscal Composition}
+
+The specification in \eqref{eq:ardl} omits the composition of government
+spending, the channel through which \autoref{section:section2} argues public
+debt could bear on distribution even where its aggregate level does not. A
+second specification adds military expenditure and non-military government
+consumption as regressors, entering with the same maximum lag order as the
+other variables. The additional regressors reduce the estimation sample: 60 of
+69 countries are estimated for the top decile and top percentile shares (six
+skipped for insufficient observations, three yielding a rank-deficient fit
+with no defined long-run relation), and 43 of 69 for the Gini coefficient (25
+skipped, one rank-deficient).
+
+The pooled long-run multiplier on public debt is essentially unchanged. Under
+this specification it is $0.0009$ for the top decile share ($k=57$,
+$p=0.925$), $0.0022$ for the top percentile share ($k=52$, $p=0.709$), and
+$-0.403$ for the Gini coefficient ($k=36$, $p=0.731$), each closer to zero
+than its counterpart in \autoref{table:meta_longrun} and none significant.
+Military expenditure and non-military spending are themselves imprecisely
+estimated for both income share measures: military expenditure pools to
+$-0.107$ ($p=0.794$) and non-military spending to $-0.101$ ($p=0.071$) for the
+top decile share, and to $0.044$ ($p=0.831$) and $-0.025$ ($p=0.438$)
+respectively for the top percentile share. Neither spending component reaches
+the 5 percent level for either income share measure, and adding the
+composition of spending does not restore a debt effect that the baseline
+specification fails to find.
+
+Cointegration is somewhat more common under this specification: the null of no
+long-run relation is rejected at the 5 percent level in 34.0 percent of
+countries for the top decile share, 44.6 percent for the top percentile share,
+and 40.0 percent for the Gini coefficient, each several points above the
+corresponding baseline rate in \autoref{table:bounds_summary}. The composition
+specification is also estimated on a smaller and different set of countries,
+so the two rates are not a controlled comparison of the same sample under two
+specifications.
+
+One result under this specification warrants a caution rather than a claim.
+For the Gini coefficient, income group accounts for 43.2 percent of the
+between-country heterogeneity in the debt multiplier ($Q_{M}(3)=19.2$,
+$p<0.001$), driven by a lower-middle-income coefficient of $-11.3$
+($p=0.003$) and an upper-middle-income coefficient of $6.1$ ($p=0.002$) of
+opposite sign. No corresponding pattern appears for either income share
+measure ($R^{2}=0$ percent in both). Given that the Gini multiplier is already
+the least numerically stable of the three outcomes, and that this result rests
+on small samples within each group (four lower-middle-income and eight
+upper-middle-income countries, several with standard errors an order of
+magnitude larger than their point estimates), this pattern is reported as a
+candidate for further scrutiny rather than as evidence of income-group
+heterogeneity in the composition channel.
+
+The aggregate level of public debt is not a quantitatively important
+determinant of top income concentration in this sample, for either measure of
+concentration or for the Gini coefficient, and this conclusion is robust to
+the inclusion of the composition of government spending. The remainder of the
+paper turns to the composition of borrowing itself, and to the institutional
+setting in which fiscal expansion occurs.
 
 	\subsection{Discussion}
 

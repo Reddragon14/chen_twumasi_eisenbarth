@@ -1,28 +1,34 @@
 
 Time series regression with "ts" data:
-Start = 2, End = 32
+Start = 4, End = 42
 
 Call:
 dynlm::dynlm(formula = full_formula, data = data, na.action = ..1, 
     start = start, end = end)
 
 Residuals:
-       Min         1Q     Median         3Q        Max 
--0.0158800 -0.0055770 -0.0007986  0.0070806  0.0194656 
+      Min        1Q    Median        3Q       Max 
+-0.007149 -0.002313  0.000459  0.002139  0.009114 
 
 Coefficients:
-               Estimate Std. Error t value Pr(>|t|)    
-(Intercept)     0.39684    0.33218   1.195    0.244    
-L(log_gini, 1)  0.86690    0.10968   7.904  3.9e-08 ***
-debt_imp        0.11055    0.07415   1.491    0.149    
-L(debt_imp, 1) -0.11632    0.08243  -1.411    0.171    
-growth         -0.31460    0.41262  -0.762    0.453    
-hc              0.01660    0.06062   0.274    0.787    
-gdp_x_debt      0.83223    0.61808   1.346    0.191    
+                    Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       -0.0237532  0.1239821  -0.192  0.84956    
+L(p90p100, 1)      0.9943011  0.1463352   6.795 3.27e-07 ***
+L(p90p100, 2)     -0.1428814  0.1213530  -1.177  0.24970    
+public_debt       -0.1120114  0.0346123  -3.236  0.00329 ** 
+L(public_debt, 1)  0.1454000  0.0518316   2.805  0.00939 ** 
+L(public_debt, 2) -0.0390915  0.0530718  -0.737  0.46797    
+L(public_debt, 3)  0.0031125  0.0334794   0.093  0.92664    
+growth             0.1350483  0.0783925   1.723  0.09682 .  
+life_exp           0.0009484  0.0020375   0.465  0.64547    
+gdp_x_debt        -0.1614454  0.1058030  -1.526  0.13911    
+L(gdp_x_debt, 1)   0.0003227  0.0696707   0.005  0.99634    
+L(gdp_x_debt, 2)  -0.0964579  0.0640596  -1.506  0.14418    
+L(gdp_x_debt, 3)   0.1261804  0.0543675   2.321  0.02840 *  
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 0.009516 on 24 degrees of freedom
-Multiple R-squared:  0.8755,	Adjusted R-squared:  0.8443 
-F-statistic: 28.12 on 6 and 24 DF,  p-value: 9.93e-10
+Residual standard error: 0.00412 on 26 degrees of freedom
+Multiple R-squared:  0.9702,	Adjusted R-squared:  0.9564 
+F-statistic: 70.49 on 12 and 26 DF,  p-value: < 2.2e-16
 

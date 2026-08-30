@@ -45,7 +45,7 @@ pwt <- haven::read_dta("./data/pwt100.dta") %>%
   #' this fixes the discrepancy in country names between IMF and PWT
   mutate(country = case_when(country == "Côte d'Ivoire" ~ "Cote d'Ivoire",
                              country == "D.R. of the Congo" ~ "Congo D.R.",
-                             country == "Lao People's DR" ~ "Laos",
+                             country == "Lao People's DR" ~ "Lao PDR",
                              country == "North Macedonia" ~ "Macedonia",
                              country == "Republic of Korea" ~ "South Korea",
                              country == "Korea" ~ "South Korea",

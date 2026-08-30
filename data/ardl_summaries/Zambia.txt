@@ -1,6 +1,6 @@
 
 Time series regression with "ts" data:
-Start = 2, End = 32
+Start = 4, End = 42
 
 Call:
 dynlm::dynlm(formula = full_formula, data = data, na.action = ..1, 
@@ -8,22 +8,34 @@ dynlm::dynlm(formula = full_formula, data = data, na.action = ..1,
 
 Residuals:
        Min         1Q     Median         3Q        Max 
--0.0040376 -0.0009473  0.0000463  0.0007017  0.0034005 
+-0.0060512 -0.0018356 -0.0000399  0.0013157  0.0068744 
 
 Coefficients:
-                  Estimate Std. Error t value Pr(>|t|)    
-(Intercept)      -0.007314   0.241753  -0.030    0.976    
-L(log_gini, 1)    1.003746   0.062589  16.037 5.59e-14 ***
-debt_imp         -0.001678   0.002876  -0.583    0.565    
-L(debt_imp, 1)    0.002124   0.001707   1.244    0.226    
-growth            0.001697   0.005771   0.294    0.771    
-hc               -0.003007   0.004485  -0.670    0.509    
-gdp_x_debt        0.008208   0.015057   0.545    0.591    
-L(gdp_x_debt, 1) -0.009501   0.006604  -1.439    0.164    
+                    Estimate Std. Error t value Pr(>|t|)    
+(Intercept)        0.0880791  0.0434257   2.028 0.056787 .  
+L(p90p100, 1)      1.5046063  0.1464299  10.275 3.39e-09 ***
+L(p90p100, 2)     -1.0325218  0.1501157  -6.878 1.46e-06 ***
+L(p90p100, 3)      0.2861804  0.1028456   2.783 0.011864 *  
+public_debt        0.0047642  0.0076889   0.620 0.542868    
+L(public_debt, 1) -0.0300288  0.0084046  -3.573 0.002030 ** 
+L(public_debt, 2)  0.0152504  0.0076302   1.999 0.060156 .  
+L(public_debt, 3) -0.0070297  0.0057722  -1.218 0.238188    
+growth            -0.0089917  0.0126411  -0.711 0.485536    
+L(growth, 1)      -0.0121890  0.0118239  -1.031 0.315541    
+L(growth, 2)       0.0002956  0.0109217   0.027 0.978688    
+L(growth, 3)      -0.0145133  0.0111025  -1.307 0.206742    
+life_exp          -0.0107255  0.0045862  -2.339 0.030436 *  
+L(life_exp, 1)     0.0239826  0.0090672   2.645 0.015972 *  
+L(life_exp, 2)    -0.0160409  0.0095358  -1.682 0.108898    
+L(life_exp, 3)     0.0038372  0.0051244   0.749 0.463145    
+gdp_x_debt        -0.0068883  0.0332835  -0.207 0.838245    
+L(gdp_x_debt, 1)   0.1041920  0.0310561   3.355 0.003326 ** 
+L(gdp_x_debt, 2)  -0.0103243  0.0316770  -0.326 0.748043    
+L(gdp_x_debt, 3)   0.1149973  0.0239993   4.792 0.000127 ***
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 0.001943 on 23 degrees of freedom
-Multiple R-squared:  0.987,	Adjusted R-squared:  0.983 
-F-statistic: 248.8 on 7 and 23 DF,  p-value: < 2.2e-16
+Residual standard error: 0.003878 on 19 degrees of freedom
+Multiple R-squared:  0.985,	Adjusted R-squared:  0.9699 
+F-statistic: 65.46 on 19 and 19 DF,  p-value: 2.044e-13
 

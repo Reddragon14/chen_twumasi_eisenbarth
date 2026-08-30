@@ -1,28 +1,28 @@
 
 Time series regression with "ts" data:
-Start = 2, End = 32
+Start = 2, End = 42
 
 Call:
 dynlm::dynlm(formula = full_formula, data = data, na.action = ..1, 
     start = start, end = end)
 
 Residuals:
-      Min        1Q    Median        3Q       Max 
--0.016796 -0.008877  0.001651  0.006283  0.027399 
+       Min         1Q     Median         3Q        Max 
+-0.0286286 -0.0057869  0.0005141  0.0062507  0.0262020 
 
 Coefficients:
-                 Estimate Std. Error t value Pr(>|t|)    
-(Intercept)       0.12276    0.17976   0.683  0.50119    
-L(log_gini, 1)    0.99267    0.07242  13.708 7.59e-13 ***
-debt_imp          0.03185    0.04016   0.793  0.43553    
-growth            0.29330    0.22839   1.284  0.21133    
-hc               -0.02831    0.02320  -1.220  0.23420    
-gdp_x_debt       -1.01389    0.61170  -1.657  0.11044    
-L(gdp_x_debt, 1) -0.36239    0.11677  -3.103  0.00485 ** 
+                  Estimate Std. Error t value Pr(>|t|)    
+(Intercept)      -0.118385   0.093076  -1.272    0.212    
+L(p90p100, 1)     0.824575   0.104072   7.923 3.15e-09 ***
+public_debt       0.007377   0.028177   0.262    0.795    
+growth            0.148850   0.131657   1.131    0.266    
+life_exp          0.002077   0.001473   1.410    0.168    
+gdp_x_debt       -0.004127   0.358681  -0.012    0.991    
+L(gdp_x_debt, 1) -0.124630   0.078459  -1.588    0.121    
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 0.0119 on 24 degrees of freedom
-Multiple R-squared:  0.9466,	Adjusted R-squared:  0.9332 
-F-statistic:  70.9 on 6 and 24 DF,  p-value: 4.424e-14
+Residual standard error: 0.01124 on 34 degrees of freedom
+Multiple R-squared:  0.9196,	Adjusted R-squared:  0.9055 
+F-statistic: 64.85 on 6 and 34 DF,  p-value: < 2.2e-16
 

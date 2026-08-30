@@ -1,6 +1,6 @@
 library(tidyverse)
 library(paletteer)
-
+library(extrafont)
 ggthemr::ggthemr(palette = "greyscale", layout = "clean", type = "outer")
 
 custom_theme <- function() {
@@ -89,8 +89,7 @@ raw_ts |>
   custom_theme() +
   facet_wrap(~ measure, scales = "free") +
   guides(fill = "none") +
-  labs(x = NULL, y = NULL, color = NULL, fill = NULL,
-       caption = "GDP-weighted, composition-adjusted cross-country means. Shaded areas denote the administrations of Margaret Thatcher (UK, 1979-1990) and Ronald Reagan (US, 1981-1989).")
+  labs(x = NULL, y = NULL, color = NULL, fill = NULL)
 
 ggsave(plot = last_plot(), "./figures/inequality_measures.png",
        dpi = 600, width = 7, height = 3, limitsize = FALSE)
@@ -117,8 +116,7 @@ raw_ts |>
   custom_theme() +
   facet_wrap(~ measure, scales = "free") +
   guides(fill = "none") +
-  labs(x = NULL, y = NULL, color = NULL, fill = NULL,
-       caption = "GDP-weighted, composition-adjusted cross-country means. Shaded areas denote the administrations of Margaret Thatcher (UK, 1979-1990) and Ronald Reagan (US, 1981-1989).")
+  labs(x = NULL, y = NULL, color = NULL, fill = NULL)
 
 ggsave(plot = last_plot(), "./figures/debt_measures.png",
        dpi = 800, width = 9, height = 4.5, limitsize = FALSE)
@@ -134,8 +132,6 @@ raw_ts |>
     year >= 2013 & year <= 2023 ~ "Recent"
   )) |> 
   summarize(value = weighted.mean(value, n_countries), .by = c(period, measure))
-
-raw <- read_csv("initial_data.csv")
 
 measure_labels <- c(
   p90p100          = "Top 10% Income Share",
@@ -219,7 +215,7 @@ group_ts |>
   custom_theme() +
   facet_wrap(~ measure, scales = "free") +
   guides(fill = "none") +
-  labs(x = NULL, y = NULL, color = NULL, fill = NULL, caption = chain_caption)
+  labs(x = NULL, y = NULL, color = NULL, fill = NULL)
 
 ggsave(plot = last_plot(), "./figures/inequality_measures.png",
        dpi = 600, width = 7, height = 3.4, limitsize = FALSE)

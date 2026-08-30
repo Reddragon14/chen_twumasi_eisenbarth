@@ -1,18 +1,13 @@
 library(tidyverse)
 library(tseries)
 
-#### UNIT ROOT TESTS: ADF & PP (per country, per variable) ###
+final <- read_csv("updated_dataset.csv")
 
 test_vars <- c(
   "p90p100",
+  "p99p100",
   "public_debt",
-  "log_debt",
-  "log_gdp_pc",
-  "govt_expenditure",
-  "composite_inflation",
-  "weo_cpi_inflation",
-  "trade_openness",
-  "military_exp"
+  "growth"
 )
 
 run_unit_root <- function(x, test = c("adf", "pp")) {
@@ -24,8 +19,8 @@ run_unit_root <- function(x, test = c("adf", "pp")) {
   tryCatch(
     {
       res <- switch(test,
-        adf = tseries::adf.test(x, alternative = "stationary"),
-        pp = tseries::pp.test(x, alternative = "stationary")
+                    adf = tseries::adf.test(x, alternative = "stationary"),
+                    pp = tseries::pp.test(x, alternative = "stationary")
       )
       tibble(statistic = as.numeric(res$statistic), p_value = res$p.value)
     },
@@ -85,14 +80,11 @@ ALPHA <- 0.05
 
 ur_classified <- ur_results |>
   mutate(
-    # Reject null of unit root at levels?
     reject_level_adf = adf_level_p < ALPHA,
     reject_level_pp = pp_level_p < ALPHA,
-
-    # Reject null of unit root at first difference?
     reject_fd_adf = adf_fd_p < ALPHA,
     reject_fd_pp = pp_fd_p < ALPHA,
-
+    
     # Conservative: require BOTH tests to agree
     stationary_level = reject_level_adf & reject_level_pp,
     stationary_fd = reject_fd_adf | reject_fd_pp,
@@ -100,16 +92,34 @@ ur_classified <- ur_results |>
       stationary_level ~ "I(0)",
       stationary_fd ~ "I(1)",
       .default = "I(2)+"
+    ),
+    result_level = if_else(stationary_level, "Pass", "Fail"),
+    result_fd = if_else(stationary_fd, "Pass", "Fail")
+  )
+
+#### VARIABLE-LEVEL PASS/FAIL SUMMARY ####
+
+variable_summary <- ur_classified |>
+  summarize(
+    n_countries = n(),
+    n_i0 = sum(integration == "I(0)"),
+    n_i1 = sum(integration == "I(1)"),
+    n_i2 = sum(integration == "I(2)+"),
+    .by = variable
+  ) |>
+  mutate(
+    pct_i0 = round(100 * n_i0 / n_countries, 1),
+    pct_i1 = round(100 * n_i1 / n_countries, 1),
+    pct_i2 = round(100 * n_i2 / n_countries, 1),
+    modal_order = case_when(
+      n_i0 >= n_i1 & n_i0 >= n_i2 ~ "I(0)",
+      n_i1 >= n_i2 ~ "I(1)",
+      .default = "I(2)+"
     )
   )
 
-#### SUMMARY TABLES ####
-
-# Per variable: how many countries are I(0), I(1), I(2)+?
-cat("\n=== INTEGRATION ORDER SUMMARY (by variable) ===\n")
-ur_classified |>
-  count(variable, integration)
-
+cat("\n=== VARIABLE-LEVEL SUMMARY: PASS/FAIL AND ORDER OF INTEGRATION ===\n")
+print(variable_summary)
 
 # Countries with I(2)+ for any variable (potential problems)
 i2_countries <- ur_classified |>
@@ -119,41 +129,33 @@ i2_countries <- ur_classified |>
 if (nrow(i2_countries) > 0) {
   cat("\n=== WARNING: I(2)+ SERIES ===\n")
   i2_countries |>
-    arrange(variable, country) |>
-    print(n = 50)
+    arrange(variable, country)
 }
 
-# Detailed results for core variables (debt & inequality)
-cat("\n=== DETAILED: public_debt ===\n")
-ur_classified |>
-  filter(variable == "public_debt") |>
-  select(
-    iso, country, integration,
-    adf_level_stat, adf_level_p,
-    pp_level_stat, pp_level_p,
-    adf_fd_stat, adf_fd_p,
-    pp_fd_stat, pp_fd_p
-  ) |>
-  mutate(across(where(is.numeric), ~ round(.x, 3))) |>
-  print(n = 120)
+#### DETAILED COUNTRY-LEVEL RESULTS, ALL CORE VARIABLES ####
 
-cat("\n=== DETAILED: p90p100 ===\n")
-ur_classified |>
-  filter(variable == "p90p100") |>
-  select(
-    iso, country, integration,
-    adf_level_stat, adf_level_p,
-    pp_level_stat, pp_level_p,
-    adf_fd_stat, adf_fd_p,
-    pp_fd_stat, pp_fd_p
-  ) |>
-  mutate(across(where(is.numeric), ~ round(.x, 3))) |>
-  print(n = 120)
+walk(test_vars, \(v) {
+  cat("\n=== DETAILED:", v, "===\n")
+  ur_classified |>
+    filter(variable == v) |>
+    select(
+      iso, country, integration, result_level, result_fd,
+      adf_level_stat, adf_level_p,
+      pp_level_stat, pp_level_p,
+      adf_fd_stat, adf_fd_p,
+      pp_fd_stat, pp_fd_p
+    ) |>
+    mutate(across(where(is.numeric), ~ round(.x, 3))) |>
+    print(n = 120)
+})
 
 # ARDL/bounds approach is valid when variables are I(0), I(1), or mixed
 # but NOT I(2). Flag countries where any core variable is I(2)+
 
-core_vars <- c("p90p100", "public_debt", "log_gdp_pc", "weo_cpi_inflation")
+core_vars <- c("p90p100",
+               "p99p100",
+               "public_debt",
+               "growth")
 
 ardl_valid <- ur_classified |>
   filter(variable %in% core_vars) |>
@@ -177,6 +179,6 @@ cat("\n=== ARDL VALIDITY CHECK (core variables) ===\n")
 cat("Valid (all I(0) or I(1)):", sum(ardl_valid$ardl_valid), "\n")
 cat("Invalid (contains I(2)+):", sum(!ardl_valid$ardl_valid), "\n")
 
-
 write_csv(ur_classified, "./data/unit_root_tests.csv")
 write_csv(ardl_valid, "./data/ardl_integration_validity.csv")
+write_csv(variable_summary, "./data/variable_integration_summary.csv")
