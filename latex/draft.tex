@@ -29,6 +29,7 @@
 \usepackage{titlesec}
 \usepackage[authoryear]{natbib}
 \usepackage[colorlinks]{hyperref}
+
 \hypersetup{
 	linkcolor=blue,
 	citecolor=blue,
@@ -64,7 +65,7 @@
 %\titleformat*{\section}{\Large\sffamily\MakeUppercase\clearpage}
 %\titleformat*{\subsection}{\large\sffamily\MakeUppercase}
 %\titleformat*{\subsubsection}{\normalsize\sffamily\MakeUppercase}
-
+\usepackage{caption}
 
 \renewcommand{\bibsection}{\section{References}}
 
@@ -76,24 +77,44 @@
 	\begin{titlepage}
 		\centering
 		%\includegraphics[width =4cm]{logic-2020.png}\\
-		\LARGE{\sffamily{Growth, Debt, and Inequality}}\\
+		\LARGE{\sffamily{Debt, Growth, and Inequality}}\\
 		\vspace{5mm}
-		\normalsize{Zhuo Fu Chen\(^\ast\), Anthony Perez Eisenbarth\(^\dagger\),
-			and Richard Atta Twumasi\(^\ddagger\)}\\ \vspace{5mm}
+		\normalsize{
+			Zhuo Fu Chen\(^{1,2,3,\ast}\), 
+			Anthony Perez Eisenbarth\(^{1,3,\dagger}\),
+			and Richard Atta Twumasi\(^{1,3,\ddagger}\)
+		}\\ \vspace{3mm}
+		\small{
+			\(^1\)Department of Economics, University of Missouri-Kansas City, 5120 Rockhill Road, 211 Haag Hall, Kansas City, MO 64110, USA\\
+			\(^2\)School of General Studies, Columbia University in the City of New York, 2970 Broadway, 408 Lewisohn Hall, New York, NY 10027, USA\\
+			\(^3\)Global Institute for Sustainable Prosperity, 100 W College St, Granville, OH 43023, USA
+		}\\ \vspace{3mm}
 		\textit{
-			\vspace{1mm}
-			\(^\ast\)zhuofuchen@gmail.com, \(^\dagger\)ageisenbarth@gmail.com, \(^\ddagger\)richard.twumasi@outlook.com
-		}
-		\begin{Center}
+			\small{
+				\(^\ast\)zhuo.chen@umkc.edu, 
+				\(^\dagger\)ageisenbarth@gmail.com, 
+				\(^\ddagger\)richard.twumasi@outlook.com
+			}
+		}\\ \vspace{5mm}
+		\begin{center}
 			\textbf{Abstract}
-		\end{Center}
+		\end{center}
 		\justifying
-		Standard macroeconomic theory assumes that persistent fiscal deficits
-		lead to negative impacts on distributional outcomes. Though there is little empirical evidence to substantiate the assumption of this relationship, it nevertheless perseveres, guiding the study
-		of both fiscal and monetary policy. The most recent global financial crisis
-		has led to an unprecedented increase in public debt across the world, raising
-		serious concerns about its economic impact. In our sample of 109 countries over a period 1978 to 2019, we study the relationship between debt, deficits, and inequality.
+		Standard macroeconomic theory traditionally assumes that persistent fiscal deficits and public debt lead inexorably to negative distributional outcomes, operating under models that often overlook underlying institutional structures. While this assumption perseveres in guiding fiscal and monetary policy, empirical evidence substantiating a direct link between fiscal imbalances and inequality remains scarce. Advocating an institutional-first perspective, this study examines the relationship between public debt, deficits, and economic inequality across a balanced panel of 109 countries from 1978 to 2019. Using country-specific ARDL bounds testing with meta-analytic pooling alongside static fixed-effects models, this study evaluate short-run and long-run dynamics across World Bank income classifications. The baseline estimations reveal no statistically significant overall effect of public debt and deficits on top income shares or broad disposable income inequality, a pattern that persists across robust model specifications and income tiers. The empirical findings challenge conventional deficit-centric narratives, suggesting that distributional outcomes are not systematically driven by fiscal imbalances alone, but rather require an institutional framework that refocuses policy debates on structural power dynamics, labor market institutions, and distributive policy rather than routine debt anxiety.
+
+        \vspace{6mm}
+		\noindent \small{\textbf{Keywords:} Sovereign Debt, Income Inequality, Distributional Effects, Fiscal Policy} 
+
+        \vspace{6mm}
+		\noindent \small{\textbf{JEL Classifications:} H63, D31, C33, O15, E62} 
+        
+        \vspace{6mm}
+		\noindent \small{\textbf{Corresponding Author:} Anthony Perez Eisenbarth, Department of Economics, University of Missouri-Kansas City (\texttt{ageisenbarth@gmail.com})}
+
+% Add conference presentation footnote:
+    \blfootnote{An earlier draft version of this paper was presented by Zhuo Fu Chen, Anthony Eisenbarth, and Richard Atta Twumasi at the Missouri Valley Economic Association 54th Annual Conference in Kansas City, MO, USA.}
 	\end{titlepage}
+    
 %	\tableofcontents
 %	\addtocontents{toc}{\protect\thispagestyle{empty}}
 %	\pagenumbering{gobble}
@@ -102,7 +123,7 @@
 
 \section{Introduction}
 
-In the aftermath of the Great Recession and the COVID-19 pandemic, public debt levels have soared to unprecedented levels. The extraordinarily high debt levels and seeming fragility of the global economy has brought public and academic debate to reconsider the long-run implications of fiscal spending. Modern arguments can be traced back to \cite{Buchanan1958}, \cite{Meade1958}, and \cite{Modigliani1961}, although the issue goes back as far as Adam Smith. Income and wealth inequality have risen in tandem across much of the world since the early 1980s.
+In the aftermath of the Great Recession and the COVID-19 pandemic, public debt levels have soared to unprecedented levels. The extraordinarily high debt levels and seeming fragility of the global economy have led to public and academic debate to reconsider the long-term implications of fiscal spending. Modern arguments can be traced back to \cite{Buchanan1958}, \cite{Meade1958}, and \cite{Modigliani1961}, although the issue goes back as far as Adam Smith. Income and wealth inequality have risen in tandem across much of the world since the early 1980s.
 
 \autoref{figure:figure1} and~\autoref{figure:figure2} document both trends
 using a common cross-country aggregate. Income concentration is measured by
@@ -126,8 +147,8 @@ remaining on the scale of the current cross-section.
 \begin{figure}[ht]
 	\caption{Long-Run Trends in Debt}
 	\label{figure:figure1}
-	\includegraphics[width=\linewidth]{C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/inequality_measures.png}
-\caption*{\scriptsize\emph{Note}: Chained GDP-weighted cross-country means,
+	\includegraphics[width=\linewidth]{inequality_measures.png}
+    {\scriptsize\emph{Note}: Chained GDP-weighted cross-country means,
 	anchored to the final-year cross-section to remove sample-entry effects.
 	Income shares from WID; Gini from SWIID 9.91. Weights are output-side real
 	GDP (PWT 11.0).}
@@ -140,21 +161,21 @@ periodization reflects a structural break in advanced-economy fiscal and
 financial policy that is well documented in the
 literature.\footnote{The early 1980s saw a coordinated acceleration of
 	financial liberalization across OECD economies, documented across multiple
-	dimensions in \citet{Abiad2010} and \citet{Quinn1997}. The reintegration of
+	dimensions in \cite{Abiad2010} and \cite{Quinn1997}. The reintegration of
 	international capital markets following the Bretton Woods era is situated in
-	long-run historical perspective in \citet{ObstfeldTaylor2004}. On the fiscal
-	side, \citet{Alesina1995} show the wave of spending-based consolidation
+	long-run historical perspective in \cite{ObstfeldTaylor2004}. On the fiscal
+	side, \cite{Alesina1995} show the wave of spending-based consolidation
 	episodes that characterized OECD fiscal policy in this period. The
 	distributional consequences are documented for the United States in
-	\citet{PikettyS2003} and across a broad set of advanced economies in
-	\citet{Atkinson2011}, both of whom identify the early 1980s as the turning
+	\cite{PikettyS2003} and across a broad set of advanced economies in
+	\cite{Atkinson2011}, both of whom identify the early 1980s as the turning
 	point in top income concentration.} The elections of Margaret Thatcher (1979)
 and Ronald Reagan (1980) mark the conventional dating of this shift, which
 encompassed capital account liberalization, credit and banking deregulation,
 and a reorientation of fiscal priorities, and whose effects propagated to the
 broader cross-country sample through international capital markets. Rising
 inequality and rising public debt are both products of this period, and
-\citet{Azzimonti2014} formalize their joint determination, showing that
+\cite{Azzimonti2014} formalize their joint determination, showing that
 financial integration and higher income risk together strengthen government
 incentives to accumulate debt.
 
@@ -327,31 +348,43 @@ and on the composition of borrowing and spending.
 	\end{threeparttable}
 \end{table}
 
-The conventional view is that debt can stimulate aggregate demand and output in the short-run, but crowds out capital and reduces output in the long-run (see \cite{Mankiw1999} for a survey). Standard growth models also predict that higher public debt leads to slower growth (see \cite{Saint-Paul91} or \cite{Aizeman07}). There are several channels through which high public debt can adversely affect capital accumulation, productivity and growth: higher long-term interest rates and sovereign risk spillovers to corporate borrowing costs \citep{Gale2003, Cecchetti2015, Corsetti2013}, higher future distortionary taxation and lower future public infrastructure spending, higher inflation \citep{Barro95}, and greater uncertainty about prospects and policies. High debt levels are also likely to constrain the scope for counter-cyclical fiscal policies, which may result in higher volatility and further lower growth \citep{Woo2015}. In more extreme cases of a debt crisis, by triggering a banking or currency crisis, the adverse effects can be magnified \citep{Reinhart2011, Reinhart2012}. The dominant strand of empirical research has framed the fiscal question in terms of aggregate growth, following after \citet{Reinhart2010} and \citet{Reinhart2011}, this  literature has examined whether public debt above some threshold suppresses GDP growth.
+The conventional view is that debt can stimulate aggregate demand and output in the short-run, but crowds out capital and reduces output in the long-run (see \cite{Mankiw1999} for a survey). Standard growth models also predict that higher public debt leads to slower growth (see \cite{Saint-Paul91} or \cite{Aizeman07}). There are several channels through which high public debt can adversely affect capital accumulation, productivity and growth: higher long-term interest rates and sovereign risk spillovers to corporate borrowing costs \citep{Gale2003, Corsetti2013, Cecchetti2015}, higher future distortionary taxation and lower future public infrastructure spending, higher inflation \citep{Barro95}, and greater uncertainty about prospects and policies. High debt levels are also likely to constrain the scope for counter-cyclical fiscal policies, which may result in higher volatility and further lower growth \citep{Woo2015}. In more extreme cases of a debt crisis, by triggering a banking or currency crisis, the adverse effects can be magnified \citep{Reinhart2011, Reinhart2012}. The dominant strand of empirical research has framed the fiscal question in terms of aggregate growth, following after \cite{Reinhart2010} and \cite{Reinhart2011}, this  literature has examined whether public debt above some threshold suppresses GDP growth.
 
 \begin{figure}[ht]
 	\caption{Long-Run Trends in Debt}
 	\label{figure:figure2}
-	\includegraphics[width=\linewidth]{C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/debt_measures.png}
-\caption*{\scriptsize\emph{Note}: Chained GDP-weighted cross-country means,
+	\includegraphics[width=\linewidth]{debt_measures.png}
+    {\scriptsize\emph{Note}: Chained GDP-weighted cross-country means,
 	anchored to the final-year cross-section to remove sample-entry effects.
 	Sectoral debt from the IMF Global Debt Database. Weights are output-side real
 	GDP (PWT 11.0).}
 \end{figure}
 
-The threshold hypothesis has proven fragile under scrutiny. \citet{Eberhardt2015} and \citet{Chudik2017} demonstrate that the debt-growth relationship is characterized by substantial cross-country heterogeneity and that no common threshold exists across economies, even if country-specific tipping points cannot be ruled out. On this point, the empirical relationship between public debt and economic growth in the United States, western offshoot economies, and the OECD countries has also been exhaustively in the past decades (for example \cite{Dwyer82}, \cite{Ahking85}, \cite{Protopapadakis87}, \cite{King1985}, \cite{Woo2015}). These empirical studies provide conflicting results, where some researchers find no significant relation between public debt and growth, while others find some relationship in their analysis with a limited data sample. One possible contributing factor is the paucity of readily available data. Another limitation is the lack of research for developing countries other than the U.S., OECD countries, and their western offshoots.  In other words, an under looked factor is that countries selected for empirical studies in the prior decades are often well-developed countries with strong financial markets and access to foreign financial instruments. Such an arrangement naturally leads to selection bias, limiting the conclusions and inferences that can be drawn from such studies.
+The threshold hypothesis has proven fragile under scrutiny. \cite{Eberhardt2015} and \cite{Chudik2017} demonstrate that the debt-growth relationship is characterized by substantial cross-country heterogeneity and that no common threshold exists across economies, even if country-specific tipping points cannot be ruled out. On this point, the empirical relationship between public debt and economic growth in the United States, western offshoot economies, and the OECD countries has also been exhaustively in the past decades (for example \cite{Dwyer82}, \cite{Ahking85}, \cite{King1985}, \cite{Protopapadakis87}, \cite{Woo2015}). These empirical studies provide conflicting results, where some researchers find no significant relation between public debt and growth, while others find some relationship in their analysis with a limited data sample. One possible contributing factor is the paucity of readily available data. Another limitation is the lack of research for developing countries other than the U.S., OECD countries, and their western offshoots.  In other words, an under looked factor is that countries selected for empirical studies in the prior decades are often well-developed countries with strong financial markets and access to foreign financial instruments. Such an arrangement naturally leads to selection bias, limiting the conclusions and inferences that can be drawn from such studies.
 
-The distributional question has attracted far less systematic empirical attention. \citet{Azzimonti2014} show that rising income inequality and financial integration jointly incentivize governments to accumulate debt, suggesting the two trends are endogenously linked rather than causally ordered.  More recently, \citet{Grancini2025} show in a heterogeneous-agent framework that high levels of public debt erode fiscal multipliers primarily through a factor-price channel: elevated real interest rates shift wealth toward households with lower marginal propensities to consume, weakening aggregate demand transmission. On the firm side, \citet{Islam2024} argue that the crowding-out costs of public debt fall disproportionately on small and domestically owned firms, deepening the unequal playing field within the private sector.
+The distributional question has attracted far less systematic empirical attention. \cite{Azzimonti2014} show that rising income inequality and financial integration jointly incentivize governments to accumulate debt, suggesting the two trends are endogenously linked rather than causally ordered.  More recently, \cite{Grancini2025} show in a heterogeneous-agent framework that high levels of public debt erode fiscal multipliers primarily through a factor-price channel: elevated real interest rates shift wealth toward households with lower marginal propensities to consume, weakening aggregate demand transmission. On the firm side, \cite{Islam2024} argue that the crowding-out costs of public debt fall disproportionately on small and domestically owned firms, deepening the unequal playing field within the private sector.
 
-These findings share a common implication that motivates this paper: the distributional consequences of public debt are mediated by institutional context, the composition of debt, and the composition of fiscal spending. A country that borrows to finance civilian public investment is likely to generate different distributional outcomes than one that borrows to service existing obligations or fund military expenditure, even at identical debt-to-GDP ratios. Similarly, the consequences of public debt expansion will differ markedly between a country with monetary and fiscal sovereignty operating under a flexible exchange rate and one constrained by fixed rates or external denomination of its obligations. Aggregate debt levels, taken alone, are theoretically insufficient to determine distributional outcomes.
+These findings share a common implication that motivates this paper: the distributional consequences of public debt are mediated by institutional context, the composition of debt, and the composition of fiscal spending. A country that borrows to finance civilian public investment is likely to generate different distributional outcomes than one that borrows to service existing obligations or fund military expenditure, even at identical debt-to-GDP ratios. Similarly, the consequences of public debt expansion might differ markedly between a country with monetary and fiscal sovereignty operating under a flexible exchange rate and one constrained by fixed rates or external denomination of its obligations (see \cite{HarmsKnaze2021}; \cite{IlzetzkiReinhartRogoff2019}). Aggregate debt levels, taken alone, are theoretically insufficient to determine distributional outcomes.
+
 
 This paper tests that proposition directly. Using a balanced panel of 109
 countries over the period 1978--2019, we estimate the long-run relationship
 between public debt and three measures of income inequality, namely the top
-10\% income share, the top 1\% income share, and the Gini coefficient,
-employing country-specific ARDL bounds testing with random-effects
-meta-analytic pooling, alongside a static panel fixed-effects specification as
-a complementary baseline. Our results yield null or insignificant effects of
+10\% income share, the top 1\% income share, and the Gini coefficient.
+To model this dynamic relationship, we set up an econometric framework designed to address 
+the standard pitfalls of cross-country macro panels. While static models or traditional dynamic panel 
+estimators—such as Difference or System GMM—are commonly applied, they frequently encounter 
+severe limitations, including Nickell bias, weak instruments, and instrument proliferation 
+\citep{Roodman2009}. To address these challenges and accommodate the profound macro-structural 
+heterogeneity across our sample, we employ country-specific Autoregressive Distributed Lag (ARDL) 
+models combined with random-effects meta-analytic pooling, alongside a static panel fixed-effects 
+specification as a complementary baseline. As established by \cite{PesaranShin1999}, augmenting the ARDL 
+specification with appropriate lag structures for both the dependent and explanatory variables fully 
+absorbs residual serial correlation and corrects for regressor endogeneity. We then synthesize these 
+country-specific long-run multiplier estimates into a unified baseline using random-effects meta-analysis, 
+providing a robust aggregate framework immune to standard dynamic panel biases.
+
+The results yield null or insignificant effects of
 public debt on inequality in both the static and the long-run specification, a
 finding we treat as substantively informative rather than as a failure to
 detect an effect: debt accumulation in aggregate does not systematically
@@ -377,11 +410,11 @@ systematic determinant of income concentration.
 	An array of research explain debt as the outcome of a political or economic struggle between different groups in the
 	population who want to gain more control over resources. The reason debt is accumulated
 	is that the group that is in power today may not be in power tomorrow, and debt is a way
-	to take advantage of this temporary power. For instance, \cite{Song2012} argue that debt is a tool used to redistribute resources across generations. \cite{Alesina1990} argue that debt represents a way to tie the hands of future governments that will have different preferences from the current one. \cite{Tabellini1991} also illustrates how debt and social security differ as distributional instruments in an overlapping generations environment. In this vein, \cite{Bouton2020} develop a political economic model focusing on the relationship between entitlements and debt. They propose that both debt and entitlements are mechanisms through which temporarily dominant groups can extract resources from groups that will hold power in the future. Specifically, debt reallocates resources across time periods, while entitlements directly influence the future allocation of resources. \cite{Debrun2020} suggest that the presence of endogenous entitlements reduces the incentive for politically powerful groups to accumulate debt, but this leads to an increase in overall government obligations. Furthermore, they argue that fiscal rules can have unintended consequences; if entitlements are not constrained and there are capital market frictions, imposing debt limits can increase total government obligations and result in worse outcomes for all groups.
+	to take advantage of this temporary power. For instance, \cite{Song2012} argue that debt is a tool used to redistribute resources across generations.  Similarly, \cite{Alesina1990} argue that debt represents a way to tie the hands of future governments that will have different preferences from the current one. \cite{Tabellini1991} also illustrates how debt and social security differ as distributional instruments in an overlapping generations environment. In this vein, \cite{Bouton2020} develop a political economic model focusing on the relationship between entitlements and debt. They propose that both debt and entitlements are mechanisms through which temporarily dominant groups can extract resources from groups that will hold power in the future. Specifically, debt reallocates resources across time periods, while entitlements directly influence the future allocation of resources. \cite{Debrun2020} suggest that the presence of endogenous entitlements reduces the incentive for politically powerful groups to accumulate debt, but this leads to an increase in overall government obligations. Furthermore, they argue that fiscal rules can have unintended consequences; if entitlements are not constrained and there are capital market frictions, imposing debt limits can increase total government obligations and result in worse outcomes for all groups.
 
 	A very different approach to understanding public debt is explored by \cite{Azzimonti2014}. They propose a multi-country model with incomplete markets, and they show that governments may choose higher public debt when financial systems are more integrated. \cite{Azzimonti2014} argue that the incentives of governments to borrow rise both as financial markets become internationally integrated and as income inequality increases if this is associated with higher income risk.
 
-	Others argue that public spending financed by government deficits has reduced the inequality gap between low and high-income individuals in their respective countries (see Li and Filer, 2007; Van Bon, 2022). The central argument of this group of research is that "institutional quality" is crucial, and that advanced economies with rule-based governance can effectively utilize public spending to generate net positive outcomes. Countries that have successfully employed fiscal spending have seen it act as a catalyst for social transfers and resource reallocation through economic development (Ortiz-Ospina and Rose, 2016). High public debt, however, can also be seen as a cause of debt crises and political instability. Politicians in high-debt countries may prioritize balancing national accounts due to political pressure from voters, leading to a decrease in public spending policies and a subsequent increase in economic inequality above a certain debt-to-GDP threshold \citep{Reinhart2011}.
+	Others argue that public spending financed by government deficits has reduced the inequality gap between low and high-income individuals in their respective countries (see \cite{BastagliCoadyGupta2015, ClementsDeMooijiGuptaKeen2015, SalottiTrecroci2018}). The central argument of this group of research is that "institutional quality" is crucial, and that advanced economies with rule-based governance can effectively utilize public spending to generate net positive outcomes. Countries that have successfully employed fiscal spending have seen it act as a catalyst for social transfers and resource reallocation through economic development \citep{OrtizOspina2016}. High public debt, however, can also be seen as a cause of debt crises and political instability. Politicians in high-debt countries may prioritize balancing national accounts due to political pressure from voters, leading to a decrease in public spending policies and a subsequent increase in economic inequality above a certain debt-to-GDP threshold \citep{Reinhart2011}.
 
 	Most existing literature has predominantly examined either the factors influencing debt levels or the effects of overall economic growth on income inequality at the national or global level. However, the lack of studies addressing how debt impacts income inequality limits effective policy making, given the scarcity of knowledge on this direct relationship.
 
@@ -397,7 +430,7 @@ systematic determinant of income concentration.
 
 	Nonetheless, stabilizing the debt-to-GDP ratio remains a complex endeavor that requires deliberate policy action. The literature highlights several interlocking challenges: how to reconcile debt stabilization with political constraints, how to maintain growth while ensuring the intergenerational fairness of fiscal policy, and how to manage the distributional consequences of tax and spending decisions.
 
-	On one side of the debate, studies such as \cite{Boushey2019}, \cite{Ramey2021}, \cite{Fieldhouse2023}, and \cite{DynanElmendorf2024} emphasize the growth-enhancing effects of public infrastructure investment, particularly when interest rates are low. On the other, researchers such as \cite{YouDutt1996}, \cite{Chetty2017}, \cite{CaseDeaton2023}, and \cite{PikettySaez2019} foreground the distributive implications of fiscal policy, arguing that the composition of spending and taxation plays a pivotal role in shaping both inequality and long-run growth.
+	On one side of the debate, studies such as \cite{Boushey2019}, \cite{Ramey2021}, \cite{Fieldhouse2023}, and \cite{DynanElmendorf2024} emphasize the growth-enhancing effects of public infrastructure investment, particularly when interest rates are low. On the other, researchers such as \cite{YouDutt1996}, \cite{Chetty2017}, \cite{PikettySaez2019}, and \cite{CaseDeaton2023} foreground the distributive implications of fiscal policy, arguing that the composition of spending and taxation plays a pivotal role in shaping both inequality and long-run growth.
 
 	As macroeconomic conditions evolve and policy preferences shift, so too do the frameworks researchers and policymakers use to understand public debt. The literature remains rich and contested, reflecting not only competing economic theories but also the normative judgments that inevitably underlie debates over who pays, who benefits, and what counts as sustainable.
 
@@ -409,30 +442,30 @@ systematic determinant of income concentration.
 	The renowned paper of \cite{Sargent81} discusses
 	the "monetary dominance" and "fiscal dominance" regimes said to emerge between the relationship of fiscal deficits  and inflation. Given that the budget deficit is jointly determined by bond sales to the public and seigniorage created by a monetary authority if the monetary authority implements a monetary policy independently, then the fiscal authority faces a budget constraint imposed by the monetary authority when it formulates the fiscal policy. Under this circumstance, the monetary authority can control the money supply, and fiscal deficits do not lead to inflation. In contrast, in a fiscal dominance regime, the monetary authority cannot control the money supply, and fiscal deficits lead to inflation under such fiscal dominance.
 
-	In a widely cited paper, \cite{Reinhart2010} provided long historical data series for the analysis of public-debt-to-GDP ratios and economic growth. Their finding that public-debt-to-GDP ratios above 90\% are associated with markedly lower economic growth rates sparked a major debate. While several leading policymakers in the US and Europe directly referred to \cite{Reinhart2010} in calling for immediate fiscal consolidation measures to reign in public debt, several groups of researchers used the data provided by \cite{Reinhart2010} as well as newly constructed datasets to conduct extensive econometric tests on the impact of public debt levels on economic growth (e.g. \cite{Herndon2014, Woo2015}).  Several papers argue that there is evidence for a negative causal effect of higher public-debt-to-GDP ratios on economic growth (e.g. \cite{Woo2015, Chudik2017}), and for a (close to) 90\% threshold in the public-debt-to-GDP-ratio beyond which growth falls significantly (e.g. \cite{Checherita2012, Baum2013}). While other studies acknowledge the stylized fact of a negative association between initial public debt levels and subsequent growth, they argue that the evidence for a causal effect running from higher public-debt-to-GDP to economic growth is weak at best (e.g. \cite{Panizza2014}). Furthermore, several authors point to systematic differences in the (non-linear) impact of public debt on growth across countries, implying a lack of evidence for universal thresholds in the public-debt-to-GDP ratio beyond which growth falters (e.g. \cite{Eberhardt2015, Eberhardt_2019, Bentour2021}).
+	In an influential paper, \cite{Reinhart2010} provided long historical data series for the analysis of public-debt-to-GDP ratios and economic growth. Their finding that public-debt-to-GDP ratios above 90\% are associated with markedly lower economic growth rates sparked a major debate. While several leading policymakers in the US and Europe directly referred to \cite{Reinhart2010} in calling for immediate fiscal consolidation measures to reign in public debt, several groups of researchers used the data provided by \cite{Reinhart2010} as well as newly constructed datasets to conduct extensive econometric tests on the impact of public debt levels on economic growth (e.g. \cite{Herndon2014, Woo2015}).  Several papers argue that there is evidence for a negative causal effect of higher public-debt-to-GDP ratios on economic growth (e.g. \cite{Woo2015, Chudik2017}), and for a (close to) 90\% threshold in the public-debt-to-GDP-ratio beyond which growth falls significantly (e.g. \cite{Checherita2012, Baum2013}). While other studies acknowledge the stylized fact of a negative association between initial public debt levels and subsequent growth, they argue that the evidence for a causal effect running from higher public-debt-to-GDP to economic growth is weak at best (e.g. \cite{Panizza2014}). Furthermore, several authors point to systematic differences in the (non-linear) impact of public debt on growth across countries, implying a lack of evidence for universal thresholds in the public-debt-to-GDP ratio beyond which growth falters (e.g. \cite{Eberhardt2015, Eberhardt_2019, Bentour2021}).
 
 	Likewise, the many empirical studies on the relationship between fiscal deficits and inflation provide contradictory and inconsistent results. For the United States, \cite{Hamburger1981} examine the deficit–money relationship from the period of 1954–1976, and conclude that budget deficits are inflationary. The relationship becomes stronger in the "Keynesian period" of 1961--1974. \cite{Dwyer82} uses quarterly data covering the 1953--1978 period to test the relationship between debt, price, and money; his results indicate that expected government deficits have no significance for future inflation. \cite{Ahking85}  examine quarterly data from the period of 1947–1980, and present that the deficit–inflation relationship of the United States does exist during some specific periods. \cite{King1985} investigate the deficit–seigniorage relationship in terms of neoclassical macroeconomic models. They find little connection between fiscal deficits and seigniorage in the 1953–1982 period in the United States; they also estimate the deficit–seigniorage connection of 12 other industrial and developing countries, but still fail to demonstrate that the relationship is significant. \cite{Protopapadakis87} examine the debt–money and the debt–inflation connections for 10 major advanced countries during the period of 1952–1987, and note that the association between debt growth and inflation is very weak. \cite{Haan1990}, investigating 17 developing countries from 1961 to 1985, find no evidence to support the "fiscal dominance hypothesis," discovering that deficits are correlated to inflation during acute inflation periods.
 
 	\cite{Catao2005} model inflation as non-linearly related to fiscal deficits through the inflation tax base and estimate this relationship as intrinsically dynamic, using panel techniques that explicitly distinguish between short- and long-run effects of fiscal deficits. Their results, with a panel spanning 107 countries between 1960 and 2001, give a strong association between deficits and inflation among high-inflation and developing country groups, but not among low-inflation advanced economies.
 
 
-	In comparison, the relationship between inequality and the level of debt has been studied less. Much of the focus has been on the interplay between household debt and inequality (see for instance, \cite{Kumhof2015, Iacoviello2008, Mason2014}).
+	In comparison, the relationship between inequality and the level of debt has been studied less. Much of the focus has been on the interplay between household debt and inequality (see for instance, \cite{Iacoviello2008, Mason2014, Kumhof2015}).
 
 \section{Data}
 \label{section:data}
 
-The dataset is constructed from six primary sources: the Penn World Tables,
-the IMF Global Debt Database, the IMF World Economic Outlook, the World
-Inequality Database, the Standardized World Income Inequality Database, and
-the World Bank's World Development Indicators. These sources are merged at
+The dataset is constructed from six primary sources: the Penn World Tables (PWT),
+the IMF Global Debt Database (GDD), the IMF World Economic Outlook (WEO), the World
+Inequality Database (WID), the Standardized World Income Inequality Database (SWIID), and
+the World Bank's World Development Indicators (WDI). These sources are merged at
 the country-year level; the estimation sample, determined by the coverage
 requirements described below, comprises 109 countries observed over a fixed
-1978--2019 window. Country income classifications follow the World Bank
+window from 1978-2019. Country income classifications follow the World Bank
 Atlas method, assigned using each country's historical modal classification
 to avoid reclassification artifacts from single-year designations
 \citep{WorldBankClassifications}. The countries span low, middle, and high
 income groups across all major regions, providing a broad empirical basis for
-the analysis. Table~\ref{table:table1} presents the distribution of countries
+the analysis. ~\autoref{table:table1} presents the distribution of countries
 by income group.\footnote{In calculating gross
 	national income (GNI) per capita in U.S. dollars, the World Bank uses the
 	Atlas method. The Atlas conversion factor for a given year is the average of
@@ -460,7 +493,7 @@ reflects its dominant structural position rather than its transitory income
 status in any particular year. Where a country is tied across two groups, the
 higher group is assigned to avoid under-classifying countries that have
 experienced sustained development over the sample. The resulting distribution
-across the 137 countries in the estimation sample is reported in
+across the 109 countries in the estimation sample is reported in
 \autoref{table:table1}.
 
 This approach is preferred to using the most recent classification for two
@@ -497,7 +530,7 @@ share of GDP provides the basis for the civilian spending share used in the
 fiscal decomposition analysis, constructed by subtracting the military
 expenditure share from the government consumption share. Government
 expenditure as a share of GDP, used elsewhere as a control for the overall
-size of the fiscal state, is measured from the IMF World Economic Outlook
+size of the fiscal state, is measured from the IMF World Economic Outlook (WEO)
 general government expenditure series.
 
 \subsection{Public Debt}
@@ -512,7 +545,7 @@ government debt from the GDD is used where available, central government debt
 from the GDD where general government coverage is missing, and gross general
 government debt from the WEO where neither GDD measure is reported. As with
 the output composites, a source indicator records the origin of each
-country-year observation. The hierarchy follows \citet{Reinhart2011} in
+country-year observation. The hierarchy follows \cite{Reinhart2011} in
 accepting central government debt as a proxy where general government data
 are incomplete, a substitution that primarily affects developing economies,
 while exploiting the broader coverage available in the GDD. Household,
@@ -526,7 +559,7 @@ GDP in purchasing power parity terms.
 \subsubsection{Top Income Shares}
 
 The primary inequality measures are top income shares from the World
-Inequality Database \citep{WID2024}. We use the share of pre-tax national
+Inequality Database (WID) \citep{WID2024}. We use the share of pre-tax national
 income accruing to the top 10\% and the top 1\% of the national pre-tax
 income distribution. These series are constructed under the Distributional
 National Accounts (DINA) framework \citep{BlanchetEtAlDINA2021}, which
@@ -547,7 +580,7 @@ Top income shares are theoretically preferred to the Gini coefficient for
 this paper's research question for two reasons. First, they are more
 sensitive to changes at the upper tail of the distribution, where the fiscal
 and financial channels through which public debt operates are most likely to
-manifest \citep{Atkinson2011, PikettyS2003}. Second, the measurement error in
+manifest \citep{PikettyS2003, Atkinson2011}. Second, the measurement error in
 top income shares is better characterized and more tractable than in
 survey-based Gini estimates: the primary limitation is the degree to which
 tax records capture top incomes, a concern that is extensively documented and
@@ -556,7 +589,7 @@ partially addressed in the WID methodology \citep{AlvaradoEtAl2013}.
 \subsubsection{Gini Coefficient}
 
 The Gini coefficient is drawn from the Standardized World Income Inequality
-Database, version 9.91 \citep{solt2020}. SWIID provides harmonized estimates
+Database (SWIID), version 9.91 \citep{solt2020}. SWIID provides harmonized estimates
 of post-tax, post-transfer disposable income inequality for up to 199
 countries from 1960 to the present. The harmonization procedure uses the
 Luxembourg Income Study (LIS) as the comparability benchmark, exploiting its
@@ -588,7 +621,7 @@ period.
 \subsection{Control Variables}
 
 The choice of control variables follows the theoretical channels identified
-in the debt and inequality literatures, and is disciplined by the
+in the debt and inequality literature, and is disciplined by the
 degrees-of-freedom constraints of the CS-DL and CS-ARDL estimators.
 
 GDP per capita is included to control for the stage of economic development.
@@ -608,7 +641,7 @@ spending are not. This motivates the fiscal decomposition specification, in
 which civilian government spending (the government consumption share less the
 military expenditure share) is distinguished from the aggregate expenditure
 share. Military expenditure as a share of GDP is sourced from the World
-Bank's World Development Indicators \citep{WorldBank2024} and used to
+Bank's World Development Indicators (WDI) \citep{WorldBank2024} and used to
 construct the civilian spending share.
 
 Life expectancy at birth is included as a broader measure of human
@@ -639,9 +672,9 @@ wealth distribution: it erodes the real value of nominal assets and
 liabilities and typically falls more heavily on lower-income households whose
 wealth is concentrated in liquid deposits rather than real assets
 \citep{DoepkeSchneider2006}. The composite inflation series draws on the
-World Development Indicators GDP deflator inflation rate, supplemented by WEO
+World Development Indicators (WDI) GDP deflator inflation rate, supplemented by WEO
 consumer price inflation where the former is missing. All control variables
-are sourced from the World Bank's World Development Indicators
+are sourced from the World Bank's World Development Indicators (WDI)
 \citep{WorldBank2024} unless otherwise noted.
 
 \subsection{Sample Construction}
@@ -657,7 +690,7 @@ differently dated alternatives.
 Within this window, a country is retained if four variables, the top 10\%
 income share, the top 1\% income share, the public debt-to-GDP ratio, and
 real GDP growth, each have no gap of more than two consecutive missing years
-and no more than 20 percent of observations missing overall (at most eight of
+and no more than 20 percent of observations missing overall (at most 8 of
 the 42 years). Applying this criterion to the merged data yields 109
 countries that satisfy it and form the estimation sample: 31 low-income, 26
 lower-middle-income, 21 upper-middle-income, and 31 high-income countries,
@@ -758,28 +791,28 @@ estimation sample is reported in \autoref{table:table1}.
 	\begin{figure}[ht]
 		\caption{Gross Government Debt by IMF Income Classification}
 		\label{figure:figure3}
-		\includegraphics[width=\textwidth]{C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/total_government_debt_icg.png}
-		\caption*{\scriptsize\emph{Note}: Each dot represents a country. Size indicates population. Dotted line is the global average debt ratio; single lines represent income group level debt ratio average. Gross government debt and GDP attained from the IMF WEO from 1980-2019.}
+		\includegraphics[width=\textwidth]{total_government_debt_icg.png}
+		{\scriptsize\emph{Note}: Each dot represents a country. Size indicates population. Dotted line is the global average debt ratio; single lines represent income group level debt ratio average. Gross government debt and GDP attained from the IMF WEO from 1980-2019.}
 	\end{figure}
 
 
 	High-income countries present the most striking variation. While some maintain conservative debt profiles, others (including those with advanced welfare states or recent histories of fiscal stimulus) exceed 100 percent of GDP. The wide range among wealthier nations underscores that fiscal capacity and borrowing are not constrained solely by income level but by a complex interplay of historical, institutional, and geopolitical factors.
 
-	Marker size in the figure is proportional to each country’s nominal GDP, allowing for a visual differentiation between economically larger and smaller states within each group. This scaling emphasizes the importance of considering both debt levels and economic size when evaluating fiscal sustainability. Crucially, the figure does not imply that higher income groups uniformly face greater debt burdens, but rather that fiscal heterogeneity is a feature of all income categories, one that defies simplistic generalizations and invites closer examination of national policy regimes, structural constraints, and the political economy of debt accumulation.
+	Marker size in \autoref{figure:figure3} is proportional to each country’s nominal GDP, allowing for a visual differentiation between economically larger and smaller states within each group. This scaling emphasizes the importance of considering both debt levels and economic size when evaluating fiscal sustainability. Crucially, \autoref{figure:figure3} does not imply that higher income groups uniformly face greater debt burdens, but rather that fiscal heterogeneity is a feature of all income categories, one that defies simplistic generalizations and invites closer examination of national policy regimes, structural constraints, and the political economy of debt accumulation.
 
 
 	\begin{figure}[ht]
 		\caption{Gross Government Debt and Inequality}
 		\label{figure:figure4}
-		\includegraphics[width=\textwidth]{C:/Users/ageis/Git/chen_twumasi_eisenbarth/figures/figure2.png}
-		\caption*{\scriptsize\emph{Note}: Each dot represents a country. Size indicates population. Dotted line is the global average debt ratio; single lines represent income group level debt ratio average. Gross government debt and GDP attained from the IMF WEO from 1980-2019.}
+		\includegraphics[width=\textwidth]{figure2.png}
+		{\scriptsize\emph{Note}: Each dot represents a country. Size indicates population. Dotted line is the global average debt ratio; single lines represent income group level debt ratio average. Gross government debt and GDP attained from the IMF WEO from 1980-2019.}
 	\end{figure}
 
 \subsection{Panel Unit Root Properties}
 \label{section:unit_roots}
 
-The CS-DL and CS-ARDL estimators, and the underlying ARDL bounds testing
-procedure of \citet{PesaranShin1999} and \citet{PesaranShinSmith2001}, require
+The Cross-Sectionally Augmented Distributed Lag (CS-DL) and Cross-Sectionally Augmented Autoregressive Distributed Lag (CS-ARDL) estimators, and the underlying Autoregressive Distributed Lag (ARDL) bounds testing
+procedure of \cite{PesaranShin1999} and \cite{PesaranShinSmith2001}, require
 that each variable entering the long-run relationship be integrated of order
 zero or one. A variable integrated of order two or higher invalidates the
 bounds test critical values and undermines the interpretation of the long-run
@@ -1172,7 +1205,7 @@ the Gini coefficient.
 \subsubsection{Specification}
 
 For each country $i$ we estimate an autoregressive distributed lag model in
-levels, following \citet{PesaranShin1999} and \citet{PesaranShinSmith2001}:
+levels, following \cite{PesaranShin1999} and \cite{PesaranShinSmith2001}:
 \begin{equation}
 	y_{it} = c_{i} + \sum_{j=1}^{p_{i}} \phi_{ij} \, y_{i,t-j}
 	+ \sum_{\ell=1}^{4} \sum_{j=0}^{q_{i\ell}} \beta_{i\ell j} \, x_{i\ell,t-j}
@@ -1272,7 +1305,7 @@ reports the outcomes for each of the three measures of concentration.
 		\end{small}
 		\begin{tablenotes}
 			\footnotesize
-			\item \emph{Note}: Bounds $F$ tests following \citet{PesaranShinSmith2001}
+			\item \emph{Note}: Bounds $F$ tests following \cite{PesaranShinSmith2001}
 			with $k = 4$ regressors, computed under an unrestricted intercept and no
 			trend. The bounds test could not be evaluated at the selected lag order for
 			the United Arab Emirates (top decile share), Burkina Faso (top percentile
@@ -1383,7 +1416,7 @@ as representative of a general pattern.
 	\end{threeparttable}
 \end{table}
 
-None of the three pooled estimates is distinguishable from zero. Applied to
+\autoref{table:meta_longrun} reports the distribution and pooled estimates for the long-run multiplier on public debt. None of the three pooled estimates is distinguishable from zero. Applied to
 the sample debt expansion, the estimate for the top decile share implies a
 decline of 0.74 percentage points, against an observed rise of 8.4 points: the
 point estimate points in the opposite direction from the observed increase in
@@ -1516,7 +1549,7 @@ country-specific long-run relation answer different questions, and that a
 result significant in the former need not survive in the latter.
 
 Four features of the estimates admit readings other than the one advanced
-above, and the pooled estimate is recomputed under two of them in
+above, and the pooled estimate is recomputed under two of them, reported in
 \autoref{table:lr_sensitivity}.
 
 \begin{table}[htbp]
@@ -1556,10 +1589,9 @@ at 1.034); such cases leave the denominator of \eqref{eq:lrm} non-positive and
 the multiplier without an equilibrium interpretation. Eight countries fall in
 this category for the Gini coefficient, with polynomials as high as 1.769
 (India) and implied multipliers running into the hundreds of index points
-(Egypt, 410.4; the United States, 566.6). Unlike an earlier draft of this
-analysis, these cases are excluded from every pooled estimate reported above
+(Egypt, 410.4; the United States, 566.6). These cases are excluded from every pooled estimate reported above
 as a matter of course rather than folded in and removed only as a robustness
-check. For the Gini coefficient this affects eight of 60 estimated countries,
+check. For the Gini coefficient this affects 8 of 60 estimated countries,
 enough that the coefficient's basic numerical behavior, on a variable measured
 in index points rather than as a fractional share, is a limitation of
 \eqref{eq:lrm} worth flagging on its own terms.
@@ -1654,7 +1686,7 @@ rather than a materially better-fitting model.
 
 Adjustment toward the estimated long-run relation is therefore rapid for both
 measures of top income concentration, running against the reading, common in
-the fiscal literature and adopted in an earlier draft of this analysis, that
+the fiscal literature, that
 the distributional consequences of public debt unfold over horizons too long
 to detect in samples of this length. On the evidence here the horizon is not
 the binding constraint for either income share measure. The long-run
@@ -1691,7 +1723,7 @@ the 5 percent level for either income share measure, and adding the
 composition of spending does not restore a debt effect that the baseline
 specification fails to find.
 
-Cointegration is somewhat more common under this specification: the null of no
+Cointegration is more common under this specification: the null of no
 long-run relation is rejected at the 5 percent level in 34.0 percent of
 countries for the top decile share, 44.6 percent for the top percentile share,
 and 40.0 percent for the Gini coefficient, each several points above the
@@ -1729,28 +1761,31 @@ setting in which fiscal expansion occurs.
 
 	Our findings also speak to the broader debate on fiscal space and debt sustainability. If the distributive consequences of debt vary so markedly across income groups, then one-size-fits-all policy prescriptions, such as universal debt thresholds, are misleading. Instead, the political economy context (monetary sovereignty, exchange rate regime, and institutional quality) determines whether public debt functions as a stabilizing or destabilizing force in the long run.
 
+    \subsection{Limitations}
+    
+   While this study provides a comprehensive re-evaluation of the debt–inequality nexus across historical regimes, several limitations warrant consideration.  First, while our empirical findings advocate for an institutional approach in mediating distributional outcomes, our quantitative panel models do not explicitly incorporate time-varying institutional proxies—such as union density, tax progressivity indices, or collective bargaining coverage—relying instead on regime periodization to capture structural shifts. Second, although our multi-decade estimations establish robust long-run baseline relationships, cross-country macroeconomic panel regressions inherently face challenges regarding dynamic feedback loops and potential endogeneity between debt and income concentration. Future research should build on this framework by integrating explicit institutional interaction terms and dynamic structural estimators to directly quantify how specific policy regimes alter transmission mechanisms.  
+   
+   Despite these constraints, our empirical framework employs several methodological strategies to mitigate these potential limitations and ensure robust findings. First, while explicit institutional time-series metrics were not incorporated directly into the regressions, our regime-based periodization effectively acts as a structural proxy, isolating systemic shifts across distinct macroeconomic eras. Second, to address cross-country heterogeneity, our country-specific ARDL bounds testing with meta-analytic pooling allows for distinct dynamic lag structures per nation rather than imposing uniform parameters. Finally, by integrating multiple high-coverage databases (including WID, SWIID, and PWT) and evaluating top-tail accumulation alongside broad disposable Gini metrics, our framework minimizes measurement error and provides a resilient baseline that holds across various inequality definitions.
 
 	\section{Conclusion}
 
-	This paper has examined the complex interplay between public debt, economic growth, and income inequality across 82 countries over nearly five decades. Contrary to the notion of a universal debt threshold beyond which growth and equity outcomes deteriorate, our results highlight deep heterogeneity. Debt does not exert a uniform effect on inequality; instead, its distributive impact depends on structural conditions, the level of development, the interaction with economic growth, and the institutional environment in which fiscal policy operates.
+	This paper has examined the complex interplay between public debt, economic growth, and income inequality across 109 countries over nearly five decades. Contrary to the notion of a universal debt threshold beyond which growth and equity outcomes deteriorate, our results highlight deep heterogeneity. Debt does not exert a uniform effect on inequality; instead, its distributive impact depends on structural conditions, the level of development, the interaction with economic growth, and the institutional environment in which fiscal policy operates.
 
-	The central finding of this study is that the transmission of debt into inequality is conditional on institutional quality. This leads us to advance an institutional-first approach to debt management: public debt should not be treated as a universal stabilization tool, but as an instrument that requires a specific level of administrative and institutional maturity to operate safely. The heterogeneity documented throughout our analysis is not a statistical nuisance; it is the result itself. Where institutions are robust (where tax administration is effective, budget processes are transparent, and central banks operate with credible independence) debt can serve as a macro-stabilizer during downturns, channeling resources toward social protection and productive investment. Where these foundations are absent, the same fiscal instrument risks amplifying inequality through elite capture, regressive consolidation, and external vulnerability.
+	The central finding of this study is that the transmission of debt into inequality is conditional on institutional quality. This leads us to advance an institutional-first approach to debt management: public debt should not be treated as a universal stabilization tool, but as an instrument that requires a specific level of administrative and institutional maturity \footnote{Having established that weak institutional channels transform fiscal expansion into a regressive force, the critical policy question becomes: How can developing economies actively construct institutional capacity to break this feedback loop? A frameworks grounded in Public Service Employment (PSE) offer a potential operational template for building this kind of institutional maturity \cite{Forstater2006}. By establishing a decentralized labor buffer stock, a PSE framework is designed to operate as a counter-cyclical wage floor that automatically absorbs displaced workers during downturns. Rather than public borrowing culminating in regressive fiscal adjustments, directing debt toward localized, non-import-intensive public works—such as ecological restoration and infrastructure maintenance—aims to convert underutilized labor into tangible public assets. Ultimately, incorporating a PSE-style stabilizer suggests that institutional resilience and capacity can be actively engineered to help insulate vulnerable populations from political and macroeconomic volatility.} to operate safely. The heterogeneity documented throughout our analysis is not a statistical nuisance; it is the result itself. Where institutions are robust (where tax administration is effective, budget processes are transparent, and central banks operate with credible independence) debt can serve as a macro-stabilizer during downturns, channeling resources toward social protection and productive investment. Where these foundations are absent, the same fiscal instrument risks amplifying inequality through elite capture, regressive consolidation, and external vulnerability.
 
-	Three specific conclusions follow. First, debt accumulation is most likely to exacerbate inequality in lower-middle-income and high-income economies, albeit through different mechanisms. In lower-middle-income countries, the "austerity channel" dominates: weak institutional capacity means that debt obligations translate into expenditure cuts that fall disproportionately on the poor, while external creditor pressures further constrain progressive fiscal responses. In high-income economies, the inequality-increasing effects of debt operate through more subtle channels, regressive fiscal adjustments and the unequal distributional consequences of accommodative monetary policies that accompany high debt ratios. For both groups, the implication is the same: institutional context determines whether debt is stabilizing or destabilizing.
+	Two specific conclusions follow. First, debt accumulation is most likely to exacerbate inequality in lower-middle-income and high-income economies, albeit through different mechanisms. In lower-middle-income countries, the "austerity channel" dominates: weak institutional capacity means that debt obligations translate into expenditure cuts that fall disproportionately on the poor, while external creditor pressures further constrain progressive fiscal responses. In high-income economies, the inequality-increasing effects of debt operate through more subtle channels, regressive fiscal adjustments and the unequal distributional consequences of accommodative monetary policies that accompany high debt ratios. For both groups, the implication is the same: institutional context determines whether debt is stabilizing or destabilizing. Moreover, while monetary sovereignty and flexible exchange rates can provide fiscal capacity, they do not automatically ensure progressive outcomes; ultimately, what matters is how governments choose to deploy those resources.
 
 	Second, economic growth on its own is not necessarily equalizing. In low-income countries, growth often coincides with widening disparities, and our finding that human capital investments can exacerbate inequality in these settings points to processes of elite capture. Where access to education and health resources remains stratified, debt-financed investments reinforce existing divides rather than narrowing them. This underscores the need for institutional prerequisites (broad-based access to public services, progressive tax structures, and accountable governance) before debt can function as a vehicle for inclusive development.
 
-	Third, the exchange rate regime analysis reveals that monetary sovereignty creates fiscal \textit{capacity} without determining fiscal \textit{outcomes}. In the short run, sovereign countries with floating exchange rates actually exhibit stronger positive associations between debt and inequality. The long-run ARDL estimates hint at a reversal, with sovereign countries showing more inequality-reducing debt multipliers on average, but the evidence is not statistically decisive. The critical insight is that the absence of external discipline does not, by itself, translate into progressive fiscal choices. What matters is not whether a country \textit{can} run deficits freely, but how it \textit{chooses} to spend and that choice is shaped by institutional quality.
+	Because aggregate public debt levels demonstrate no deterministic, long-run impact on income distribution across our models, the transmission mechanism of fiscal policy is necessarily mediated by structural capacity. While these results do not offer a single policy prescription, they highlight how structural priorities vary by institutional maturity. For low-income and lower-middle-income countries at an early stage of institutional development, the priority should be capacity building: strengthening tax administration, improving budget transparency, establishing credible and independent central banking, and broadening access to public services. Until these foundations are set, the austerity channel poses significant structural risks, and debt should be deployed with extreme caution and directed toward the institutional investments that will expand future fiscal space. For upper-middle-income and advanced economies that have already achieved a degree of institutional maturity, the evidence supports a more flexible use of debt as a counter-cyclical instrument provided that the composition of spending is designed to reach broad segments of the population rather than accruing disproportionately to asset holders and elites.
 
-	These findings yield a clear policy prescription, differentiated by institutional maturity. For low-income and lower-middle-income countries at an early stage of institutional development, the priority must be capacity building: strengthening tax administration, improving budget transparency, establishing credible and independent central banking, and broadening access to public services. Until these foundations are set, the austerity channel poses too great a risk, and debt should be deployed with extreme caution and directed toward the institutional investments that will expand future fiscal space. For upper-middle-income and advanced economies that have already achieved a degree of institutional maturity, the evidence supports a more confident use of debt as a counter-cyclical instrument provided that the composition of spending is designed to reach broad segments of the population rather than accruing disproportionately to asset holders and elites.
+	For international policy debates, the findings caution decisively against reliance on simple debt-to-GDP thresholds or cross-country averages. The 90 percent threshold popularized by \cite{Reinhart2010}, frequently accepted as a stylized fact, obscures the institutional heterogeneity that our analysis reveals to be the dominant feature of the debt-inequality landscape. Context-sensitive assessments of fiscal space, ones that account for institutional capacity, exchange rate arrangements, and the functional composition of public spending, are essential.
 
-	For international policy debates, the findings caution decisively against reliance on simple debt-to-GDP thresholds or cross-country averages. The 90 percent threshold popularized by \cite{Reinhart2010}, whatever its merits as a stylized fact, obscures the institutional heterogeneity that our analysis reveals to be the dominant feature of the debt-inequality landscape. Context-sensitive assessments of fiscal space, ones that account for institutional capacity, exchange rate arrangements, and the functional composition of public spending, are essential.
-
-	Future research should extend the analysis along two dimensions. First, incorporating more granular data on the functional composition of public spending would clarify which categories of expenditure drive the equalizing or disequalizing effects of debt across institutional contexts. Second, modeling the interaction between domestic political institutions and external financial constraints would illuminate the mechanisms through which institutional quality mediates the debt-inequality relationship. Doing so would further clarify the conditions under which public debt can support both growth and equity in the global economy, and would provide the empirical foundation for the institutional-first framework we advocate here.
+	Future research should extend the analysis along two dimensions. First, incorporating more granular data on the functional composition of public spending would clarify which categories of expenditure drive the equalizing or dis-equalizing effects of debt across institutional contexts. Second, modeling the interaction between domestic political institutions and external financial constraints would illuminate the mechanisms through which institutional quality mediates the debt-inequality relationship. Doing so would further clarify the conditions under which public debt can support both growth and equity in the global economy, and would provide the empirical foundation for the institutional-first framework we advocate here.
 
 
 
-	\bibliographystyle{aea}
+	\bibliographystyle{apalike}
 	\bibliography{references} % Bibliography file (usually '*.bib' )
 
 \end{document}
